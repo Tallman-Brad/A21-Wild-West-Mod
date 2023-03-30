@@ -1,0 +1,52 @@
+<configs>
+	
+	<append xpath="/blocks">
+	
+	<block name="fogLightGrey">
+		<property name="Material" value="Mmetal"/>
+		<property name="CustomIcon" value="fogLightGrey"/>
+		<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/FogBlocks.unity3d?foggray" />
+	</block>
+	
+	<block name="fogVariantHelper">
+		<property name="Extends" value="fogLightGrey"/>		
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIcon" value="fogLightGrey"/>
+		<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+		<property name="ItemTypeIcon" value="all_blocks"/>
+		<property name="SelectAlternates" value="true"/>
+		<property name="PlaceAltBlockValue" value="fogLightGrey,fogDarkGrey,fogOrange,fogGreen,fogBlue"/>
+	</block>
+
+	<block name="fogDarkGrey">
+		<property name="Material" value="Mmetal"/>
+		<property name="CustomIcon" value="fogDarkGrey"/>
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#@modfolder:Resources/FogBlocks.unity3d?foggray1block" />
+	</block>
+
+	<block name="fogOrange">
+		<property name="Material" value="Mmetal"/>
+		<property name="CustomIcon" value="fogOrange"/>
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#@modfolder:Resources/FogBlocks.unity3d?fogOrange" />
+	</block>
+
+	<block name="fogGreen">
+		<property name="Material" value="Mmetal"/>
+		<property name="CustomIcon" value="fogGreen"/>
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#@modfolder:Resources/FogBlocks.unity3d?fogGreen" />
+	</block>
+
+	<block name="fogBlue">
+		<property name="Material" value="Mmetal"/>
+		<property name="CustomIcon" value="fogBlue"/>
+		<property name="Shape" value="ModelEntity" />
+		<property name="Model" value="#@modfolder:Resources/FogBlocks.unity3d?fogBlue" />
+	</block> 
+ 
+	</append>
+	
+</configs>

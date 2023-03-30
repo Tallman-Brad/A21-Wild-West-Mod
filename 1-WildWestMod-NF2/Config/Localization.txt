@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+fogLightGrey,blocks,Block,,,Fog (Light Grey),,,,,,,,,,,,,
+fogLightGreyDesc,blocks,Block,,,"This is a light grey decorative fog block. Responds well to lighting.",,,,,,,,,,,,,
+fogDarkGrey,blocks,Block,,,Fog (Dark Grey),,,,,,,,,,,,,
+fogDarkGreyDesc,blocks,Block,,,"This is a dark grey decorative fog block. Responds well to lighting.",,,,,,,,,,,,,
+fogOrange,blocks,Block,,,Fog (Orange),,,,,,,,,,,,,
+fogOrangeDesc,blocks,Block,,,"This is an orange decorative fog block. Responds well to lighting.",,,,,,,,,,,,,
+fogGreen,blocks,Block,,,Fog (Green),,,,,,,,,,,,,
+fogGreenDesc,blocks,Block,,,"This is a green decorative fog block. Responds well to lighting.",,,,,,,,,,,,,
+fogBlue,blocks,Block,,,Fog (Blue),,,,,,,,,,,,,
+fogBlueDesc,blocks,Block,,,"This is a blue decorative fog block. Responds well to lighting.",,,,,,,,,,,,,
+fogVariantHelper,blocks,Block,,,Fog Helper,,,,,,,,,,,,,
