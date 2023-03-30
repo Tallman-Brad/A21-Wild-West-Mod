@@ -1,0 +1,123 @@
+<configs>
+
+<append xpath="/entity_classes">
+
+<entity_class name="animalBisonBear" extends="animalTemplateHostile">
+	<property name="Tags" value="entity,animal,hostile,bear,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="false"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="Mesh" value="#@modfolder:Resources/WildWestAnimals.unity3d?BisonWildWest"/>	
+	<property name="Mass" value="600"/>
+
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,25,EntityZombie,30"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,13,8,EntityAnimalStag,0,0,EntityZombie,0,0"/>
+	<property name="AITarget-4" value=""/>
+
+	<property name="SoundHurt" value="Animals/Bear/bearpain"/>
+	<property name="SoundDeath" value="Animals/Bear/beardeath"/>
+	<property name="SoundRandom" value="Animals/Bear/bearroam"/>
+	<property name="SoundSense" value="Animals/Bear/bearsense"/>
+	<property name="SoundAlert" value="Animals/Bear/bearalert"/>
+	<property name="SoundAttack" value="Animals/Bear/bearattack"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
+
+	<!-- Gameplay  -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="750"/><!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="600"/>
+
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> <!-- animalBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1600"/>
+	</effect_group>
+
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_bear,clear_sleeper" />
+</entity_class>
+
+<entity_class name="animalBisonBoar" extends="animalTemplateHostile">
+	<property name="Tags" value="entity,animal,hostile,boar,perkAT02,perkAT03,radiated"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_pig"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_pig"/>
+	<property name="IsEnemyEntity" value="false"/><!-- override hostile template setting so he can spawn in safe zones -->
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="PhysicsBody" value="boar"/>
+	<property name="Mesh" value="#@modfolder:Resources/WildWestAnimals.unity3d?BisonWildWest"/>
+	<property name="Mass" value="200"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="false"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+
+	<property name="SoundRandom" value="Animals/Boar/boarroam"/>
+	<property name="SoundAlert" value="Animals/Boar/boaralert"/>
+	<property name="SoundHurt" value="Animals/Boar/boarpain"/>
+	<property name="SoundDeath" value="Animals/Boar/boardeath"/>
+	<property name="SoundAttack" value="Animals/Boar/boarattack"/>
+	<property name="SoundSense" value="Animals/Boar/boarsense"/>
+	<property name="SoundGiveUp" value="Animals/Boar/boargiveup"/>
+
+	<!-- Gameplay  -->
+	<property name="PainResistPerHit" value=".75"/>
+	<property name="MoveSpeed" value="0.2"/>
+	<property name="MoveSpeedAggro" value="1.3, 1.3"/>
+	<property name="MoveSpeedPanic" value="1.6"/>
+
+	<property name="HandItem" value="meleeHandAnimalWolf"/>
+
+	<!-- Gameplay  -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="-1000"/><!-- XP Minus -->
+	<property name="DeadBodyHitPoints" value="600"/>
+
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> <!-- animalBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1600"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_boar,clear_sleeper" />
+</entity_class>
+
+</append>	
+	
+</configs>

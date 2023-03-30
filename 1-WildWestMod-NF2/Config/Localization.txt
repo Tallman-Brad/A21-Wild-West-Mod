@@ -11,3 +11,6 @@ fogGreenDesc,blocks,Block,,,"This is a green decorative fog block. Responds well
 fogBlue,blocks,Block,,,Fog (Blue),,,,,,,,,,,,,
 fogBlueDesc,blocks,Block,,,"This is a blue decorative fog block. Responds well to lighting.",,,,,,,,,,,,,
 fogVariantHelper,blocks,Block,,,Fog Helper,,,,,,,,,,,,,
+
+animalBisonBear,entityclasses,Entity,,,Bison (Territorial Grazer),,,,,,,,,,,,,
+animalBisonBoar,entityclasses,Entity,,,Bison (Peaceful Grazer),,,,,,,,,,,,,

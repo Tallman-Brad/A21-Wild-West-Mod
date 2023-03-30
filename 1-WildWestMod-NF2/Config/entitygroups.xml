@@ -1,0 +1,10 @@
+<wildwestmod>
+	
+	<!-- Desert -->
+
+	<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']">
+		<entity name="animalBisonBoar" prob="4"/> <!-- A timid animal but will attack if attacked -->
+		<entity name="animalBisonBear" prob="0.5"/> <!-- Territorial and Bearish -->		
+	</append>
+
+</wildwestmod>
