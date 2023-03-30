@@ -1,0 +1,1177 @@
+<configs>
+<append xpath="/buffs">
+<!-- Horses -->
+
+<buff name="buffHorseStart"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="Brown Horse">
+				<requirement name="EntityTagCompare" target="self" tags="horseBrown"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWildBrownHorse" target="self"/>
+		</effect_group>
+		<effect_group name="Black Horse">
+				<requirement name="EntityTagCompare" target="self" tags="horseBlack"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWildBlackHorse" target="self"/>
+		</effect_group>
+		<effect_group name="Yellow Horse">
+				<requirement name="EntityTagCompare" target="self" tags="horseYellow"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWildYellowHorse" target="self"/>
+		</effect_group>
+		<effect_group name="Albino Horse">
+				<requirement name="EntityTagCompare" target="self" tags="horseAlbino"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWildAlbinoHorse" target="self"/>
+		</effect_group>
+		<effect_group name="Cream Horse">
+				<requirement name="EntityTagCompare" target="self" tags="horseCream"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWildCreamHorse" target="self"/>
+		</effect_group>
+		<effect_group name="Midnight Horse">
+				<requirement name="EntityTagCompare" target="self" tags="horseMidnight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWildMidnightHorse" target="self"/>
+		</effect_group>
+		<effect_group name="Gray Horse">
+				<requirement name="EntityTagCompare" target="self" tags="horseGray"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWildGrayHorse" target="self"/>
+		</effect_group>
+	</buff>
+<!-- brown horse taming -->
+<buff name="buffWildBrownHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Sound">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="HorseSpeakSound"/>		
+		</effect_group>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildBrownHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBrownHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffWildBrownHorseMeleeAttack" target="self"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffWildBrownHorseMeleeAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBrownHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBrownHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBrownHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="buffWildBrownHorseMeleeAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildBrownHorseWalkPrefab"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBrownHorseAttackPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBrownHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBrownHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBrownHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="WildBrownHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBrownHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+<buff name="buffBrownHorseTamingComplete"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".3" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Send to Player">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBrownHorseTamingCompletePlayer" target="selfAOE" range="2" target_tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseTamingFeedPrefab" local_offset="0,.75,0" parent_transform="Global"/>
+		</effect_group>
+		<effect_group name="Removes">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="HorseTamingCVar" operation="set" value="1" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffBrownHorseTamingCompletePlayer"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty, Allows Saddle Use">
+		</effect_group>
+	</buff>
+
+<!-- black horse taming -->
+<buff name="buffWildBlackHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Sound">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="HorseSpeakSound"/>		
+		</effect_group>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildBlackHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBlackHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffWildBlackHorseMeleeAttack" target="self"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffWildBlackHorseMeleeAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBlackHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBlackHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBlackHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="buffWildBlackHorseMeleeAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildBlackHorseWalkPrefab"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBlackHorseAttackPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBlackHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildBlackHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBlackHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="WildBlackHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildBlackHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+<buff name="buffBlackHorseTamingComplete"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".3" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Send to Player">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffBlackHorseTamingCompletePlayer" target="selfAOE" range="2" target_tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseTamingFeedPrefab" local_offset="0,.75,0" parent_transform="Global"/>
+		</effect_group>
+		<effect_group name="Removes">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="HorseTamingCVar" operation="set" value="1" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffBlackHorseTamingCompletePlayer"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty, Allows Saddle Use">
+		</effect_group>
+	</buff>
+
+<!-- yellow horse taming -->
+<buff name="buffWildYellowHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Sound">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="HorseSpeakSound"/>	
+		</effect_group>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildYellowHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildYellowHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffWildYellowHorseMeleeAttack" target="self"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffWildYellowHorseMeleeAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildYellowHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildYellowHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildYellowHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="buffWildYellowHorseMeleeAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildYellowHorseWalkPrefab"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildYellowHorseAttackPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildYellowHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildYellowHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildYellowHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="WildYellowHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildYellowHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+<buff name="buffYellowHorseTamingComplete"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".3" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Send to Player">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffYellowHorseTamingCompletePlayer" target="selfAOE" range="2" target_tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseTamingFeedPrefab" local_offset="0,.75,0" parent_transform="Global"/>
+		</effect_group>
+		<effect_group name="Removes">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="HorseTamingCVar" operation="set" value="1" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffYellowHorseTamingCompletePlayer"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty, Allows Saddle Use">
+		</effect_group>
+	</buff>
+
+<!-- Albino horse taming -->
+<buff name="buffWildAlbinoHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Sound">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="HorseSpeakSound"/>	
+		</effect_group>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildAlbinoHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildAlbinoHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffWildAlbinoHorseMeleeAttack" target="self"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffWildAlbinoHorseMeleeAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildAlbinoHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildAlbinoHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildAlbinoHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="buffWildAlbinoHorseMeleeAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildAlbinoHorseWalkPrefab"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildAlbinoHorseAttackPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildAlbinoHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildAlbinoHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildAlbinoHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="WildAlbinoHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildAlbinoHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+<buff name="buffAlbinoHorseTamingComplete"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".3" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Send to Player">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffAlbinoHorseTamingCompletePlayer" target="selfAOE" range="2" target_tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseTamingFeedPrefab" local_offset="0,.75,0" parent_transform="Global"/>
+		</effect_group>
+		<effect_group name="Removes">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="HorseTamingCVar" operation="set" value="1" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffAlbinoHorseTamingCompletePlayer"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty, Allows Saddle Use">
+		</effect_group>
+	</buff>
+
+<!-- Cream horse taming -->
+<buff name="buffWildCreamHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Sound">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="HorseSpeakSound"/>		
+		</effect_group>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildCreamHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildCreamHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffWildCreamHorseMeleeAttack" target="self"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffWildCreamHorseMeleeAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildCreamHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildCreamHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildCreamHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="buffWildCreamHorseMeleeAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildCreamHorseWalkPrefab"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildCreamHorseAttackPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildCreamHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildCreamHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildCreamHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="WildCreamHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildCreamHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+<buff name="buffCreamHorseTamingComplete"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".3" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Send to Player">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffCreamHorseTamingCompletePlayer" target="selfAOE" range="2" target_tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseTamingFeedPrefab" local_offset="0,.75,0" parent_transform="Global"/>
+		</effect_group>
+		<effect_group name="Removes">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="HorseTamingCVar" operation="set" value="1" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffCreamHorseTamingCompletePlayer"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty, Allows Saddle Use">
+		</effect_group>
+	</buff>
+
+<!-- Midnight horse taming -->
+<buff name="buffWildMidnightHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Sound">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="HorseSpeakSound"/>		
+		</effect_group>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildMidnightHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildMidnightHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffWildMidnightHorseMeleeAttack" target="self"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffWildMidnightHorseMeleeAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildMidnightHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildMidnightHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildMidnightHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="buffWildMidnightHorseMeleeAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildMidnightHorseWalkPrefab"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildMidnightHorseAttackPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildMidnightHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildMidnightHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildMidnightHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="WildMidnightHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildMidnightHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+<buff name="buffMidnightHorseTamingComplete"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".3" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Send to Player">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffMidnightHorseTamingCompletePlayer" target="selfAOE" range="2" target_tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseTamingFeedPrefab" local_offset="0,.75,0" parent_transform="Global"/>
+		</effect_group>
+		<effect_group name="Removes">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="HorseTamingCVar" operation="set" value="1" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffMidnightHorseTamingCompletePlayer"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty, Allows Saddle Use">
+		</effect_group>
+	</buff>
+
+<!-- Gray horse taming -->
+<buff name="buffWildGrayHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Sound">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="18"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="HorseSpeakSound"/>	
+		</effect_group>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildGrayHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildGrayHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" buff="buffWildGrayHorseMeleeAttack" target="self"/>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" buff="buffWildGrayHorseMeleeAttack" target="self"/>
+				
+			
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildGrayHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildGrayHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildGrayHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+</buff>
+<buff name="buffWildGrayHorseMeleeAttack" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Resistance">
+			<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,triggerInfection,triggerBleeding,triggerLaceration,triggerAbrasion,triggerSprainedLeg,triggerBrokenLeg,triggerSprainedArm,triggerBrokenArm,triggerFatigued,triggerStun,triggerConcussion,buffInjuryBleedingOne,buffInjuryBleeding,buffBLegBroken,buffLegSprained,buffLegSplinted,buffLegCast,buffInjuryAbrasion,buffLegGetsWorse,buffArmGetsWorse,buffArmSprained,buffBrokenLimbStatus,buffFatigued,buffInjuryConcussion"/>
+		</effect_group>
+		<effect_group name="Attach">
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePrefabFromEntity" prefab="WildGrayHorseWalkPrefab"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildGrayHorseAttackPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildGrayHorseWalkPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="WildGrayHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfDied" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildGrayHorseDeathPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="WildGrayHorseAttackPrefab"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?WildGrayHorseWalkPrefab" local_offset="0,0,-.1" parent_transform="Global"/>
+		</effect_group>
+	</buff>
+<buff name="buffGrayHorseTamingComplete"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value=".3" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Send to Player">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffGrayHorseTamingCompletePlayer" target="selfAOE" range="2" target_tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseTamingFeedPrefab" local_offset="0,.75,0" parent_transform="Global"/>
+		</effect_group>
+		<effect_group name="Removes">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="HorseTamingCVar" operation="set" value="1" />
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseTamingFeedPrefab"/>
+		</effect_group>
+	</buff>
+<buff name="buffGrayHorseTamingCompletePlayer"  hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty, Allows Saddle Use">
+		</effect_group>
+	</buff>
+
+
+<!-- utility buffs -->
+<buff name="buffInstaGibHorse" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value=".5"/>
+		<effect_group name="Deal Damage">
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyStats" stat="Health" operation="subtract" value="5000"/>
+		</effect_group>
+	</buff>
+<buff name="buffAllowAppleHarvest" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="Set Harvest Count">
+			<passive_effect name="HarvestCount" operation="base_set" value="1" tags="AppleHarvesting"/>
+		</effect_group>
+</buff>
+<!-- vehicle horse care -->
+<buff name="buffVehicleHorseHeal" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Heal">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="1000" />
+		</effect_group>
+</buff>
+<buff name="buffVehicleHorseDamage" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="5" />
+		<effect_group name="Damage over Time">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="5" />
+		</effect_group>
+</buff>
+<buff name="buffVehicleT2HorseDamage" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="15" />
+		<effect_group name="Damage over Time">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="5" />
+		</effect_group>
+</buff>
+
+
+<!-- greets -->
+<buff name="buffMaybellGreet" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value="1" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="MaybellGreetSound" play_in_head="true"/>		
+		</effect_group>
+		<effect_group name="Display Reputation Buff">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffReputationDisplay" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffAbbyGreet" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value="1" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="AbbyGreetSound" play_in_head="true"/>		
+		</effect_group>
+		<effect_group name="Display Reputation Buff">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffReputationDisplay" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffLeahGreet" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value="1" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="LeahGreetSound" play_in_head="true"/>		
+		</effect_group>
+		<effect_group name="Display Reputation Buff">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffReputationDisplay" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffVincentGreet" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="30"/>
+		<update_rate value="1" />
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="VincentGreetSound" play_in_head="true"/>		
+		</effect_group>
+		<effect_group name="Display Reputation Buff">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffReputationDisplay" target="self"/>
+		</effect_group>
+</buff>
+
+<!-- reputation buffs -->
+<buff name="buffReputationDisplay" name_key="buffReputationDisplayName" description_key="buffReputationDisplayDesc" icon="ui_game_symbol_HorseRanchReputation" icon_color="255,255,255">
+		<stack_type value="replace"/>
+		<duration value="1.5"/>
+		<display_value value="HorseRanchReputationDisplay"/>
+		<display_value_key value="Reputation: {0}"/>
+		<effect_group name="Set CVar to 1">
+				<requirement name="CVarCompare" cvar="HorseRanchReputationDisplay" operation="LT" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseRanchReputationDisplay" operation="set" value="1"/>	
+		</effect_group>
+		<effect_group name="Add Unlocks Buff">
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHorseRanchUnlocks" target="self"/>	
+		</effect_group>
+</buff>
+<buff name="buffReputationAddDisplay" name_key="buffReputationDisplayName" description_key="buffReputationDisplayDesc" icon="ui_game_symbol_HorseRanchReputation" icon_color="255,255,255">
+		<stack_type value="replace"/>
+		<duration value="1.5"/>
+		<display_value value="HorseRanchReputationDisplay"/>
+		<display_value_key value="Reputation + 1"/>
+		<effect_group name="Play Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+</buff>
+<!-- unlocks -->
+<buff name="buffHorseRanchUnlockNotify" name_key="buffHorseRanchUnlockNotifyName" description_key="buffHorseRanchUnlockNotifyDesc" icon="ui_game_symbol_HorseRanchReputation" icon_color="255,255,255">
+		<stack_type value="ignore"/>
+		<display_value value="HorseRanchReputationDisplay"/>
+		<display_value_key value="New Unlocks!"/>
+		<duration value="15"/>
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseReputationUnlock" play_in_head="true"/>		
+		</effect_group>
+</buff>
+<buff name="buffHorseRanchUnlocks" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group name="Tier 1 Saddle">
+			<requirement name="CVarCompare" cvar="HorseRanchReputationDisplay" operation="GTE" value="25"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" tags="questHorseRanchUnlock1"/>	
+		</effect_group>
+		<effect_group name="Tier 2 Horse Upgrade">
+			<requirement name="CVarCompare" cvar="HorseRanchReputationDisplay" operation="GTE" value="50"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" tags="vehicleT2BrownHorsePlaceable,vehicleT2BlackHorsePlaceable,vehicleT2AlbinoHorsePlaceable,vehicleT2MidnightHorsePlaceable,vehicleT2CreamHorsePlaceable,vehicleT2GrayHorsePlaceable,vehicleT2YellowHorsePlaceable"/>	
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" tags="questHorseRanchUnlockItem2"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="HorseCourseAllow" operation="set" value="1"/>	
+		</effect_group>
+		<effect_group name="Unlock Ticket Recipe">
+			<requirement name="CVarCompare" cvar="HorseCourseTicketUnlocked" operation="GTE" value="1"/>
+		
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" tags="resourceHorseCourseTicket"/>
+		</effect_group>
+</buff>
+
+
+<!-- horse course -->
+<buff name="buffHorseCourseStart" name_key="buffHorseCourseStartName" description_key="buffHorseCourseStartDesc" icon="ui_game_symbol_HorseTimeTrial" icon_color="255,255,255">
+		<stack_type value="ignore"/>
+		<duration value="60"/>
+		<update_rate value="1" />
+		<display_value value="HorseCourseTimer"/>
+		<display_value_key value="{0}s"/>
+		<effect_group name="Remove if CVar 0">
+			<requirement name="CVarCompare" cvar="HorseCourseAllow" operation="LTE" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHorseCourseStart" target="self"/>
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHorseCourseScoreDisplay" target="self"/>
+		</effect_group>
+		<effect_group name="Play Sound">
+			<requirement name="CVarCompare" cvar="HorseCourseAllow" operation="GTE" value="1"/>
+			<requirement name="EntityTagCompare" tags="player"/>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseCourseStartSound" play_in_head="true"/>
+		</effect_group>
+		<effect_group name="Restart Score CVar">
+				<requirement name="CVarCompare" cvar="HorseCourseScoreDisplay" operation="GTE" value="100"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseScoreDisplay" operation="set" value="0"/>
+		</effect_group>
+		<effect_group name="Set CVar">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseCheckpoints" operation="set" value="4"/>
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseComplete" operation="set" value="0"/>		
+
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseTimer" operation="set" value="60"/>				
+		</effect_group>
+		<effect_group name="Timer">
+			<requirement name="CVarCompare" cvar="HorseCourseTimer" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="HorseCourseTimer" operation="subtract" value="1"/>
+		</effect_group>
+		<effect_group name="Remove if Failed">
+			<requirement name="CVarCompare" cvar="HorseCourseTimer" operation="LTE" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="StopSound" sound="HorseCourseStartSound"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffHorseCourseStart" target="self"/>
+		</effect_group>
+		<effect_group name="Add Score Display">
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHorseCourseScoreDisplay" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffHorseCheckpoint1" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="2"/>
+		<display_value value="HorseCourseCheckpoints"/>
+		<display_value_key value="{0} checkpoints left!"/>
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Set CVar">	
+				<requirement name="HasBuff" buff="buffHorseCourseStart"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseCheckpoints" operation="set" value="3"/>	
+		</effect_group>
+		<effect_group name="Attach">
+			<requirement name="EntityTagCompare" tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseCheckpointParticlePrefab" local_offset="0,0,0" local_rotation="0,0,90" parent_transform="Hips"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+		</effect_group>
+</buff>
+<buff name="buffHorseCheckpoint2" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="2"/>
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Set CVar">	
+				<requirement name="HasBuff" buff="buffHorseCourseStart"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseCheckpoints" operation="set" value="2"/>	
+		</effect_group>
+		<effect_group name="Attach">
+			<requirement name="EntityTagCompare" tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseCheckpointParticlePrefab" local_offset="0,0,0" local_rotation="0,0,90" parent_transform="Hips"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+		</effect_group>
+</buff>
+<buff name="buffHorseCheckpoint3" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="2"/>
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Set CVar">	
+				<requirement name="HasBuff" buff="buffHorseCourseStart"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseCheckpoints" operation="set" value="1"/>	
+		</effect_group>
+		<effect_group name="Attach">
+			<requirement name="EntityTagCompare" tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseCheckpointParticlePrefab" local_offset="0,0,0" local_rotation="0,0,90"  parent_transform="Hips"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+		</effect_group>
+</buff>
+<buff name="buffHorseCheckpoint4" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="2"/>
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Set CVar">	
+				<requirement name="HasBuff" buff="buffHorseCourseStart"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseCheckpoints" operation="set" value="0"/>	
+		</effect_group>
+		<effect_group name="Attach">
+			<requirement name="EntityTagCompare" tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseCheckpointParticlePrefab" local_offset="0,0,0" local_rotation="0,0,90"  parent_transform="Hips"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+		</effect_group>
+</buff>
+<buff name="buffHorseCourseFinish" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="10"/>
+		<effect_group name="Stop Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="StopSound" sound="HorseCourseStartSound"/>
+		</effect_group>
+		<effect_group name="Sound">
+				<requirement name="HasBuff" buff="buffHorseCourseStart"/>
+				<requirement name="CVarCompare" cvar="HorseCourseCheckpoints" operation="LT" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseCourseCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Set CVar">	
+				<requirement name="HasBuff" buff="buffHorseCourseStart"/>
+				<requirement name="CVarCompare" cvar="HorseCourseCheckpoints" operation="LTE" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseComplete" operation="set" value="1"/>	
+		</effect_group>
+		<effect_group name="Add Score Display">
+				<requirement name="HasBuff" buff="buffHorseCourseStart"/>
+				<requirement name="CVarCompare" cvar="HorseCourseCheckpoints" operation="LTE" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffHorseCourseScoreAddDisplay" target="self"/>	
+		</effect_group>
+		<effect_group name="Remove Buffs">	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHorseCheckpoint1" target="self"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHorseCheckpoint2" target="self"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHorseCheckpoint3" target="self"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHorseCheckpoint4" target="self"/>	
+			<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffHorseCourseStart" target="self"/>	
+		</effect_group>
+</buff>
+
+<buff name="buffHorseCourseScoreAddDisplay" name_key="buffHorseCourseScoreName" description_key="buffHorseCourseScoreDesc" icon="ui_game_symbol_HorseTimeTrialScore" icon_color="255,255,255">
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+		<update_rate value="1" />
+		<display_value value="HorseCourseScoreAdd"/>
+		<display_value_key value="+ {0}"/>
+		<effect_group name="Set CVar">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseCourseScoreAdd" operation="set" value="@HorseCourseTimer"/>
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="HorseCourseScoreDisplay" operation="add" value="@HorseCourseScoreAdd"/>
+		</effect_group>
+</buff>
+<buff name="buffHorseCourseScoreDisplay" name_key="buffHorseCourseScoreDisplayName" description_key="buffHorseCourseScoreDisplayDesc" icon="ui_game_symbol_HorseTimeTrialScore" icon_color="255,255,255">
+		<stack_type value="ignore"/>
+		<duration value="80"/>
+		<update_rate value="1" />
+		<display_value value="HorseCourseScoreDisplay"/>
+		<display_value_key value="{0} / 100"/>
+		<effect_group name="Set CVar if Over 100">
+				<requirement name="CVarCompare" cvar="HorseCourseScoreDisplay" operation="GT" value="100"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="HorseCourseScoreDisplay" operation="set" value="100"/>
+		</effect_group>
+</buff>
+<buff name="buffHorseCourseReset" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1.5"/>
+		<effect_group name="Reset Horse Score">
+			<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="HorseCourseScoreDisplay" operation="set" value="0"/>
+		</effect_group>
+</buff>
+
+<!-- Simon Says -->
+<buff name="buffSimonSaysStart" name_key="buffSimonSaysStartName" description_key="buffSimonSaysStartDesc" icon="ui_game_symbol_HorseRanchReputation" icon_color="255,255,255">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<display_value value="HorseCourseScoreDisplay"/>
+		<display_value_key value="Playing Abby Says"/>
+		<update_rate value="10" />
+		<effect_group name="Play and Remove Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="SimonSaysSound"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="SimonSaysSound"/>
+		</effect_group>
+		<effect_group name="Reset CVar">
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="SimonSaysScore" operation="set" value="0"/>
+			
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="SimonSaysPlaying" operation="set" value="1"/>
+		</effect_group>
+		<effect_group name="Clear CVars on Finish">
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="SimonSaysPlaying" operation="set" value="0"/>
+		</effect_group>
+		<effect_group name="Random Call Out">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysSphereCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="11"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysRedCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="21"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="GTE" value="12"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysSquareCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="31"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="GTE" value="22"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysGreenCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="41"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="GTE" value="32"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysStarCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="51"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="GTE" value="42"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysBlueCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="61"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="GTE" value="52"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysTriangleCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="71"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="GTE" value="62"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysYellowCallOut" target="self">
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="LTE" value="81"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="1,80" operation="GTE" value="72"/>
+				</triggered_effect>
+		</effect_group>
+</buff>
+<!-- red sphere -->
+<buff name="buffSimonSaysSphereCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysSphere" icon_color="255,255,255" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysSphereCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysSphereCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+					<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+					<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysSphereCallOut" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysRedCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysColor" icon_color="255,0,0" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysRedCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysRedCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+					<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+					<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysRedCallOut" target="self"/>
+		</effect_group>
+</buff>
+<!-- greensquare -->
+<buff name="buffSimonSaysSquareCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysSquare" icon_color="255,255,255" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysSquareCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysSquareCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+					<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+					<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysSquareCallOut" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysGreenCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysColor" icon_color="0,255,0" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysGreenCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysGreenCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+					<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+					<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysGreenCallOut" target="self"/>
+		</effect_group>
+</buff>
+<!-- blue star -->
+<buff name="buffSimonSaysStarCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysStar" icon_color="255,255,255" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStarCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStarCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+					<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+					<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStarCallOut" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysBlueCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysColor" icon_color="0,0,255" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysBlueCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysBlueCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+					<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+					<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysBlueCallOut" target="self"/>
+		</effect_group>
+</buff>
+<!-- yellow triangle -->
+<buff name="buffSimonSaysTriangleCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysTriangle" icon_color="255,255,255" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysTriangleCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysTriangleCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+					<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+					<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysTriangleCallOut" target="self"/>
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysYellowCallOut" name_key="buffSimonSaysCallOutName" description_key="buffSimonSaysCallOutDesc" icon="ui_game_symbol_SimonSaysColor" icon_color="255,255,0" icon_blink="true">
+		<stack_type value="ignore"/>
+		<duration value="5"/>
+		<update_rate value=".1" />
+		<effect_group name="Add Score if Correct">
+				<requirement name="HasBuff" buff="buffSimonSaysYellowTriangle"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysScoreIncrease" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysYellowCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Game if no Choice">
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="RemoveBuff" buff="buffSimonSaysYellowCallOut" target="self"/>
+		</effect_group>
+		<effect_group name="Clear Score and Game if Incorrect">
+				<requirements compare_type="or">
+					<requirement name="HasBuff" buff="buffSimonSaysGreenSquare"/>
+					<requirement name="HasBuff" buff="buffSimonSaysBlueStar"/>
+					<requirement name="HasBuff" buff="buffSimonSaysRedSphere"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysStart" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffSimonSaysIncorrect" target="self"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffSimonSaysYellowCallOut" target="self"/>
+		</effect_group>
+</buff>
+
+<!-- completes -->
+<buff name="buffSimonSaysIncorrect" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Play Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="password_fail"/>
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysRedSphere" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty For Check">
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysBlueStar" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty For Check">
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysGreenSquare" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty For Check">
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysYellowTriangle" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Empty For Check">
+		</effect_group>
+</buff>
+<!-- scoring -->
+<buff name="buffSimonSaysScoreIncrease" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="3"/>
+		<effect_group name="Sound">
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="HorseTamingCompleteSound"/>		
+		</effect_group>
+		<effect_group name="Add CVar if > 0">
+				<requirement name="CVarCompare" cvar="SimonSaysScore" operation="GTE" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="SimonSaysScore" operation="add" value="1"/>
+		</effect_group>
+		<effect_group name="Set CVar if 0">
+				<requirement name="CVarCompare" cvar="SimonSaysScore" operation="LT" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="SimonSaysScore" operation="set" value="1"/>
+		</effect_group>
+		<effect_group name="Reset CVar and Add Rep if 20">
+				<requirement name="CVarCompare" cvar="SimonSaysScore" operation="GTE" value="20"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="SimonSaysScore" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseRanchReputationDisplay" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffReputationAddDisplay" target="self"/>
+		</effect_group>
+		<effect_group name="Add Score Display">
+			<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffSimonSaysScoreDisplay" target="self"/>
+		</effect_group>
+		<effect_group name="Attach">
+			<requirement name="EntityTagCompare" tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseCheckpointParticlePrefab" local_offset="0,0,0" local_rotation="0,0,90" parent_transform="Hips"/>
+				
+				<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="HorseCourseCheckpointParticlePrefab"/>
+		</effect_group>
+</buff>
+<buff name="buffSimonSaysScoreDisplay" name_key="buffSimonSaysScoreDisplayName" description_key="buffSimonSaysDisplayDesc" icon="ui_game_symbol_SimonSaysScore" icon_color="255,255,255">
+		<stack_type value="replace"/>
+		<duration value="10"/>
+		<update_rate value="1" />
+		<display_value value="SimonSaysScore"/>
+		<display_value_key value="{0} / 10"/>
+		<effect_group name="Add Reputation if 10">
+				<requirement name="CVarCompare" cvar="SimonSaysScore" operation="GT" value="10"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="HorseRanchReputationDisplay" operation="add" value="1"/>
+		</effect_group>		
+</buff>
+
+
+
+
+
+
+
+
+</append>
+
+
+
+
+
+
+
+
+
+
+
+</configs>

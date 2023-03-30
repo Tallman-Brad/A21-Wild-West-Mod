@@ -1,0 +1,208 @@
+======================
+= Wild West POI List =
+======================
+Some of these POIs are not hooked up to 7D2D RWG tag system and will only appear in the Custom World or Teragon Worlds.
+This is because they are on water, in caves, or other locations that 7D2D RWG cannot support.
+
+Summary
+Decorative POIs for Town and Wilderness = 28
+Tier 1 = 40
+Tier 2 = 25
+Tier 3 = 12
+Tier 4 = 9
+Tier 5 = 10
+
+TOWN POIS
+- No Tier Decorative - Total = 8
+wildwest_business_05 (TFP)
+wildwest_gallows (TFP)
+wildwest_remnant_oldwest_01 (TFP)
+wildwest_remnant_oldwest_02 (TFP)
+wildwest_remnant_oldwest_05 (TFP)
+wildwest_remnant_oldwest_06 (TFP)
+wildwest_remnant_oldwest_08 (TFP)
+wildwest_watertower (TFP)
+
+- Tier 1 - Total = 33
+wildwest_apothecary_Medusa
+wildwest_Blacksmith(by_Zeebark)
+wildwest_business_01 (TFP)
+wildwest_business_02 (TFP)
+wildwest_business_03 (TFP)
+wildwest_business_04 (TFP)
+wildwest_business_06 (TFP)
+wildwest_business_07 (TFP)
+wildwest_business_08 (TFP)
+wildwest_business_09 (TFP)
+wildwest_business_10 (TFP)
+wildwest_business_11 (TFP)
+wildwest_business_12 (TFP)
+wildwest_business_13 (TFP)
+wildwest_business_14 (TFP)
+wildwest_cabin_02 (TFP)
+wildwest_cabin_04 (TFP)
+wildwest_cabin_10 (TFP)
+wildwest_cathouse_Medusa
+wildwest_church
+wildwest_coal_factory
+wildwest_Courthouse_Medusa
+wildwest_jail (TFP)
+wildwest_picturehouse_Medusa
+wildwest_remnant_business_03 (TFP)
+wildwest_remnant_oldwest_04 (TFP)
+wildwest_remnant_oldwest_07 (TFP)
+wildwest_remnant_oldwest_09 (TFP)
+wildwest_stables (TFP)
+wildwest_stables_01_arramus
+wildwest_station_02_arramus
+wildwest_strip_03 (TFP)
+wildwest_strip_04 (TFP)
+
+- Tier 2 - Total = 18
+wildwest_bony_xpress_01_arramus
+wildwest_bricabrac_01_arramus
+wildwest_bucksden_01_arramus
+wildwest_cabin_01 (TFP)
+wildwest_craterfield_01_arramus
+wildwest_dukepower_01_arramus
+wildwest_gfv_01_arramus
+wildwest_gold_01_arramus
+wildwest_gunshop_01_arramus
+wildwest_Hotel_Skank(By_Zeebark)
+wildwest_market_01_arramus
+wildwest_meatloaf_01_arramus
+wildwest_ministrip_01_arramus
+wildwest_Shooting_Range_Zeebark
+wildwest_stables_02_arramus
+wildwest_strip_01 (TFP)
+wildwest_strip_02 (TFP)
+wildwest_sweeney_01_arramus
+
+- Tier 3 - Total = 10
+wildwest_apper_01_arramus
+wildwest_bank_01_arramus
+wildwest_bubbles_01_arramus
+wildwest_dukepatrol_01_arramus
+wildwest_lyttletrippers_01_arramus
+wildwest_mine_01_arramus
+wildwest_railroad_Medusa
+wildwest_schoolfix_01_arramus
+wildwest_station_01_arramus
+wildwest_woodpecker_01_arramus
+
+- Tier 5 - Total = 2
+wildwest_CowboysRest_Medusa
+wildwest_shipping_warehouse_TMB
+
+WILDERNESS POIS
+- Tier 1 - Total = 7
+wildwest_Boat_Scrap_tug_TMB
+wildwest_cabin_08 (TFP)
+wildwest_farm_12 (TFP)
+wildwest_felledforest_TMB
+wildwest_TMB_Bandit_Loot
+wildwest_Wilderness_shack_02_TMB
+wildwest_Wilderness_shack_03_TMB
+
+- Tier 2 - Total = 7
+wildwest_cabin_05 (TFP)
+wildwest_cabin_07 (TFP)
+wildwest_cabin_11 (TFP - and Tiling System)
+wildwest_farm_04 (TFP)
+wildwest_farm_07 (TFP)
+wildwest_farm_10 (TFP)
+wildwest_logdrive_01
+
+- Tier 3 - Total = 2
+wildwest_rural_church_01 (TFP)
+wildwest_MambaHomestead_Medusa
+
+- Tier 4 - Total = 9
+wildwest_adobe_01_arramus
+wildwest_cathedral_01 (TFP)
+wildwest_desertsettlers_01 (Joint Project)
+wildwest_farm_02 (TFP)
+wildwest_farm_08 (TFP)
+wildwest_ProudMary_Medusa
+wildwest_settler_01_arramus
+wildwest_Stagecoach_Medusa (and Tiling System)
+wildwest_wildernessgroup_01_Medusa_arramus
+
+- Tier 5 - Total = 8
+wildwest_cave_01_arramus
+wildwest_fort_01_arramus
+wildwest_pack_01_arramus
+wildwest_sawmill_01_arramus
+wildwest_SnakeBite_Saloon_Medusa (and Tiling System)
+wildwest_upright_arramus
+wildwest_upright_drydock_arramus
+wildwest_WW_Ranch_Stallionsden
+
+WILDERNESS DECO BIOME SPAWNING POIS - Total = 20
+deco_wasteland_tradersmoke_white
+deco_wasteland_tradersmoke_black
+deco_wildwest_desertoasis_01
+deco_wildwest_desertoasis_02
+deco_wildwest_desertoasis_03
+deco_wildwest_desertsmallcamp_01
+deco_wildwest_desertsmallcamp_02
+deco_wildwest_forestsmallcamp_01
+deco_wildwest_forestsmallcamp_02
+deco_wildwest_OilRig01_by_MPLogue
+deco_wildwest_OilRig02_by_MPLogue
+deco_wildwest_OilRig03_by_MPLogue
+deco_wilderness_pineforestlogging_01
+deco_wilderness_pineforestlogging_02
+deco_wilderness_pineforestlogging_03
+deco_wilderness_pineforestlogging_04
+deco_wildwest_prospector_dig_01_TMB
+deco_wildwest_prospector_dig_02_TMB
+deco_wildwest_remnant_oldwest_03
+deco_wildwest_smokeriser3000
+
+There are additional hand placed decorative POIs that are not questable, but will offer treasures and other rewards.
+
+====================================
+= Chaz916Gaming Wild West POI List =
+====================================
+Chaz916Gaming kindly submitted 29 POI candidates for the Wild West Mod.
+These POIs range from custom made POIs to TFP conversions.
+They displayed a multitude of biome.xml spawning assets both above and below ground which infers they were directly exported from a World.
+
+As such, making them compatible with regular POI features required some intensive updating as follows:
+- Removal of biome placed underground ore from the terrain blocks which were very noticable in cross section export cuts
+- Removal of deco spawning topsoil assets
+- Replacing all terrain to Terrain Filler to match the biome
+- Replacing player assets such as player lights (torches, lanterns, and candles), as well as writeable crates and player crates, among others.
+
+The Wild West Mod team working on POIs (Medusa, Tallman Brad, and arramus) made extensive overhaul updates, but maintained as much of the original context as possible.
+They all conform with default POI standard.
+TMB Gameplay Community appreciate this assortment of custom made and repurposed TFP repurposed POIs shared by Chaz916Gaming.
+
+The full list of POIs added to the Wild West Mod are as follows:
+
+1. wildwest_Schoolhouse_Chaz916Gaming (TMB) - T1 F+C
+2. wildwest_AssayLandOffice_Chaz916Gaming (arramus) - T1 F+C
+3. wildwest_BankFireDeptLeesGoods_Chaz916Gaming (arramus) - T2 F+C
+4. wildwest_LiveryStable_Chaz916Gaming (Medusa) - T1 F+C
+- incorporating wildWest_Haybarn_Chaz916Gaming and wildWest_HayRoadEnd_Chaz916Gaming
+5. wildwest_BestEatsBarberShop_Chaz916Gaming (arramus) - T1 F+C
+6. wildwest_BlainWoodMetal_Chaz916Gaming (arramus) - T1 F+C
+7. wildwest_FortWest_Chaz916Gaming (Medusa) - T2 F+C
+8. wildwest_HotelCardSaloon_Chaz916Gaming (arramus) - T3
+- incorporating and replacing as a new POI, wildwest_BoardingHouseHotel_Chaz916Gaming and wildwest_CardHouseVelvetSaloon_Chaz916Gaming
+9. wildwest_Clothier_Chaz916Gaming (arramus) - T1 F+C
+- merged with wildwest_GallowsGraveyard_Chaz916Gaming
+10. - 15. wildwest_HotelBathhouseJoesMining_Chaz916Gaming (arramus) - T1 F+C
+merged wildwest_HotelBathhouse_Chaz916Gaming and wildwest_JoesMining_Chaz916Gaming due to terrain challenges
+11. wildwest_LastChanceTradingPost_Chaz916Gaming (arramus) - T1 F+C
+12. wildwest_MeatsFeednSeed_Chaz916Gaming (arramus) - T1 F+C
+13. wildwest_GoodNews_Chaz916Gaming (arramus) - T1 F+C
+- A merger of wildwest_Newsstand_Chaz916Gaming and wildwest_OldWestBibleChurch_Chaz916Gaming due to size
+14. wildwest_TheaterPOJail_Chaz619Gaming (arramus) - T3 F+C+P
+- Merging of wildwest_OWTheater_Chaz916Gaming, wildwest_PostOffice_Chaz916Gaming, and wildwest_SheriffJail_Chaz916Gaming
+15. wildwest_StageUndiesGrave_Chaz916Gaming (arramus) - T2 F+C
+- The merger of wildwest_StageStopAnlUndertakers_Chaz916Gaming and wildwest_TownGraveyard_Chaz916Gaming
+16. wildwest_TownHallWestsideHotel_Chaz916Gaming (arramus) - T2 F+C
+- Combination of wildwest_TownHall_Chaz916Gaming and wildwest_Westsidehotel_Chaz916Gaming
+17. wildwest_GunshopBakery_Chaz916Gaming (Medusa) - T2 F+C

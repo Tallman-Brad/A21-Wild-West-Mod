@@ -1,0 +1,28 @@
+<configs>
+<append xpath="/entitygroups">
+	<entitygroup name="TelricsHorses">
+		<entity name="animalRabbit"/>
+		<entity name="animalChicken"/>	
+		<!-- entity name="invisibleAnimalEnemy" prob="6"/>
+		<entity name="invisibleAnimalEnemy" prob="6"/>
+		<entity name="invisibleAnimalEnemy" prob="6"/--> <!-- Obsolete -->
+		<entity name="animalBrownHorse" prob=".5"/>
+		<entity name="animalBlackHorse" prob=".5"/>
+		<entity name="animalYellowHorse" prob=".5"/>
+		<entity name="animalAlbinoHorse" prob=".5"/>
+		<entity name="animalCreamHorse" prob=".5"/>
+		<entity name="animalMidnightHorse" prob=".5"/>
+		<entity name="animalGrayHorse" prob=".5"/>
+		<entity name="none" prob="85"/> <!-- TFP A20 addition -->	
+	</entitygroup>
+
+</append>
+
+
+
+
+
+
+
+
+</configs>

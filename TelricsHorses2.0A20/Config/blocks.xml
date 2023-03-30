@@ -1,0 +1,811 @@
+<configs>
+<append xpath="/blocks">
+<block name="AppleBlock">
+		<property name="CustomIcon" value="buttercup" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?AppleBlockPrefab"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" name="foodApple" count="1"/>
+		<drop event="Fall" name="foodApple" count="1" prob="1" stick_chance="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="treeTallGrassDiagonal"/>
+	<property name="PlantGrowing.GrowthRate" value="3"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	</block>
+<block name="CarrotBlock">
+		<property name="CustomIcon" value="buttercup" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?CarrotBlockPrefab"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" name="foodCarrot" count="1"/>
+		<drop event="Fall" name="foodCarrot" count="1" prob="1" stick_chance="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+	</block>
+<block name="AbbysLocketBlock">
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?AbbysLocketBlockPrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceAbbysLocket" count="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="DowngradeBlock" value="AbbysLocketBlockAir"/>
+</block>
+<block name="AbbysLocketBlockAir">
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0j0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="AbbysLocketBlock"/>
+	<property name="PlantGrowing.GrowthRate" value="2"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+</block>
+<block name="HorseBroomPile">
+	<property name="Material" value="Mwood"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseBroomPilePrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="meleeToolBroom" count="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="DowngradeBlock" value="HorseBroomPileAir"/>
+</block>
+<block name="HorseBroomPileAir">
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0j0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="HorseBroomPile"/>
+	<property name="PlantGrowing.GrowthRate" value="2"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+</block>
+<block name="HorseDustBunnyBlockPlaceholder">
+	<property name="Material" value="Mcloth"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseDustBunnyPrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Destroy" name="meleeToolBroom" count="1"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="DowngradeBlock" value="HorseDustBunnyAir"/>
+</block>
+<block name="HorseDustBunnyBlock">
+	<property name="Material" value="Mcloth"/>
+	<property name="MaxDamage" value="10"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseDustBunnyPrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<drop event="Destroy" count="0" />
+	<drop event="Harvest" name="resourceDustBunny" count="1" tag="DustBunny"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="Collide" value="melee"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="HorseDustBunnyAir"/>
+	<property name="PlantGrowing.GrowthRate" value="1.5"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="DowngradeBlock" value="HorseDustBunnyAir"/>
+</block>
+<block name="HorseDustBunnyAir">
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0j0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="HorseDustBunnyBlockPlaceholder"/>
+	<property name="PlantGrowing.GrowthRate" value="2"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+</block>
+
+
+<!-- maybells farm placeholder -->
+<block name="plantedMaybellsFarmRandomHelper">
+	<property name="Extends" value="plantedCorn3Harvest" param1="MultiBlockDim"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="CustomIcon" value="plantedCorn3Harvest"/> <property name="CustomIconTint" value="ff8080"/>
+	<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+</block>
+
+
+<!-- traders -->
+<block name="spawnMaybellTrader">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="500000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?BlockNPCMaybellIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="TraderID" value="10"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+</block>
+<block name="spawnAbbyTrader">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="500000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?BlockNPCAbbyIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="TraderID" value="11"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+</block>
+<block name="spawnLeahTrader">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="500000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?NPCLeahIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="TraderID" value="12"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+</block>
+<block name="spawnVincentTrader">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="500000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Class" value="VendingMachine"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?NPCVincentHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="TraderID" value="13"/>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+</block>
+
+
+<!-- placeholder block-->
+<block name="spawnStabledRandomHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="500000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildAlbinoHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+</block>
+<block name="spawnStabledHorseAir">
+	<property name="Material" value="Mair"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="Texture" value="250"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0j0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="Class" value="PlantGrowing"/>
+	<property name="PlantGrowing.Next" value="spawnStabledRandomHorse"/>
+	<property name="PlantGrowing.GrowthRate" value="5"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.LightLevelGrow" value="0"/>
+	<property name="PlantGrowing.LightLevelStay" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+</block>
+<block name="spawnStabledAlbinoHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="3000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildAlbinoHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DowngradeBlock" value="spawnStabledHorseAir"/>
+</block>
+<block name="spawnStabledBlackHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="3000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildBlackHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DowngradeBlock" value="spawnStabledHorseAir"/>
+</block>
+<block name="spawnStabledBrownHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="3000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildBrownHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DowngradeBlock" value="spawnStabledHorseAir"/>
+</block>
+<block name="spawnStabledCreamHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="3000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildCreamHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DowngradeBlock" value="spawnStabledHorseAir"/>
+</block>
+<block name="spawnStabledGrayHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="3000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildGrayHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DowngradeBlock" value="spawnStabledHorseAir"/>
+</block>
+<block name="spawnStabledMidnightHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="3000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildMidnightHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DowngradeBlock" value="spawnStabledHorseAir"/>
+</block>
+<block name="spawnStabledYellowHorse">
+	<property name="Group" value="Science"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+	<property name="DisplayType" value="blockHardenedMulti"/>
+	<property name="Material" value="Morganic"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="MaxDamage" value="3000" />
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?WildYellowHorseIdlePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="143"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"> <property name="resourceWood" value="1"/> </property>
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="2000"/>
+	<drop event="Destroy" count="0"/>
+	<property name="FilterTags" value="floot,ffurniture"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="DowngradeBlock" value="spawnStabledHorseAir"/>
+</block>
+<!-- greet blocks -->
+<block name="greetMaybell">
+	<property name="Extends" value="woodMaster"/>
+	<property name="Shape" value="New"/>
+	<property name="Model" value="cube_half"/>
+	<property name="SortOrder2" value="0060"/> <!-- SortShape -->
+	<property class="UpgradeBlock"> <property name="ToBlock" value="woodShapes:cubeHalf"/> </property> <!-- Replaced rWoodHalf -->
+	<property name="DowngradeBlock" value="solidWoodFrameHalf"/>
+	
+		<property name="BuffsWhenWalkedOn" value="buffMaybellGreet"/>
+        <property name="MaxDamage" value="35000"/>
+</block>
+<block name="greetAbby">
+	<property name="Material" value="MforestGround"/><property name="NoScrapping" value="true"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="195,570,570,570,570,570"/>
+	<property name="LPHardnessScale" value="2"/>
+	<property name="Map.Color" value="35,80,45"/>
+	<!--property class="Map"> <property name="Color" value="44,48,26"/> <property name="Color2" value="44,60,25"/> <property name="ElevMinMax" value="50,80"/> </property-->
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"> <property name="resourceClayLump" value="14"/> </property>
+	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrForestGround" count="1" prob="0.25" stick_chance="1"/>
+	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0k0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrainFertile"/>
+	<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		<property name="BuffsWhenWalkedOn" value="buffAbbyGreet"/>
+        <property name="MaxDamage" value="35000"/>
+</block>
+<block name="greetLeah">
+	<property name="Material" value="MforestGround"/><property name="NoScrapping" value="true"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="195,570,570,570,570,570"/>
+	<property name="LPHardnessScale" value="2"/>
+	<property name="Map.Color" value="35,80,45"/>
+	<!--property class="Map"> <property name="Color" value="44,48,26"/> <property name="Color2" value="44,60,25"/> <property name="ElevMinMax" value="50,80"/> </property-->
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"> <property name="resourceClayLump" value="14"/> </property>
+	<drop event="Harvest" name="resourceClayLump" count="22" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceYuccaFibers" count="2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrForestGround" count="1" prob="0.25" stick_chance="1"/>
+	<drop event="Fall" name="resourceClayLump" count="44" prob="0.187" stick_chance="0"/>
+	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0k0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrainFertile"/>
+	<property name="DescriptionKey" value="terrainBlockGroupDesc"/>
+		<property name="BuffsWhenWalkedOn" value="buffLeahGreet"/>
+        <property name="MaxDamage" value="35000"/>
+</block>
+<block name="greetVincent">
+	<property name="Extends" value="woodMaster"/>
+	<property name="Path" value="solid"/>
+	<property class="UpgradeBlock"> <property name="ToBlock" value="solidWoodFrameBlock"/> </property> <!-- Changed from rWoodBlock -->
+	<property name="DowngradeBlock" value="woodFrameBlock"/>
+	<property name="SortOrder2" value="0050"/> <!-- SortShape -->
+		<property name="BuffsWhenWalkedOn" value="buffVincentGreet"/>
+        <property name="MaxDamage" value="35000"/>
+</block>
+
+<!-- horse course blocks -->
+<block name="horseCourseFlag5Checkpoint1">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseFlag5Prefab"/>
+		<property name="MultiBlockDim" value="5,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="BuffsWhenWalkedOn" value="buffHorseCheckpoint1"/>
+        <property name="MaxDamage" value="35000"/>
+		
+	</block>
+<block name="horseCourseFlag5Checkpoint2">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseFlag5Prefab"/>
+		<property name="MultiBlockDim" value="5,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="BuffsWhenWalkedOn" value="buffHorseCheckpoint2"/>
+        <property name="MaxDamage" value="35000"/>
+		
+	</block>
+<block name="horseCourseFlag5Checkpoint3">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseFlag5Prefab"/>
+		<property name="MultiBlockDim" value="5,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="BuffsWhenWalkedOn" value="buffHorseCheckpoint3"/>
+        <property name="MaxDamage" value="35000"/>
+		
+	</block>
+<block name="horseCourseFlag5Checkpoint4">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseFlag5Prefab"/>
+		<property name="MultiBlockDim" value="5,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="BuffsWhenWalkedOn" value="buffHorseCheckpoint4"/>
+        <property name="MaxDamage" value="35000"/>
+		
+	</block>
+<block name="horseCourseFlag5Finish">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseFlagFinishPrefab"/>
+		<property name="MultiBlockDim" value="5,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="BuffsWhenWalkedOn" value="buffHorseCourseFinish"/>
+        <property name="MaxDamage" value="35000"/>
+		
+	</block>
+<block name="horseCourseFlag5Start">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mplants"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseCourseFlagFinishPrefab"/>
+		<property name="MultiBlockDim" value="5,1,1"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+		<property name="BuffsWhenWalkedOn" value="buffHorseCourseStart"/>
+        <property name="MaxDamage" value="35000"/>
+		
+	</block>
+
+<!-- simon says blocks -->
+<block name="simonSaysGreenSquare">
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="MaxDamage" value="20000"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?SimonSaysGreenSquarePrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="1,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="BuffsWhenWalkedOn" value="buffSimonSaysGreenSquare"/>
+</block>
+<block name="simonSaysRedSphere">
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="MaxDamage" value="20000"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?SimonSaysRedSpherePrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="1,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="BuffsWhenWalkedOn" value="buffSimonSaysRedSphere"/>
+</block>
+<block name="simonSaysYellowTriangle">
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="MaxDamage" value="20000"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?SimonSaysYellowTrianglePrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="1,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="BuffsWhenWalkedOn" value="buffSimonSaysYellowTriangle"/>
+</block>
+<block name="simonSaysBlueStar">
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="MaxDamage" value="20000"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Shape" value="ModelEntity"/>
+        <property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?SimonSaysBlueStarPrefab"/> 
+	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="1,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+	<property name="BuffsWhenWalkedOn" value="buffSimonSaysBlueStar"/>
+</block>
+
+
+<!-- music boxes -->
+<block name="musicHorseBoxOff">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mwood"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?MaybellsHorseMusicBoxOffPrefab"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee,movement"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+        <property name="MaxDamage" value="5"/>
+		
+	<property name="DowngradeBlock" value="musicHorseBoxOn"/>
+		
+	</block>
+<block name="musicHorseBoxOn">
+		<property name="CustomIcon" value="" />
+		<property name="CreativeMode" value="Player"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mwood"/>
+		<property name="LightOpacity" value="0"/>
+		<property name="Shape" value="ModelEntity"/>	
+		<property name="Model" value="#@modfolder:Resources/TelricsHorses.unity3d?MaybellsHorseMusicBoxOnPrefab"/>
+		<property name="ImposterDontBlock" value="true"/>
+		<property name="Collide" value="melee,movement"/>
+		<property name="IsTerrainDecoration" value="true"/>
+		<property name="HarvestOverdamage" value="false"/>
+		<drop event="Destroy" count="0"/>
+		<property name="FilterTags" value="foutdoor,fcrops"/>
+		<property name="SortOrder1" value="a090"/>
+		<property name="SortOrder2" value="0002"/>
+        <property name="MaxDamage" value="5"/>
+		
+	<property name="DowngradeBlock" value="musicHorseBoxOff"/>
+		
+	</block>
+
+<!-- tests -->
+</append>
+
+<append xpath="/blocks/block[@name='treeMaster']">
+	<drop event="Harvest" name="foodApple" prob=".35" count="1" tag="AppleHarvesting"/>
+</append>
+
+
+
+
+
+
+
+
+</configs>

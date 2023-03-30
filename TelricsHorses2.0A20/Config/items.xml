@@ -1,0 +1,926 @@
+<configs>
+<append xpath="/items">
+<!-- horses -->
+<item name="resourceBrownHorseSaddle">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="ItemTypeIcon" value="BrownHorseSaddleIcon"/>
+	<property name="CustomIcon" value="HorseSaddleIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="353"/>
+	<property name="UnlockedBy" value="horseSaddleSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="vehicleBrownHorsePlaceable"/>
+		<property name="Focused_blockname_1" value="spawnStabledBrownHorse"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+<item name="resourceBlackHorseSaddle">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="ItemTypeIcon" value="BlackHorseSaddleIcon"/>
+	<property name="CustomIcon" value="HorseSaddleIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="353"/>
+	<property name="UnlockedBy" value="horseSaddleSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="vehicleBlackHorsePlaceable"/>
+		<property name="Focused_blockname_1" value="spawnStabledBlackHorse"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffBlackHorseTamingComplete" target="other"/>
+	</effect_group>
+</item>
+<item name="resourceYellowHorseSaddle">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="ItemTypeIcon" value="YellowHorseSaddleIcon"/>
+	<property name="CustomIcon" value="HorseSaddleIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="353"/>
+	<property name="UnlockedBy" value="horseSaddleSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="vehicleYellowHorsePlaceable"/>
+		<property name="Focused_blockname_1" value="spawnStabledYellowHorse"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffYellowHorseTamingComplete" target="other"/>
+	</effect_group>
+</item>
+<item name="resourceAlbinoHorseSaddle">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="ItemTypeIcon" value="AlbinoHorseSaddleIcon"/>
+	<property name="CustomIcon" value="HorseSaddleIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="353"/>
+	<property name="UnlockedBy" value="horseSaddleSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="vehicleAlbinoHorsePlaceable"/>
+		<property name="Focused_blockname_1" value="spawnStabledAlbinoHorse"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffAlbinoHorseTamingComplete" target="other"/>
+	</effect_group>
+</item>
+<item name="resourceCreamHorseSaddle">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="ItemTypeIcon" value="CreamHorseSaddleIcon"/>
+	<property name="CustomIcon" value="HorseSaddleIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="353"/>
+	<property name="UnlockedBy" value="horseSaddleSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="vehicleCreamHorsePlaceable"/>
+		<property name="Focused_blockname_1" value="spawnStabledCreamHorse"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffCreamHorseTamingComplete" target="other"/>
+	</effect_group>
+</item>
+<item name="resourceMidnightHorseSaddle">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="ItemTypeIcon" value="BlackHorseSaddleIcon"/>
+	<property name="CustomIcon" value="HorseSaddleIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="353"/>
+	<property name="UnlockedBy" value="horseSaddleSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="vehicleMidnightHorsePlaceable"/>
+		<property name="Focused_blockname_1" value="spawnStabledMidnightHorse"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffMidnightHorseTamingComplete" target="other"/>
+	</effect_group>
+</item>
+<item name="resourceGrayHorseSaddle">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="ItemTypeIcon" value="GrayHorseSaddleIcon"/>
+	<property name="CustomIcon" value="HorseSaddleIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="353"/>
+	<property name="UnlockedBy" value="horseSaddleSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="vehicleGrayHorsePlaceable"/>
+		<property name="Focused_blockname_1" value="spawnStabledGrayHorse"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveBuff" buff="buffGrayHorseTamingComplete" target="other"/>
+	</effect_group>
+</item>
+
+<item name="resourceAbbyGameToken">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="casinoCoin" />
+	<property name="CustomIconTint" value="e7a729" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="1"/>
+	<property name="UnlockedBy" value="SimonSaysSchematic"/>
+	<property class="Action0">
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="resourceAbbyGameTokenUsed"/>
+		<property name="Focused_blockname_1" value="spawnAbbyTrader"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<requirement name="HasBuff" buff="buffAbbyGreet"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffSimonSaysStart" target="self"/>
+	</effect_group>
+</item>
+<item name="resourceAbbyGameTokenUsed">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="casinoCoin" />
+	<property name="CustomIconTint" value="000000" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapBrassSmall"/>
+	<property name="Weight" value="1500" />
+	<property name="Stacknumber" value="20000"/> <!-- STK food -->
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+<item name="resourceAbbysLocket">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="AbbysLocketIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="1" />
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+<item name="resourceDustBunny">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="DustBunnyIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Weight" value="1" />
+	<property name="Stacknumber" value="1000"/> <!-- STK food -->
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+
+<item name="resourceHorseCourseTicket">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="treasureQuestMaster" />
+	<property name="CustomIconTint" value="e7a729" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="1"/>
+	<property class="Action0">
+			<requirement name="CVarCompare" cvar="HorseCourseScoreDisplay" operation="GTE" value="100"/>
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="resourceHorseCourseRibbon"/>
+		<property name="Focused_blockname_1" value="spawnVincentTrader"/>
+		<property name="Sound_start" value="HorseCourseCompleteSound"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffHorseCourseReset" target="self"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="HorseCourseTicketUnlocked" operation="set" value="1"/>
+	</effect_group>
+</item>
+<item name="resourceHorseCourseRibbon">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="3"/>
+	<property name="CustomIcon" value="HorseCourseRibbonIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mcloth"/>
+	<property name="Weight" value="2" />
+	<property name="Stacknumber" value="20000"/> <!-- STK food -->
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+
+<item name="meleeToolBroom">
+	<property name="Tags" value="melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
+	<property name="CustomIcon" value="HorseBroomIcon" />
+	<property name="DisplayType" value="melee"/>
+	<property name="HoldType" value="63"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?HorseBroomPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="metaldestroy1"/>
+	<property name="FuelValue" value="250"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="ToolCategory.DustBunny" value="1" param1="1"/>
+
+		<property name="GrazeStart" value=".25"/>
+		<property name="GrazeEnd" value=".35"/>
+		<property name="SwingDegrees" value="65"/>
+		<property name="SwingAngle" value="180"/>
+		<property name="UseGrazingHits" value="true"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="DynamicMelee"/>
+		<property name="Sphere" value=".15"/>
+		<property name="Sound_start" value="swoosh"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<property name="UsePowerAttackAnimation" value="true"/>
+
+		<property name="UseGrazingHits" value="true"/>
+		<property name="GrazeStart" value=".3"/>
+		<property name="GrazeEnd" value=".4"/>
+		<property name="SwingDegrees" value="70"/>
+		<property name="SwingAngle" value="130"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<effect_group name="meleeToolPickT1IronPickaxe">
+		<passive_effect name="EntityDamage" operation="base_set" value="1"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="15"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="45"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="18.4" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="260,886" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
+
+		<passive_effect name="ModSlots" operation="base_set" value="1,1,2,2,3,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+
+
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value=".8" tags="terrGravel"/>
+		
+		<passive_effect name="HarvestCount" operation="base_set" value="1" tags="DustBunny"/>
+	</effect_group>
+	<effect_group name="Power Attack">
+		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="31.3" tags="secondary"/>
+	</effect_group>
+	<property name="PickupJournalEntry" value="miningTip"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+</item>
+
+<item name="horseSaddleSchematic">
+	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="horseSaddleSchematicDesc"/>
+	<property name="CustomIcon" value="HorseSaddleIcon"/>
+	<property name="Unlocks" value="resourceBrownHorseSaddle,resourceBlackHorseSaddle,resourceYellowHorseSaddle,resourceAlbinoHorseSaddle,resourceCreamHorseSaddle,resourceMidnightHorseSaddle,resourceGrayHorseSaddle"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBrownHorseSaddle" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceBlackHorseSaddle" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceYellowHorseSaddle" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceAlbinoHorseSaddle" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceCreamHorseSaddle" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceMidnightHorseSaddle" operation="set" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceGrayHorseSaddle" operation="set" value="1"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffAllowAppleHarvest" target="self"/>
+		
+		
+	</effect_group>
+</item>
+<item name="SimonSaysSchematic">
+	<property name="Extends" value="schematicNoQualityRecipeMaster"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="SimonSaysSchematicDesc"/>
+	<property name="CustomIconTint" value="e7a729" />
+	<property name="CustomIcon" value="casinoCoin"/>
+	<property name="Unlocks" value="resourceAbbyGameToken"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="resourceAbbyGameToken" operation="set" value="1"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+	</effect_group>
+</item>
+
+<item name="foodApple">
+	<property name="Tags" value="food"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="AppleIcon" />
+	<property name="DisplayType" value="food"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?AppleItemPrefab"/>
+	<property name="DropMeshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?AppleItemPrefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="RepairTime" value="3"/>
+	<property name="RepairAmount" value="500"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffVehicleHorseHeal" target="selfAOE" range="1.5" target_tags="horseMount"/>
+		</effect_group>
+</item>
+
+<!-- mounts -->
+<item name="vehicleBrownHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleBrownHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleHorseIcon" />
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?BrownHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="RepairTools" value="foodApple"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleBrownHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleBlackHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleBlackHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleBlackHorseIcon" />
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?BlackHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleBlackHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleYellowHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleYellowHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleYellowHorseIcon" />
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?YellowHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleYellowHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleAlbinoHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleAlbinoHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleAlbinoHorseIcon" />
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?AlbinoHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleAlbinoHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleCreamHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleCreamHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleCreamHorseIcon" />
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?CreamHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleCreamHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleMidnightHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleMidnightHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleMidnightHorseIcon" />
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?MidnightHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleMidnightHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleGrayHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleGrayHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleGrayHorseIcon" />
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?GrayHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleGrayHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+
+<item name="vehicleT2BrownHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleT2BrownHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleHorseIcon" />
+	<property name="ItemTypeIcon" value="T2HorseIcon"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?T2BrownHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property name="RepairTools" value="foodApple"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleT2BrownHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleT2BlackHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleT2BlackHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleBlackHorseIcon" />
+	<property name="ItemTypeIcon" value="T2HorseIcon"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?T2BlackHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleT2BlackHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleT2YellowHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleT2YellowHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleYellowHorseIcon" />
+	<property name="ItemTypeIcon" value="T2HorseIcon"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?T2YellowHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleT2YellowHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleT2AlbinoHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleT2AlbinoHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleAlbinoHorseIcon" />
+	<property name="ItemTypeIcon" value="T2HorseIcon"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?T2AlbinoHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleT2AlbinoHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleT2CreamHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleT2CreamHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleCreamHorseIcon" />
+	<property name="ItemTypeIcon" value="T2HorseIcon"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?T2CreamHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleT2CreamHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleT2MidnightHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleT2MidnightHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleMidnightHorseIcon" />
+	<property name="ItemTypeIcon" value="T2HorseIcon"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?T2MidnightHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleT2MidnightHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+<item name="vehicleT2GrayHorsePlaceable">
+	<property name="Extends" value="vehicleMinibikePlaceable"/>
+	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
+	<property name="DescriptionKey" value="vehicleT2GrayHorsePlaceableDesc"/>
+	<property name="CustomIcon" value="VehicleGrayHorseIcon" />
+	<property name="ItemTypeIcon" value="T2HorseIcon"/>
+	<property name="Meshfile" value="#@modfolder:Resources/TelricsHorses.unity3d?T2GrayHorseVehiclePrefab"/>
+	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="3000"/>
+	<property class="Action1">
+		<property name="Vehicle" value="vehicleT2GrayHorse"/>
+		<property name="VehicleSize" value="2.5, 2.1, 5"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+</item>
+
+<!-- talk tos -->
+<item name="resourceTalkToMaybell">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="HorseNPCTalkToIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK food -->
+	<property name="EconomicValue" value="0"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="metalhitmetal"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+<item name="resourceTalkToAbby">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="HorseNPCTalkToIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK food -->
+	<property name="EconomicValue" value="0"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="metalhitmetal"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+<item name="resourceTalkToLeah">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="HorseNPCTalkToIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK food -->
+	<property name="EconomicValue" value="0"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="metalhitmetal"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+<item name="resourceTalkToVincent">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="HorseNPCTalkToIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK food -->
+	<property name="EconomicValue" value="0"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="metalhitmetal"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+
+<!-- quests -->
+<item name="questHorseRanchLeah1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchLeah1"/>
+	</property>
+</item>
+<item name="questHorseRanchLeah2">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchLeah2"/>
+	</property>
+</item>
+
+<item name="questHorseRanchAbby1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchAbby1"/>
+	</property>
+</item>
+<item name="questHorseRanchAbby2">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchAbby2"/>
+	</property>
+</item>
+<item name="questHorseRanchAbby3">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchAbby3"/>
+	</property>
+</item>
+
+<item name="questHorseRanchMaybell1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchMaybell1"/>
+	</property>
+</item>
+<item name="questHorseRanchMaybell2">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchMaybell2"/>
+	</property>
+</item>
+<item name="questHorseRanchMaybell3">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchMaybell3"/>
+	</property>
+</item>
+
+<item name="questHorseRanchVincent1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchVincent1"/>
+	</property>
+</item>
+<item name="questHorseRanchVincent2">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchVincent2"/>
+	</property>
+</item>
+<item name="questHorseRanchVincent3">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchGroupDesc"/>
+	<property name="EconomicValue" value="50"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchVincent3"/>
+	</property>
+</item>
+
+<item name="questHorseRanchUnlock1">
+	<property name="Extends" value="challengeQuestMaster"/>
+	<property name="DescriptionKey" value="questHorseRanchUnlock1Desc"/>
+	<property class="Action0">
+		<property name="QuestGiven" value="questHorseRanchUnlock1"/>
+	</property>
+</item>
+<item name="questHorseRanchUnlockItem2">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="challengeQuestMaster" />
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="1"/> <!-- STK food -->
+	<property name="EconomicValue" value="0"/>
+	<property class="Action0">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="metalhitmetal"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+	</effect_group>
+</item>
+
+<!-- reputation gains -->
+<item name="resourceHorseRanchReputation1">
+	<property name="Tags" value="equipment"/>
+	<property name="HoldType" value="31"/>
+	<property name="CustomIcon" value="MaybellsRanchReputationIcon" />
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK food -->
+	<property name="EconomicValue" value="0"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_painkillers"/>
+	</property>
+	<property name="Group" value="Resources"/>
+
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="HorseRanchReputationDisplay" operation="add" value="1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffReputationAddDisplay" target="self"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffReputationDisplay" target="self"/>
+		
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffHorseRanchUnlockNotify" target="self">
+			<requirement name="CVarCompare" cvar="HorseRanchReputationDisplay" operation="Equals" value="25"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffHorseRanchUnlockNotify" target="self">
+			<requirement name="CVarCompare" cvar="HorseRanchReputationDisplay" operation="Equals" value="50"/>
+		</triggered_effect>
+		
+	</effect_group>
+</item>
+
+<!-- tests -->
+</append>
+
+
+
+
+
+
+
+
+</configs>

@@ -1,0 +1,22 @@
+<test name="XUi_Menu/xui.xml">
+	<append xpath="/xui/ruleset[@name='default']">
+		<window_group name="menuBackgroundWW1" actionSet="false">
+			<window name="WWbackground1" />
+		</window_group>	
+		<window_group name="menuBackgroundWW2" actionSet="false">
+			<window name="WWbackground2" />
+		</window_group>
+		<window_group name="menuBackgroundWW3" actionSet="false">
+			<window name="WWbackground3" />
+		</window_group>
+		<window_group name="menuBackgroundWW4" actionSet="false">
+			<window name="WWbackground4" />
+		</window_group>
+		<window_group name="menuBackgroundWW5" actionSet="false">
+			<window name="WWbackground5" />
+		</window_group>
+		<window_group name="menuBackgroundWW6" actionSet="false">
+			<window name="WWbackground6" />
+		</window_group>		
+	</append>
+</test>

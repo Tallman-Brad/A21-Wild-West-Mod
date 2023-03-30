@@ -1,0 +1,35 @@
+<configs>
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="TelricsHorseChecker">
+			<requirement name="NotHasBuff" buff="TelricsHorseChecker"/>
+		</triggered_effect>
+	</append>
+	
+	<append xpath="/buffs">
+		<buff name="TelricsHorseChecker" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="500"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="horseMountCheck">
+					<requirement name="EntityTagCompare" target="other" tags="horseMount"/>
+					<requirement name="NotHasBuff" target="other" buff="horseMountCheck"/>
+				</triggered_effect>
+			</effect_group>				
+		</buff>
+		
+<!-- Mounted Horses -->		
+
+		<buff name="horseMountCheck" hidden="true">	
+			<stack_type value="ignore"/>			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true"  transform_path="headlight"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset=".0016,0.0155,-0.008" local_rotation="0,0,0" parent_transform="headlight"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Ranged/LeverActionRifle/leverActionRiflePrefab.prefab" local_offset="-1.40,-0.58,-0.25" local_rotation="350,90,0" parent_transform="Horse1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?weapon_bags_smallPrefab.prefab" local_offset="-1.1,-0.27,-0.31" local_rotation="-270,0,0" parent_transform="Horse1"/>				
+				<!--triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/lanternPlayerPrefab" local_offset="-1.7,-0.7,0" local_rotation="0,0,90" parent_transform="Horse1"/-->
+			</effect_group> <!-- offsets - (D/-U)(F/-B)(L/R) -->
+		</buff>		
+		
+	</append>
+</configs>

@@ -1,0 +1,207 @@
+﻿<wildwestmod>
+
+<!-- M1849 Prototype Revolver Rifle Mods are not visible as it gets tricky to position on an old format model -->
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/effect_group[@name='external attachment prefab (old way)']">
+		<requirement name="!HoldingItemHasTags" tags="gunM1849"/>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/effect_group[@name='external attachment prefab (old way)']">
+		<requirement name="!HoldingItemHasTags" tags="gunM1849"/>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']/effect_group[@name='external attachment prefab (old way)']">
+		<requirement name="!HoldingItemHasTags" tags="gunM1849"/>
+	</append>
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/effect_group[@name='external attachment prefab (old way)']">
+		<requirement name="!HoldingItemHasTags" tags="gunM1849"/>
+	</append>	
+
+<!-- Stag Spear -->
+
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
+		<item_property_overrides name="meleeWpnSpearStagSpear">
+			<property name="FlameEffect" value="ItemModEffects/mod_spear_steel_flamePrefab"/>
+		</item_property_overrides>		
+	</append>
+
+<append xpath="/item_modifiers">
+
+<!-- Cowboy Boots Mod -->
+
+  <item_modifier name="modArmorCowboyBoots" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="apparelCowboyBoots"/>
+		<property name="EconomicValue" value="440"/>
+		<property name="DisplayType" value="clothing"/>
+		<item_property_overrides name="*">
+			<property name="UMA.Mesh" value="boot02"/>
+			<property name="UMA.Overlay0" value="boot02"/>
+		</item_property_overrides>
+
+		<effect_group tiered="false">
+		<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
+		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
+		</effect_group>
+	</item_modifier>
+
+<!-- Desert Hare Hat Mod -->
+
+	<item_modifier name="modArmorDesertHareHelmetPelt" installable_tags="head" modifier_tags="dye" blocked_tags="noMods,clothing" type="attachment">
+        <property name="CustomIcon" value="sleeperRabbitAnimal"/>
+		<property name="DescriptionKey" value="modArmorDesertHareHelmetPeltDesc"/>		
+        <property name="Stacknumber" value="1"/>
+            <property name="Group" value="Mods"/>
+            <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+            <property name="EconomicValue" value="50"/>
+            <effect_group tiered="false">
+                <triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Rabbit/RABBIT" parent_transform="Head" local_offset="-0.1,0,0.09" local_rotation="0,-35,90">
+                    <requirement name="!IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStart" action="RemovePrefabFromEntity" prefab="Entities/Animals/Rabbit/RABBIT">
+                    <requirement name="IsFPV"/>
+                </triggered_effect>
+                <triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Entities/Animals/Rabbit/RABBIT"/>
+            </effect_group>
+            <effect_group tiered="false">
+            <passive_effect name="HypothermalResist" operation="base_add" value="15.0"/> <!-- Skull Cap 10.5,13.2 -->
+            <passive_effect name="HyperthermalResist" operation="base_add" value="5.0"/> <!-- Skull Cap 1.5,2.5 -->
+        </effect_group>
+	</item_modifier>
+	
+<!-- Snow Hare Shoe Warmer Mod -->
+	
+	<item_modifier name="modArmorSnowHareShoeWarmer" installable_tags="armorFeet" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DisplayType" value="modTempResist"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
+		</effect_group>
+	</item_modifier>		
+
+<!-- Bow Handle -->
+
+	<item_modifier name="modGunBowArrowHandleGrip" installable_tags="bow" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="UnlockedBy" value="modGunBowArrowHandleGripSchematic"/>
+		<!--Do +15% damage to evil / undead-->
+		<effect_group tiered="false">
+			<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.15"/>
+		</effect_group>
+	</item_modifier>
+
+<!-- Haidr'Gna - Invisible Dye -->
+
+	<item_modifier name="modInvisible" installable_tags="clothing,armor" modifier_tags="dye" blocked_tags="noMods" type="attachment" cosmetic_install_chance="0.000000001">
+		<property name="CustomIcon" value="modDyeWhite"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Mods"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="EconomicValue" value="150"/>
+	<property name="SellableToTrader" value="false"/>
+
+		<item_property_overrides name="*">
+			<property name="UMA.Mesh" value=""/>
+			<property name="UMA.Overlay0" value=""/>
+			<property name="UMA.ShowAltHair" value="false"/>
+		</item_property_overrides>
+	</item_modifier>
+	
+<!-- arramus - Color additions -->
+
+	<item_modifier name="modDyeTan" installable_tags="clothing,armor,weapon,tool,vehicle,drone" modifier_tags="dye" type="attachment" cosmetic_install_chance=".16">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="210,180,140"/>
+		<property name="Material" value="Mpaint"/>
+		<property name="Weight" value="20"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="210,180,140"/>
+			<property name="CustomIconTint" value="210,180,140"/>
+			<property name="UMA.Overlay0Tint" value="210,180,140"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="210,180,140"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="210,180,140"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="210,180,140"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="210,180,140,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="210,180,140"/>
+		</item_property_overrides>
+	</item_modifier>
+	
+	<item_modifier name="modDyeSandyTan" installable_tags="clothing,armor,weapon,tool,vehicle,drone" modifier_tags="dye" type="attachment" cosmetic_install_chance=".16">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="CustomIcon" value="modDyeWhite"/> <property name="CustomIconTint" value="253,217,181"/>
+		<property name="Material" value="Mpaint"/>
+		<property name="Weight" value="20"/>
+
+		<item_property_overrides name="*">
+			<property name="TintColor" value="253,217,181"/>
+			<property name="CustomIconTint" value="253,217,181"/>
+			<property name="UMA.Overlay0Tint" value="253,217,181"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTankTop">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="253,217,181"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtPlain">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="253,217,181"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelTShirtZU">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="253,217,181"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelCoatJacketLetterZU">
+			<property name="UMA.Overlay0Tint" value="253,217,181,255"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="apparelDenimShortsPants">
+			<property name="UMA.Overlay0Tint" value="skin"/>
+			<property name="UMA.Overlay1Tint" value="253,217,181"/>
+		</item_property_overrides>
+	</item_modifier>
+
+	<item_modifier name="modWeaponLubrication" installable_tags="weapon" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DescriptionKey" value="modWeaponLubricationDesc"/>
+		<property name="UnlockedBy" value="modWeaponLubricationSchematic"/>		
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="CustomIcon" value="modWeaponLubrication"/>
+		
+		<!-- Increases durability, increases block efficiency, all weapons and melee -->
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.5" tags="perkYeahScience,perkGunslinger,perkMachineGunner,perkBoomstick,perkDeadEye,perkSkullCrusher,perkDeepCuts,perkArchery,perkFlurryOfBlows,perkPummelPete,perkTheHuntsman,perkMiner69r,perkMotherLode,admin"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+
+</append>
+
+</wildwestmod>
+
+
+

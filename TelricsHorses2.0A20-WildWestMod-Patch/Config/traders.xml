@@ -1,0 +1,27 @@
+<configs>
+
+<!-- Adds low tier Telric Horse to Bartering Skill low -->
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsLow']">
+		<item name="vehicleBrownHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleBlackHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleYellowHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleAlbinoHorsePlaceable" count="1" prob="0.7"/>		
+		<item name="vehicleCreamHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleMidnightHorsePlaceable" count="1" prob="0.7"/>			
+		<item name="vehicleGrayHorsePlaceable" count="1" prob="0.7"/>		
+	</append>
+	
+<!-- Adds high tier Telric Horse to Bartering Skill high -->	
+	
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='stashOnlyItemsHigh']">
+		<item name="vehicleT2BrownHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleT2BlackHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleT2YellowHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleT2AlbinoHorsePlaceable" count="1" prob="0.7"/>		
+		<item name="vehicleT2CreamHorsePlaceable" count="1" prob="0.7"/>
+		<item name="vehicleT2MidnightHorsePlaceable" count="1" prob="0.7"/>			
+		<item name="vehicleT2GrayHorsePlaceable" count="1" prob="0.7"/>		
+	</append>
+
+</configs>

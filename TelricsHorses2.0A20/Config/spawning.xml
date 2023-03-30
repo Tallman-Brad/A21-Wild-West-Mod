@@ -1,0 +1,30 @@
+<configs>
+<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="1" respawndelay="2" time="Day"	entitygroup="TelricsHorses" />
+		<spawn maxcount="1" respawndelay="2" time="Night" entitygroup="TelricsHorses" />
+</append>
+<append xpath="/spawning/biome[@name='burnt_forest']">
+		<spawn maxcount="1" respawndelay="2" time="Day"	entitygroup="TelricsHorses" />
+		<spawn maxcount="1" respawndelay="2" time="Night" entitygroup="TelricsHorses" />
+</append>
+<append xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="1" respawndelay="2" time="Day"	entitygroup="TelricsHorses" />
+		<spawn maxcount="1" respawndelay="2" time="Night" entitygroup="TelricsHorses" />
+</append>
+<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="1" respawndelay="2" time="Day"	entitygroup="TelricsHorses" />
+		<spawn maxcount="1" respawndelay="2" time="Night" entitygroup="TelricsHorses" />
+</append>
+<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="1" respawndelay="2" time="Day"	entitygroup="TelricsHorses" />
+		<spawn maxcount="1" respawndelay="2" time="Night" entitygroup="TelricsHorses" />
+</append>
+
+
+
+
+
+
+
+
+</configs>

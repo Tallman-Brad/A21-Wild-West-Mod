@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/materials">		
+
+<material id="Tar">
+	<property name="damage_category" value="stone"/>
+	<property name="surface_category" value="stone"/>
+	<property name="forge_category" value="stone"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="stone"/>
+	<property name="stability_glue" value="20"/>
+	<property name="Mass" type="int" value="10"/>
+	<property name="movement_factor" value="0.02"/>
+	<property name="MaxDamage" value="300"/>
+	<property name="Experience" value="2"/>
+</material>
+		
+	</append>
+</configs>
