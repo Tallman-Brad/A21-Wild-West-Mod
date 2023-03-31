@@ -1245,9 +1245,7 @@
   <decoration type="model" name="wildwest_stables_01_arramus" position="-1129,34,2191" rotation="3" />
   <decoration type="model" name="wildwest_stables_01_arramus" position="417,57,-1959" rotation="3" />
   <decoration type="model" name="wildwest_TMB_Bandit_Loot" position="-1427,33,242" rotation="1" />
-  <decoration type="model" name="deco_wildwest_OilRig01_by_MPLogue" position="-2152,39,-2475" rotation="1" />
   <decoration type="model" name="deco_wildwest_OilRig02_by_MPLogue" position="-2068,37,-2438" rotation="3" />
-  <decoration type="model" name="deco_wildwest_OilRig03_by_MPLogue" position="-2225,30,-2476" rotation="1" />
   <decoration type="model" name="wildwest_docks_01" position="1986,18,824" rotation="0" />
   <decoration type="model" name="wildwest_docks_04" position="2694,17,1334" rotation="3" />
   <decoration type="model" name="wildwest_business_10" position="2366,32,1311" rotation="0" />
@@ -1483,9 +1481,7 @@
   <decoration type="model" name="wildwest_crackcave01_TMB" position="410,32,-2394" rotation="2" />
   <decoration type="model" name="wildwest_crackcave01_TMB" position="2354,46,861" rotation="0" />
   <decoration type="model" name="wildwest_wildernessgroup_01_Medusa_arramus" position="-541,24,-351" rotation="1" />
-  <decoration type="model" name="part_loot_t2" position="1034,83,-173" rotation="1" />
   <decoration type="model" name="part_loot_t1" position="1002,75,-162" rotation="1" />
-  <decoration type="model" name="part_loot_t1" position="1015,55,-174" rotation="3" />
   <decoration type="model" name="part_horde_small" position="1086,88,-161" rotation="3" />
   <decoration type="model" name="wildwest_remnant_business_03" position="1863,36,1525" rotation="0" />
   <decoration type="model" name="wildwest_schoolfix_01_arramus" position="-2245,32,1177" rotation="3" />
@@ -1740,12 +1736,10 @@
   <decoration type="model" name="wildwest_deco_mist_white01" position="-1975,141,-1744" rotation="2" />
   <decoration type="model" name="wildwest_deco_mist_white01" position="-2013,99,-1892" rotation="2" />
   <decoration type="model" name="wildwest_deco_mist_white01" position="-2182,90,-2349" rotation="0" />
-  <decoration type="model" name="wildwest_deco_mist_white01" position="-2158,31,-2533" rotation="2" />
   <decoration type="model" name="wildwest_deco_mist_white01" position="-2185,90,-2345" rotation="2" />
   <decoration type="model" name="wildwest_deco_mist_white01" position="-2187,88,-2368" rotation="2" />
   <decoration type="model" name="wildwest_deco_mist_white01" position="-2200,86,-2372" rotation="2" />
   <decoration type="model" name="wildwest_deco_mist_white01" position="-2263,79,-2396" rotation="2" />
-  <decoration type="model" name="wildwest_colapse_test_TMB" position="-2067,25,-2462" rotation="2" />
   <decoration type="model" name="wildwest_upright_icelocked" position="906,21,2726" rotation="0" />
   <decoration type="model" name="wildwest_spelunking_deathtrap_TMB" position="-115,85,56" rotation="2" />
   <decoration type="model" name="wildwest_market_01_arramus" position="-153,93,115" rotation="0" />
@@ -1760,8 +1754,15 @@
   <decoration type="model" name="wildwest_raft_destroyed_TMB" position="2487,21,-2637" rotation="2" />
   <decoration type="model" name="wildwest_mountain_shack_01_TMB" position="2862,32,-2227" rotation="1" />
   <decoration type="model" name="wildwest_docks_04" position="2893,17,-2220" rotation="3" />
-  <decoration type="model" name="wildwest_lighthouse_01_arramus" position="2620,44,-2598" rotation="3" />
+  <decoration type="model" name="wildwest_lighthouse_01_arramus" position="2620,44,-2599" rotation="1" />
   <decoration type="model" name="wildwest_shipwreckage_TMB" position="2858,20,-2375" rotation="1" />
   <decoration type="model" name="deco_wilderness_pineforestlogging_01" position="-1165,36,1312" rotation="3" />
   <decoration type="model" name="deco_wildwest_prospector_dig_02_TMB" position="-1415,32,1263" rotation="3" />
+  <decoration type="model" name="wildwest_picturehouse_Medusa" position="1719,36,-2422" rotation="2" />
+  <decoration type="model" name="wildwest_stables_02_arramus" position="2124,36,-2425" rotation="0" />
+  <decoration type="model" name="wildwest_business_06" position="2141,36,-2454" rotation="2" />
+  <decoration type="model" name="wildwest_Courthouse_Medusa" position="1812,35,-2363" rotation="2" />
+  <decoration type="model" name="wildwest_docks_01" position="2671,18,-1242" rotation="1" />
+  <decoration type="model" name="wildwest_stonecave_01_arramus" position="-2180,32,-2541" rotation="3" />
+  <decoration type="model" name="wildwest_venom_mine_TMB" position="-2068,25,-2461" rotation="2" />
 </prefabs>
