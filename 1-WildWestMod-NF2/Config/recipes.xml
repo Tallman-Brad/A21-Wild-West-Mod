@@ -1,0 +1,27 @@
+<wildwestmod>
+
+	<append xpath="/recipes">
+		
+<!-- Wild West Melee -->
+
+<recipe name="meleeWpnClubT0Ladle" count="1" craft_time="15" tags="perkPummelPete"> <!-- this tag corresponds to <passive_effect name="CraftingTier" operation="base_add" level="2,5" value="1,4" tags="perkPummelPete"/> in progression -->
+	<ingredient name="resourceScrapIron" count="50"/>
+	<ingredient name="resourceWood" count="10"/>
+</recipe>
+		
+<recipe name="meleeWpnClubT1OldPan" count="1" craft_time="240" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedIron" count="10"/>
+	<ingredient name="resourceWood" count="10"/>
+	<ingredient name="resourceCrushedSand" count="20"/>
+</recipe>
+
+<recipe name="meleeWpnClubT3Skillet" count="1" craft_time="300" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedIron" count="20"/>
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="resourceWood" count="6"/>
+	<ingredient name="resourceCrushedSand" count="50"/>
+</recipe>
+
+	</append>
+	
+</wildwestmod>
