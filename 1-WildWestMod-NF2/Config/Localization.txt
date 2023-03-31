@@ -14,3 +14,10 @@ fogVariantHelper,blocks,Block,,,Fog Helper,,,,,,,,,,,,,
 
 animalBisonBear,entityclasses,Entity,,,Bison (Territorial Grazer),,,,,,,,,,,,,
 animalBisonBoar,entityclasses,Entity,,,Bison (Peaceful Grazer),,,,,,,,,,,,,
+
+meleeWpnClubT0Ladle,items,Melee,,,Ladle,,,,,,,,,,,,,
+meleeWpnClubT0LadleDesc,items,Melee,,,"A homestead kitchen ladle. Also good for breaking knees and skulls.\n\nRepair with Repair Kit.\nScrap to Scrap Iron.",,,,,,,,,,,,,
+meleeWpnClubT1OldPan,items,Melee,,,Pan,,,,,,,,,,,,,
+meleeWpnClubT1OldPanDesc,items,Melee,,,"A homestead kitchen pan. Also good for breaking knees and skulls.\n\nRepair with Repair Kit.\nScrap to Scrap Iron.",,,,,,,,,,,,,
+meleeWpnClubT3Skillet,items,Melee,,,Skillet,,,,,,,,,,,,,
+meleeWpnClubT3SkilletDesc,items,Melee,,,"A homestead kitchen skillet. Also good for breaking knees and skulls.\n\nRepair with Repair Kit.\nScrap to Scrap Iron.",,,,,,,,,,,,,
