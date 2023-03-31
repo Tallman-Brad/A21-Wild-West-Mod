@@ -4,7 +4,7 @@
 		
 <!-- Wild West Melee -->
 
-<recipe name="meleeWpnClubT0Ladle" count="1" craft_time="30">
+<recipe name="meleeWpnClubT0Ladle" count="1" craft_time="15" tags="perkPummelPete"> <!-- this tag corresponds to <passive_effect name="CraftingTier" operation="base_add" level="2,5" value="1,4" tags="perkPummelPete"/> in progression -->
 	<ingredient name="resourceScrapIron" count="50"/>
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
