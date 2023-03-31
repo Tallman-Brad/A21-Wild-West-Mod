@@ -92,7 +92,7 @@
 	</effect_group>
 </item>
 
-<item name="meleeWpnClubT1OldPan"> <!-- T1 meleeWpnClubT1BaseballBat -->
+<item name="meleeWpnClubT1OldPan"> <!-- T1 meleeWpnClubT1BaseballBat +10% for base damage and -10% for degradation -->
 	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
@@ -183,7 +183,7 @@
 	</effect_group>
 </item>
 
-<item name="meleeWpnClubT3Skillet"> <!-- T3 clubs meleeWpnClubT3SteelClub -->
+<item name="meleeWpnClubT3Skillet"> <!-- T3 clubs meleeWpnClubT3SteelClub +10% for base damage and -10% for degradation and -5% stamina use for high end GS -->
 	<property name="Tags" value="blunt,club,melee,grunting,light,longShaft,perkFlurryOfBlows,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="Group" value="Ammo/Weapons,Melee Weapons"/>
@@ -241,11 +241,11 @@
 			</property>
 
 	<effect_group name="meleeWpnClubT3Skillet">
-		<passive_effect name="EntityDamage" operation="base_set" value="28.8" tags="perkPummelPete"/> <!-- meleeWpnClubT3SteelClub +10% for base damage and -10% for degradation -->
-		<passive_effect name="BlockDamage" operation="base_set" value="24.3" tags="perkPummelPete"/> <!-- meleeWpnClubT3SteelClub +10% for base damage and -10% for degradation -->
+		<passive_effect name="EntityDamage" operation="base_set" value="28.8" tags="perkPummelPete"/> <!-- meleeWpnClubT3SteelClub +10% for base damage -->
+		<passive_effect name="BlockDamage" operation="base_set" value="24.3" tags="perkPummelPete"/> <!-- meleeWpnClubT3SteelClub +10% for base damage -->
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="52" tags="perkPummelPete,perkFlurryOfBlows"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="23.7" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="330,770" tier="1,6" tags="perkPummelPete"/> <!-- meleeWpnClubT3SteelClub +10% for base damage and -10% for degradation -->
+		<passive_effect name="StaminaLoss" operation="base_set" value="22.5" tags="primary"/> <!-- meleeWpnClubT3SteelClub -5% for stamina use -->
+		<passive_effect name="DegradationMax" operation="base_set" value="330,770" tier="1,6" tags="perkPummelPete"/> <!-- meleeWpnClubT3SteelClub -10% for degradation -->
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkPummelPete"/>
 		<passive_effect name="MaxRange" operation="base_set" value="2.4" tags="perkPummelPete"/>
 		<passive_effect name="BlockRange" operation="base_set" value="3" tags="perkPummelPete"/>
@@ -270,7 +270,7 @@
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
 		<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="40.3" tags="secondary"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="38.3" tags="secondary"/> <!-- meleeWpnClubT3SteelClub -5% for stamina use -->
 	</effect_group>
 </item>
 
