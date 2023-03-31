@@ -1,0 +1,11 @@
+<configs>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_All']" >
+	    <item name="meleeWpnClubT0Ladle"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_Melee']" >
+	    <item name="meleeWpnClubT0Ladle"/>
+	</append>
+
+</configs>
