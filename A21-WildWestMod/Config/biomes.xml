@@ -1,0 +1,256 @@
+<wildwestmod>
+
+	<!-- WEATHER CHANGES 23/04/26 (TMB)-->
+
+	<!-- Snow Biome Environmental Customisations --> <!-- More frequent fog and snow, heavier fog in storms -->
+	<!-- default --> 
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/@prob">45</set> <!-- default 44 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/Fog/@min">.02</set> <!-- default 0 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='default']/Fog/@max">2</set> <!-- default 2 -->	
+	<!-- fog -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/@prob">5</set> <!-- default 8 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/Fog/@min">7</set> <!-- default 7 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='fog']/Fog/@max">17</set> <!-- default 18 -->	
+	<!-- snow -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/@prob">40</set> <!-- default 40 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/Fog/@min">1</set> <!-- default 1 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/Fog/@max">7</set> <!-- default 5 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snow']/Precipitation/@min">50</set> <!-- default 30 -->	
+	<!-- storm -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/@prob">10</set> <!-- default 8 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/Fog/@min">8</set> <!--default 5 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='storm']/Fog/@max">20</set> <!-- default 15 -->
+		
+	<!-- Pine Forest Environmental Customisations -->	
+	<!-- default -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/@prob">83</set> <!-- default 83 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/Fog/@min">.05</set> <!-- default 0 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='default']/Fog/@max">2</set> <!-- default 2 -->					
+	<!-- fog --> <!-- Raised chance of fog and made much colder and much foggier -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/@prob">7</set> <!-- default 7 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/Temperature/@min">28</set> <!-- default 65 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/Temperature/@max">50</set> <!-- default 70 -->
+		<!-- Could thickness left at default 35, 70-->
+		<!-- Precipitation left at default 0, 0 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/Fog/@min">16</set> <!-- default 16 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='fog']/Fog/@max">27</set> <!-- default 27 -->
+		<!-- Wind left at default 0 -->
+	<!-- rain -->	<!-- Lowered chance of rain, but made colder, foggier and wetter -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/@prob">5</set> <!-- default 7 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Temperature/@min">40</set> <!-- default 65 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Temperature/@max">60</set> <!-- default 70 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Fog/@min">1</set> <!-- default 1 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Fog/@max">3</set> <!-- default 3 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Precipitation/@min">30</set> <!-- default 30 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rain']/Precipitation/@max">90</set> <!-- default 80 -->
+	<!-- storm -->	<!-- Raised chance of storms and made colder and foggier -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/@prob">5</set> <!-- default 3 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Temperature/@min">40</set> <!-- default 65 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Temperature/@max">60</set> <!-- default 70 -->	
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Fog/@min">3</set> <!-- default 2 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Fog/@max">8</set> <!-- default 8 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Precipitation/@min">90</set> <!-- default 90 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']/Precipitation/@max">100</set> <!-- default 100 -->
+
+	<!-- Desert Environmental Customisations --> <!-- More chance of storms, hotter in normal weather, colder in storms -->
+	<!-- default -->	
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/@prob">85</set> <!-- default 87 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/Temperature/@min">100</set> <!-- default 95 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/Temperature/@max">115</set> <!-- default 105 -->	
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/CloudThickness[1]/@prob">33</set> <!-- default 33 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='default']/CloudThickness[2]/@prob">66</set> <!-- default 66 -->
+	<!-- rain -->				
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/@prob">5</set> <!-- default 8 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/Fog/@min">1</set> <!-- default 1 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/Fog/@max">5</set> <!-- default 4 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rain']/Precipitation/@min">40</set> <!-- default 25 -->
+	<!-- storm -->		
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/@prob">10</set> <!-- default 5 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/Temperature/@min">40</set> <!-- default 95 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/Temperature/@max">60</set> <!-- default 105 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/Fog/@min">3</set> <!-- default 3 -->
+		<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='storm']/Fog/@max">15</set> <!-- default 15 -->
+
+	<!-- COSMETIC CHANGES -->
+
+	<!-- Should remove shopping carts, etc. -->
+
+	<remove xpath="/worldgeneration/pois/poi[@name='City Asphalt']/blockontop[@blockname='cntStreetRandomLootHelper']"/>
+	<remove xpath="/worldgeneration/pois/poi[@name='Country Road Asphalt']/blockontop[@blockname='cntStreetRandomLootHelper']"/>
+
+	<!-- Changing all roadways to gravel ustilizing 0-SphereII Legacy Distant Terrain -->
+	
+	<set xpath="/worldgeneration/pois/poi[@name='City Asphalt']/@blockname">terrGravel</set>
+	<set xpath="/worldgeneration/pois/poi[@name='Country Road Asphalt']/@blockname">terrGravel</set>
+	
+	<!-- WASTELAND CUSTOMISATION -->
+	<!-- Removing mines and hubcaps in Water and Wasteland -->
+	<!-- remove xpath="//biome[@name='underwater']/subbiome/decorations/decoration[@blockname='hubcapNoMine']"/ -->
+	<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='mineCandyTin']"/>
+	<remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='mineHubcap']"/>	
+	<!-- remove xpath="//biome[@name='wasteland']/subbiome/decorations/decoration[@blockname='hubcapNoMine']"/ -->	
+	<!-- Replacing terrain broken rubble in Wasteland -->	
+	<set xpath="//biome[@name='wasteland']/@topsoil_block">terrBurntForestGround</set> <!-- Set the tiling system -->
+	<set xpath="//biome[@name='wasteland']/subbiome[1]/layers[1]/layer[1]/@blockname">terrBurntForestGround</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[2]/layers[1]/layer[1]/@blockname">terrBurntForestGround</set>	
+	<set xpath="//biome[@name='wasteland']/subbiome[3]/layers[1]/layer[1]/@blockname">terrBurntForestGround</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[4]/layers[1]/layer[1]/@blockname">terrBurntForestGround</set>	
+	<!-- Reducing girders and breeze blocks in Wasteland -->
+	<set xpath="//biome[@name='wasteland']/subbiome[2]/decorations[1]/decoration[@blockname='scrapMetalPile']/@prob">.002</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[2]/decorations[1]/decoration[@blockname='cinderBlocks01']/@prob">.0005</set>	
+	<set xpath="//biome[@name='wasteland']/subbiome[2]/decorations[1]/decoration[@blockname='cinderBlocks02']/@prob">.0005</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[2]/decorations[1]/decoration[@blockname='cinderBlocks03']/@prob">.0005</set>	
+	<set xpath="//biome[@name='wasteland']/subbiome[3]/decorations[1]/decoration[@blockname='scrapMetalPile']/@prob">.002</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[3]/decorations[1]/decoration[@blockname='cinderBlocks01']/@prob">.0005</set>	
+	<set xpath="//biome[@name='wasteland']/subbiome[3]/decorations[1]/decoration[@blockname='cinderBlocks02']/@prob">.0005</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[3]/decorations[1]/decoration[@blockname='cinderBlocks03']/@prob">.0005</set>		
+	<set xpath="//biome[@name='wasteland']/subbiome[4]/decorations[1]/decoration[@blockname='scrapMetalPile']/@prob">.002</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[4]/decorations[1]/decoration[@blockname='cinderBlocks01']/@prob">.0005</set>	
+	<set xpath="//biome[@name='wasteland']/subbiome[4]/decorations[1]/decoration[@blockname='cinderBlocks02']/@prob">.0005</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[4]/decorations[1]/decoration[@blockname='cinderBlocks03']/@prob">.0005</set>	
+	<set xpath="//biome[@name='wasteland']/decorations[1]/decoration[@blockname='scrapMetalPile']/@prob">.002</set>
+	<set xpath="//biome[@name='wasteland']/decorations[1]/decoration[@blockname='cinderBlocks01']/@prob">.0005</set>	
+	<set xpath="//biome[@name='wasteland']/decorations[1]/decoration[@blockname='cinderBlocks02']/@prob">.0005</set>
+	<set xpath="//biome[@name='wasteland']/decorations[1]/decoration[@blockname='cinderBlocks03']/@prob">.0005</set>
+	<!-- Adding Biome deco POIs for aesthetics, signs of life and simple loot -->
+
+	<!-- Decorations Main: Wasteland -->
+	<append xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations">
+			<decoration type="block" blockname="emberPileDeco1" prob="0.00025" rotatemax="7"/>
+			<decoration type="block" blockname="emberPileDeco2" prob="0.00025" rotatemax="7"/>
+			<decoration type="block" blockname="emberPileDeco3" prob="0.0025" rotatemax="7"/>
+			<decoration type="block" blockname="emberPileDeco4" prob="0.0025" rotatemax="7"/>
+			<decoration type="block" blockname="rubblePileWoodBurntLarge" prob=".00125" rotatemax="7"/>
+			<decoration type="block" blockname="rubblePileWoodBurntSmall" prob=".00075" rotatemax="7"/>
+			<decoration type="prefab" name="deco_wildwest_smokeriser3000" prob=".003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wasteland_tradersmoke_white" prob=".003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wasteland_tradersmoke_black" prob=".0035" rotatemax="3"/>			
+	</append>
+	
+	<!-- BURNT FOREST CUSTOMISATION -->
+	<!-- Removing plastic trash from Burnt Forest -->
+	<remove xpath="//biome[@name='burnt_forest']/subbiome/decorations/decoration[@blockname='cntTrashPile01']"/>
+	
+	<!-- Decorations Main: Burnt Forest -->
+	<append xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/decorations">
+			<decoration type="block" blockname="bluerock22" prob="0.0002" rotatemax="7"/>
+			<decoration type="block" blockname="bluerock33" prob="0.0002" rotatemax="7"/>
+			<decoration type="block" blockname="lightblueRock" prob="0.0002" rotatemax="7"/>
+			<decoration type="block" blockname="greenrock" prob="0.0002" rotatemax="7"/>			
+	</append>
+
+	<!-- Pine Forest -->
+	<!-- Heavy short grass Sub Biome -->
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.27']/decorations">
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_01"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_02"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_01"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_02"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_03"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_04"  onslopes="false" prob=".0003" rotatemax="3"/>			
+	</append>
+		<!-- Pine Forest Sub Biome Clustered Flowers and Boulders -->
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.31']/decorations">
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_01"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_02"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_01"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_02"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_03"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_04"  onslopes="false" prob=".0003" rotatemax="3"/>			
+	</append>
+		<!-- Ore Sub Biome: coalOre -->
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.392']/decorations">
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_01"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_02"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_01"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_02"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_03"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_04"  onslopes="false" prob=".0003" rotatemax="3"/>			
+	</append>
+		<!-- Ore Sub Biome: potassiumNitrate -->
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.412']/decorations">
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_01"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_02"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_01"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_02"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_03"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_04"  onslopes="false" prob=".0003" rotatemax="3"/>			
+	</append>
+		<!-- Ore Sub Biome: leadOre -->
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[@prob='0.442']/decorations">
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_01"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_02"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_01"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_02"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_03"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_04"  onslopes="false" prob=".0003" rotatemax="3"/>			
+	</append>	
+		<!-- Decorations Main: Pine Forest -->	
+	<append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations">
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_01"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_forestsmallcamp_02"  onslopes="false" prob=".00007" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_01"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_02"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_03"  onslopes="false" prob=".0003" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wilderness_pineforestlogging_04"  onslopes="false" prob=".0003" rotatemax="3"/>			
+	</append>
+	
+	<!-- Desert -->
+	<!-- Desert Sub Biome Clustered Cactus and Desert Shrub -->
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.29']/decorations">
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+	</append>
+	<!-- Desert Sub Biome, Thick Grass and Shrubs-->
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.24']/decorations">
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+	</append>
+	<!-- Ore Sub Biome: oilDeposit *** -->
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.402']/decorations">
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>						
+	</append>
+	<!-- Ore Sub Biome: potassiumNitrate -->
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.412']/decorations">
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+	</append>
+	<!-- Ore Sub Biome: leadOre -->
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.442']/decorations">
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+	</append>
+	<!-- Decorations Main: Desert -->	
+	<append xpath="/worldgeneration/biomes/biome[@name='desert']/decorations">
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertsmallcamp_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>
+			<decoration type="prefab" name="deco_wildwest_prospector_dig_01_TMB"  onslopes="false" prob=".005" rotatemax="3"/> <!-- Duplicates in all sub biomes as well -->
+			<decoration type="prefab" name="deco_wildwest_prospector_dig_02_TMB"  onslopes="false" prob=".002" rotatemax="3"/> <!-- Duplicates in all sub biomes as well -->			
+	</append>	
+	
+</wildwestmod>

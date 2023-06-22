@@ -1,0 +1,56 @@
+<wildwestmod>
+
+	<remove xpath="/rwgmixer/township[@name='countrytown']"/>
+	<remove xpath="/rwgmixer/township[@name='town']"/>
+	<remove xpath="/rwgmixer/township[@name='city']"/>
+	<remove xpath="/rwgmixer/district[@name='commercial']"/>	
+	<remove xpath="/rwgmixer/district[@name='downtown']"/>
+	<remove xpath="/rwgmixer/district[@name='industrial']"/>
+	<remove xpath="/rwgmixer/district[@name='residential']"/>
+	<remove xpath="/rwgmixer/district[@name='countryresidential']"/>
+	<remove xpath="/rwgmixer/district[@name='rural']"/>
+	<!-- increased most values below slightly -TMB -->
+	<set xpath="/rwgmixer/township[@name='oldwest']/property[@name='spawn_trader']/@value">true</set>
+	<set xpath="/rwgmixer/township[@name='oldwest']/property[@name='spawn_gateway']/@value">true</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='oldwest']/property[@name='few']/@value">3</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='oldwest']/property[@name='default']/@value">4</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='oldwest']/property[@name='many']/@value">6</set>	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='oldwest']/property[@name='mintiles']/@value">2</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='oldwest']/property[@name='maxtiles']/@value">6</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='few']/@value">4</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='default']/@value">6</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='many']/@value">8</set>	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='mintiles']/@value">2</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='oldwest']/property[@name='maxtiles']/@value">8</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='few']/@value">6</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='default']/@value">9</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='many']/@value">12</set>	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='mintiles']/@value">4</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='oldwest']/property[@name='maxtiles']/@value">12</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='few']/@value">8</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='default']/@value">12</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='many']/@value">16</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='mintiles']/@value">6</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='oldwest']/property[@name='maxtiles']/@value">16</set>
+	
+	<append xpath="/rwgmixer/township[@name='oldwest']">
+		<property name="outskirt_district" value="oldwest"/>
+	</append>
+	
+	<append xpath="/rwgmixer">
+	
+	<streettile name="rwg_tile_oldwest_corner_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+	
+	<streettile name="rwg_tile_oldwest_straight_02">
+		<property name="maxtiles" value="1"/>
+		<property name="mintiles" value="1"/>
+		<property name="maxdensity" value="120"/>
+	</streettile>
+
+	</append>	
+
+</wildwestmod>
