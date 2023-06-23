@@ -21,6 +21,7 @@
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0" />
   <property name="Tags" value="wilderness" />
+  <property name="ThemeRepeatDistance" value="2500" />
   <property class="IndexedBlockOffsets">
     <property class="quest_wood">
       <property name="0" value="73, 4, 112" />

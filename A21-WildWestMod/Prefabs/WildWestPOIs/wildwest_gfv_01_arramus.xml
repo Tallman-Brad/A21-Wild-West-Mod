@@ -6,7 +6,7 @@
   <property name="DistantPOIYOffset" value="0" />
   <property name="AllowTopSoilDecorations" value="True" />
   <property name="Tags" value="oldwest" />
-  <property name="ThemeRepeatDistance" value="500" />
+  <property name="ThemeRepeatDistance" value="1000" />
   <property name="DifficultyTier" value="2" />
   <property name="ShowQuestClearCount" value="1" />
   <property name="QuestTags" value="clear,fetch" />

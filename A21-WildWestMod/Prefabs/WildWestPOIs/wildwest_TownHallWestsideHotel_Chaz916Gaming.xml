@@ -8,6 +8,7 @@
   <property name="DifficultyTier" value="2" />
   <property name="ShowQuestClearCount" value="1" />
   <property name="Tags" value="oldwest" />
+  <property name="ThemeRepeatDistance" value="1000" />
   <property name="QuestTags" value="clear,fetch" />
   <property name="TraderArea" value="False" />
   <property name="PrefabSize" value="25, 14, 25" />

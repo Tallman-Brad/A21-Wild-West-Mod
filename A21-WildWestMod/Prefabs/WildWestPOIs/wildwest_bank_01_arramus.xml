@@ -9,7 +9,7 @@
   <property name="ShowQuestClearCount" value="2" />
   <property name="QuestTags" value="clear,fetch,restore_power" />
   <property name="Tags" value="oldwest" />
-  <property name="ThemeRepeatDistance" value="500" />
+  <property name="ThemeRepeatDistance" value="1000" />
   <property name="TraderArea" value="False" />
   <property name="PrefabSize" value="50, 18, 25" />
   <property name="RotationToFaceNorth" value="2" />
