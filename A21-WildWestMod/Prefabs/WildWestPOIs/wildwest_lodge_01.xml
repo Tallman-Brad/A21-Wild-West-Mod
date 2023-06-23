@@ -15,7 +15,7 @@
   <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,4,5,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,4,5,S_-Group_Generic_Zombie,2,4,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,1,2,S_-Group_Generic_Zombie,4,6,S_-Group_Generic_Zombie,4,5,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,2,5,S_-Group_Generic_Zombie,2,5,S_-Group_Generic_Zombie,2,3,S_Zom_Lumber_Jack,2,3,S_Zom_Janitor_Only,2,3,S_-Group_Generic_Zombie,3,4,S_-_Group_Zom_Badass_Only,3,4" />
   <property name="SleeperIsLootVolume" value="True,False,True,False,True,False,False,True,False,False,False,False,False,False,False,False,False" />
   <property name="SleeperIsBossVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
-  <property name="QuestTags" value="clear,fetch,hidden_cache" />
+  <property name="QuestTags" value="clear, fetch, hidden_cache" />
   <property name="EditorGroups" value="Wilderness" />
   <property name="Zoning" value="commercial" />
   <property name="AllowedTownships" value="rural,wilderness" />
@@ -32,59 +32,54 @@
   <property name="POIMarkerPartRotations" value="2" />
   <property name="POIMarkerPartSpawnChance" value="1" />
   <property name="PrefabSize" value="60, 25, 60" />
+  <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # # # # # # # # # " />
   <property class="Stats">
-    <property name="TotalVertices" value="2269405" />
-    <property name="TotalTriangles" value="3189918" />
+    <property name="TotalVertices" value="2224172" />
+    <property name="TotalTriangles" value="2694887" />
     <property class="BlockEntities">
-      <property name="Vertices" value="2102675" />
-      <property name="Triangles" value="3086050" />
+      <property name="Vertices" value="2054468" />
+      <property name="Triangles" value="2589384" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="153008" />
-      <property name="Triangles" value="82948" />
+      <property name="Vertices" value="157002" />
+      <property name="Triangles" value="85439" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes2">
-      <property name="Vertices" value="288" />
-      <property name="Triangles" value="176" />
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes3">
-      <property name="Vertices" value="12" />
-      <property name="Triangles" value="6" />
+      <property name="Vertices" value="1576" />
+      <property name="Triangles" value="1132" />
     </property>
     <property class="ChunkMeshes4">
-      <property name="Vertices" value="2260" />
-      <property name="Triangles" value="1788" />
-    </property>
-    <property class="ChunkMeshes5">
       <property name="Vertices" value="32" />
       <property name="Triangles" value="16" />
     </property>
-    <property class="ChunkMeshes6">
+    <property class="ChunkMeshes5">
       <property name="Vertices" value="0" />
       <property name="Triangles" value="0" />
     </property>
-    <property class="ChunkMeshes7">
+    <property class="ChunkMeshes6">
       <property name="Vertices" value="11094" />
       <property name="Triangles" value="18916" />
     </property>
-    <property class="ChunkMeshes8">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-    <property class="ChunkMeshes9">
-      <property name="Vertices" value="36" />
-      <property name="Triangles" value="18" />
-    </property>
   </property>
   <property class="IndexedBlockOffsets">
+    <property class="quest_wood_trees">
+      <property name="0" value="53, 7, 45" />
+    </property>
     <property class="POILight">
       <property name="0" value="48, 9, 30" />
       <property name="1" value="48, 9, 33" />
       <property name="2" value="47, 9, 36" />
+    </property>
+    <property class="TraderOnOff">
+      <property name="0" value="47, 7, 35" />
     </property>
     <property class="FetchContainer">
       <property name="0" value="35, 13, 30" />
