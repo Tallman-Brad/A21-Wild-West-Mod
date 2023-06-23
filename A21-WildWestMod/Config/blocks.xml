@@ -99,7 +99,17 @@
 
 	<set xpath="/blocks/block[@name='cntVendingMachine']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest</set>
 	<set xpath="/blocks/block[@name='cntVendingMachineTrader']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2</set>
+	<set xpath="/blocks/block[@name='cntVendingMachine2']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2</set>	
+	<set xpath="/blocks/block[@name='cntVendingMachineEnergy']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineWater']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineSnacksFull']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2</set>
 	<set xpath="/blocks/block[@name='cntVendingMachine2Broken']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2Broken</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineEnergyBroken']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2Broken</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineWaterBroken']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2Broken</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineSnacksEmpty']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2Broken</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineSnacksFullBroken']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2Broken</set>
+	<set xpath="/blocks/block[@name='cntVendingMachineSnacksEmptyBroken']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest2Broken</set>
+	
 	<set xpath="/blocks/block[@name='cntVendingMachine2']/property[@name='Model']/@value">#@modfolder:Resources/VendingMachineOldWest.unity3d?VendingMachineOldWest</set>
 	
 	<set xpath="/blocks/block[@name='cntCoffeeMaker']/property[@name='Model']/@value">#@modfolder:Resources/coffeegrinder.unity3d?CoffeeGrinder3</set>
