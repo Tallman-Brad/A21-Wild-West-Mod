@@ -1,13 +1,9 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-  <ModInfo>
-
-<!-- TMB EDIT -->
-
-    <Name value="1-WildWestMod" />
-    <Description value="Removing modern features, and adding new features to reflect mid 19th Century American Wild West" />
-    <Author value="Tallman Brad Gameplay Community." />
-    <Version value="A21" />
-    <Website value="https://discord.gg/vc2XmnNWB8" />
-  </ModInfo>
+	<Name value="A21-WildWestMod" />
+	<DisplayName value="Wild West Mod (A21)" />
+	<Description value="Removing modern features, and adding new features to reflect mid 19th Century American Wild West." />
+	<Author value="Tallman Brad Gameplay Community." />
+	<Version value="21.0.0.1" />
+	<Website value="https://discord.gg/vc2XmnNWB8" />
 </xml>
