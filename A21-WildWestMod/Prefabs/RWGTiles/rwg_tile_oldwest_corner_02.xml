@@ -9,7 +9,7 @@
   <property name="ShowQuestClearCount" value="1" />
   <property name="TraderArea" value="False" />
   <property name="YOffset" value="-2" />
-  <property name="RotationToFaceNorth" value="2" />
+  <property name="RotationToFaceNorth" value="0" />
   <property name="Zoning" value="none" />
   <property name="POIMarkerSize" value="25, 0, 50#25, 0, 25#25, 0, 25#25, 0, 25#25, 0, 25#25, 0, 25#25, 0, 50#25, 0, 25" />
   <property name="POIMarkerStart" value="46, 2, 25#79, 2, 83#46, 2, 83#46, 2, 0#79, 2, 0#104, 2, 83#79, 2, 25#104, 2, 50" />
