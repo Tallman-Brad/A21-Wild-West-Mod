@@ -1,17 +1,8 @@
 <spawnpoints>
-    <spawnpoint position="-2547,53.07255,1953" rotation="0,262.3971,0"/>
-    <spawnpoint position="-2547,59.93871,2253" rotation="0,140.2508,0"/>
-    <spawnpoint position="-2547,51.13683,2403" rotation="0,223.3107,0"/>
-    <spawnpoint position="-2547,53.26091,2553" rotation="0,164.756,0"/>
-    <spawnpoint position="-2397,59.04118,1953" rotation="0,144.5852,0"/>
-    <spawnpoint position="-2397,56.84106,2103" rotation="0,269.2094,0"/>
-    <spawnpoint position="-2397,55.44299,2253" rotation="0,140.8153,0"/>
-    <spawnpoint position="-2397,60.63189,2403" rotation="0,315.2335,0"/>
-    <spawnpoint position="-2247,49.7838,2103" rotation="0,319.9649,0"/>
-    <spawnpoint position="-2247,59.96849,2403" rotation="0,342.775,0"/>
-    <spawnpoint position="-2247,62.26865,2553" rotation="0,154.1187,0"/>
-    <spawnpoint position="-2097,40.64441,1203" rotation="0,110.5519,0"/>
-    <spawnpoint position="-2097,36.4124,1653" rotation="0,171.6674,0"/>
-    <spawnpoint position="-2097,38.5258,1803" rotation="0,262.0528,0"/>
-    <spawnpoint position="-2097,60.6938,2103" rotation="0,305.7656,0"/>
+    <spawnpoint position="1638,53.07255,2754" rotation="0,180,0"/>
+    <spawnpoint position="1640,53.07255,2754" rotation="0,180,0"/>
+    <spawnpoint position="1642,53.07255,2754" rotation="0,180,0"/>
+	<spawnpoint position="2718,53.07255,-1979" rotation="0,180,0"/>
+    <spawnpoint position="2720,53.07255,-1979" rotation="0,180,0"/>
+    <spawnpoint position="2722,53.07255,-1979" rotation="0,180,0"/>
 </spawnpoints>
