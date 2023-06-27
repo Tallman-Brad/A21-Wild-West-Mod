@@ -49,10 +49,6 @@
 	<set xpath="/rwgmixer/world[@name='large']/property[@class='roadside']/property[@name='mintiles']/@value">1</set>
 	<set xpath="/rwgmixer/world[@name='large']/property[@class='roadside']/property[@name='maxtiles']/@value">1</set>
 	
-	<!--append xpath="/rwgmixer/township[@name='oldwest']">
-		<property name="outskirt_district" value="oldwest"/>
-	</append-->
-	
 	<append xpath="/rwgmixer">
 	
 	<streettile name="rwg_tile_oldwest_corner_02">
