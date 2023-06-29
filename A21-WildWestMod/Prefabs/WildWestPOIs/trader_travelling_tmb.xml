@@ -18,23 +18,23 @@
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="none" />
   <property name="ThemeRepeatDistance" value="2500" />
-  <property name="Tags" value="trader,wilderness,nocheckpoint" />
+  <property name="Tags" value="wilderness,trader,nocheckpoint" />
   <property name="TeleportVolumeSize" value="" />
   <property name="TeleportVolumeStart" value="" />
   <property class="Stats">
-    <property name="TotalVertices" value="378680" />
-    <property name="TotalTriangles" value="373414" />
+    <property name="TotalVertices" value="379963" />
+    <property name="TotalTriangles" value="373790" />
     <property class="BlockEntities">
-      <property name="Vertices" value="376802" />
-      <property name="Triangles" value="371618" />
+      <property name="Vertices" value="378687" />
+      <property name="Triangles" value="372274" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="608" />
-      <property name="Triangles" value="304" />
+      <property name="Vertices" value="524" />
+      <property name="Triangles" value="292" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="512" />
-      <property name="Triangles" value="256" />
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="0" />
@@ -53,8 +53,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes6">
-      <property name="Vertices" value="758" />
-      <property name="Triangles" value="1236" />
+      <property name="Vertices" value="752" />
+      <property name="Triangles" value="1224" />
     </property>
   </property>
   <property class="IndexedBlockOffsets">
