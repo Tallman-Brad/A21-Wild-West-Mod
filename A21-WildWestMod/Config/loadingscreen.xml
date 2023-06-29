@@ -1,0 +1,54 @@
+﻿<wildwestmod>
+
+	<remove xpath="/doc/tips/tip[@key='loadingTipMainHUD']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipStoneAxe']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipHarvestingResources']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipDistraction']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipStealth']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipEncumbrance']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipArmor']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipBandages']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipJournalEntries']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipQuestSharing']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipWhatIsItGoodFor']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipWorkstations']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipUnlockingRecipes']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipCraftingBetterQL']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipMagazines']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipPerkLootBoost']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipBaseUpgrading']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipRadials']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipHarvestingCorpses']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipGlue']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipProperTools']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipItemStats']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipExtCharStats']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipBladedWeapons']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipPickaxes']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipAxes']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipSteelKnuckles']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipWrenches']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipSledgehammers']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipUsingIronTools']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipScrapping']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipBuffs']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipKnownSchematics']"/>
+	<remove xpath="/doc/tips/tip[@key='loadingTipTwitchIntegration']"/>	
+
+	<append xpath="/doc/tips">
+		<tip key="loadingTipWildWestTomahawk"/>	
+		<tip key="loadingTipWildWestHordeNight"/>
+		<tip key="loadingTipWildWestHordeQuest"/>
+		<tip key="loadingTipWildWestHardPOIs"/>
+		<tip key="loadingTipWildWestWrenching"/>
+		<tip key="loadingTipWildWestScopes"/>
+		<tip key="loadingTipWildWestWeather"/>
+		<tip key="loadingTipWildWestInvisibleDye"/>
+		<tip key="loadingTipWildWestHUD"/>
+		<tip key="loadingTipWildWestHivesCoops"/>
+		<tip key="loadingTipWildWestLights"/>
+		<tip key="loadingTipWildWestWells"/>
+		<tip key="loadingTipWildWestWaterPOIs"/>		
+	</append>
+
+</wildwestmod>
