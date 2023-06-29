@@ -3,6 +3,8 @@
 	<remove xpath="//window[@name='newsWindow']"/>
 	<remove xpath="//window[@name='mainMenuLogo']"/>
 	
+	<set xpath="/windows/window[@name='menuBackground']/texture/@texture">@modfolder(A21-WildWestMod):Textures/background.png</set>
+	
 	<append xpath="/windows">	
 	<window name="mainMenuLogo" anchor="CenterCenter" pos="0,0" width="1387" height="780" depth="-2">
 		<texture depth="3" color="[white]" texture="@modfolder(A21-WildWestMod):Textures/mainMenuLogo.png" name="gameLogo" anchor_left="#cam,0.5,-20" anchor_bottom="#cam,0.5,70" anchor_right="#cam,0.5,-20" anchor_top="#cam,0.5,490" pivot="center" keep_aspect_ratio="BasedOnHeight" aspect_ratio="2.3" />
