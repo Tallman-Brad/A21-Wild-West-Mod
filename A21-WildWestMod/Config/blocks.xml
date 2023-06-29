@@ -1652,166 +1652,6 @@
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/chairs.unity3d?Rockingchair"/>
 	</block>
-
-<!-- MPLogue's Custom Blocks / Offset Block Features -->
-
-	<block name="WoodPillar50PlateOffset">
-		<property name="CustomIconTint" value="32455E"/>
-		<property name="Material" value="Mwood"/>
-		<property name="Shape" value="New"/>
-		<property name="Model" value="pillar50_plate"/>
-		<property name="CustomIcon" value="shapepillar50Plate"/>
-		<property name="Texture" value="46"/>
-		<property name="StabilitySupport" value="true"/>
-		<property name="Collide" value=""/>
-		<drop event="Destroy" count="0"/>
-		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-		<property name="ModelOffset" value=".5,.45,1"/>
-	</block>
-
-	<block name="WoodPillar025CentOffset">
-		<property name="CustomIconTint" value="32455E"/>
-		<property name="Class" value="ActivateSingle"/>
-		<property name="Material" value="Mwood"/>
-		<property name="Shape" value="New"/>
-		<property name="Model" value="pole.025_centered"/>
-		<property name="CustomIcon" value="shapePole.025Centered"/>
-		<property name="Texture" value="46"/>
-		<property name="StabilitySupport" value="true"/>
-		<property name="Collide" value=""/>
-		<drop event="Destroy" count="0"/>
-		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-		<property name="ModelOffset" value="1,-1,1"/>
-	</block>
-
-	<block name="RopeTiledOffset">
-		<property name="Extends" value="modularRopeTiled"/>
-		<property name="Model" value="Entities/OutdoorDecor/modularRopeTiledPrefab"/>
-					<property name="ModelOffset" value="0,.5,-.07"/>
-	</block>
-
-	<block name="RopeNooseOffset">
-		<property name="Extends" value="modularRopeTiled"/>
-		<property name="Model" value="Entities/OutdoorDecor/modularRopeNoosePrefab"/>
-		<property name="ModelOffset" value="0,.75,-.07"/>
-	</block>
-
-	<block name="RopeKnotOffset">
-		<property name="Extends" value="modularRopeTiled"/>
-		<property name="Model" value="Entities/OutdoorDecor/modularRopeTopTiedPrefab"/>
-		<property name="ModelOffset" value="0,.5,-.07"/>
-	</block>
-	
-	<block name="cntWoodBurningStoveOffset">
-		<property name="Extends" value="decoEntityMetalMaster"/>
-		<property name="Model" value="Entities/Furniture/woodBurningStovePrefab"/>
-		<property name="Place" value="TowardsPlacerInverted"/>
-		<property class="RepairItems">
-			<property name="resourceScrapIron" value="10"/>
-			<property name="resourceCoal" value="10"/>
-		</property>
-		<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-		<drop event="Harvest" name="resourceCoal" count="5" tag="allHarvest"/>
-		<drop event="Destroy" name="resourceScrapIron" count="5"/>
-		<property name="FilterTags" value="MC_building,SC_decor"/>
-		<property name="Class" value="Light"/>
-		<property name="Light" value="0.5"/>
-		<property name="ModelOffset" value="0,.5,-.8"/>	
-	</block>
-
-	<block name="burningBarrelOffset">
-		<property name="Extends" value="burningBarrelPlayer" param1="Class,HeatMapStrength,HeatMapTime,HeatMapFrequency"/>
-		<property name="CreativeMode" value="Dev"/>
-		<property name="Model" value="Entities/Lighting/barrel03_burningPrefab"/>
-		<property name="Class" value="Light"/>
-		<property name="Light" value="0.5"/>
-		<property name="DescriptionKey" value="lightPOIGroupDesc"/>
-		<property name="CanPickup" value="false"/>
-		<property name="FilterTags" value="MC_building,SC_lighting"/>
-			<property name="ModelOffset" value="0,-1,0"/>	
-	</block>
-
-	<block name="wineBarrelPlainBoom">
-		<property name="Extends" value="wineBarrel"/>
-		<property name="Model" value="Entities/Decor/BarrelPrefab"/>
-		<property name="CreativeMode" value="Dev"/>
-		<property name="Material" value="Mwood"/>
-		<property name="ItemTypeIcon" value="explosion"/>
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-		<property name="Class" value="CarExplode"/>
-		<property class="Explosion">
-			<property name="ParticleIndex" value="14"/>
-			<property name="RadiusBlocks" value="5"/>
-			<property name="BlockDamage" value="1000"/>
-			<property name="RadiusEntities" value="5"/>
-			<property name="EntityDamage" value="10"/>
-		</property>
-		<property name="Explosion.DamageBonus.stone" value="0.001"/>
-		<property name="Explosion.DamageBonus.metal" value="0.5"/>
-		<property name="Explosion.DamageBonus.earth" value="0.001"/>
-		<property name="Explosion.DamageBonus.wood" value="0.5"/>
-		<property name="Explosion.DamageBonus.water" value="0"/>
-		<property name="MaxDamage" value="5"/>
-		<property name="IsTerrainDecoration" value="true"/>
-		<property name="Explosion.Buff" value="buffBurningMolotov"/>
-	</block>
-
-	<block name="mineCookingPotSevere">
-		<property name="Class" value="Mine"/> <!-- a mine destroyed by an *explosion* only has a 33% chance to detonate -->
-		<property name="Tags" value="Mine"/>
-		<property name="ItemTypeIcon" value="explosion"/>
-		<property name="Material" value="MLandMine"/>
-		<property name="Shape" value="ModelEntity"/>
-		<property name="Model" value="@:Other/Items/Weapons/Explosive/trapMineCookingPot_01Prefab.prefab"/>
-		<property name="LODCullMin" value=".1"/>
-		<property name="IsTerrainDecoration" value="true"/>
-		<property name="OnlySimpleRotations" value="true"/>
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-		<property name="Stacknumber" value="25"/> <!-- STK explosives -->
-		<property name="MaxDamage" value="4"/>
-		<property name="TriggerDelay" value="0.5"/>
-		<property name="TriggerSound" value="landmine_trigger"/>
-		<property name="Explosion.ParticleIndex" value="11"/>
-		<property name="Explosion.RadiusBlocks" value="7"/>
-		<property name="Explosion.RadiusEntities" value="1"/>
-		<property name="Explosion.BlockDamage" value="400"/>
-		<property name="Explosion.EntityDamage" value="11"/> <!-- damage for entities in the center of the explosion. -->
-		<property name="Explosion.DamageBonus.stone" value="0"/>
-		<property name="Explosion.DamageBonus.metal" value="0.5"/>
-		<property name="Explosion.DamageBonus.earth" value="0"/>
-		<property name="Explosion.DamageBonus.wood" value="0.5"/>
-		<property name="Explosion.DamageBonus.water" value="0"/>
-		<property name="CanPickup" value="false"/>
-		<drop event="Destroy" count="0"/>
-		<property name="Group" value="Tools/Traps"/>
-		<property name="EconomicValue" value="97"/>
-		<property name="FilterTags" value="MC_building,SC_traps"/>
-		<property name="SortOrder1" value="70g0"/>
-		<property name="Explosion.ParticleIndex" value="10"/>
-		<property name="Explosion.Buff" value="buffBurningMolotov"/>
-	</block>
-
-	<block name="HardAirLadder">
-		<property name="Class" value="Ladder"/>
-		<property name="CustomIcon" value="shapeCube"/>
-		<property name="CustomIconTint" value="32455E"/>
-		<property name="Material" value="Mbedrock"/>
-		<property name="Shape" value="BillboardPlant"/>
-		<property name="Mesh" value="grass"/>
-		<property name="Texture" value="1"/>
-		<property name="StabilitySupport" value="true"/>
-		<property name="Collide" value=""/>
-		<drop event="Destroy" count="0"/>
-		<property name="FilterTags" value="MC_outdoor,SC_terrain"/>
-		<property name="ModelOffset" value="0,0,1"/>
-	</block>
-
-	<block name="CTRLadderWood">
-		<property name="Extends" value="ladderWood"/>
-		<property name="ModelOffset" value="1,0,.2"/>
-		<property name="CustomIconTint" value="ff8080"/>
-		<property name="CustomIcon" value="ladderWood"/>
-	</block>
 	
 <!-- arramus' Custom Blocks / Offset Blocks -->	
 
@@ -1907,7 +1747,6 @@
 	<property name="Extends" value="RailTrack1X2"/>		
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="RailTrack1X2"/>
-	<property name="UnlockedBy" value="perkGreaseMonkey"/>
 	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
 	<property name="SelectAlternates" value="true"/>
@@ -2365,7 +2204,6 @@
 	<property name="CustomIcon" value="resourceFishTrapCone"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Group" value="Tools/Traps"/>
-	<property name="UnlockedBy" value="perkLivingOffTheLand"/>
 	<property name="Material" value="Mwood_weak"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
 	<property name="Shape" value="ModelEntity"/>
@@ -2416,8 +2254,6 @@
 	</block>
 	
 	<!-- Clucking Bells Screamer Bell -->
-	
-
 	
 <block name="cluckingbellsTrap">
 	<property name="Material" value="Mbrass"/>
@@ -2481,7 +2317,6 @@
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 	<property name="Material" value="Mwood_regular"/>
 	<property name="Group" value="Ammo/Weapons,Ammo"/>
-	<property name="UnlockedBy" value="perkDemolitionsExpert"/>
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanDecorateOnSlopes" value="false"/>

@@ -231,7 +231,7 @@
 	<crafting_skill name="craftingHarvestingTools" max_level="100" parent="attCrafting" name_key="craftingHarvestingToolsName" desc_key="craftingHarvestingToolsDesc" long_desc_key="craftingHarvestingToolsLongDesc" icon="ui_game_symbol_tool">
 
 		<display_entry icon="meleeToolRepairT0StoneAxe" name_key="harvestToolsStone" has_quality="true" unlock_level="1,3,5,7,10" >
-			<unlock_entry item="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel" unlock_tier="1" />
+			<unlock_entry item="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel,meleeToolRepairT2Tomahawk1,meleeToolRepairT2Tomahawk2" unlock_tier="1" />
 		</display_entry>
 		<display_entry icon="meleeToolPickT1IronPickaxe" name_key="harvestToolsIron" has_quality="true" unlock_level="11,14,18,22,26" >
 			<unlock_entry item="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe" unlock_tier="1" />
@@ -244,12 +244,12 @@
 		</display_entry-->
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel,meleeToolRepairT2Tomahawk1,meleeToolRepairT2Tomahawk2"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT2SteelAxe"/>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw"/-->
 
-			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="meleeToolRepairT0StoneAxe,meleeToolShovelT0StoneShovel,meleeToolRepairT2Tomahawk1,meleeToolRepairT2Tomahawk2"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="14,18,22,26,100" value="1,2,3,4,4" tags="meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel,meleeToolAxeT1IronFireaxe"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="35,43,51,59,100" value="1,2,3,4,4" tags="meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel,meleeToolAxeT2SteelAxe"/>
 			<!--passive_effect name="CraftingTier" operation="base_add" level="70,80,90,100" value="1,2,3,4" tags="meleeToolPickT3Auger,meleeToolAxeT3Chainsaw"/-->
@@ -312,16 +312,25 @@
 
 		<display_entry item="meleeWpnBladeT0BoneKnife" unlock_level="1,3,5,7,10" />
 		<display_entry item="meleeWpnBladeT1HuntingKnife" unlock_level="11,17,24,31,38" />
+		<display_entry item="meleeWpnBladeT1HuntingKnifeObsidian" unlock_level="11,17,24,31,38" />
+		<display_entry item="meleeWpnBladeT1HuntingKnifeMedusa" unlock_level="11,17,24,31,38" />
 		<display_entry item="meleeWpnBladeT3Machete" unlock_level="39,48,57,66,75" />
+		<display_entry item="meleeWpnBladeT3MacheteMini" unlock_level="39,48,57,66,75" />
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="meleeWpnBladeT0BoneKnife"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnBladeT1HuntingKnife"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnBladeT1HuntingKnifeObsidian"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnBladeT1HuntingKnifeMedusa"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnBladeT3Machete"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnBladeT3MacheteMini"/>
 
 			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="meleeWpnBladeT0BoneKnife"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnBladeT1HuntingKnife"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnBladeT1HuntingKnifeObsidian"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnBladeT1HuntingKnifeMedusa"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnBladeT3Machete"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnBladeT3MacheteMini"/>
 		</effect_group>
 	</crafting_skill>
 
@@ -329,17 +338,26 @@
 	<crafting_skill name="craftingClubs" max_level="75" parent="attCrafting" name_key="craftingClubsName" desc_key="craftingClubsDesc" long_desc_key="craftingClubsLongDesc" icon="ui_game_symbol_club">
 
 		<display_entry item="meleeWpnClubT0WoodenClub" unlock_level="1,3,5,7,10" />
+		<display_entry item="meleeWpnClubT0Ladle" unlock_level="1,3,5,7,10" />
 		<display_entry item="meleeWpnClubT1BaseballBat" unlock_level="11,17,24,31,38" />
+		<display_entry item="meleeWpnClubT1OldPan" unlock_level="11,17,24,31,38" />
 		<display_entry item="meleeWpnClubT3SteelClub" unlock_level="39,48,57,66,75" />
+		<display_entry item="meleeWpnClubT3Skillet" unlock_level="39,48,57,66,75" />
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="meleeWpnClubT0WoodenClub"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="meleeWpnClubT0Ladle"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnClubT1BaseballBat"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="meleeWpnClubT1OldPan"/>			
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnClubT3SteelClub"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="meleeWpnClubT3Skillet"/>
 
 			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="meleeWpnClubT0WoodenClub"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="meleeWpnClubT0Ladle"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnClubT1BaseballBat"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="17,24,31,38,75" value="1,2,3,4,4" tags="meleeWpnClubT1OldPan"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnClubT3SteelClub"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="48,57,66,75" value="1,2,3,4" tags="meleeWpnClubT3Skillet"/>
 		</effect_group>
 	</crafting_skill>
 
@@ -407,22 +425,22 @@
 	<crafting_skill name="craftingHandguns" max_level="100" parent="attCrafting" name_key="craftingHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_pistol">
 
 		<display_entry item="gunHandgunT0PipePistol" unlock_level="1,3,5,7,10" />
-		<!--display_entry item="gunHandgunT1Pistol" unlock_level="11,13,16,19,22" /-->
-		<!--display_entry item="gunHandgunT2Magnum44" unlock_level="23,26,30,34,38" /-->
-		<!--display_entry item="gunHandgunT3SMG5" unlock_level="39,46,53,60,67" /-->
+		<display_entry item="gunHandgunT1666Revolver" unlock_level="11,13,16,19,22" />
+		<display_entry item="gunHandgunT2RavenRevolver" unlock_level="23,26,30,34,38" />
+		<display_entry item="gunHandgunT3SchofieldRevolver" unlock_level="39,46,53,60,67" />
 		<!--display_entry item="gunHandgunT3DesertVulture" unlock_level="68,76,84,92,100" /-->
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="gunHandgunT0PipePistol"/>
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunHandgunT1Pistol"/-->
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,100" value="1" tags="gunHandgunT2Magnum44"/-->
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,100" value="1" tags="gunHandgunT3SMG5"/-->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunHandgunT1666Revolver"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,100" value="1" tags="gunHandgunT2RavenRevolver"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,100" value="1" tags="gunHandgunT3SchofieldRevolver"/>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="68,100" value="1" tags="gunHandgunT3DesertVulture"/-->
 
 			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="gunHandgunT0PipePistol"/>
-			<!--passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,100" value="1,2,3,4,4" tags="gunHandgunT1Pistol"/-->
-			<!--passive_effect name="CraftingTier" operation="base_add" level="26,30,34,38,100" value="1,2,3,4,4" tags="gunHandgunT2Magnum44"/-->
-			<!--passive_effect name="CraftingTier" operation="base_add" level="46,53,60,67,100" value="1,2,3,4,4" tags="gunHandgunT3SMG5"/-->
+			<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,100" value="1,2,3,4,4" tags="gunHandgunT1666Revolver"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="26,30,34,38,100" value="1,2,3,4,4" tags="gunHandgunT2RavenRevolver"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="46,53,60,67,100" value="1,2,3,4,4" tags="gunHandgunT3SchofieldRevolver"/>
 			<!--passive_effect name="CraftingTier" operation="base_add" level="76,84,92,100" value="1,2,3,4" tags="gunHandgunT3DesertVulture"/-->
 		</effect_group>
 	</crafting_skill>
@@ -454,18 +472,21 @@
 		<display_entry item="gunRifleT0PipeRifle" unlock_level="1,3,5,7,10" />
 		<display_entry item="gunRifleT1HuntingRifle" unlock_level="11,14,18,22,26" />
 		<display_entry item="gunRifleT2LeverActionRifle" unlock_level="27,35,43,51,59" />
-		<!--display_entry item="gunRifleT3SniperRifle" unlock_level="60,70,80,90,100" /-->
+		<display_entry item="gunRifleT2LeverActionRifleWinchester" unlock_level="27,35,43,51,59" />
+		<display_entry item="gunRifleT2LeverActionRifleLegendaryTribeWinchester" unlock_level="50,60,70,80,90,100" />
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="gunRifleT0PipeRifle"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunRifleT1HuntingRifle"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="gunRifleT2LeverActionRifle"/>
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="gunRifleT3SniperRifle"/-->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="gunRifleT2LeverActionRifleWinchester"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="gunRifleT2LeverActionRifleLegendaryTribeWinchester"/>
 
 			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="gunRifleT0PipeRifle"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="14,18,22,26,100" value="1,2,3,4,4" tags="gunRifleT1HuntingRifle"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="35,43,51,59,100" value="1,2,3,4,4" tags="gunRifleT2LeverActionRifle"/>
-			<!--passive_effect name="CraftingTier" operation="base_add" level="70,80,90,100" value="1,2,3,4" tags="gunRifleT3SniperRifle"/-->
+			<passive_effect name="CraftingTier" operation="base_add" level="35,43,51,59,100" value="1,2,3,4,4" tags="gunRifleT2LeverActionRifleWinchester"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="60,70,80,90,100" value="1,2,3,4,5" tags="gunRifleT2LeverActionRifleLegendaryTribeWinchester"/>
 		</effect_group>
 	</crafting_skill>
 
@@ -473,18 +494,18 @@
 	<crafting_skill name="craftingMachineGuns" max_level="100" parent="attCrafting" name_key="craftingMachineGunsName" desc_key="craftingMachineGunsDesc" long_desc_key="craftingMachineGunsLongDesc" icon="ui_game_symbol_rifle">
 
 		<!--display_entry item="gunMGT0PipeMachineGun" unlock_level="1,3,5,7,10" /-->
-		<!--display_entry item="gunMGT1AK47" unlock_level="11,14,18,22,26" /-->
+		<display_entry item="gunGatling" unlock_level="10,25,40,55,70,85" />
 		<!--display_entry item="gunMGT2TacticalAR" unlock_level="27,35,43,51,59" /-->
 		<!--display_entry item="gunMGT3M60" unlock_level="60,70,80,90,100" /-->
 
 		<effect_group>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="gunMGT0PipeMachineGun"/-->
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunMGT1AK47"/-->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="gunGatling"/>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="gunMGT2TacticalAR"/-->
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="gunMGT3M60"/-->
 
 			<!--passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="gunMGT0PipeMachineGun"/-->
-			<!--passive_effect name="CraftingTier" operation="base_add" level="14,18,22,26,100" value="1,2,3,4,4" tags="gunMGT1AK47"/-->
+			<passive_effect name="CraftingTier" operation="base_add" level="25,40,55,70,85,100" value="1,2,3,4,5,5" tags="gunGatling"/>
 			<!--passive_effect name="CraftingTier" operation="base_add" level="35,43,51,59,100" value="1,2,3,4,4" tags="gunMGT2TacticalAR"/-->
 			<!--passive_effect name="CraftingTier" operation="base_add" level="70,80,90,100" value="1,2,3,4" tags="gunMGT3M60"/-->
 		</effect_group>
@@ -543,20 +564,20 @@
 		<!--display_entry item="meleeWpnBatonT0PipeBaton" unlock_level="1,3,5,7,10" /-->
 		<!--display_entry item="gunBotT1JunkSledge" unlock_level="11,13,16,19,22" /-->
 		<!--display_entry item="meleeWpnBatonT2StunBaton" unlock_level="23,26,30,34,38" /-->
-		<display_entry item="gunBotT2JunkTurret" unlock_level="39,46,53,60,67" />
+		<display_entry item="gunBotT2JunkTurretWildWest" unlock_level="5,10,15,20,25,30" />
 		<!--display_entry item="gunBotT3JunkDrone" unlock_level="68,76,84,92,100" /-->
 
 		<effect_group>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="meleeWpnBatonT0PipeBaton"/-->
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunBotT1JunkSledge"/-->
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,100" value="1" tags="meleeWpnBatonT2StunBaton"/-->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,100" value="1" tags="gunBotT2JunkTurret"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="gunBotT2JunkTurretWildWest"/>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="68,100" value="1" tags="gunBotT3JunkDrone"/-->
 
 			<!--passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="meleeWpnBatonT0PipeBaton"/-->
 			<!--passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,100" value="1,2,3,4,4" tags="gunBotT1JunkSledge"/-->
 			<!--passive_effect name="CraftingTier" operation="base_add" level="26,30,34,38,100" value="1,2,3,4,4" tags="meleeWpnBatonT2StunBaton"/-->
-			<passive_effect name="CraftingTier" operation="base_add" level="46,53,60,67,100" value="1,2,3,4,4" tags="gunBotT2JunkTurret"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,30,100" value="1,2,3,4,5,5" tags="gunBotT2JunkTurretWildWest"/>
 			<!--passive_effect name="CraftingTier" operation="base_add" level="76,84,92,100" value="1,2,3,4" tags="gunBotT3JunkDrone"/-->
 		</effect_group>
 	</crafting_skill>
