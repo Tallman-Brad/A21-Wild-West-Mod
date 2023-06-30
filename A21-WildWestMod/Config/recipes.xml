@@ -4504,32 +4504,32 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="resourceScrapPolymers" count="50"/>
 		<ingredient name="resourceLeather" count="50"/>
 		<ingredient name="resourceDuctTape" count="50"/>		
-		<ingredient name="resourceCloth" count="2000"/>
-		<ingredient name="ammoGasCan" count="2000"/>
+		<ingredient name="resourceCloth" count="1500"/>
+		<ingredient name="ammoGasCan" count="3000"/>
 	</recipe>
 
 	<recipe name="vehicleBalloon2Placeable" count="1" craft_area="workbench" tags="learnable">
 		<ingredient name="resourceScrapPolymers" count="50"/>
 		<ingredient name="resourceLeather" count="50"/>
 		<ingredient name="resourceDuctTape" count="50"/>		
-		<ingredient name="resourceCloth" count="2000"/>
-		<ingredient name="ammoGasCan" count="2000"/>
+		<ingredient name="resourceCloth" count="1500"/>
+		<ingredient name="ammoGasCan" count="3000"/>
 	</recipe>
 	
 	<recipe name="vehicleBalloon3Placeable" count="1" craft_area="workbench" tags="learnable">
 		<ingredient name="resourceScrapPolymers" count="50"/>
 		<ingredient name="resourceLeather" count="50"/>
 		<ingredient name="resourceDuctTape" count="50"/>		
-		<ingredient name="resourceCloth" count="2000"/>
-		<ingredient name="ammoGasCan" count="2000"/>
+		<ingredient name="resourceCloth" count="1500"/>
+		<ingredient name="ammoGasCan" count="3000"/>
 	</recipe>
 	
 	<recipe name="vehicleBalloon4Placeable" count="1" craft_area="workbench" tags="learnable">
 		<ingredient name="resourceScrapPolymers" count="50"/>
 		<ingredient name="resourceLeather" count="50"/>
 		<ingredient name="resourceDuctTape" count="50"/>		
-		<ingredient name="resourceCloth" count="2000"/>
-		<ingredient name="ammoGasCan" count="2000"/>
+		<ingredient name="resourceCloth" count="1500"/>
+		<ingredient name="ammoGasCan" count="3000"/>
 	</recipe>
 
 </set>

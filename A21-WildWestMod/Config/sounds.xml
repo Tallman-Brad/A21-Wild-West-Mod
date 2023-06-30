@@ -1,0 +1,126 @@
+<wildwestmod>
+
+<!-- Timed Dynamite -->
+<set xpath="/Sounds/SoundDataNode[@name='charge_keypress']/AudioClip/@ClipName">Sounds/Weapons/weapon_jam1</set>
+<set xpath="/Sounds/SoundDataNode[@name='charge_keypress_armed']/AudioClip/@ClipName">Sounds/Weapons/weapon_jam2</set>
+<set xpath="/Sounds/SoundDataNode[@name='Supply_Crate_Plane_lp']/AudioClip/@ClipName">#@modfolder:Resources/Steamsounds.unity3d?SteamTrainChug Away</set>
+
+  <append xpath="/Sounds">
+  
+<!-- Gatling Gun - Thank you to Snufkin for base inspiration -->
+
+		<SoundDataNode name="GatlingWindup">
+			<AudioSource name="Sounds/AudioSource_Reloads"/>
+			<Noise ID="1" noise="7" time="3" muffled_when_crouched="0.5"/>
+			<AudioClip ClipName="Sounds/Weapons/weapon_jam1"/>
+			<AudioClip ClipName="Sounds/Weapons/weapon_jam2"/>
+			<AudioClip ClipName="Sounds/Weapons/weapon_jam3"/>
+			<LowestPitch name="0"/>
+			<HighestPitch name="0"/>
+			<LocalCrouchVolumeScale value="1.0"/>
+			<CrouchNoiseScale value="0.5"/>
+			<NoiseScale value="1"/>
+			<MaxVoices value="20"/>
+			<MaxVoicesPerEntity value="6"/>
+			<MaxRepeatRate value="0.001"/>
+		</SoundDataNode>  
+  
+<!-- Oakraven's Bee Hives -->
+  
+  <SoundDataNode name="BeeHiveOpen">
+  <AudioSource name="Sounds/AudioSource_VO" />
+  <Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+   <AudioClip ClipName="#@modfolder:Resources/BeeSounds.unity3d?zBeeSound2" />
+   <LocalCrouchVolumeScale name="1.0" />
+   <CrouchNoiseScale name="0.5" />
+  <NoiseScale name="1" />
+  <MaxVoices name="10" />
+   <MaxRepeatRate name="1.111" />
+  </SoundDataNode> 
+  
+<!-- Oakraven's Chicken Coops -->
+
+  <SoundDataNode name="Chicken6Sounds">
+  <AudioSource name="Sounds/AudioSource_VO" />
+  <Noise ID="3" range="3" volume="25" time="10" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60" />
+   <AudioClip ClipName="#@modfolder:Resources/ChickenCoop.unity3d?Chicken1" />
+   <LocalCrouchVolumeScale name="1.0" />
+   <CrouchNoiseScale name="0.5" />
+  <NoiseScale name="1" />
+  <MaxVoices name="10" />
+   <MaxRepeatRate name="1.111" />
+  </SoundDataNode>
+  
+<!-- Steam Horse -->
+
+<SoundDataNode name="Train_horn"> <AudioSource name="Sounds/AudioSource_SmallHorn"/>
+	<Noise ID="4" noise="60" time="3" heat_map_strength="0.2" heat_map_time="90"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainSteamWhistle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainSteamWhistle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainSteamWhistle"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+<SoundDataNode name="Train_idle_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?TrainWaiting" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="Train_max_speed_lp"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?SteamTrainChug Away" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+		
+<SoundDataNode name="Train_accel1"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="3" noise="30" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/Steamsounds.unity3d?SteamTrainChug Away"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+ 
+<!-- Balloons -->
+ 
+<SoundDataNode name="oakidl"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakidl" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="oakraven"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakraven" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+
+
+<SoundDataNode name="oakstop"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakstop"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
+
+<SoundDataNode name="oakstart"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakstart"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<!-- Oak Melee Pots and Pans -->
+ 
+<SoundDataNode name="pan_swinglight"> <AudioSource name="Sounds/AudioSource_Melee"/> <NetworkAudioSource name="Sounds/AudioSource_Melee"/>
+	<AudioClip ClipName="#@modfolder:Resources/pan.unity3d?Bongo"/>
+	<LocalCrouchVolumeScale value="0.25"/> <CrouchNoiseScale value="0.05"/> <NoiseScale value=".1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+<SoundDataNode name="pan_swingheavy_ladle"> <AudioSource name="Sounds/AudioSource_Melee"/> <NetworkAudioSource name="Sounds/AudioSource_Melee"/>
+  <AudioClip ClipName="#@modfolder:Resources/pan.unity3d?Bongo2"/>
+	<LowestPitch name="1.1"/>
+	<HighestPitch name="1.35"/>
+	<LocalCrouchVolumeScale value="0.25"/> <CrouchNoiseScale value="0.05"/> <NoiseScale value=".1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+<SoundDataNode name="pan_swingheavy_pan"> <AudioSource name="Sounds/AudioSource_Melee"/> <NetworkAudioSource name="Sounds/AudioSource_Melee"/>
+  <AudioClip ClipName="#@modfolder:Resources/pan.unity3d?Bongo2"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="0.25"/> <CrouchNoiseScale value="0.05"/> <NoiseScale value=".1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+	
+<SoundDataNode name="pan_swingheavy_skillet"> <AudioSource name="Sounds/AudioSource_Melee"/> <NetworkAudioSource name="Sounds/AudioSource_Melee"/>
+  <AudioClip ClipName="#@modfolder:Resources/pan.unity3d?Bongo2"/>
+	<LowestPitch name="0.8"/>
+	<HighestPitch name="0.95"/>
+	<LocalCrouchVolumeScale value="0.25"/> <CrouchNoiseScale value="0.05"/> <NoiseScale value=".1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+  </append>
+
+</wildwestmod>
+
+
+

@@ -213,7 +213,7 @@
 	<book_group name="skillEnforcer" parent="attBooks" name_key="perkEnforcer0Name" desc_key="perkEnforcer0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_gunslinger"><effect_group/></book_group>
 	<book_group name="skillNeedleAndThread" parent="attBooks" name_key="perkNeedleAndThread0Name" desc_key="perkNeedleAndThread0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_light_armor"><effect_group/></book_group>
 	<book_group name="skillNightStalker" parent="attBooks" name_key="perkNightStalker0Name" desc_key="perkNightStalker0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_sneak_attack"><effect_group/></book_group>
-	<book_group name="skillPistolPete" parent="attBooks" name_key="perkPistolPete0Name" desc_key="perkPistolPete0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_pistol"><effect_group/></book_group>
+	<book_group name="skillPistolPete" parent="attBooks" name_key="perkPistolPete0Name" desc_key="perkPistolPete0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_gunslinger"><effect_group/></book_group>
 	<book_group name="skillArchery" parent="attBooks" name_key="perkRangers0Name" desc_key="perkRangers0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_archery"><effect_group/></book_group>
 	<book_group name="skillShotguns" parent="attBooks" name_key="perkShotgunMessiah0Name" desc_key="perkShotgunMessiah0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shotgun"><effect_group/></book_group>
 	<book_group name="skillSniper" parent="attBooks" name_key="perkSniper0Name" desc_key="perkSniper0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_long_shot"><effect_group/></book_group>
@@ -422,7 +422,7 @@
 	</crafting_skill>
 
 		<!-- *** HANDGUN_SKILLS -->
-	<crafting_skill name="craftingHandguns" max_level="100" parent="attCrafting" name_key="craftingHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_pistol">
+	<crafting_skill name="craftingHandguns" max_level="100" parent="attCrafting" name_key="craftingHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_gunslinger">
 
 		<display_entry item="gunHandgunT0PipePistol" unlock_level="1,3,5,7,10" />
 		<display_entry item="gunHandgunT1666Revolver" unlock_level="11,13,16,19,22" />
@@ -517,17 +517,17 @@
 		<display_entry icon="mineCookingPot" name_key="explosivesT1-3" has_quality="false" unlock_level="10" >
 			<!--unlock_entry item="thrownAmmoPipeBomb" unlock_tier="1" /-->
 			<!--unlock_entry item="thrownGrenade" unlock_tier="2" /-->
-			<unlock_entry item="mineCookingPot" unlock_tier="3" />
+			<unlock_entry item="mineCookingPot" unlock_tier="1" />
 		</display_entry>
 		<display_entry icon="thrownDynamite" name_key="explosivesT2-1" has_quality="false" unlock_level="12" >
 			<unlock_entry item="thrownDynamite" unlock_tier="1" />
 			<!--unlock_entry item="thrownGrenadeContact" unlock_tier="2" /-->
 			<!--unlock_entry item="mineHubcap" unlock_tier="3" /-->
 		</display_entry>
-		<display_entry icon="resourceGunPowder" name_key="explosivesT3-2" has_quality="false" unlock_level="30" >
-			<!--unlock_entry item="mineAirFilter" unlock_tier="1" /-->
+		<display_entry icon="thrownTimedDynamite" name_key="explosivesT3-2" has_quality="false" unlock_level="25" >
+			<unlock_entry item="thrownTimedDynamite" unlock_tier="1" />
 			<unlock_entry item="resourceGunPowderBundle" unlock_tier="2" />
-			<!--unlock_entry item="thrownTimedCharge" unlock_tier="3" /-->
+			<!--unlock_entry item="thrownTimedDynamite" unlock_tier="3" /-->
 		</display_entry>
 				<!--display_entry icon="ammoRocketFrag" name_key="explosivesT4" has_quality="false" unlock_level="45" >
 			<unlock_entry item="resourceRocketTip,resourceRocketCasing,ammoRocketFrag,ammoRocketHE" unlock_tier="1" />
@@ -546,8 +546,8 @@
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="mineHubcap"/-->
 
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="mineAirFilter"/-->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="thrownTimedDynamite"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="resourceGunPowderBundle"/>
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="thrownTimedCharge"/-->
 
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="resourceRocketTip,resourceRocketCasing,ammoRocketFrag,ammoRocketHE"/-->
 
@@ -559,7 +559,7 @@
 	</crafting_skill>
 
 		<!-- *** ROBOTIC_SKILLS -->
-	<crafting_skill name="craftingRobotics" max_level="100" parent="attCrafting" name_key="craftingRoboticsName" desc_key="craftingRoboticsDesc" long_desc_key="craftingRoboticsLongDesc" icon="ui_game_symbol_junk_turret">
+	<crafting_skill name="craftingRobotics" max_level="100" parent="attCrafting" name_key="craftingRoboticsName" desc_key="craftingRoboticsDesc" long_desc_key="craftingRoboticsLongDesc" icon="ui_game_symbol_electric_turret">
 
 		<!--display_entry item="meleeWpnBatonT0PipeBaton" unlock_level="1,3,5,7,10" /-->
 		<!--display_entry item="gunBotT1JunkSledge" unlock_level="11,13,16,19,22" /-->
@@ -621,7 +621,7 @@
 		<display_entry icon="medicalFirstAidKit,drugSteroids" name_key="medicalT3-1,medicalT3-3" has_quality="false" unlock_level="50,75" >
 			<unlock_entry item="medicalFirstAidKit" unlock_tier="1" />
 			<!--unlock_entry item="drugAntibiotics" unlock_tier="2" /-->
-			<unlock_entry item="drugSteroids" unlock_tier="3" />
+			<unlock_entry item="drugSteroids" unlock_tier="2" />
 		</display_entry>
 
 		<effect_group>
@@ -814,30 +814,30 @@
 	</crafting_skill>
 
 		<!-- *** VEHICLE_SKILLS -->
-	<crafting_skill name="craftingVehicles" max_level="100" parent="attCrafting" name_key="craftingVehiclesName" desc_key="craftingVehiclesDesc" long_desc_key="craftingVehiclesLongDesc" icon="ui_game_symbol_4x4">
+	<crafting_skill name="craftingVehicles" max_level="100" parent="attCrafting" name_key="craftingVehiclesName" desc_key="craftingVehiclesDesc" long_desc_key="craftingVehiclesLongDesc" icon="ui_game_symbol_balloon">
 
 		<display_entry icon="vehicleBicyclePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5" >
 			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan,ammoGasCanBundle" unlock_tier="1" />
 		</display_entry>
 		<!--display_entry icon="vehicleMinibikePlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="20" >
 			<unlock_entry item="vehicleMinibikeChassis,vehicleMinibikeHandlebars,resourceOil,ammoGasCan" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="vehicleMotorcyclePlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="45" >
-			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="vehicle4x4TruckPlaceable" name_key="vehiclesT4" has_quality="false" unlock_level="70" >
-			<unlock_entry item="vehicle4x4TruckChassis,vehicle4x4TruckAccessories" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="vehicleGyrocopterPlaceable" name_key="vehiclesT5" has_quality="false" unlock_level="100" >
-			<unlock_entry item="vehicleGyroCopterChassis,vehicleGyroCopterAccessories" unlock_tier="1" />
 		</display_entry-->
+		<!--display_entry icon="vehicleMotorcyclePlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="45" >
+			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle" unlock_tier="1" />
+		</display_entry-->
+		<display_entry icon="vehicleSteamHorse" name_key="vehiclesT4" has_quality="false" unlock_level="50" >
+			<unlock_entry item="vehicleSteamHorsePlaceable" unlock_tier="1" />
+		</display_entry>
+		<display_entry icon="balloon1" name_key="vehiclesT5" has_quality="false" unlock_level="75" >
+			<unlock_entry item="vehicleBalloonPlaceable,vehicleBalloon2Placeable,vehicleBalloon3Placeable,vehicleBalloon4Placeable" unlock_tier="1" />
+		</display_entry>
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan,ammoGasCanBundle"/>
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,carBattery,resourceOil,ammoGasCan"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="vehicle4x4TruckChassis,vehicle4x4TruckAccessories"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories"/-->
+			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,carBattery,resourceOil,ammoGasCan"/-->
+			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle"/-->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="vehicleSteamHorsePlaceable"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="vehicleBalloonPlaceable,vehicleBalloon2Placeable,vehicleBalloon3Placeable,vehicleBalloon4Placeable"/>
 
 		</effect_group>
 	</crafting_skill>
@@ -2901,6 +2901,25 @@
 			<effect_description level="3" desc_key="perkLockPickingRank3Desc" long_desc_key="perkLockPickingRank3LongDesc"/>
 		</effect_group>
 	</perk>
+
+		<!-- *** WILD_WEST_EXPERIENCE -->	
+	<perk name="perkWildWestExperience" parent="skillIntellectCraftsmanship" name_key="perkWildWestExperienceName" desc_key="perkWildWestExperienceDesc" icon="ui_game_symbol_wildwestexperience">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="1" desc_key="reqIntellectLevel01"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel03"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="5" desc_key="reqIntellectLevel05"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
+
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value=".2,1 " level="1,5"/>
+
+				<effect_description level="1" desc_key="perkWildWestExperienceRank1Desc" long_desc_key="perkWildWestExperienceRank1LongDesc"/>
+				<effect_description level="2" desc_key="perkWildWestExperienceRank2Desc" long_desc_key="perkWildWestExperienceRank2LongDesc"/>
+				<effect_description level="3" desc_key="perkWildWestExperienceRank3Desc" long_desc_key="perkWildWestExperienceRank3LongDesc"/>
+				<effect_description level="4" desc_key="perkWildWestExperienceRank4Desc" long_desc_key="perkWildWestExperienceRank4LongDesc"/>
+				<effect_description level="5" desc_key="perkWildWestExperienceRank5Desc" long_desc_key="perkWildWestExperienceRank5LongDesc"/>
+			</effect_group>
+		</perk>
 
 					<!-- *** -->
 
