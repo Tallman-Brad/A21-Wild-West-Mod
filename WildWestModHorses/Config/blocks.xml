@@ -1,0 +1,9 @@
+﻿<configs>
+
+	<!-- Apples for the Wild West due to Zero Rotten Trash Plastic Bags -->
+	
+	<append xpath="/blocks/block[@name='treeMaster']" >
+		<drop event="Destroy" name="foodApple" prob=".175" count="1,2"/>
+	</append>
+
+</configs>

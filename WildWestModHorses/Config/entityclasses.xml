@@ -1,0 +1,86 @@
+<configs>
+
+		<!-- Horse - Zilox and Darkstardragon -->
+
+		<append xpath="/entity_classes/entity_class[@name='playerMale']">
+			<effect_group>	
+				<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
+				<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
+			</effect_group>
+		</append>
+
+<append xpath="/entity_classes">
+
+		<!-- VEHICLES -->
+		
+		<!-- Horse - Zilox and Darkstardragon -->	
+
+		<entity_class name="vehicleWWMHorseT1">
+			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?MedievalHorse.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="organic"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="vehicleMinibike"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="ui_game_symbol_horse"/>
+			<property name="NavObject" value="Horse" />
+			<property name="Buffs" value="buffHorseMovement"/>		
+		</entity_class>
+		
+		<entity_class name="vehicleWWMHorseT2">
+			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?MedievalHorse.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="organic"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="vehicleMotorcycle"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="ui_game_symbol_horse"/>
+			<property name="NavObject" value="Horse" />
+			<property name="Buffs" value="buffHorseMovement"/>	
+		</entity_class>
+		
+		<entity_class name="vehicleWWMHorseT3">
+			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
+			<property name="Class" value="EntityVJeep"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?MedievalHorse.prefab"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="organic"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="vehicle4x4Truck"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="ui_game_symbol_horse"/>
+			<property name="NavObject" value="Horse" />
+			<property name="Buffs" value="buffHorseMovement"/>	
+		</entity_class>
+
+</append>	
+	
+</configs>
