@@ -76,22 +76,22 @@
 <!-- Balloons -->
  
 <SoundDataNode name="oakidl"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
-	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakidl" Loop="true"/>
+	<AudioClip ClipName="#@modfolder:Resources/A21NewBalloons.unity3d?oakidl" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="oakraven"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
-	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakraven" Loop="true"/>
+	<AudioClip ClipName="#@modfolder:Resources/A21NewBalloons.unity3d?oakraven" Loop="true"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
 
 
 <SoundDataNode name="oakstop"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
 	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakstop"/>
+	<AudioClip ClipName="#@modfolder:Resources/A21NewBalloons.unity3d?oakstop"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>	
 
 <SoundDataNode name="oakstart"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
 	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
-	<AudioClip ClipName="#@modfolder:Resources/newballoon2.unity3d?oakstart"/>
+	<AudioClip ClipName="#@modfolder:Resources/A21NewBalloons.unity3d?oakstart"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
 <!-- Oak Melee Pots and Pans -->

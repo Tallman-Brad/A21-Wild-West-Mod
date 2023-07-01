@@ -27,7 +27,7 @@
 	<property name="Tags" value="vehicle,vehicleballoon,usesGas"/>
 	<property name="Class" value="EntityVBlimp"/>
 	<property name="Parent" value="Cars"/>
-	<property name="Prefab" value="#@modfolder:Resources/A21Balloons.unity3d?balloon_Prefab"/>
+	<property name="Prefab" value="#@modfolder:Resources/A21NewBalloons.unity3d?balloon_Prefab"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
@@ -48,7 +48,7 @@
 	<property name="Tags" value="vehicle,vehicleballoon,usesGas"/>
 	<property name="Class" value="EntityVBlimp"/>
 	<property name="Parent" value="Cars"/>
-	<property name="Prefab" value="#@modfolder:Resources/A21Balloons.unity3d?balloon2_Prefab"/>
+	<property name="Prefab" value="#@modfolder:Resources/A21NewBalloons.unity3d?balloon2_Prefab"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
@@ -69,7 +69,7 @@
 	<property name="Tags" value="vehicle,vehicleballoon,usesGas"/>
 	<property name="Class" value="EntityVBlimp"/>
 	<property name="Parent" value="Cars"/>
-	<property name="Prefab" value="#@modfolder:Resources/A21Balloons.unity3d?balloon3_Prefab"/>
+	<property name="Prefab" value="#@modfolder:Resources/A21NewBalloons.unity3d?balloon3_Prefab"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
@@ -90,7 +90,7 @@
 	<property name="Tags" value="vehicle,vehicleballoon,usesGas"/>
 	<property name="Class" value="EntityVBlimp"/>
 	<property name="Parent" value="Cars"/>
-	<property name="Prefab" value="#@modfolder:Resources/A21Balloons.unity3d?balloon4_Prefab"/>
+	<property name="Prefab" value="#@modfolder:Resources/A21NewBalloons.unity3d?balloon4_Prefab"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="SurfaceCategory" value="metal"/>
 	<property name="IgnoreTrigger" value="true"/>
