@@ -1,0 +1,104 @@
+<wildwestmod>
+
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="WWMHorseDecoChecker">
+			<requirement name="NotHasBuff" buff="WWMHorseDecoChecker"/>
+		</triggered_effect>
+	</append>
+
+	<append xpath="/buffs">
+	
+		<buff name="WWMHorseDecoChecker" hidden="true">
+			<stack_type value="replace"/>
+			<duration value="500"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="100" buff="WWMHorseDeco">
+					<requirement name="EntityTagCompare" target="other" tags="horsedeco"/>
+					<requirement name="NotHasBuff" target="other" buff="WWMHorseDeco"/>
+				</triggered_effect>
+			</effect_group>				
+		</buff>
+		
+		<!-- Horse Animation - Zilox and Darkstardragon -->		
+
+	<buff name="buffHorseMovement" hidden="true">
+		<duration value="0"/>
+
+			<effect_group> <!-- Idle >>> to walk -->
+                <requirement name="CVarCompare" cvar="$RFood" operation="Equals" value=".002"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="Horse-Idle"/>    
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="Horse-Walk"/>    
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="Horse-Run"/>   
+            </effect_group>
+            <effect_group> <!-- walk >>> run -->
+                <requirement name="CVarCompare" cvar="$RFood" operation="Equals" value=".001"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="Horse-Idle"/>    
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="Horse-Walk"/>    
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="Horse-Run"/>   
+            </effect_group>
+            <effect_group> <!-- run >>> idle -->
+                <requirement name="CVarCompare" cvar="$RFood" operation="Equals" value="1"/>
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="Horse-Idle"/>    
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="Horse-Walk"/>    
+                <triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="Horse-Run"/>
+            </effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffVehicleHorseDamageOverTime">
+					<requirement name="EntityTagCompare" tags="horsehealth"/>
+			</triggered_effect>
+		</effect_group>
+	</buff>
+	
+	<buff name="buffHorseMovementPlayer" hidden="true">
+		<stack_type value="replace"/>
+		<update_rate value=".1"/>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value="0"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.1" cvar="$RFood" operation="set" value="1"/>
+
+		</effect_group>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value="0.002"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.1" cvar="$RFood" operation="set" value=".002"/> 
+
+
+		</effect_group>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value=".001"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.1" cvar="$RFood" operation="set" value=".001"/>
+		</effect_group>
+	</buff>
+	
+<!-- WWM Horse Deco -->		
+
+		<buff name="WWMHorseDeco" hidden="true">	
+			<stack_type value="ignore"/>			
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="0.45,-1.0,-0.25" local_rotation="0,0,0" parent_transform="horse Spine2"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Ranged/LeverActionRifle/leverActionRiflePrefab.prefab" local_offset="0.45,-0.28,-0.25" local_rotation="270,180,270" parent_transform="horse Spine2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/LootContainers/weapon_bags_smallPrefab.prefab" local_offset="0.14,0,-0.31" local_rotation="0,90,90" parent_transform="horse Spine2"/>				
+			</effect_group> <!-- offsets - (D/-U)(F/-B)(L/R) -->
+		</buff>
+		
+<!-- Telric's Horse Health Care -->
+
+<buff name="buffvehicleWWMHorseHeal" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group name="Heal">
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="1000" />
+		</effect_group>
+</buff>
+<buff name="buffVehicleHorseDamageOverTime" hidden="true">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<update_rate value="15" />
+		<effect_group name="Damage over Time">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="10" />
+		</effect_group>
+</buff>
+
+	</append>
+	
+</wildwestmod>

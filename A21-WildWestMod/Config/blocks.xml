@@ -154,6 +154,13 @@
 	<set xpath="/blocks/block[@name='cntCementMixerBustedRandomLootHelper']/property[@name='ModelOffset']/@value">0,0.5,0</set>	
 <!-- Wood Saw -->
 	<set xpath="/blocks/block[@name='tableSaw']/property[@name='Model']/@value">#@modfolder:Resources/CementMixer2.unity3d?TableSaw2</set>
+	
+	<!-- Apples for the Wild West due to Zero Rotten Trash Plastic Bags -->
+	
+	<append xpath="/blocks/block[@name='treeMaster']" >
+		<drop event="Destroy" name="foodApple" prob=".175" count="1,2"/>
+	</append>
+	
 	<!-- A19 Farming For A20 by Syco54645 -->
 
 	<append xpath="/blocks/block[@name='plantedMushroom3HarvestPlayer']">
