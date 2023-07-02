@@ -253,8 +253,6 @@
 	<remove xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Destroy']" />
 	<set xpath="/blocks/block[@name='plantedPumpkin3HarvestPlayer']/drop[@event='Harvest']/@count">1</set>
 	
-<!-- Remove drop from campfire to avoid exploit -->
-	<set xpath="/blocks/block[@name='campfire']/drop[@event='Destroy']/@count">0</set>
 <!-- Adding Resin to all Trees -->
 	
 	<append xpath="/blocks/block[@name='treeMaster']" >
@@ -332,52 +330,61 @@
 <!-- Oakraven's Cookers -->
 
 <block name="OaksCooker">
-    <property name="Extends" value="campfire"/>
 	<property name="Class" value="Campfire"/>
-	<property name="Material" value="MstoneNoGlue"/>
-	<property name="DescriptionKey" value="OaksCookerDesc"/>	
-	<property name="CustomIcon" value="cookerbigoak"/>
-	<property name="MaxDamage" value="100"/>
-	<property name="StabilitySupport" value="false"/>
-	<property name="DisplayType" value="blockMulti"/>
-	<property name="MultiBlockDim" value="2,2,1"/>
-	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?CookerBigoak"/>
-	<property name="ImposterDontBlock" value="true"/>
-	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<property name="IsTerrainDecoration" value="true"/>
-	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?CookerFX"/>
-	<property name="ParticleOffset" value="0,0.5,0.5"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="5"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
-	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
-	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
-	<!-- property name="UnlockedBy" value="perkMasterChef"/ -->	
-
 	<property class="Workstation">
 		<property name="Modules" value="tools,output,fuel,input"/>
 		<property name="CraftingAreaRecipes" value="campfire"/>		
 		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="OaksCookerDesc"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
 	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
 	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?CookerBigoak"/>
+	<property name="CustomIcon" value="cookerbigoak"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?CookerFX"/>
+	<property name="ParticleOffset" value="0,0.5,0.5"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="100"/>
+	<property name="HeatMapStrength" value="3"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
 	<property name="CloseSound" value="campfire_close"/>
 	<property name="CraftSound" value="campfire_cook_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="WorkstationJournalTip" value="heatMapTip"/>
-	<property name="PickupJournalEntry" value="campfireTip"/>
-	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
 	<drop event="Destroy" name="CookerVariantHelper" count="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
 	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-	<property name="EconomicValue" value="5"/>
-	<property name="EconomicBundleSize" value="1"/>
-	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-	<property name="SortOrder1" value="70i0"/>
 </block>
 
 <block name="CookerVariantHelper">
@@ -391,105 +398,180 @@
 </block>
 
 <block name="PotStove">
-    <property name="Extends" value="OaksCooker"/>
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="CraftingAreaRecipes" value="campfire"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
 	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?PotStove"/>
 	<property name="CustomIcon" value="potstove"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
-	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?PotStove"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
 	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?potstoveFX"/>
 	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
-	<!-- property name="UnlockedBy" value="perkMasterChef"/ -->		
-
-	<property class="Workstation">
-		<property name="Modules" value="tools,output,fuel,input"/>
-		<property name="CraftingAreaRecipes" value="campfire"/>
-		<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-	<property name="CraftActionName" value="lblContextActionCook"/>
-	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="100"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
 	<property name="CloseSound" value="campfire_close"/>
 	<property name="CraftSound" value="campfire_cook_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="WorkstationJournalTip" value="heatMapTip"/>
-	<property name="PickupJournalEntry" value="campfireTip"/>
-	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="CookerVariantHelper" count="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
 	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-	<property name="EconomicValue" value="5"/>
-	<property name="EconomicBundleSize" value="1"/>
-	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-	<property name="SortOrder1" value="70i0"/>
 </block>
 
 <block name="IronStove">
-    <property name="Extends" value="OaksCooker"/>
-	<property name="DescriptionKey" value="IronStoveDesc"/>
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="CraftingAreaRecipes" value="campfire"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?Ironstove"/>
 	<property name="CustomIcon" value="ironstove"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
-	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?Ironstove"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
 	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?IronstoveFX"/>
 	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
-	<!-- property name="UnlockedBy" value="perkMasterChef"/ -->		
-
-	<property class="Workstation">
-		<property name="Modules" value="tools,output,fuel,input"/>
-		<property name="CraftingAreaRecipes" value="campfire"/>
-		<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-	<property name="CraftActionName" value="lblContextActionCook"/>
-	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="100"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
 	<property name="CloseSound" value="campfire_close"/>
 	<property name="CraftSound" value="campfire_cook_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="WorkstationJournalTip" value="heatMapTip"/>
-	<property name="PickupJournalEntry" value="campfireTip"/>
-	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="CookerVariantHelper" count="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
 	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-	<property name="EconomicValue" value="5"/>
-	<property name="EconomicBundleSize" value="1"/>
-	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-	<property name="SortOrder1" value="70i0"/>
 </block>
 
 <block name="StoneStove">
-    <property name="Extends" value="OaksCooker"/>
-	<property name="DescriptionKey" value="StoneStoveDesc"/>
+	<!-- Class -->
+	<property name="Class" value="Campfire"/>
+	<property class="Workstation">
+		<property name="Modules" value="tools,output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
+		<property name="CraftingAreaRecipes" value="campfire"/>
+	</property>
+	<!-- UI_Info -->
+	<property name="CreativeMode" value="Player"/>
+	<property name="DescriptionKey" value="PotStoveDesc"/>
+	<property name="PickupJournalEntry" value="campfireTip"/>
+	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
+	<property name="WorkstationJournalTip" value="heatMapTip"/>
+	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<property name="CraftActionName" value="lblContextActionCook"/>
+	<property name="Stacknumber" value="1"/>
+	<!-- Visual -->
+	<property name="Material" value="MstoneNoGlue"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?StoneStove"/>
 	<property name="CustomIcon" value="stonestove"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,2,1"/>
-	<property name="Model" value="#@modfolder:Resources/cookingstations.unity3d?StoneStove"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
 	<property name="ParticleName" value="#@modfolder:Resources/cookingstations.unity3d?StoneStoveFX"/>
 	<property name="ParticleOffset" value="0.5,0.5,0.5"/>
-	<!-- property name="UnlockedBy" value="perkMasterChef"/ -->		
-
-	<property class="Workstation">
-		<property name="Modules" value="tools,output,fuel,input"/>
-		<property name="CraftingAreaRecipes" value="campfire"/>
-		<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	</property>
-	<property name="WorkstationIcon" value="ui_game_symbol_campfire"/>
-	<property name="CraftActionName" value="lblContextActionCook"/>
-	<property name="CraftIcon" value="ui_game_symbol_spatula"/>
+	<!-- Placement -->
+	<property name="Place" value="TowardsPlacer90"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Value -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="100"/>
+	<property name="HeatMapStrength" value="5"/>
+	<property name="HeatMapTime" value="5000"/>
+	<property name="HeatMapFrequency" value="1000"/>
+	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
 	<property name="CloseSound" value="campfire_close"/>
 	<property name="CraftSound" value="campfire_cook_click"/>
 	<property name="CraftCompleteSound" value="campfire_complete_item"/>
-	<property name="WorkstationJournalTip" value="heatMapTip"/>
-	<property name="PickupJournalEntry" value="campfireTip"/>
-	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<property class="RepairItems">
+		<property name="resourceRockSmall" value="5"/>
+	</property>
+	<drop event="Destroy" name="CookerVariantHelper" count="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B281"/>
+	<property name="SortOrder2" value="0000"/>
 	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
-	<property name="EconomicValue" value="5"/>
-	<property name="EconomicBundleSize" value="1"/>
-	<property name="SellableToTrader" value="false"/>
 	<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
-	<property name="SortOrder1" value="70i0"/>
 </block>
 
 	<!-- Player Stove -->
@@ -529,6 +611,7 @@
 	<property name="WorkstationJournalTip" value="heatMapTip"/>
 	<property name="PickupJournalEntry" value="campfireTip"/>
 	<property class="RepairItems"> <property name="resourceRockSmall" value="5"/> </property>
+	<drop event="Destroy" name="CookerVariantHelper" count="1"/>
 	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
