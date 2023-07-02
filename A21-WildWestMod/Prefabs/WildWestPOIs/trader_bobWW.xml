@@ -24,15 +24,15 @@
   <property name="TeleportVolumeSize" value="" />
   <property name="TeleportVolumeStart" value="" />
   <property class="Stats">
-    <property name="TotalVertices" value="682113" />
-    <property name="TotalTriangles" value="325041" />
+    <property name="TotalVertices" value="686314" />
+    <property name="TotalTriangles" value="336720" />
     <property class="BlockEntities">
-      <property name="Vertices" value="585597" />
-      <property name="Triangles" value="267552" />
+      <property name="Vertices" value="590562" />
+      <property name="Triangles" value="279459" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="90966" />
-      <property name="Triangles" value="49343" />
+      <property name="Vertices" value="90198" />
+      <property name="Triangles" value="49115" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -55,7 +55,7 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes6">
-      <property name="Vertices" value="4738" />
+      <property name="Vertices" value="4742" />
       <property name="Triangles" value="7448" />
     </property>
   </property>
@@ -70,9 +70,6 @@
     </property>
     <property class="Trader">
       <property name="0" value="5, 2, 12" />
-    </property>
-    <property class="FetchContainer">
-      <property name="0" value="30, 2, 9" />
     </property>
     <property class="quest_feather">
       <property name="0" value="22, 11, 30" />
