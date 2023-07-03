@@ -89,7 +89,10 @@
 		<trader_item_group name="groupMeleeAll">
 		<!-- *** Melee_T1 -->
 			<item name="meleeWpnBladeT1HuntingKnife" quality="2,5"/>
+			<item name="meleeWpnBladeT1HuntingKnifeObsidian" quality="2,5"/> <!-- Wild West Mod -->
+			<item name="meleeWpnBladeT1HuntingKnifeMedusa" quality="2,5"/> <!-- Wild West Mod -->
 			<item name="meleeWpnClubT1BaseballBat" quality="2,5"/>
+			<item name="meleeWpnClubT1OldPan" quality="2,5"/> <!-- Wild West Mod -->
 			<item name="meleeWpnSpearT1IronSpear" quality="2,5"/>
 			<item name="meleeWpnSledgeT1IronSledgehammer" quality="2,5"/>
 			<item name="meleeWpnKnucklesT1IronKnuckles" quality="2,5"/>
@@ -97,7 +100,9 @@
 			<item name="meleeWpnBatonT2StunBaton" quality="2,5"/>
 		<!-- *** Melee_T3 -->
 			<item name="meleeWpnBladeT3Machete" quality="2,5"/>
+			<item name="meleeWpnBladeT3MacheteMini" quality="2,5"/> <!-- Wild West Mod -->
 			<item name="meleeWpnClubT3SteelClub" quality="2,5"/>
+			<item name="meleeWpnClubT3Skillet" quality="2,5"/> <!-- Wild West Mod -->
 			<item name="meleeWpnSpearT3SteelSpear" quality="2,5"/>
 			<item name="meleeWpnSledgeT3SteelSledgehammer" quality="2,5"/>
 			<item name="meleeWpnKnucklesT3SteelKnuckles" quality="2,5"/>
@@ -110,10 +115,10 @@
 			<item name="gunHandgunT0PipePistol" quality="3,5"/>
 			<item name="gunShotgunT0PipeShotgun" quality="3,5"/>
 			<item name="gunRifleT0PipeRifle" quality="3,5"/>
-			<item name="gunMGT0PipeMachineGun" quality="3,5"/>
+			<!--item name="gunMGT0PipeMachineGun" quality="3,5"/-->
 		<!-- *** Ranged_Weapons_T1 -->
 			<item name="gunBowT1WoodenBow" quality="2,5"/>
-			<item name="gunHandgunT1Pistol" quality="2,5"/>
+			<item name="gunHandgunT1666Revolver" quality="2,5"/> <!-- Was Pistol -->
 			<item name="gunShotgunT1DoubleBarrel" quality="2,5"/>
 			<item name="gunRifleT1HuntingRifle" quality="2,5"/>
 			<!--item name="gunMGT1AK47" quality="2,5"/-->
@@ -250,6 +255,7 @@
 		<!-- *** T1_Melee_Mods -->
 			<item name="modMeleeSerratedBlade"/>
 			<item name="modMeleeStructuralBrace"/>
+			<item name="modWeaponLubrication"/> <!-- Wild West Mod -->
 			<item name="modMeleeWeightedHead"/>
 			<item name="modMeleeGraveDigger"/>
 			<item name="modMeleeWoodSplitter"/>
@@ -281,6 +287,7 @@
 			<item name="modGunScopeSmall"/>
 			<item name="modShotgunSawedOffBarrel"/>
 			<!--item name="modGunTriggerGroupSemi"/-->
+			<item name="modWeaponLubrication"/> <!-- Wild West Mod -->
 		<!-- *** T2_Ranged_Mods -->
 			<item name="modGunBarrelExtender"/>
 			<item name="modGunCrippleEm"/>
@@ -290,6 +297,7 @@
 			<item name="modGunScopeMedium"/>
 			<item name="modGunSoundSuppressorSilencer"/>
 			<!--item name="modGunTriggerGroupBurst3"/-->
+			<item name="modGunBowArrowHandleGrip"/> <!-- Wild West Mod -->
 		<!-- *** T3_Ranged_Mods -->
 			<item name="modGunBowPolymerString"/>
 			<item name="modGunScopeLarge"/>
@@ -307,6 +315,7 @@
 			<item name="modArmorPlatingBasic"/>
 			<item name="modArmorStoragePocket"/>
 			<item name="modArmorImprovedFittings"/>
+			<item name="modArmorCowboyBoots"/> <!-- Wild West Mod -->
 		<!-- *** T2_Armor_Mods -->
 			<item name="modArmorWaterPurifier"/>
 			<item name="modArmorImpactBracing"/>
@@ -372,7 +381,7 @@
 			<item name="apparelHazmatPants"/>
 			<item name="apparelHazmatJacket"/>
 			<item name="apparelHazmatGloves"/>
-			<item name="apparelHazmatMask"/>
+			<!--item name="apparelHazmatMask"/-->
 			<item name="resourceMilitaryFiber" count="1,6" prob="2"/>
 		</trader_item_group>
 
@@ -381,7 +390,7 @@
 			<item group="skullCapAll"/>
 			<item group="ballCapAll"/>
 			<item name="armorClothHat"/>
-			<item name="armorFootballHelmet"/>
+			<!--item name="armorFootballHelmet"/-->
 			<item name="armorMiningHelmet" quality="1,5" mods="modArmorHelmetLight" mod_chance="1"/>
 		</trader_item_group>
 
@@ -406,10 +415,10 @@
 			<item name="apparelNerdGlasses" prob=".7"/>
 			<item name="apparelSkiGoggles" prob=".7"/>
 			<item name="apparelAviatorGoggles" prob=".7"/>
-			<item name="apparelNightvisionGoggles" prob=".7"/>
-			<item name="armorFootballHelmet"/>
+			<!--item name="apparelNightvisionGoggles" prob=".7"/-->
+			<!--item name="armorFootballHelmet"/-->
 			<item name="apparelCoatLeatherDuster" prob="0.2"/>
-			<item group="hazmatGear" prob="0.1"/>
+			<!--item group="hazmatGear" prob="0.1"/-->
 			<item name="apparelFacialPiercings" prob="0.1"/>
 			<item name="apparelGothBoots" prob=".3"/>
 			<item name="apparelGothPants" prob=".3"/>
@@ -670,8 +679,8 @@
 			<!-- Mo_Power_AND_Trader_Bob_Magazines -->
 			<item name="roboticsSkillMagazine" count="1,3"/>
 			<item name="vehiclesSkillMagazine" count="1,3"/>
-			<item name="electricianSkillMagazine" count="1,3"/>
-			<item name="trapsSkillMagazine" count="1,3"/>
+			<!--item name="electricianSkillMagazine" count="1,3"/-->
+			<!--item name="trapsSkillMagazine" count="1,3"/-->
 		</trader_item_group>
 
 		<!-- *** Trader_Bob_Magazines -->
@@ -683,8 +692,8 @@
 			<item name="workstationSkillMagazine" count="1,3"/>
 			<item name="roboticsSkillMagazine" count="1,3"/>
 			<item name="vehiclesSkillMagazine" count="1,3"/>
-			<item name="electricianSkillMagazine" count="1,3"/>
-			<item name="trapsSkillMagazine" count="1,3"/>
+			<!--item name="electricianSkillMagazine" count="1,3"/-->
+			<!--item name="trapsSkillMagazine" count="1,3"/-->
 		</trader_item_group>
 		
 		<!-- *** Trader_Hugh_Magazines -->
@@ -779,22 +788,24 @@
 			<item name="modGunFlashlightSchematic"/>
 			<item name="modGunScopeSmallSchematic"/>
 			<item name="modGunScopeMediumSchematic"/>
-			<item name="modGunReflexSightSchematic"/>
-			<item name="modGunTriggerGroupSemiSchematic"/>
+			<!--item name="modGunReflexSightSchematic"/-->
+			<!--item name="modGunTriggerGroupSemiSchematic"/-->
 			<item name="modGunBipodSchematic"/>
 			<item name="modGunForegripSchematic"/>
 			<item name="modGunRetractingStockSchematic"/>
 			<item name="modGunDuckbillSchematic"/>
 			<item name="modGunChokeSchematic"/>
-			<item name="modGunMagazineExtenderSchematic"/>
+			<!--item name="modGunMagazineExtenderSchematic"/-->
 			<item name="modShotgunSawedOffBarrelSchematic"/>
 			<item name="modGunCrippleEmSchematic"/>
+			<item name="modGunBowArrowHandleGripSchematic"/> <!-- Wild West Mod -->
 			<item name="modGunBowArrowRestSchematic"/>
 			<item name="modGunBowPolymerStringSchematic"/>
 			<item name="modMeleeTemperedBladeSchematic"/>
 			<item name="modMeleeSerratedBladeSchematic"/>
 			<item name="modMeleeWeightedHeadSchematic"/>
 			<item name="modMeleeStructuralBraceSchematic"/>
+			<item name="modWeaponLubricationSchematic"/> <!-- Wild West Mod -->
 			<item name="modMeleeErgonomicGripSchematic"/>
 			<item name="modMeleeFortifyingGripSchematic"/>
 			<item name="modMeleeClubBarbedWireSchematic"/>
@@ -802,8 +813,8 @@
 			<item name="modMeleeClubBurningShaftSchematic"/>
 			<item name="modMeleeGraveDiggerSchematic"/>
 			<item name="modMeleeWoodSplitterSchematic"/>
-			<item name="modFuelTankSmallSchematic"/>
-			<item name="modFuelTankLargeSchematic"/>
+			<!--item name="modFuelTankSmallSchematic"/-->
+			<!--item name="modFuelTankLargeSchematic"/-->
 			<!-- <item name="medicalFirstAidBandageSchematic"/> -->
 			<!-- <item name="resourceMilitaryFiberSchematic"/> -->
 			<item name="modGunMeleeTheHunterSchematic"/>
@@ -896,6 +907,8 @@
 		</trader_item_group>
 
 		<trader_item_group name="rareBooks">
+			<item name="modGunBowArrowHandleGripSchematic"/>
+			<item name="modWeaponLubricationSchematic"/>
 			<!-- <item name="meleeWpnBladeT3MacheteSchematic"/> -->
 			<!-- <item name="gunBowT3CompoundBowSchematic"/> -->
 			<!-- <item name="gunBowT3CompoundCrossbowSchematic"/> -->
@@ -906,11 +919,11 @@
 			<!-- <item name="gunExplosivesT3RocketLauncherSchematic"/> -->
 			<!-- <item name="gunBotT2JunkTurretSchematic" prob="0.66"/> -->
 			<!-- <item name="gunBotT3JunkDroneSchematic" prob="0.33"/> -->
-			<item name="modRoboticDroneCargoModSchematic"/>
-			<item name="modRoboticDroneMedicModSchematic"/>
-			<item name="modRoboticDroneHeadlampModSchematic"/>
-			<item name="modRoboticDroneArmorPlatingModSchematic"/>
-			<item name="modRoboticDroneMoraleBoosterModSchematic"/>
+			<!--item name="modRoboticDroneCargoModSchematic"/-->
+			<!--item name="modRoboticDroneMedicModSchematic"/-->
+			<!--item name="modRoboticDroneHeadlampModSchematic"/-->
+			<!--item name="modRoboticDroneArmorPlatingModSchematic"/-->
+			<!--item name="modRoboticDroneMoraleBoosterModSchematic"/-->
 			<!-- <item name="armorMilitarySetSchematic"/> -->
 			<!-- <item name="armorSteelSetSchematic"/> -->
 			<!-- <item name="thrownAmmoPipeBombSchematic"/> -->
@@ -958,7 +971,7 @@
 		<trader_item_group name="rareMedicine">
 			<item name="medicalFirstAidKit"/>
 			<item name="toolBeaker"/>
-			<item name="drugAntibiotics"/>
+			<!--item name="drugAntibiotics"/-->
 			<item name="drugFortBites"/>
 			<item name="drugRecog"/>
 			<item name="drugSteroids"/>
@@ -1067,7 +1080,7 @@
 			<item name="drinkJarRedTea" count="1,2"/>
 			<item name="drinkJarCoffee" count="1,2"/>
 			<item name="drinkJarBeer" count="1,2"/>
-			<item name="drinkYuccaJuiceSmoothie" count="1,2"/>
+			<!--item name="drinkYuccaJuiceSmoothie" count="1,2"/-->
 		</trader_item_group>
 
 		<!-- *** Special_Drinks -->
@@ -1116,8 +1129,8 @@
 			<!-- <item name="resourceClayLump" count="5,25"/> -->
 			<item name="resourceWood" count="50,1000"/>
 			<item name="resourceCrushedSand" count="50,500"/>
-			<item name="resourcePotassiumNitratePowder" count="20,60"/>
-			<item name="resourceCoal" count="20,60"/>
+			<item name="resourcePotassiumNitratePowder" count="100,250"/> <!-- 20,60 -->
+			<item name="resourceCoal" count="100,250"/> <!-- 20,60 -->
 			<item name="resourceScrapLead" count="5,90"/>
 			<item name="resourceScrapBrass" count="30,80"/>
 			<item name="resourceScrapIron" count="25,250"/>
@@ -1132,10 +1145,10 @@
 			<item name="resourceLeather" count="5,25"/>
 			<item name="resourceScrapPolymers" count="30,150"/>
 			<item name="resourceMilitaryFiber" count="5,20" prob="0.6"/>
-			<item name="resourceGunPowder" count="3,30"/>
+			<item name="resourceGunPowder" count="30,60"/> <!-- 3,30 -->
 			<item name="resourceAcid" count="1" prob="0.6"/>
 			<item name="resourceAnimalFat" count="5,40"/>
-			<item name="resourceHeadlight" count="5,20" prob="0.6"/>
+			<!--item name="resourceHeadlight" count="5,20" prob="0.6"/-->
 			<item name="resourceSpring" count="5,30"/>
 			<item name="resourceElectricParts" count="15,50" prob="0.7"/>
 			<item name="resourceMechanicalParts" count="15,80" prob="0.8"/>
@@ -1148,19 +1161,21 @@
 			<item name="meleeToolAllSteelParts" count="1,3"/>
 			<item name="meleeToolPickT2SteelPickaxe" quality="2,5"/>
 			<item name="meleeToolShovelT2SteelShovel" quality="2,5"/>
-			<item name="meleeToolPickT3Auger" quality="2,5"/>
+			<!--item name="meleeToolPickT3Auger" quality="2,5"/-->
 			<item name="meleeToolAxeT2SteelAxe" quality="2,5"/>
-			<item name="meleeToolAxeT3Chainsaw" quality="2,5"/>
-			<item name="meleeToolRepairT3Nailgun"/>
+			<!--item name="meleeToolAxeT3Chainsaw" quality="2,5"/-->
+			<!--item name="meleeToolRepairT3Nailgun"/-->
 			<item name="meleeToolSalvageT2Ratchet" quality="1,3"/>
-			<item name="meleeToolSalvageT3ImpactDriver" quality="2,5"/>
+			<!--item name="meleeToolSalvageT3ImpactDriver" quality="2,5"/-->
 			<item name="meleeWpnSledgeT3SteelSledgehammer" quality="2,5"/>
 			<item name="toolForgeCrucible"/>
-			<item name="smallEngine"/>
+			<!--item name="smallEngine"/-->
 		</trader_item_group>
 
 		<trader_item_group name="tools" count="1">
 			<item name="meleeToolRepairT0StoneAxe" quality="2,6"/>
+			<item name="meleeToolRepairT2Tomahawk1" quality="2,6"/>
+			<item name="meleeToolRepairT2Tomahawk2" quality="2,6"/>
 			<item name="meleeToolPickT1IronPickaxe" quality="1,4"/>
 			<item name="meleeToolShovelT0StoneShovel" quality="2,6"/>
 			<item name="meleeToolShovelT1IronShovel" quality="1,4"/>
@@ -1180,27 +1195,27 @@
 <!-- *** Vehicles -->
 		<trader_item_group name="groupVehicles" count="1">
 			<item name="vehicleWheels"/>
-			<item name="smallEngine"/>
+			<!--item name="smallEngine"/-->
 		<!-- *** Bicycle -->
 			<item name="vehicleBicycleChassis"/>
 			<item name="vehicleBicycleHandlebars"/>
 			<item name="vehicleBicyclePlaceable"/>
 		<!-- *** Minibike -->
-			<item name="vehicleMinibikeChassis"/>
-			<item name="vehicleMinibikeHandlebars"/>
-			<item name="vehicleMinibikePlaceable"/>
+			<!--item name="vehicleMinibikeChassis"/-->
+			<!--item name="vehicleMinibikeHandlebars"/-->
+			<!--item name="vehicleMinibikePlaceable"/-->
 		<!-- *** Motorcycle -->
-			<item name="vehicleMotorcycleChassis"/>
-			<item name="vehicleMotorcycleHandlebars"/>
-			<item name="vehicleMotorcyclePlaceable"/>
+			<!--item name="vehicleMotorcycleChassis"/-->
+			<!--item name="vehicleMotorcycleHandlebars"/-->
+			<!--item name="vehicleMotorcyclePlaceable"/-->
 		<!-- *** 4x4 -->
-			<item name="vehicle4x4TruckChassis"/>
-			<item name="vehicle4x4TruckAccessories"/>
-			<item name="vehicle4x4TruckPlaceable"/>
+			<!--item name="vehicle4x4TruckChassis"/-->
+			<!--item name="vehicle4x4TruckAccessories"/-->
+			<!--item name="vehicle4x4TruckPlaceable"/-->
 		<!-- *** Gyro -->
-			<item name="vehicleGyroCopterChassis"/>
-			<item name="vehicleGyroCopterAccessories"/>
-			<item name="vehicleGyrocopterPlaceable"/>
+			<!--item name="vehicleGyroCopterChassis"/-->
+			<!--item name="vehicleGyroCopterAccessories"/-->
+			<!--item name="vehicleGyrocopterPlaceable"/-->
 		</trader_item_group>
 		
 <!-- *** Blocks -->
@@ -1220,14 +1235,14 @@
 		<!-- *** Deco_Blocks -->
 		<trader_item_group name="decorativeBlocks" count="1">
 			<item group="decorativeBlinds"/>
-			<item name="airConditioner" count="2,3"/>
-			<item name="appliancesVariantHelper" count="2,3"/>
+			<!--item name="airConditioner" count="2,3"/-->
+			<!--item name="appliancesVariantHelper" count="2,3"/-->
 			<item name="cntCashRegister"/>
-			<item name="cntCoolerVariantHelper"/>
+			<!--item name="cntCoolerVariantHelper"/-->
 			<item name="cntFileCabinetBlockVariantHelper"/>
 			<item name="sinkKitchen" count="2,4"/>
 			<item name="pictureVariantHelper" count="2,3"/>
-			<item name="cntWaterCoolerFull"/>
+			<!--item name="cntWaterCoolerFull"/-->
 			<item name="pipeLargeBlockVariantHelper" count="20,30"/>
 			<item name="pipeSmallBlockVariantHelper" count="20,30"/>
 			<item name="treeAzalea" count="8,15"/>
@@ -1237,38 +1252,38 @@
 		<!-- *** Landmines -->
 		<trader_item_group name="landMines" count="1">
 			<item name="mineCandyTin" count="1,6"/>
-			<item name="mineHubcap" count="1,5"/>
-			<item name="mineAirFilter" count="1,4"/>
+			<!--item name="mineHubcap" count="1,5"/-->
+			<!--item name="mineAirFilter" count="1,4"/-->
 		</trader_item_group>
 
 <!-- *** Electrical_System -->
 		<trader_item_group name="traderElectrical" count="1">
 		<!-- *** Power_Production -->
 			<item name="resourceElectricParts" count="15,35" prob="0.5"/>
-			<item name="generatorbank" count="1" prob="1"/>
-			<item name="batterybank" count="1" prob="0.7"/>
-			<item name="solarbank" count="1" prob="0.7"/>
-			<item name="solarCell" count="1,3" prob="0.2" quality="3,6" />
+			<!--item name="generatorbank" count="1" prob="1"/-->
+			<!--item name="batterybank" count="1" prob="0.7"/-->
+			<!--item name="solarbank" count="1" prob="0.7"/-->
+			<!--item name="solarCell" count="1,3" prob="0.2" quality="3,6" /-->
 		<!-- *** Activation -->
-			<item name="switch" count="3,9" prob="1.0"/>
-			<item name="tripwirepost" count="1,5" prob="1.0"/>
-			<item name="pressureplate" count="1,5" prob="1.0"/>
-			<item name="motionsensor" count="1,2" prob="1.0"/>
+			<!--item name="switch" count="3,9" prob="1.0"/-->
+			<!--item name="tripwirepost" count="1,5" prob="1.0"/-->
+			<!--item name="pressureplate" count="1,5" prob="1.0"/-->
+			<!--item name="motionsensor" count="1,2" prob="1.0"/-->
 		<!-- *** Relays -->
-			<item name="electricwirerelay" count="5,15" prob="1.0"/>
-			<item name="electrictimerrelay" count="1,3" prob="1.0"/>
+			<!--item name="electricwirerelay" count="5,15" prob="1.0"/-->
+			<!--item name="electrictimerrelay" count="1,3" prob="1.0"/-->
 		<!-- *** Lights_Misc -->
 			<item name="lanternDecorLightBlockVariantHelper" count="1" prob="1.0"/>
-			<item name="ceilingLight01_player" count="1,6" prob="1.0"/>
-			<item name="spotlightPlayer" count="1,2" prob="1.0"/>
-			<item name="speaker" count="1,2" prob="1.0"/>
+			<!--item name="ceilingLight01_player" count="1,6" prob="1.0"/-->
+			<!--item name="spotlightPlayer" count="1,2" prob="1.0"/-->
+			<!--item name="speaker" count="1,2" prob="1.0"/-->
 		<!-- *** Traps -->
-			<item name="electricfencepost" count="2,6" prob="1.0"/>
-			<item name="ammoDartIron" count="15,70" prob="1.0"/>
-			<item name="dartTrap" count="1,2" prob="1.0"/>
-			<item name="bladeTrap" count="1,3" prob="0.8"/>
-			<item name="autoTurret" count="1,2" prob="0.5"/>
-			<item name="shotgunTurret" count="1,2" prob="0.7"/>
+			<!--item name="electricfencepost" count="2,6" prob="1.0"/-->
+			<!--item name="ammoDartIron" count="15,70" prob="1.0"/-->
+			<!--item name="dartTrap" count="1,2" prob="1.0"/-->
+			<!--item name="bladeTrap" count="1,3" prob="0.8"/-->
+			<!--item name="autoTurret" count="1,2" prob="0.5"/-->
+			<!--item name="shotgunTurret" count="1,2" prob="0.7"/-->
 		</trader_item_group>
 
 <!-- *** Trader_Always -->
@@ -1306,7 +1321,7 @@
 			<item group="rareTools" count="1"/>
 			<item group="rareMedicine" count="1" prob="0.3"/>
 			<item group="medicine" count="1,2" prob="1"/>
-			<item name="drugAntibiotics" count="1,3" prob="0.5"/>
+			<!--item name="drugAntibiotics" count="1,3" prob="0.5"/-->
 			<item group="workstations" count="1"/>
 			<item group="groupVehicles" count="1,2"/>
 		</trader_item_group>
