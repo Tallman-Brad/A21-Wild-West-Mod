@@ -25,19 +25,19 @@
   <property name="Tags" value="navonly" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # # # # # # # # # # # # # " />
   <property class="Stats">
-    <property name="TotalVertices" value="1279811" />
-    <property name="TotalTriangles" value="824592" />
+    <property name="TotalVertices" value="1279119" />
+    <property name="TotalTriangles" value="844464" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1016798" />
-      <property name="Triangles" value="654560" />
+      <property name="Vertices" value="1013704" />
+      <property name="Triangles" value="672908" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="247399" />
-      <property name="Triangles" value="150036" />
+      <property name="Vertices" value="248807" />
+      <property name="Triangles" value="150780" />
     </property>
     <property class="ChunkMeshes1">
-      <property name="Vertices" value="1344" />
-      <property name="Triangles" value="672" />
+      <property name="Vertices" value="1920" />
+      <property name="Triangles" value="960" />
     </property>
     <property class="ChunkMeshes2">
       <property name="Vertices" value="0" />
@@ -56,8 +56,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes6">
-      <property name="Vertices" value="9498" />
-      <property name="Triangles" value="16112" />
+      <property name="Vertices" value="9916" />
+      <property name="Triangles" value="16604" />
     </property>
   </property>
   <property class="IndexedBlockOffsets">
@@ -70,7 +70,7 @@
       <property name="2" value="28, 14, 34" />
     </property>
     <property class="quest_wood_trees">
-      <property name="0" value="1, 11, 52" />
+      <property name="0" value="1, 10, 52" />
     </property>
     <property class="QuestRestorePower">
       <property name="0" value="16, 22, 29" />
