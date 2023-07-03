@@ -1,5 +1,276 @@
 <wildwestmod>
 
+<!-- Steroids unlock all 60 Backpack slots for increased capacity -->
+	<set xpath="/buffs/buff[@name='buffEncumberedInv']/effect_group/triggered_effect[@cvar='$encumbranceEffect'][@value='0.026']/@value">0.013</set>
+	<set xpath="/buffs/buff[@name='buffDrugSteroids']/effect_group/passive_effect[@name='CarryCapacity'][@operation='base_set']/@value">60</set>
+	
+<!-- Oakraven Fish Traps - Thank you to MeanCloud Fishing, which in turn credits ACP Fishing, for inspiration -->
+
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		<effect_group name="FishTrapWater">
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="FishTrapEmptyWater">
+				<requirement name="CVarCompare" cvar="_underwater" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="FishTrapEmptyWater">
+				<requirement name="CVarCompare" cvar="_underwater" operation="NotEquals" value="1"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	
+	<append xpath="/buffs">
+		<buff name="FishTrapEmptyWater" duration="2" name_key="FishTrapEmptyWater" description_key="FishTrapEmptyWaterDesc" icon="ui_game_symbol_water_trap">
+			<display_value_key value="Bait Fish Trap"/> <display_value value="xxx"/>
+			<update_rate value="0.5"/>
+			<stack_type value="replace"/>
+		<effect_group>
+			<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="FishTrapEmptyWater"/>
+		</effect_group>
+		</buff>		
+	</append>
+
+<!-- Gatling Gun Checker - Thank you to Snufkin for base inspiration -->
+
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="chargeGatling"/>
+	</append>
+	
+<!-- Yucca Juice Cooler - God Mode Hyperthermal Resistance Buff Clear -->	
+
+	<append xpath="/buffs/buff[@name='god']/effect_group">	
+	<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffYuccaJuiceCoolerDuration" operation="set" value="0"/>
+	</append>
+	
+	<append xpath="/buffs">
+	
+<!-- Wild West Default Zombie Decorations -->
+
+		<buff name="zombieBoeHat1WildWestDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat1" local_offset="0,-1.55,0.01" local_rotation="0,0,0" parent_transform="Head"/>
+			</effect_group>
+		</buff>
+
+		<buff name="zombieMoeHat2WildWestDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat2" local_offset="0,-1.55,0.01" local_rotation="0,0,0" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Commercial/wineBottlePrefab" local_offset="0.15,0.05,-0.4" local_rotation="-90,0,0" parent_transform="RightHand"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="zombieBusinessManHat3WildWestDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat3" local_offset="0,-1.71,0.04" local_rotation="0,0,0" parent_transform="Head"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="zombieYoHat4WildWestDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat4" local_offset="0,-1.66,0.06" local_rotation="0,0,0" parent_transform="Head"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="zombieDarleneHat5WildWestDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat5" local_offset="0,-1.69,0.04" local_rotation="0,0,0" parent_transform="Head"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="zombieSoldierHat6WildWestDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat6" local_offset="0,-1.72,0.03" local_rotation="0,0,0" parent_transform="Head"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="npcTraderJenHatDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat1" local_offset="1.675,0,0.075" local_rotation="0,0,90" parent_transform="Head"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="npcTraderBobHatDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/NewHats.unity3d?Hat4" local_offset="1.7,0,0.075" local_rotation="0,0,90" parent_transform="Head"/>
+			</effect_group>
+		</buff>
+		
+<!-- Wild West Snufkins -->
+	
+		<buff name="UndertakerWildWestDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/coffinWildWestPrefab" local_offset="-0.1,-.05,.05" local_rotation="45,90,90" parent_transform="Spine"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Tools/shovel_ironPrefab.prefab" local_offset="-.11,.2,-.02" local_rotation="0,0,0" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Lighting/lantern_02PlayerPrefab" local_offset="-.1,0,-.05" local_rotation="90,90,0" parent_transform="LeftHand"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="HammerSpammerWildWestDeco" hidden="true">
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Melee/SledgeHammer/steelSledgehammerPrefab.prefab" local_offset="-0.11,0.4,-0.04" local_rotation="0,0,0" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Front-Back/Left-Right -->				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="-0.06,0.4,-.04" local_rotation="0,0,0" parent_transform="RightHand"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="zombieSpiderFeralFireGliderDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Vulture/animalVultureStandard" local_offset="0,-.3,.25" local_rotation="-45,0,0" parent_transform="Spine"/> <!-- A19 Oakraven -->
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  parent_transform="Spine" transform_path="body_mesh"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="0.2,0,0" local_rotation="0,0,0" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_torch_wall" local_offset="-0.1,-0.15,0" local_rotation="0,0,0" parent_transform="LeftHand"/>			
+			</effect_group>
+		</buff>	
+		
+		<buff name="ZombieFeralChickenDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="-0.1,-0.04,0" local_rotation="235,90,0" parent_transform="CHICKEN_ Head"/> <!-- -0.1,-0.02,0 -->
+			</effect_group>
+		</buff>
+	
+<!-- Wild West Steam Spitter -->
+
+		<buff name="gunBotT2JunkTurretWildWestDeco" hidden="true">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<!--triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Gun" transform_path="turret_targeting"/-->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.73,0.33" local_rotation="10,0,0" parent_transform="Gun"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="0,0.5,0.5" local_rotation="90,0,180" parent_transform="Gun"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_01Prefab" local_offset="0,0.2,0.3" local_rotation="180,90,90" parent_transform="Gun"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_02Prefab" local_offset="0.85,0.2,-0.35" local_rotation="180,-160,90" parent_transform="Gun"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_03Prefab" local_offset="0.35,0.2,0.05" local_rotation="180,160,90" parent_transform="Gun"/>				
+			</effect_group>
+		</buff>	
+	
+<!-- Wild West Snow Bear -->
+	
+		<buff name="animalWildWestSnowBearDeco" hidden="true">
+			<effect_group>		
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/animals/catfish/animalcatfish" local_offset="-0.7,-0.19,0.49" local_rotation="270,0,90" parent_transform="Head"/>		
+			</effect_group>
+		</buff>	
+	
+<!-- Wight Gunslinger -->
+
+		<buff name="zombieWightFeralGunslingerDeco" hidden="true">
+			<effect_group>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Ranged/PipeRevolver/pipeRevolverPrefab.prefab" local_offset="0.12,0.04,-0.06" local_rotation="187,-80,90" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Left-Right/Front-Back -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Other/Items/Weapons/Ranged/PipeRevolver/pipeRevolverPrefab.prefab" local_offset="-0.11,-0.04,0.06" local_rotation="7,-80,-90" parent_transform="LeftHand"/> <!-- Local Offset Up-Down/Left-Right/Front-Back --> <!-- Local Rotation Exorcist Spin/Nodding/Thinking -->				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Snake/sleeperPose/idleSleeperSnake" local_offset="0,0.51,0" local_rotation="0,0,0" parent_transform="Head"/> <!-- Local Offset Left-Right/Up-Down/Front-Back -->				
+			</effect_group>
+		</buff>
+		
+<!-- Business Bandit - Monsignor -->
+		
+		<buff name="zombieBusinessManRadiatedGunslingerDeco" hidden="true">
+			<effect_group>								
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/schofieldrevolver.unity3d?schofieldrevolver" local_offset="0.1,0.02,0.0" local_rotation="187,-80,90" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Left-Right/Front-Back -->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/schofieldrevolver.unity3d?schofieldrevolver" local_offset="-0.1,-0.02,0.0" local_rotation="7,-80,-90" parent_transform="LeftHand"/> <!-- Local Offset Up-Down/Left-Right/Front-Back --> <!-- Local Rotation Exorcist Spin/Nodding/Thinking -->
+			</effect_group>
+		</buff>
+		
+<!-- Business Bandit - Monsignor -->
+		
+		<buff name="zombieLumberjackRadiatedAxeDeco" hidden="true">
+			<effect_group>								
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/newfireaxe.unity3d?newfireaxe" local_offset="0.1,0.02,0.0" local_rotation="187,-80,90" parent_transform="RightHand"/> <!-- Local Offset Up-Down/Left-Right/Front-Back -->
+			</effect_group>
+		</buff>
+		
+<!-- Wendigo Radiation buff courtesy of Bdubyah from The Wasteland Overhaul -->	
+	
+		<buff name="zombieWendigoRadiatedShowerAOE" hidden="true">
+			<damage_type value="radiation"/>
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="4" buff="zombieWendigoRadiatedShowerAOEEffect">
+					<requirement name="!EntityTagCompare" target="other" tags="vehicle,zombie,turret,drone"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="zombieWendigoRadiatedShowerAOEEffect" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
+			<damage_type value="radiation"/>
+			<stack_type value="replace"/>
+			<duration value="4"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value=".5"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity=".15" fade=".5" effect_name="Hot">
+					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".5" effect_name="Hot">
+					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".3" fade="2"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+			</effect_group>
+		</buff>
+		
+<!-- Gatling Gun - Thank you to Snufkin for base inspiration -->		
+		
+		<buff name="chargeGatling" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$chargeG" operation="add" value="-.15">
+					<requirement name="CVarCompare" cvar="$GatlingCharging" operation="Equals" value="0"/>
+					<requirement name="CVarCompare" cvar="$chargeG" operation="GTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$chargeG" operation="add" value=".15">
+					<requirement name="CVarCompare" cvar="$GatlingCharging" operation="GTE" value="1"/>
+					<requirement name="CVarCompare" cvar="$chargeG" operation="LTE" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$chargeG" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$vulcanCharging" operation="set" value="0"/>
+			</effect_group>
+		</buff>
+		
+<!-- Oakraven's Wild West Traps -->
+
+	<buff name="buffTar" description_key="" tooltip_key="buffShockedTooltip" icon="" name_key="buffShockedName" icon_color="255,0,0">
+		<damage_type value="electrical"/>
+		<stack_type value="replace"/>
+		<duration value="4.5"/>
+		<effect_group>
+				<passive_effect name="BuffBlink" operation="base_set" value="2" duration="0,3" tags="buffTar"/>
+				<passive_effect name="HealthChangeOT" operation="base_add" value="0"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.4,0.2" duration="0,2.5"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.4,0.2" duration="0,2.5"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.4,0.2" duration="0,2.5"/>
+				<passive_effect name="JumpStrength" operation="perc_subtract" value="0.4,0.2" duration="0,2.5"/>
+		</effect_group>
+	</buff>
+	
+<!-- Yucca Juice Cooler - Hyperthermal Resistance Buff -->	
+
+	<buff name="buffYuccaJuiceCooler" name_key="drinkYuccaJuiceCooler" description_key="drinkYuccaJuiceCoolerDesc" icon="ui_game_symbol_beer">
+		<stack_type value="replace"/><duration value="0"/>
+		<display_value value=".buffYuccaJuiceCoolerDisplay"/><display_value_format value="time"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffYuccaJuiceCoolerDuration" operation="subtract" value="@$MetabolismDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffYuccaJuiceCoolerDisplay" operation="set" value="@$buffYuccaJuiceCoolerDuration"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffYuccaJuiceCoolerDisplay" operation="divide" value="@$MetabolismDuration"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffYuccaJuiceCooler">
+				<requirement name="CVarCompare" cvar="$buffYuccaJuiceCoolerDuration" operation="LTE" value="0"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffYuccaJuiceCoolerDisplay" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffYuccaJuiceCoolerDuration" operation="set" value="0"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="25"/>
+		</effect_group>
+	</buff>
+	
+	</append>
+
 	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
 		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="WWMHorseDecoChecker">
 			<requirement name="NotHasBuff" buff="WWMHorseDecoChecker"/>

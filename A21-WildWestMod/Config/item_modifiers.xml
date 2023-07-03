@@ -58,6 +58,7 @@
   <item_modifier name="modArmorCowboyBoots" installable_tags="armorFeet" modifier_tags="rare" blocked_tags="noMods,clothing" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="CustomIcon" value="apparelCowboyBoots"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>
 		<property name="EconomicValue" value="440"/>
 		<property name="DisplayType" value="clothing"/>
 		<item_property_overrides name="*">
@@ -80,7 +81,7 @@
             <property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
             <property name="EconomicValue" value="50"/>
-            <effect_group tiered="false">
+            <!--effect_group tiered="false">
                 <triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Rabbit/RABBIT" parent_transform="Head" local_offset="-0.1,0,0.09" local_rotation="0,-35,90">
                     <requirement name="!IsFPV"/>
                 </triggered_effect>
@@ -88,7 +89,7 @@
                     <requirement name="IsFPV"/>
                 </triggered_effect>
                 <triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Entities/Animals/Rabbit/RABBIT"/>
-            </effect_group>
+            </effect_group-->
             <effect_group tiered="false">
             <passive_effect name="HypothermalResist" operation="base_add" value="15.0"/> <!-- Skull Cap 10.5,13.2 -->
             <passive_effect name="HyperthermalResist" operation="base_add" value="5.0"/> <!-- Skull Cap 1.5,2.5 -->
@@ -111,6 +112,7 @@
 	<item_modifier name="modGunBowArrowHandleGrip" installable_tags="bow" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="UnlockedBy" value="modGunBowArrowHandleGripSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier2"/>
 		<!--Do +15% damage to evil / undead-->
 		<effect_group tiered="false">
 			<requirement name="EntityTagCompare" target="other" tags="zombie"/>
@@ -216,7 +218,8 @@
 	<item_modifier name="modWeaponLubrication" installable_tags="weapon" modifier_tags="durability" blocked_tags="noMods" type="attachment">
 		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
 		<property name="DescriptionKey" value="modWeaponLubricationDesc"/>
-		<property name="UnlockedBy" value="modWeaponLubricationSchematic"/>		
+		<property name="UnlockedBy" value="modWeaponLubricationSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier1"/>		
 		<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 		<property name="CustomIcon" value="modWeaponLubrication"/>
 		
