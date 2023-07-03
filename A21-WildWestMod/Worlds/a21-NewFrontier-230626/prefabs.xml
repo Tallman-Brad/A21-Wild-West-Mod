@@ -1194,7 +1194,7 @@
   <decoration type="model" name="wildwest_docks_04" position="1104,17,370" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_sawmill_01_arramus" position="2114,35,859" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_docks_02" position="2106,24,686" rotation="2" y_is_groundlevel="true" />
-  <decoration type="model" name="wildwest_docks_03" position="2052,23,691" rotation="2" y_is_groundlevel="true" />
+  <decoration type="model" name="wildwest_docks_03" position="2052,24,691" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_docks_01" position="1988,18,720" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_capsized_arramus" position="2748,30,1062" rotation="0" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_church" position="-1737,48,103" rotation="2" y_is_groundlevel="true" />
@@ -1229,7 +1229,7 @@
   <decoration type="model" name="wildwest_lighthouse_01_arramus" position="-2753,36,1403" rotation="3" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_docks_01" position="671,18,-992" rotation="3" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_docks_04" position="191,17,-447" rotation="2" y_is_groundlevel="true" />
-  <decoration type="model" name="wildwest_docks_03" position="-2335,23,1436" rotation="3" y_is_groundlevel="true" />
+  <decoration type="model" name="wildwest_docks_03" position="-2335,24,1436" rotation="3" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_Blacksmith(by_Zeebark)" position="1306,37,792" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_Hotel_Skank(By_Zeebark)" position="1097,37,1050" rotation="3" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_Blacksmith(by_Zeebark)" position="-356,37,1552" rotation="2" y_is_groundlevel="true" />
