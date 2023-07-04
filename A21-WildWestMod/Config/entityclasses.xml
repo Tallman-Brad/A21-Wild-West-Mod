@@ -675,7 +675,7 @@
 	
 	<entity_class name="zombieFemaleBigFatBarker" extends="zombieFemaleFatFeral"> <!-- Radiated Conversion -->
 		<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-		<property name="Mesh" value="#Entities/Zombies?Prefabs/ZBigMamaRadiated.prefab"/>
+		<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZBigMamaRadiated.prefab"/>
 		<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 
 		<!-- Gameplay zombieFemaleFatRadiated -->

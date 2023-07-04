@@ -1,0 +1,235 @@
+<wildwestmod>
+
+<!-- *** BIOME_GROUPS -->
+	<!-- *** BIOME_ZOMBIES_NIGHT_GROUP -->
+	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
+		zombieSpiderFeralFireGlider, .085	
+	</csv>
+
+<!-- *** BIOME_ZOMBIES_WASTELAND_GROUP -->
+	<set xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+		zombieBurnt, 3
+		zombieBurntFeral, 2
+		zombieBurntRadiated
+		zombieWightFeral, 1.5
+		zombieWightRadiated
+		zombieSoldier, 2
+		zombieSoldierFeral, 1.5
+		zombieSoldierRadiated
+		zombieMutated, 2
+		zombieMutatedFeral, 1.5
+		zombieMutatedRadiated
+		zombieSpider, 2
+		zombieSpiderFeral, 1.5
+		zombieSpiderRadiated
+		zombieWightFeralGunslinger, .8
+		zombieWightRadiatedGunslinger, .5
+		zombieFemaleFatBarker, .8		
+		zombieFemaleBigFatBarker, .5
+		guppyVultureBurnt, 1.2
+		guppyMommaVultureBurnt, .8
+		guppyRadiatedMommaVultureBurnt, .5
+		zombieMolotovSoldierFeral, .5
+		guppyRadiatedFireMommaVultureBurnt, .5
+		zombieSpiderFeralFireGlider, .25	
+	</set>
+	
+<!-- *** BIOME_ZOMBIES_WASTELAND_NIGHT_GROUP -->
+	<set xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+		zombieBurnt, 3
+		zombieBurntFeral, 2
+		zombieBurntRadiated
+		zombieWightFeral, 1.5
+		zombieWightRadiated
+		zombieSoldier, 2
+		zombieSoldierFeral, 1.5
+		zombieSoldierRadiated
+		zombieMutated, 2
+		zombieMutatedFeral, 1.5
+		zombieMutatedRadiated
+		zombieSpider, 2
+		zombieSpiderFeral, 1.5
+		zombieSpiderRadiated
+		zombieWightFeralGunslinger, .8
+		zombieWightRadiatedGunslinger, .5
+		zombieFemaleFatBarker, .8		
+		zombieFemaleBigFatBarker, .5
+		guppyVultureBurnt, 1.2
+		guppyMommaVultureBurnt, .8
+		guppyRadiatedMommaVultureBurnt, .5
+		zombieMolotovSoldierFeral, .5
+		guppyRadiatedFireMommaVultureBurnt, .5
+		zombieSpiderFeralFireGlider, .25	
+	</set>
+	
+<!-- *** INTEGRATION FOR ANIMALS -->
+
+<!-- *** WASTELAND ANIMALS -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']/text()" delim="\n" op="add" >
+		animalZombieWastelandCraterBear, 15
+		animalBossGrace, 15
+		animalZombieLargeVulture, 10
+		animalZombieFeralChicken, 10	
+	</csv>
+	
+<!-- *** DESERT ANIMALS -->
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add" >
+		animalDesertHare, 7
+		animalBisonBoar, 5
+		animalBisonBear, .5
+		guppyVultureBurnt, 15		
+	</csv>
+	
+<!-- *** SNOW ANIMALS -->	
+	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']/text()" delim="\n" op="add" >
+		animalSnowHare, 13
+		animalWolf, 10
+		animalWildWestSnowBear, 7
+	</csv>
+	
+<!-- *** FOREST ANIMALS -->
+	
+	<csv xpath="/entitygroups/entitygroup[@name='WildGameForest']/text()" delim="\n" op="add" >
+		animalBoar, 3
+		animalStag, 4
+		animalDoe, 5
+		animalBear, 1
+		animalWolf, 1
+		animalDireWolf, .05
+	</csv>
+	
+	<!-- Custom Groups -->
+	
+	<!-- Wasteland Crater and Select POIs -->
+
+	<append xpath="/entitygroups">	
+	<entitygroup name="animalZombieWastelandCraterBear">
+		animalZombieWastelandCraterBear
+	</entitygroup>
+	
+	<entitygroup name="WastelandCraterBearGroup">
+		animalZombieWastelandCraterBear
+	</entitygroup>
+	
+	<!-- Guppy Vulture Group -->
+	
+	<entitygroup name="CripsyVariantsGroupGS01">
+		guppyVultureBurnt
+        guppyMommaVultureBurnt, 1	
+	</entitygroup>
+	<entitygroup name="CripsyVariantsGroupGS50">
+		guppyVultureBurnt
+        guppyMommaVultureBurnt, .25	
+	</entitygroup>
+	<entitygroup name="CripsyVariantsGroupGS100">
+		guppyVultureBurnt
+        guppyMommaVultureBurnt, .35
+        guppyRadiatedMommaVultureBurnt, .1
+	</entitygroup>
+	<entitygroup name="CripsyVariantsGroupGS200">
+		guppyVultureBurnt
+        guppyMommaVultureBurnt, .5
+        guppyRadiatedMommaVultureBurnt, .25		
+	</entitygroup>
+	<entitygroup name="CripsyVariantsGroupGS400">
+		guppyVultureBurnt
+        guppyMommaVultureBurnt, .5
+        guppyRadiatedMommaVultureBurnt, .25	
+	</entitygroup>
+	<entitygroup name="CripsyVariantsGroupGS800">
+		guppyVultureBurnt
+        guppyMommaVultureBurnt, .75
+        guppyRadiatedMommaVultureBurnt, .5
+	</entitygroup>
+	
+	<!-- Bison POI Spawn Group -->
+	
+	<entitygroup name="animalBisonBoar">
+		animalBisonBoar
+	</entitygroup>
+	
+	<!-- Snow Bear Sleeper Group -->
+
+	<entitygroup name="animalWildWestSnowBear">
+		animalWildWestSnowBear
+	</entitygroup>
+	
+	</append>
+	
+<!-- *** INTEGRATION FOR SLEEPERS -->
+
+<!-- Mon Senor -->
+
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'ZombieGhostTownGroupGS') and contains (text(), 'zombieFemaleFatRadiated') and not ( contains(text(), 'zombieFemaleFatRadiated, 0'))]/text()" delim="\n" op="add">
+		zombieBusinessManRadiatedGunslinger, .25
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'sleeperHordeStageGS') and contains (text(), 'zombieFemaleFatRadiated')]/text()" delim="\n" op="add">
+		zombieBusinessManRadiatedGunslinger, .9
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'badassHordeStageGS') and contains (text(), 'zombieFemaleFatRadiated')]/text()" delim="\n" op="add">
+		zombieBusinessManRadiatedGunslinger, .9
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'badassOnlyHordeStageGS') and contains (text(), 'zombieFemaleFatRadiated')]/text()" delim="\n" op="add">
+		zombieBusinessManRadiatedGunslinger, .9
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHordeStageGS') and contains (text(), 'zombieFemaleFatRadiated')]/text()" delim="\n" op="add">
+		zombieBusinessManRadiatedGunslinger, .9
+	</csv>
+
+<!-- Steel Axe Lumberjack -->
+
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'zombieLumberjackGroupGS') and contains (text(), 'zombieLumberjackRadiated')]/text()" delim="\n" op="add">
+		zombieLumberjackRadiatedAxe, .25
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'sleeperHordeStageGS') and contains (text(), 'zombieLumberjackRadiated')]/text()" delim="\n" op="add">
+		zombieLumberjackRadiatedAxe, .9
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'badassHordeStageGS') and contains (text(), 'zombieLumberjackRadiated')]/text()" delim="\n" op="add">
+		zombieLumberjackRadiatedAxe, .9
+	</csv>
+	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'badassOnlyHordeStageGS') and contains (text(), 'zombieLumberjackRadiated')]/text()" delim="\n" op="add">
+		zombieLumberjackRadiatedAxe, .9
+	</csv>
+
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHordeStageGS') and contains (text(), 'zombieLumberjackRadiated')]/text()" delim="\n" op="add">
+		zombieLumberjackRadiatedAxe, .9
+	</csv>
+	
+<!-- *** FERAL_HORDE_STAGES -->
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains (text(), 'zombieMoe')]/text()" delim="\n" op="add">
+		zombieBurnt, .5
+		zombieMutated, .5
+	</csv>	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains (text(), 'zombieMoeFeral')]/text()" delim="\n" op="add">
+		zombieBurntFeral, .35
+		zombieMutatedFeral, .35
+	</csv>	
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains (text(), 'zombieMoeFeral')]/text()" delim="\n" op="add">
+		zombieBurntRadiated, .2
+		zombieMutatedRadiated, .2
+		zombieBusinessManRadiatedGunslinger, .35 
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains (text(), 'zombieLumberjackRadiated')]/text()" delim="\n" op="add">
+		zombieLumberjackRadiatedAxe, .35
+	</csv>
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains (text(), 'zombieDemolition')]/text()" delim="\n" op="add">
+		guppyVultureBurnt, .45
+		guppyMommaVultureBurnt, .45
+		zombieSoldierRadiated, .45
+		zombieMolotovSoldierFeral, .45
+		guppyRadiatedFireMommaVultureBurnt, .45
+		guppyRadiatedMommaVultureBurnt, .45
+		animalZombieBear, .45
+		animalZombieLargeVulture, .45
+		animalZombieFeralChicken, .45
+		animalBisonZombieBear, .45
+	</csv>
+
+</wildwestmod>

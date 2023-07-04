@@ -1,0 +1,43 @@
+<wildwestmod>
+
+	<!-- respawndelay: game days - .000278 real seconds, .0167 mins -->
+
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@respawndelay">0.0835</set> <!-- Lowered to 5 minutes from Default 0.3 -->
+	
+	<append xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesForestDowntown']/@tags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesForestDowntownNight']/@tags">,oldwest</append>
+	
+	<append xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesAll']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesDowntown']/@tags">,oldwest</append>
+	
+	<append xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesDowntown']/@tags">,oldwest</append>
+	
+	<append xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesAll']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesDowntown']/@tags">,oldwest</append>
+	
+	<append xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWasteland']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@notags">,oldwest</append>
+	<append xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandDowntown']/@tags">,oldwest</append>	
+
+	<!-- Bison POI tag Group -->
+
+	<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="10" respawndelay="0.3" time="Any" entitygroup="animalBisonBoar" tags="bison" spawnDeadChance="0" />
+	</append>
+
+	<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="10" respawndelay="0.3" time="Any" entitygroup="animalBisonBoar" tags="bison" spawnDeadChance="0" />
+	</append>
+	
+	<append xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="10" respawndelay="0.3" time="Any" entitygroup="animalBisonBoar" tags="bison" spawnDeadChance="0" />
+	</append>
+	
+</wildwestmod>
