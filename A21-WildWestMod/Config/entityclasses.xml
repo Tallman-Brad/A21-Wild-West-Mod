@@ -205,7 +205,7 @@
 		<property name="PhysicsBody" value="bear"/>
 		<property name="Mass" value="600"/>
 		<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
-		<property name="ReplaceMaterial0" value="#Other/Items?Misc/snowballPrefab/materials/snowball"/>
+		<property name="ReplaceMaterial0" value="@:Other/Items/Misc/Materials/snowball.mat"/>
 		
 		<property name="HandItem" value="meleeHandAnimalBear"/>
 		<property name="AITask-1" value="BreakBlock"/>
@@ -269,7 +269,7 @@
 	<property name="Class" value="EntityAnimalRabbit"/>
 	<property name="SizeScale" value="1.8"/>	
 	<property name="Prefab" value="/Entities/Animals/Rabbit/RABBIT"/>
-	<property name="ReplaceMaterial0" value="#Other/Items?Misc/snowballPrefab/materials/snowball"/>	
+	<property name="ReplaceMaterial0" value="@:Other/Items/Misc/Materials/snowball.mat"/>
 	<property name="Parent" value="Animals"/>
 	<property name="Faction" value="animals"/>
 	<property name="PhysicsBody" value="rabbit"/>
