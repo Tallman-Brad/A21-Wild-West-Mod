@@ -150,10 +150,12 @@
 	<!-- Auto reload for Iron Crossbow -->
 	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='AutoReload']/@value">true</set>
 	
-	<!-- Supply Drop Random Item Removal for Innapropriate Assets -->
+	<!-- Supply Drop and Reward Random Item Removal or Replacement -->
 	<set xpath="/items/item[@name='questRewardT1RangedModsBundle']/property[@class='Action0']/property[@name='Random_item']/@value">modGunBipod,modGunChoke,modGunDuckbill,modGunForegrip,modGunMeleeTheHunter,modGunMuzzleBrake,modGunScopeSmall,modShotgunSawedOffBarrel</set>	
 	<set xpath="/items/item[@name='questRewardT2RangedModsBundle']/property[@class='Action0']/property[@name='Random_item']/@value">modGunBarrelExtender,modGunCrippleEm,modGunBowArrowRest,modGunRetractingStock,modGunScopeMedium,modGunSoundSuppressorSilencer,modGunShotgunTubeExtenderMagazine</set>
 	<set xpath="/items/item[@name='questRewardT3RangedModsBundle']/property[@class='Action0']/property[@name='Random_item']/@value">modGunBowPolymerString,modGunScopeLarge,modGunDrumMagazineExtender</set>
+	<set xpath="/items/item[@name='questRewardT3HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set>
+	<set xpath="/items/item[@name='questRewardT3HandgunLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set>
 
 	<!-- Weather Durable Poncho -->
 	<set xpath="/items/item[@name='apparelCoatLeatherPoncho']/effect_group/passive_effect[@name='HypothermalResist']/@value">10.8,13.2</set><!-- 2.8,5.2 -->
