@@ -192,6 +192,7 @@
 		<!-- CUSTOM Bear - Snow Bear -->	
 	
 	<entity_class name="animalWildWestSnowBear" extends="animalTemplateHostile">
+		<property name="UserSpawnType" value="Menu"/>
 		<property name="Tags" value="entity,animal,boss,hostile,bear,animalwildwestsnowbear,perkAT03"/>	
 		<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
 		<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
@@ -204,7 +205,7 @@
 		<property name="PhysicsBody" value="bear"/>
 		<property name="Mass" value="600"/>
 		<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
-		<property name="ReplaceMaterial0" value="@:Other/Items/Misc/snowballPrefab/materials/snowball"/>
+		<property name="ReplaceMaterial0" value="#Other/Items?Misc/snowballPrefab/materials/snowball"/>
 		
 		<property name="HandItem" value="meleeHandAnimalBear"/>
 		<property name="AITask-1" value="BreakBlock"/>
@@ -261,13 +262,14 @@
 		<!-- CUSTOM Rabbit - Snow Hare -->
 		
 	<entity_class name="animalSnowHare" extends="animalTemplateTimid">
+	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,animal,rabbit,perkAT01,perkAT02,perkAT03"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
 	<property name="Class" value="EntityAnimalRabbit"/>
 	<property name="SizeScale" value="1.8"/>	
 	<property name="Prefab" value="/Entities/Animals/Rabbit/RABBIT"/>
-	<property name="ReplaceMaterial0" value="@:Other/Items/Misc/snowballPrefab/materials/snowball"/>	
+	<property name="ReplaceMaterial0" value="#Other/Items?Misc/snowballPrefab/materials/snowball"/>	
 	<property name="Parent" value="Animals"/>
 	<property name="Faction" value="animals"/>
 	<property name="PhysicsBody" value="rabbit"/>
@@ -317,6 +319,7 @@
 		<!-- CUSTOM Rabbit - Desert Hare -->
 		
 	<entity_class name="animalDesertHare" extends="animalTemplateTimid">
+	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,animal,rabbit,perkAT01,perkAT02,perkAT03"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_rabbit"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
@@ -415,6 +418,7 @@
 		<!-- CUSTOM Zombie Feral Chicken -->
 
 		<entity_class name="animalZombieFeralChicken" extends="animalTemplateHostile">
+			<property name="UserSpawnType" value="Menu"/>
 			<property name="Tags" value="entity,animal,chicken,perkAT01,perkAT02,perkAT03"/>
 			<property name="ExperienceGain" value="1000"/>
 			<property name="MapIcon" value="ui_game_symbol_tracking_chicken"/>
@@ -480,6 +484,7 @@
 		<!-- CUSTOM Bison -->
 		
 <entity_class name="animalBisonBear" extends="animalTemplateHostile">
+	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,animal,hostile,bear,perkAT03"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
@@ -580,6 +585,7 @@
 </entity_class>
 
 <entity_class name="animalBisonBoar" extends="animalTemplateHostile">
+	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,animal,hostile,boar,perkAT02,perkAT03,radiated"/>
 	<property name="MapIcon" value="ui_game_symbol_tracking_pig"/>
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_pig"/>
@@ -906,7 +912,7 @@
 		<!-- Guppycur - Burnt Vulture Entity Variants -->		
 
 		<entity_class name="guppyVultureBurnt" extends="zombieTemplateMale">
-            <property name="HideInSpawnMenu" value="false"/>    
+			<property name="UserSpawnType" value="Menu"/>    
             <property name="SizeScale" value=".5"/> 
 			<property name="Tags" value="entity,animal,zombie,hostile,vulture,UMA2"/>
             <property name="HasRagdoll" value="false"/>
@@ -960,7 +966,7 @@
         </entity_class>
 		
 		<entity_class name="guppyMommaVultureBurnt" extends="zombieTemplateMale">
-            <property name="HideInSpawnMenu" value="false"/>    
+            <property name="UserSpawnType" value="Menu"/>    
             <property name="SizeScale" value="1"/> 
 			<property name="Tags" value="entity,animal,zombie,hostile,vulture,UMA2,feral"/>
             <property name="HasRagdoll" value="false"/>
@@ -1017,7 +1023,7 @@
         </entity_class>
 		
 		<entity_class name="guppyRadiatedMommaVultureBurnt" extends="zombieWightRadiated">
-            <property name="HideInSpawnMenu" value="false"/>    
+            <property name="UserSpawnType" value="Menu"/>    
             <property name="SizeScale" value="1"/> 
 			<property name="Tags" value="entity,animal,zombie,hostile,vulture,UMA2,feral,radiated"/>
             <property name="HasRagdoll" value="false"/>
@@ -1077,7 +1083,7 @@
         </entity_class>
 		
 		<entity_class name="guppyRadiatedFireMommaVultureBurnt" extends="zombieWightRadiated">
-            <property name="HideInSpawnMenu" value="false"/>    
+            <property name="UserSpawnType" value="Menu"/>   
             <property name="SizeScale" value="1.1"/> 
 			<property name="Tags" value="entity,animal,zombie,hostile,vulture,UMA2,feral,radiated"/>
             <property name="HasRagdoll" value="false"/>
