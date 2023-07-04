@@ -646,21 +646,21 @@
 			<unlock_entry item="foodCornBread,drinkJarGoldenRodTea" unlock_tier="2" />
 			<unlock_entry item="foodGrilledMeat,drinkJarRedTea" unlock_tier="3" />
 			<unlock_entry item="foodBoiledMeat,drinkJarYuccaJuice" unlock_tier="4" />
-			<unlock_entry item="foodBaconAndEggs,drinkJarCoffee" unlock_tier="5" />
+			<unlock_entry item="foodBaconAndEggs,foodWildWestBaconAndEggsAndAcornHardtack,foodWildWestPineConeJamPancakes,foodFriedCatfish,drinkJarCoffee" unlock_tier="5" />
 		</display_entry>
 		<display_entry icon="foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato" name_key="foodT2-1,foodT2-2,foodT2-3,foodT2-4,foodT2-5" has_quality="false" unlock_level="11,14,18,22,26" >
-			<unlock_entry item="foodPumpkinBread,foodBlueberryPie" unlock_tier="1" />
-			<unlock_entry item="foodPumpkinPie" unlock_tier="2" />
+			<unlock_entry item="foodPumpkinBread,foodBlueberryPie,foodEggQuiche" unlock_tier="1" />
+			<unlock_entry item="foodPumpkinPie,foodHoneyPumpkinPie" unlock_tier="2" />
 			<unlock_entry item="foodPumpkinCheesecake" unlock_tier="3" />
-			<unlock_entry item="foodVegetableStew,foodMeatStew" unlock_tier="4" />
+			<unlock_entry item="foodVegetableStew,foodMeatStew,foodcottagebake,foodRubaboo,foodChickenStew" unlock_tier="4" />
 			<unlock_entry item="foodSteakAndPotato" unlock_tier="5" />
 		</display_entry>
 		<display_entry icon="drinkYuccaJuiceSmoothie,foodHoboStew,foodFishTacos,foodChiliDog,foodShamChowder" name_key="foodT3-1,foodT3-2,foodT3-3,foodT3-4,foodT3-5" has_quality="false" unlock_level="27,35,43,51,59" >
 			<unlock_entry item="drinkYuccaJuiceSmoothie,drinkJarBeer" unlock_tier="1" />
 			<unlock_entry item="foodHoboStew" unlock_tier="2" />
-			<unlock_entry item="foodFishTacos" unlock_tier="3" />
+			<unlock_entry item="foodFishTacos,foodCampfireBeans" unlock_tier="3" />
 			<unlock_entry item="foodChiliDog" unlock_tier="4" />
-			<unlock_entry item="foodShamChowder" unlock_tier="5" />
+			<unlock_entry item="foodShamChowder,foodCrawfishGumbo,foodChowder" unlock_tier="5" />
 		</display_entry>
 		<display_entry icon="foodTunaFishGravyToast,foodShepardsPie,drinkJarGrandpasLearningElixir,foodSpaghetti,foodGumboStew" name_key="foodT4-1,foodT4-2,foodT4-3,foodT4-4,foodT4-5" has_quality="false" unlock_level="60,70,80,90,100" >
 			<unlock_entry item="foodTunaFishGravyToast,drinkJarGrandpasAwesomeSauce" unlock_tier="1" />
@@ -675,19 +675,19 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,100" value="1" tags="foodCornBread,drinkJarGoldenRodTea"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="foodGrilledMeat,drinkJarRedTea"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="foodBoiledMeat,drinkJarYuccaJuice"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="foodBaconAndEggs,drinkJarCoffee"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="foodBaconAndEggs,foodWildWestBaconAndEggsAndAcornHardtack,foodWildWestPineConeJamPancakes,foodFriedCatfish,drinkJarCoffee"/>
 
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="foodPumpkinBread,foodBlueberryPie"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="foodPumpkinPie"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="foodPumpkinBread,foodBlueberryPie,foodEggQuiche"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="foodPumpkinPie,foodHoneyPumpkinPie"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="foodPumpkinCheesecake"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="foodVegetableStew,foodMeatStew"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="foodVegetableStew,foodMeatStew,foodcottagebake,foodRubaboo,foodChickenStew"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="foodSteakAndPotato"/>
 
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="drinkYuccaJuiceSmoothie,drinkJarBeer"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="foodHoboStew"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="43,100" value="1" tags="foodFishTacos"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="43,100" value="1" tags="foodFishTacos,foodCampfireBeans"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="51,100" value="1" tags="foodChiliDog"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="59,100" value="1" tags="foodShamChowder"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="59,100" value="1" tags="foodShamChowder,foodCrawfishGumbo,foodChowder"/>
 
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="foodTunaFishGravyToast,drinkJarGrandpasAwesomeSauce"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="foodShepardsPie,drinkJarGrandpasMoonshine"/>
