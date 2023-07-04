@@ -1,4 +1,8 @@
 <wildwestmod>
+
+	<!-- New compass addition for GPS brain implant -->	
+	<remove xpath="/xui/ruleset/window_group[@name='compass']/window[@name='windowEntering']"></remove>
+
 	<append xpath="/xui/ruleset">
 	
 		<window_group name="serverinfowindow">
