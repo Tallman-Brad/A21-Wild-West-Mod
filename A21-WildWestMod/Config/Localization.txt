@@ -557,6 +557,7 @@ drinkCanMegaCrushDesc,items,Food,,,"Remedial and energizing. Helps you pick up t
 barracksChair,blocks,Block,,,Deck Chair,,,,,,,,,,,,,
 dewCollectorDesc,blocks,block,,,Collects groundwater over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
 cntDewCollector,blocks,block,,,Groundwater Collector,,,,,,,,,,,,,
+resourceWaterFilterDesc,items,item,,,A component used in the crafting of a Groundwater Collector.",,,,,,,,,,,,,
 
 modVehicleSuperCharger,item_modifiers,Mod,,,Horse Sugar Cubes Mod,,,,,,,,,,,,,
 modVehicleSuperChargerDesc,item_modifiers,Mod,,,"This horse sugar cubes mod increases acceleration and top speed.",,,,,,,,,,,,,
