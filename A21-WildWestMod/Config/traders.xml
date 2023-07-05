@@ -1200,22 +1200,31 @@
 			<item name="vehicleBicycleChassis"/>
 			<item name="vehicleBicycleHandlebars"/>
 			<item name="vehicleBicyclePlaceable"/>
+			<item name="vehicleWWMHorseT1Placeable">
 		<!-- *** Minibike -->
 			<!--item name="vehicleMinibikeChassis"/-->
 			<!--item name="vehicleMinibikeHandlebars"/-->
 			<!--item name="vehicleMinibikePlaceable"/-->
+			<item name="vehicleSteamVelocipedePlaceable"/>
+			<item name="vehicleWWMHorseT2Placeable">
 		<!-- *** Motorcycle -->
 			<!--item name="vehicleMotorcycleChassis"/-->
 			<!--item name="vehicleMotorcycleHandlebars"/-->
 			<!--item name="vehicleMotorcyclePlaceable"/-->
+			<item name="vehicleWWMHorseT3Placeable">
 		<!-- *** 4x4 -->
 			<!--item name="vehicle4x4TruckChassis"/-->
 			<!--item name="vehicle4x4TruckAccessories"/-->
 			<!--item name="vehicle4x4TruckPlaceable"/-->
+			<item name="vehicleSteamHorsePlaceable"/>
 		<!-- *** Gyro -->
 			<!--item name="vehicleGyroCopterChassis"/-->
 			<!--item name="vehicleGyroCopterAccessories"/-->
 			<!--item name="vehicleGyrocopterPlaceable"/-->
+			<item name="vehicleBalloonPlaceable"/>
+			<item name="vehicleBalloon2Placeable"/>
+			<item name="vehicleBalloon3Placeable"/>
+			<item name="vehicleBalloon4Placeable"/>
 		</trader_item_group>
 		
 <!-- *** Blocks -->

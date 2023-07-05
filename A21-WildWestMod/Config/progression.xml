@@ -817,11 +817,11 @@
 	<crafting_skill name="craftingVehicles" max_level="100" parent="attCrafting" name_key="craftingVehiclesName" desc_key="craftingVehiclesDesc" long_desc_key="craftingVehiclesLongDesc" icon="ui_game_symbol_balloon">
 
 		<display_entry icon="vehicleBicyclePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5" >
-			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan,ammoGasCanBundle" unlock_tier="1" />
+			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan" unlock_tier="1" />
 		</display_entry>
-		<!--display_entry icon="vehicleMinibikePlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="20" >
-			<unlock_entry item="vehicleMinibikeChassis,vehicleMinibikeHandlebars,resourceOil,ammoGasCan" unlock_tier="1" />
-		</display_entry-->
+		<display_entry icon="vehicleSteamVelocipedePlaceable" name_key="vehiclesT2" has_quality="false" unlock_level="25" >
+			<unlock_entry item="vehicleSteamVelocipedePlaceable,ammoGasCanBundle,resourceOil" unlock_tier="1" />
+		</display_entry>
 		<!--display_entry icon="vehicleMotorcyclePlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="45" >
 			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle" unlock_tier="1" />
 		</display_entry-->
@@ -833,8 +833,8 @@
 		</display_entry>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan,ammoGasCanBundle"/>
-			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="vehicleMinibikeChassis,vehicleMinibikeHandlebars,carBattery,resourceOil,ammoGasCan"/-->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="vehicleSteamVelocipedePlaceable,ammoGasCanBundle,resourceOil"/>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle"/-->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="vehicleSteamHorsePlaceable"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="vehicleBalloonPlaceable,vehicleBalloon2Placeable,vehicleBalloon3Placeable,vehicleBalloon4Placeable"/>

@@ -1178,6 +1178,27 @@
 			<entity_class name="QC_zombieBikerRadiated" extends="zombieBikerRadiated"></entity_class>
 			
 <!-- VEHICLES -->
+
+	<entity_class name="vehicleSteamVelocipede">
+	<property name="Class" value="EntityMotorcycle"/>
+	<property name="Tags" value="vehicle,usesGas"/>
+	<property name="Parent" value="Cars"/>
+	<property name="Prefab" value="#@modfolder:Resources/SteamMotorcycle.unity3d?SteamMotorcycle"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="vehicleMotorcycle"/>
+	<property name="IsEnemyEntity" value="false"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="4"/>
+	<property name="Explosion.RadiusEntities" value="4"/>
+	<property name="Explosion.BlockDamage" value="50"/>
+	<property name="Explosion.EntityDamage" value="50"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<property name="MapIcon" value="ui_game_symbol_velocipede"/>
+	<property name="NavObject" value="SteamVelocipede" />
+</entity_class>	
 			
 <entity_class name="vehicleSteamHorse">
 	<property name="Tags" value="vehicle,vehicleSteamHorse,usesGas"/>
