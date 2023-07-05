@@ -3637,7 +3637,6 @@
 	<property name="Tags" value="vehicle,vengine,vfuel,vlight,vseat,canHaveCosmetic"/>
 	<property name="Meshfile" value="#@modfolder:Resources/SteamMotorcycle.unity3d?SteamMotorcycle"/>
 	<property name="EconomicValue" value="10000"/>
-	<property name="CustomIcon" value="armorClothHat"/>
 	<property name="UnlockedBy" value="craftingVehicles"/>
 	<property name="TraderStageTemplate" value="vehicleTier2"/>
 	<property class="Action1">
