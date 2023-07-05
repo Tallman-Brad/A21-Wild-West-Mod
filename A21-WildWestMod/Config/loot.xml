@@ -2249,7 +2249,7 @@ If there is no hit the default quality is used.
 	<item name="resourceDuctTape" count="1,2"/>
 	<item name="resourceOil" count="1,5"/>
 	<item name="resourceSpring" count="1,2"/>
-	<item name="resourceHeadlight" count="1,2"/>
+	<!--item name="resourceHeadlight" count="1,2"/-->
 	<item name="resourceElectricParts" count="1,2"/>
 	<item name="resourceMechanicalParts" count="1,2"/>
 	<item name="resourceAcid" count="1" loot_prob_template="low"/>
@@ -2376,7 +2376,7 @@ If there is no hit the default quality is used.
 	<item group="groupApparelPants"/>
 	<item group="groupApparelBootsShoes"/>
 	<item group="groupApparelSuit" loot_prob_template="low"/>
-	<item name="armorFootballHelmet" loot_prob_template="low"/>
+	<!--item name="armorFootballHelmet" loot_prob_template="low"/-->
 	<item name="resourceSewingKit" count="1,2" loot_prob_template="med"/>
 	<item name="armorSteelSetParts" count="1,2" loot_prob_template="medLow"/>
 	<item name="armorMilitarySetParts" count="1,2" loot_prob_template="medLow"/>
@@ -2390,7 +2390,7 @@ If there is no hit the default quality is used.
 	<item group="groupApparelTankTopTShirt"/>
 	<item group="groupApparelPants"/>
 	<item group="groupApparelSuit" loot_prob_template="low"/>
-	<item name="armorFootballHelmet" loot_prob_template="low"/>
+	<!--item name="armorFootballHelmet" loot_prob_template="low"/-->
 	<item name="resourceSewingKit" count="1,2" loot_prob_template="med"/>
 	<item name="armorSteelSetParts" count="1,2" loot_prob_template="medLow"/>
 	<item name="armorMilitarySetParts" count="1,2" loot_prob_template="medLow"/>
@@ -2447,7 +2447,7 @@ If there is no hit the default quality is used.
 	<item name="armorSteelChest"/>
 	<item name="armorSteelLegs"/>
 	<item name="armorSteelBoots"/>
-	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+	<!--item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/-->
 </lootgroup>
 
 <lootgroup name="groupArmorScaled">
@@ -2466,11 +2466,11 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupApparelHazmat">
-	<item name="apparelHazmatBoots"/>
-	<item name="apparelHazmatPants"/>
-	<item name="apparelHazmatJacket"/>
-	<item name="apparelHazmatGloves"/>
-	<item name="apparelHazmatMask"/>
+	<!--item name="apparelHazmatBoots"/-->
+	<!--item name="apparelHazmatPants"/-->
+	<!--item name="apparelHazmatJacket"/-->
+	<!--item name="apparelHazmatGloves"/-->
+	<!--item name="apparelHazmatMask"/-->
 	<item name="resourceMilitaryFiber" count="1,5" loot_prob_template="low"/>
 </lootgroup>
 
@@ -2493,7 +2493,7 @@ If there is no hit the default quality is used.
 	<item name="armorMilitaryLegs"/>
 	<item name="armorMilitaryBoots"/>
 	<item name="armorMilitarySetParts" count="1,2" loot_prob_template="medLow"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/>
+	<!--item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/-->
 </lootgroup>
 
 <!-- *** Ammo_Groups -->
@@ -2565,7 +2565,7 @@ If there is no hit the default quality is used.
 	<!-- <item name="ammoRocketFrag" count="1"/> -->
 <!-- </lootgroup> -->
 
-<lootgroup name="groupAmmoRocket">
+<lootgroup name="groupAmmoRocket"> <!-- REMOVE FURTHER DOWN -->
 	<item name="ammoRocketHE" count="1"/>
 	<item name="ammoRocketFrag" count="1"/>
 </lootgroup>
@@ -2587,41 +2587,43 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupWeaponsT2_DeadEye" count="all" loot_quality_template="QLTemplateT2">
-	<item name="gunRifleT2LeverActionRifle"/>
+	<item name="gunRifleT2LeverActionRifleWinchester"/> <!-- Switched with gunRifleT2LeverActionRifle for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_DeadEye" count="all" loot_quality_template="QLTemplateT3">
-	<item name="gunRifleT3SniperRifle"/>
+	<item name="gunRifleT2LeverActionRifleLegendaryTribeWinchester"/> <!-- Switched with gunRifleT3SniperRifle for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupWeaponsT1_Demolitionist">
 	<item name="thrownAmmoMolotovCocktail" count="1,3"/>
-	<item name="thrownAmmoPipeBomb" count="1,4"/>
+	<!--item name="thrownAmmoPipeBomb" count="1,4"/-->
 </lootgroup>
 
 <lootgroup name="groupWeaponsT2_Demolitionist">
 	<item name="thrownDynamite" count="1,3"/>
-	<item name="thrownGrenade" count="1,3"/>
-	<item group="groupAmmoRocket" prob="0.3"  count="1,2"/>
+	<!--item name="thrownGrenade" count="1,3"/-->
+	<!--item group="groupAmmoRocket" prob="0.3"  count="1,2"/-->
+	<item name="thrownAmmoMolotovCocktail" count="3,5"/> <!-- Wild West Mod -->
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Demolitionist01" count="all" loot_quality_template="QLTemplateT3">
+<lootgroup name="groupWeaponsT3_Demolitionist01" count="all" loot_quality_template="QLTemplateT3"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunExplosivesT3RocketLauncher"/>
 	<item group="groupAmmoRocket"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_Demolitionist">
-	<item group="groupWeaponsT3_Demolitionist01" prob="0.4"/>
-	<item group="groupAmmoRocket" prob="0.6"  count="1,2"/>
-	<item name="thrownGrenadeContact" count="1,3"/>
-	<item name="thrownTimedCharge" count="1,3"/>
+	<!--item group="groupWeaponsT3_Demolitionist01" prob="0.4"/-->
+	<!--item group="groupAmmoRocket" prob="0.6"  count="1,2"/-->
+	<!--item name="thrownGrenadeContact" count="1,3"/-->
+	<item name="thrownTimedDynamite" count="1,3"/> <!-- Switched with thrownTimedCharge for Wild West Mod -->
+	<item name="thrownAmmoMolotovCocktail" count="5,10"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupWeapons_Demolitionist">
 	<item group="groupWeaponsT1_Demolitionist" loot_prob_template="ProbT0"/>
 	<item group="groupWeaponsT2_Demolitionist" loot_prob_template="ProbT1"/>
 	<item group="groupWeaponsT2_Demolitionist" loot_prob_template="ProbT2"/>
-	<item name="gunExplosivesT3RocketLauncherParts" count="2,5" loot_prob_template="ProbT2"/>
+	<!--item name="gunExplosivesT3RocketLauncherParts" count="2,5" loot_prob_template="ProbT2"/-->
 	<item group="groupWeaponsT3_Demolitionist" loot_prob_template="ProbT3"/>
 </lootgroup>
 
@@ -2629,7 +2631,7 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT1_Demolitionist" loot_prob_template="ProbT0"/>
 	<item group="groupWeaponsT2_Demolitionist" loot_prob_template="ProbT1"/>
 	<item group="groupWeaponsT2_Demolitionist" loot_prob_template="ProbT2"/>
-	<item name="gunExplosivesT3RocketLauncherParts" count="2,5" loot_prob_template="ProbT2"/>
+	<!--item name="gunExplosivesT3RocketLauncherParts" count="2,5" loot_prob_template="ProbT2"/-->
 	<item group="groupWeaponsT3_Demolitionist" loot_prob_template="ProbT3"/>
 	<item group="groupWeaponsT3_Demolitionist" loot_prob_template="ProbT3"/>
 </lootgroup>
@@ -2647,24 +2649,24 @@ If there is no hit the default quality is used.
 	<item name="gunShotgunT2PumpShotgun"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Boomstick" count="all" loot_quality_template="QLTemplateT3">
+<lootgroup name="groupWeaponsT3_Boomstick" count="all" loot_quality_template="QLTemplateT3"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunShotgunT3AutoShotgun"/>
 </lootgroup>
 
 <!-- *** Fortitude_Based_Lootgroups -->
-<lootgroup name="groupWeaponsT0_Machinegunner" count="all" loot_quality_template="QLTemplateT0">
+<lootgroup name="groupWeaponsT0_Machinegunner" count="all" loot_quality_template="QLTemplateT0"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunMGT0PipeMachineGun"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT1_Machinegunner" count="all" loot_quality_template="QLTemplateT1">
+<lootgroup name="groupWeaponsT1_Machinegunner" count="all" loot_quality_template="QLTemplateT1"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunMGT1AK47"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT2_Machinegunner" count="all" loot_quality_template="QLTemplateT2">
+<lootgroup name="groupWeaponsT2_Machinegunner" count="all" loot_quality_template="QLTemplateT2"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunMGT2TacticalAR"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Machinegunner" count="all" loot_quality_template="QLTemplateT3">
+<lootgroup name="groupWeaponsT3_Machinegunner" count="all" loot_quality_template="QLTemplateT3"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunMGT3M60"/>
 </lootgroup>
 
@@ -2686,15 +2688,15 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT1_Archery02"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Archery01" count="all" loot_quality_template="QLTemplateT2">
+<lootgroup name="groupWeaponsT3_Archery01" count="all" loot_quality_template="QLTemplateT2"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunBowT3CompoundBow"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Archery02" count="all" loot_quality_template="QLTemplateT2">
+<lootgroup name="groupWeaponsT3_Archery02" count="all" loot_quality_template="QLTemplateT2"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunBowT3CompoundCrossbow"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Archery">
+<lootgroup name="groupWeaponsT3_Archery"> <!-- REMOVE FURTHER DOWN -->
 	<item group="groupWeaponsT3_Archery01"/>
 	<item group="groupWeaponsT3_Archery02"/>
 </lootgroup>
@@ -2704,23 +2706,23 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupWeaponsT1_Gunslinger" count="all" loot_quality_template="QLTemplateT1">
-	<item name="gunHandgunT1Pistol"/>
+	<item name="gunHandgunT1666Revolver"/> <!-- Switched with gunHandgunT1Pistol for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupWeaponsT2_Gunslinger" count="all" loot_quality_template="QLTemplateT2">
-	<item name="gunHandgunT2Magnum44"/>
+	<item name="gunHandgunT2RavenRevolver"/> <!-- Switched with gunHandgunT2Magnum44 for Wild West Mod -->
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_Gunslinger01" count="all" loot_quality_template="QLTemplateT3">
+<lootgroup name="groupWeaponsT3_Gunslinger01" count="all" loot_quality_template="QLTemplateT3"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunHandgunT3SMG5"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_Gunslinger02" count="all" loot_quality_template="QLTemplateT3">
-	<item name="gunHandgunT3DesertVulture"/>
+	<item name="gunHandgunT3SchofieldRevolver"/> <!-- Switched with gunHandgunT3DesertVulture for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_Gunslinger">
-	<item group="groupWeaponsT3_Gunslinger01"/>
+	<!--item group="groupWeaponsT3_Gunslinger01"/-->
 	<item group="groupWeaponsT3_Gunslinger02"/>
 </lootgroup>
 
@@ -2729,15 +2731,15 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnBatonT0PipeBaton"/>
 </lootgroup>
 
-<lootgroup name="groupWeaponsT1_TurretsSyndrome" loot_quality_template="QLTemplateT1">
+<lootgroup name="groupWeaponsT1_TurretsSyndrome" loot_quality_template="QLTemplateT1"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunBotT1JunkSledge"/>
 </lootgroup>
 
 <lootgroup name="groupWeaponsT2_TurretsSyndrome" loot_quality_template="QLTemplateT2">
-	<item name="gunBotT2JunkTurret"/>
+	<item name="WildWestgunBotT2JunkTurret"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
 </lootgroup>
 
-<lootgroup name="groupWeaponsT3_TurretsSyndrome" loot_quality_template="QLTemplateT3">
+<lootgroup name="groupWeaponsT3_TurretsSyndrome" loot_quality_template="QLTemplateT3"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunBotT3JunkDrone"/>
 </lootgroup>
 
@@ -2747,7 +2749,7 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT0_Gunslinger"/>
 	<item group="groupWeaponsT0_Boomstick"/>
 	<item group="groupWeaponsT0_DeadEye"/>
-	<item group="groupWeaponsT0_Machinegunner"/>
+	<!--item group="groupWeaponsT0_Machinegunner"/-->
 	<item name="meleeWpnSpearT0StoneSpear"/>
 	<item name="meleeWpnClubT0WoodenClub"/>
 	<item name="meleeWpnSledgeT0StoneSledgehammer"/>
@@ -2780,7 +2782,9 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnSledgeT1IronSledgehammer"/>
 	<item name="meleeWpnKnucklesT1IronKnuckles"/>
 	<item name="meleeWpnBladeT1HuntingKnife"/>
-	<item name="meleeWpnBatonT2StunBaton"/>
+	<item name="meleeWpnBladeT1HuntingKnifeObsidian"/> <!-- Wild West Mod -->
+	<item name="meleeWpnBladeT1HuntingKnifeMedusa"/> <!-- Wild West Mod -->
+	<!--item name="meleeWpnBatonT2StunBaton"/-->
 </lootgroup>
 
 <!-- *** T2&T3_Melee_Weapons -->
@@ -2790,7 +2794,8 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnSledgeT3SteelSledgehammer"/>
 	<item name="meleeWpnKnucklesT3SteelKnuckles"/>
 	<item name="meleeWpnBladeT3Machete"/>
-	<item name="meleeWpnBatonT2StunBaton"/>
+	<item name="meleeWpnBladeT3MacheteMini"/> <!-- Wild West Mod -->
+	<!--item name="meleeWpnBatonT2StunBaton"/-->
 </lootgroup>
 
 <!-- *** Melee_Weapon_Parts -->
@@ -2800,7 +2805,7 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="2,5"/>
 	<item name="meleeWpnKnucklesT3SteelKnucklesParts" count="2,5"/>
 	<item name="meleeWpnBladeT3MacheteParts" count="2,5"/>
-	<item name="meleeWpnBatonT2StunBatonParts" count="2,5"/>
+	<!--item name="meleeWpnBatonT2StunBatonParts" count="2,5"/-->
 </lootgroup>
 
 <!-- *** Melee_Weapons_Scaled -->
@@ -2841,10 +2846,10 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT1_DeadEye"/>
 	<item group="groupWeaponsT1_Demolitionist"/>
 	<item group="groupWeaponsT1_Boomstick"/>
-	<item group="groupWeaponsT1_Machinegunner"/>
+	<!--item group="groupWeaponsT1_Machinegunner"/-->
 	<item group="groupWeaponsT1_Archery"/>
 	<item group="groupWeaponsT1_Gunslinger"/>
-	<item group="groupWeaponsT1_TurretsSyndrome"/>
+	<!--item group="groupWeaponsT1_TurretsSyndrome"/-->
 </lootgroup>
 
 <!-- *** T2_Ranged_Weapons -->
@@ -2852,8 +2857,8 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT2_DeadEye"/>
 	<item group="groupWeaponsT2_Demolitionist"/>
 	<item group="groupWeaponsT2_Boomstick"/>
-	<item group="groupWeaponsT2_Machinegunner"/>
-	<item group="groupWeaponsT3_Archery"/>
+	<!--item group="groupWeaponsT2_Machinegunner"/-->
+	<!--item group="groupWeaponsT3_Archery"/-->
 	<item group="groupWeaponsT2_Gunslinger"/>
 	<item group="groupWeaponsT2_TurretsSyndrome"/>
 </lootgroup>
@@ -2862,22 +2867,22 @@ If there is no hit the default quality is used.
 <lootgroup name="groupWeaponsT3_Ranged">
 	<item group="groupWeaponsT3_DeadEye"/>
 	<item group="groupWeaponsT3_Demolitionist"/>
-	<item group="groupWeaponsT3_Boomstick"/>
-	<item group="groupWeaponsT3_Machinegunner"/>
-	<item group="groupWeaponsT3_Archery"/>
+	<!--item group="groupWeaponsT3_Boomstick"/-->
+	<!--item group="groupWeaponsT3_Machinegunner"/-->
+	<!--item group="groupWeaponsT3_Archery"/-->
 	<item group="groupWeaponsT3_Gunslinger"/>
-	<item group="groupWeaponsT3_TurretsSyndrome"/>
+	<!--item group="groupWeaponsT3_TurretsSyndrome"/-->
 </lootgroup>
 
 <!-- *** Ranged_Weapon_Parts -->
 <lootgroup name="groupWeapons_RangedParts">
-	<item name="gunMGT1AK47Parts" count="1,4"/>
-	<item name="gunHandgunT1PistolParts" count="1,4"/>
+	<!--item name="gunMGT1AK47Parts" count="1,4"/-->
+	<!--item name="gunHandgunT1PistolParts" count="1,4"/-->
 	<item name="gunBowT1WoodenBowParts" count="1,4"/>
 	<item name="gunRifleT1HuntingRifleParts" count="1,4"/>
 	<item name="gunShotgunT1DoubleBarrelParts" count="1,4"/>
-	<item name="gunExplosivesT3RocketLauncherParts" count="1,4"/>
-	<item name="gunBotRoboticsParts" count="1,4"/>
+	<!--item name="gunExplosivesT3RocketLauncherParts" count="1,4"/-->
+	<!--item name="gunBotRoboticsParts" count="1,4"/-->
 </lootgroup>
 
 <!-- *** Ranged_Weapons_Scaled -->
@@ -2931,6 +2936,9 @@ If there is no hit the default quality is used.
 	<item name="modDyePink"/>
 	<item name="modDyePurple"/>
 	<item name="modDyeYellow"/>
+	<item name="modDyeTan"/> <!-- Wild West Mod -->
+	<item name="modDyeSandyTan"/> <!-- Wild West Mod -->
+	<item name="modInvisible" prob="0.5"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <!-- *** T1_Melee_Mods -->
@@ -2957,8 +2965,8 @@ If there is no hit the default quality is used.
 	<item name="modMeleeErgonomicGrip"/>
 	<item name="modMeleeTemperedBlade"/>
 	<item name="modMeleeIronBreaker"/>
-	<item name="modFuelTankSmall" loot_prob_template="ProbT3"/>
-	<item name="modFuelTankLarge" loot_prob_template="ProbT3"/>
+	<!--item name="modFuelTankSmall" loot_prob_template="ProbT3"/-->
+	<!--item name="modFuelTankLarge" loot_prob_template="ProbT3"/-->
 </lootgroup>
 
 <lootgroup name="modGunMeleeT2">
@@ -2977,13 +2985,13 @@ If there is no hit the default quality is used.
 	<item name="modGunBipod"/>
 	<item name="modGunChoke"/>
 	<item name="modGunDuckbill"/>
-	<item name="modGunFlashlight"/>
+	<!--item name="modGunFlashlight"/-->
 	<item name="modGunForegrip"/>
 	<item name="modGunMagazineExtender"/>
 	<item name="modGunMeleeTheHunter"/>
 	<item name="modGunMuzzleBrake"/>
 	<item name="modGunScopeSmall"/>
-	<item name="modGunTriggerGroupSemi"/>
+	<!--item name="modGunTriggerGroupSemi"/-->
 	<item name="modShotgunSawedOffBarrel"/>
 </lootgroup>
 
@@ -2992,12 +3000,12 @@ If there is no hit the default quality is used.
 	<item name="modGunBarrelExtender"/>
 	<item name="modGunCrippleEm"/>
 	<item name="modGunBowArrowRest"/>
-	<item name="modGunLaserSight"/>
-	<item name="modGunReflexSight"/>
+	<!--item name="modGunLaserSight"/-->
+	<!--item name="modGunReflexSight"/-->
 	<item name="modGunRetractingStock"/>
 	<item name="modGunScopeMedium"/>
 	<item name="modGunSoundSuppressorSilencer"/>
-	<item name="modGunTriggerGroupBurst3"/>
+	<!--item name="modGunTriggerGroupBurst3"/-->
 	<item name="modGunShotgunTubeExtenderMagazine"/>
 	<!-- <item name="modRoboticDroneCargoMod"/> -->
 	<!-- <item name="modRoboticDroneMedicMod"/> -->
@@ -3011,7 +3019,7 @@ If there is no hit the default quality is used.
 	<!-- <item name="modRoboticDroneMoraleBoosterMod"/> -->
 	<!-- <item name="modRoboticDroneWeaponMod"/> -->
 	<item name="modGunScopeLarge"/>
-	<item name="modGunTriggerGroupAutomatic"/>
+	<!--item name="modGunTriggerGroupAutomatic"/-->
 	<item name="modGunDrumMagazineExtender" loot_prob_template="low"/>
 </lootgroup>
 
@@ -3310,8 +3318,8 @@ If there is no hit the default quality is used.
 	<!-- Mo_Power_AND_Trader_Bob_Magazines -->
 	<item name="roboticsSkillMagazine"/>
 	<item name="vehiclesSkillMagazine"/>
-	<item name="electricianSkillMagazine"/>
-	<item name="trapsSkillMagazine"/>
+	<!--item name="electricianSkillMagazine"/-->
+	<!--item name="trapsSkillMagazine"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestRewardSkillMagazinesAll01" count="3" >
@@ -3338,8 +3346,8 @@ If there is no hit the default quality is used.
 	<item name="foodSkillMagazine" count="2"/>
 	<item name="seedSkillMagazine" count="2"/>
 	<item name="vehiclesSkillMagazine" count="2"/>
-	<item name="electricianSkillMagazine" count="2"/>
-	<item name="trapsSkillMagazine" count="2"/>
+	<!--item name="electricianSkillMagazine" count="2"/-->
+	<!--item name="trapsSkillMagazine" count="2"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestRewardSkillMagazinesAll" count="all">
@@ -3414,16 +3422,17 @@ If there is no hit the default quality is used.
 	<item name="modArmorStoragePocketSchematic"/>
 	<item name="modGunBarrelExtenderSchematic"/>
 	<item name="modGunDuckbillSchematic"/>
-	<item name="modGunFlashlightSchematic"/>
+	<!--item name="modGunFlashlightSchematic"/-->
 	<item name="modGunForegripSchematic"/>
 	<item name="modGunMeleeTheHunterSchematic"/>
 	<item name="modGunRetractingStockSchematic"/>
 	<item name="modGunScopeSmallSchematic"/>
-	<item name="modGunTriggerGroupSemiSchematic"/>
+	<!--item name="modGunTriggerGroupSemiSchematic"/-->
 	<item name="modMeleeClubBurningShaftSchematic"/>
 	<item name="modMeleeErgonomicGripSchematic"/>
 	<item name="modMeleeGraveDiggerSchematic"/>
 	<item name="modMeleeStructuralBraceSchematic"/>
+	<item name="modWeaponLubricationSchematic"/> <!-- Wild West Mod -->
 	<item name="modMeleeTemperedBladeSchematic"/>
 	<item name="modMeleeWeightedHeadSchematic"/>
 	<item name="modMeleeWoodSplitterSchematic"/>
@@ -3435,16 +3444,17 @@ If there is no hit the default quality is used.
 	<item name="modArmorBandolierSchematic"/>
 	<item name="modArmorDoubleStoragePocketSchematic"/>
 	<item name="modArmorHelmetLightSchematic"/>
-	<item name="modFuelTankSmallSchematic"/>
+	<!--item name="modFuelTankSmallSchematic"/-->
 	<item name="modGunBipodSchematic"/>
 	<item name="modGunBowArrowRestSchematic"/>
+	<item name="modGunBowArrowHandleGripSchematic"/> <!-- Wild West Mod -->
 	<item name="modGunChokeSchematic"/>
 	<item name="modGunCrippleEmSchematic"/>
 	<item name="modGunMagazineExtenderSchematic"/>
 	<item name="modGunMuzzleBrakeSchematic"/>
-	<item name="modGunReflexSightSchematic"/>
+	<!--item name="modGunReflexSightSchematic"/-->
 	<item name="modGunScopeMediumSchematic"/>
-	<item name="modGunTriggerGroupBurst3Schematic"/>
+	<!--item name="modGunTriggerGroupBurst3Schematic"/-->
 	<item name="modMeleeBunkerBusterSchematic"/>
 	<item name="modMeleeClubBarbedWireSchematic"/>
 	<item name="modMeleeFortifyingGripSchematic"/>
@@ -3460,19 +3470,19 @@ If there is no hit the default quality is used.
 	<item name="modArmorPlatingReinforcedSchematic"/>
 	<item name="modArmorTripleStoragePocketSchematic"/>
 	<item name="modArmorWaterPurifierSchematic"/>
-	<item name="modFuelTankLargeSchematic"/>
+	<!--item name="modFuelTankLargeSchematic"/-->
 	<item name="modGunBowPolymerStringSchematic"/>
-	<item name="modGunLaserSightSchematic"/>
+	<!--item name="modGunLaserSightSchematic"/-->
 	<item name="modGunMeleeRadRemoverSchematic"/>
 	<item name="modGunScopeLargeSchematic"/>
 	<item name="modGunSoundSuppressorSilencerSchematic"/>
-	<item name="modGunTriggerGroupAutomaticSchematic"/>
+	<!--item name="modGunTriggerGroupAutomaticSchematic"/-->
 	<item name="modMeleeClubMetalSpikesSchematic"/>
-	<item name="modRoboticDroneCargoModSchematic" loot_prob_template="med"/>
-	<item name="modRoboticDroneMedicModSchematic" loot_prob_template="med"/>
-	<item name="modRoboticDroneHeadlampModSchematic" loot_prob_template="med"/>
-	<item name="modRoboticDroneArmorPlatingModSchematic" loot_prob_template="med"/>
-	<item name="modRoboticDroneMoraleBoosterModSchematic" loot_prob_template="med"/>
+	<!--item name="modRoboticDroneCargoModSchematic" loot_prob_template="med"/-->
+	<!--item name="modRoboticDroneMedicModSchematic" loot_prob_template="med"/-->
+	<!--item name="modRoboticDroneHeadlampModSchematic" loot_prob_template="med"/-->
+	<!--item name="modRoboticDroneArmorPlatingModSchematic" loot_prob_template="med"/-->
+	<!--item name="modRoboticDroneMoraleBoosterModSchematic" loot_prob_template="med"/-->
 	<!-- <item name="modRoboticDroneWeaponModSchematic" loot_prob_template="med"/> -->
 	
 </lootgroup>
@@ -3549,8 +3559,10 @@ If there is no hit the default quality is used.
 	<item name="drinkJarGrandpasMoonshine"/>
 	<item name="foodShamChowder"/>
 	<item name="foodHoboStew"/>
+	<item name="foodCrawfishGumbo"/> <!-- Wild West Mod -->
 	<item name="drinkJarBlackStrapCoffee"/>
 	<item name="drinkCanMegaCrush"/>
+	<item name="drinkYuccaJuiceCooler"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <!-- *** Books_Schematics_Scaled -->
@@ -3576,18 +3588,18 @@ If there is no hit the default quality is used.
 
 <!-- *** Electrical_Devices -->
 <lootgroup name="groupElectricalDevices">
-	<item name="resourceElectricParts" count="5,10" loot_prob_template="high"/>
-	<item name="electricwirerelay" count="5,15" loot_prob_template="med"/>
-	<item name="electrictimerrelay" count="1,3" loot_prob_template="med"/>
-	<item name="ceilingLight01_player" count="1,6" loot_prob_template="med"/>
-	<item name="switch" count="1,3" loot_prob_template="med"/>
-	<item name="speaker" count="1" loot_prob_template="low"/>
-	<item name="motionsensor" count="1,2" loot_prob_template="low"/>
-	<item name="pressureplate" count="1,5" loot_prob_template="low"/>
-	<item name="batterybank" loot_prob_template="veryLow"/>
-	<item name="generatorbank" loot_prob_template="veryLow"/>
-	<item name="electricianSkillMagazine" loot_prob_template="high"/>
-	<item name="trapsSkillMagazine" count="1" loot_prob_template="med"/>
+	<item name="resourceElectricParts" count="10,20" loot_prob_template="high"/> <!-- 5,10 -->
+	<!--item name="electricwirerelay" count="5,15" loot_prob_template="med"/-->
+	<!--item name="electrictimerrelay" count="1,3" loot_prob_template="med"/-->
+	<!--item name="ceilingLight01_player" count="1,6" loot_prob_template="med"/-->
+	<!--item name="switch" count="1,3" loot_prob_template="med"/-->
+	<!--item name="speaker" count="1" loot_prob_template="low"/-->
+	<!--item name="motionsensor" count="1,2" loot_prob_template="low"/-->
+	<!--item name="pressureplate" count="1,5" loot_prob_template="low"/-->
+	<!--item name="batterybank" loot_prob_template="veryLow"/-->
+	<!--item name="generatorbank" loot_prob_template="veryLow"/-->
+	<!--item name="electricianSkillMagazine" loot_prob_template="high"/-->
+	<!--item name="trapsSkillMagazine" count="1" loot_prob_template="med"/-->
 </lootgroup>
 
 <!-- *** Canned_Food -->
@@ -3715,7 +3727,7 @@ If there is no hit the default quality is used.
 <!-- *** Tool_Resources -->
 <lootgroup name="toolParts">
 	<item name="meleeToolAllSteelParts" count="1,4"/>
-	<item name="meleeToolAxeT3ChainsawParts" count="1,4"/>
+	<!--item name="meleeToolAxeT3ChainsawParts" count="1,4"/-->
 	<item name="meleeWpnSledgeT3SteelSledgehammerParts" count="1,4" loot_prob_template="medLow"/>
 </lootgroup>
 
@@ -3757,10 +3769,16 @@ If there is no hit the default quality is used.
 
 <!-- *** T3_Tool_Loot -->
 <lootgroup name="groupToolsT3" loot_quality_template="QLTemplateT3">
-	<item name="meleeToolAxeT3Chainsaw"/>
-	<item name="meleeToolPickT3Auger"/>
-	<item name="meleeToolRepairT3Nailgun"/>
-	<item name="meleeToolSalvageT3ImpactDriver"/>
+	<!--item name="meleeToolAxeT3Chainsaw"/-->
+	<!--item name="meleeToolPickT3Auger"/-->
+	<!--item name="meleeToolRepairT3Nailgun"/-->
+	<!--item name="meleeToolSalvageT3ImpactDriver"/-->
+	<item name="meleeToolShovelT2SteelShovel"/> <!-- Wild West Mod -->
+	<item name="meleeToolPickT2SteelPickaxe"/> <!-- Wild West Mod -->
+	<item name="meleeToolAxeT2SteelAxe"/> <!-- Wild West Mod -->
+	<item name="meleeToolSalvageT2Ratchet"/> <!-- Wild West Mod -->
+	<item name="meleeToolRepairT2Tomahawk1"/> <!-- Wild West Mod -->
+	<item name="meleeToolRepairT2Tomahawk2"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <!-- *** Tool_Loot_Scaled -->
@@ -3780,17 +3798,17 @@ If there is no hit the default quality is used.
 
 <!-- *** Automotive_Resources_Rare -->
 <lootgroup name="groupRareAutomotive">
-	<item name="smallEngine"/>
+	<!--item name="smallEngine"/-->
 	<item name="vehicleWheels"/>
-	<item name="carBattery"/>
-	<item name="ammoGasCan" count="10,100"/>
+	<!--item name="carBattery"/-->
+	<item name="ammoGasCan" count="100,200"/> <!-- 10,100 -->
 </lootgroup>
 
 <!-- *** Automotive_Weapons_Tools -->
 <lootgroup name="groupCarWeaponsTools">
 	<item name="meleeToolPaintTool" loot_prob_template="veryLow"/>
-	<item name="meleeToolFlashlight02" loot_prob_template="veryLow"/>
-	<item name="resourceRepairKit" count="1,2"/>
+	<!--item name="meleeToolFlashlight02" loot_prob_template="veryLow"/-->
+	<item name="resourceRepairKit" count="3,6"/> <!-- 1,2 -->
 </lootgroup>
 
 <!-- *** Automotive_Resources -->
@@ -3803,11 +3821,11 @@ If there is no hit the default quality is used.
 
 <!-- *** Utility_Group -->
 <lootgroup name="groupUtilityItems">
-	<item name="resourceRepairKit" count="1,2"/>
-	<item name="resourceLockPick" count="1,2"/>
+	<item name="resourceRepairKit" count="3,6"/> <!-- 1,2 -->
+	<item name="resourceLockPick" count="3,6"/> <!-- 1,2 -->
 	<item name="meleeToolPaintTool" loot_prob_template="veryLow"/>
-	<item name="meleeToolWireTool" loot_prob_template="veryLow"/>
-	<item name="meleeToolFlashlight02" loot_prob_template="veryLow"/>
+	<!--item name="meleeToolWireTool" loot_prob_template="veryLow"/-->
+	<!--item name="meleeToolFlashlight02" loot_prob_template="veryLow"/-->
 </lootgroup>
 
 <!-- *** Working_Stiffs -->
@@ -3910,7 +3928,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** Minibike_Parts -->
-<lootgroup name="minibikeParts">
+<lootgroup name="minibikeParts"> <!-- REMOVE FURTHER DOWN -->
 	<item name="vehicleMinibikeChassis"/>
 	<item name="vehicleMinibikeHandlebars"/>
 	<item name="vehicleWheels"/>
@@ -3919,7 +3937,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** Motorcycle_Parts -->
-<lootgroup name="motorcycleParts">
+<lootgroup name="motorcycleParts"> <!-- REMOVE FURTHER DOWN -->
 	<item name="vehicleMotorcycleChassis"/>
 	<item name="vehicleMotorcycleHandlebars"/>
 	<item name="vehicleWheels"/>
@@ -3928,7 +3946,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** 4x4_Parts -->
-<lootgroup name="4x4Parts">
+<lootgroup name="4x4Parts"> <!-- REMOVE FURTHER DOWN -->
 	<item name="vehicle4x4TruckChassis"/>
 	<item name="vehicle4x4TruckAccessories"/>
 	<item name="vehicleWheels"/>
@@ -3937,7 +3955,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** Gyrocopter_Parts -->
-<lootgroup name="gyroCopterParts">
+<lootgroup name="gyroCopterParts"> <!-- REMOVE FURTHER DOWN -->
 	<item name="vehicleGyroCopterChassis"/>
 	<item name="vehicleGyroCopterAccessories"/>
 	<item name="vehicleWheels"/>
@@ -3948,11 +3966,11 @@ If there is no hit the default quality is used.
 <!-- *** Vehicle_Parts_Scaled -->
 <lootgroup name="vehiclePartsTiered">
 	<item group="bicycleParts"  loot_prob_template="ProbT0"/>
-	<item group="minibikeParts"  loot_prob_template="ProbT1Cap"/>
-	<item group="motorcycleParts" loot_prob_template="ProbT2Cap"/>
+	<item group="vehicleMods"  loot_prob_template="ProbT1Cap"/> <!-- Switched with minibikeParts for Wild West Mod -->
+	<item group="vehicleMods" loot_prob_template="ProbT2Cap"/> <!-- Switched with motorcycleParts for Wild West Mod -->
 	<item group="vehicleMods" loot_prob_template="ProbT1Cap"/>
-	<item group="4x4Parts" loot_prob_template="ProbT3"/>
-	<item group="gyroCopterParts" loot_prob_template="ProbT3"/>
+	<item group="vehicleMods" loot_prob_template="ProbT3"/> <!-- Switched with 4x4Parts for Wild West Mod -->
+	<item group="vehicleMods" loot_prob_template="ProbT3"/> <!-- Switched with gyroCopterParts for Wild West Mod -->
 </lootgroup>
 
 <!-- *** Shamway_Loot -->
@@ -3971,14 +3989,14 @@ If there is no hit the default quality is used.
 
 <!-- *** Weapon_Parts -->
 <lootgroup name="weaponParts">
-	<item name="gunMGT1AK47Parts" count="1,2"/>
-	<item name="gunHandgunT1PistolParts" count="1,2"/>
+	<!--item name="gunMGT1AK47Parts" count="1,2"/-->
+	<!--item name="gunHandgunT1PistolParts" count="1,2"/-->
 	<item name="gunBowT1WoodenBowParts" count="1,2"/>
 	<item name="gunRifleT1HuntingRifleParts" count="1,2"/>
 	<item name="gunShotgunT1DoubleBarrelParts" count="1,2"/>
-	<item name="gunExplosivesT3RocketLauncherParts" count="1,2"/>
-	<item name="gunBotRoboticsParts" count="1,2"/>
-	<item name="meleeWpnBatonT2StunBatonParts" count="1,2"/>
+	<!--item name="gunExplosivesT3RocketLauncherParts" count="1,2"/-->
+	<!--item name="gunBotRoboticsParts" count="1,2"/-->
+	<!--item name="meleeWpnBatonT2StunBatonParts" count="1,2"/-->
 	<item name="meleeWpnBladeT3MacheteParts" count="1,2"/>
 	<item name="meleeWpnSpearT3SteelSpearParts" count="1,2"/>
 	<item name="meleeWpnClubT3SteelClubParts" count="1,2"/>
@@ -3988,11 +4006,11 @@ If there is no hit the default quality is used.
 
 <!-- *** Gun_Parts -->
 <lootgroup name="gunPartsOnly">
-	<item name="gunMGT1AK47Parts" count="1,2"/>
-	<item name="gunHandgunT1PistolParts" count="1,2"/>
+	<!--item name="gunMGT1AK47Parts" count="1,2"/-->
+	<!--item name="gunHandgunT1PistolParts" count="1,2"/-->
 	<item name="gunRifleT1HuntingRifleParts" count="1,2"/>
 	<item name="gunShotgunT1DoubleBarrelParts" count="1,2"/>
-	<item name="gunExplosivesT3RocketLauncherParts" count="1,2"/>
+	<!--item name="gunExplosivesT3RocketLauncherParts" count="1,2"/-->
 </lootgroup>
 
 <!-- *** Playtest_Box -->
@@ -4158,10 +4176,16 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupQuestToolsT3" loot_quality_template="questT3QualTemplate">
-	<item name="meleeToolAxeT3Chainsaw"/>
-	<item name="meleeToolPickT3Auger"/>
-	<item name="meleeToolRepairT3Nailgun"/>
-	<item name="meleeToolSalvageT3ImpactDriver"/>
+	<!--item name="meleeToolAxeT3Chainsaw"/-->
+	<!--item name="meleeToolPickT3Auger"/-->
+	<!--item name="meleeToolRepairT3Nailgun"/-->
+	<!--item name="meleeToolSalvageT3ImpactDriver"/-->
+	<item name="meleeToolShovelT2SteelShovel"/> <!-- Wild West Mod -->
+	<item name="meleeToolPickT2SteelPickaxe"/> <!-- Wild West Mod -->
+	<item name="meleeToolAxeT2SteelAxe"/> <!-- Wild West Mod -->
+	<item name="meleeToolSalvageT2Ratchet"/> <!-- Wild West Mod -->
+	<item name="meleeToolRepairT2Tomahawk1"/> <!-- Wild West Mod -->
+	<item name="meleeToolRepairT2Tomahawk2"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupQuestTools">
@@ -4176,11 +4200,13 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnSledgeT1IronSledgehammer"/>
 	<item name="meleeWpnKnucklesT1IronKnuckles"/>
 	<item name="meleeWpnBladeT1HuntingKnife"/>
-	<item name="gunBotT1JunkSledge"/>
+	<item name="meleeWpnBladeT1HuntingKnifeObsidian"/> <!-- Wild West Mod -->
+	<item name="meleeWpnBladeT1HuntingKnifeMedusa"/> <!-- Wild West Mod -->
+	<!--item name="gunBotT1JunkSledge"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestWeaponsMeleeT2" loot_quality_template="questT2QualTemplate">
-	<item name="meleeWpnBatonT2StunBaton"/>
+	<!--item name="meleeWpnBatonT2StunBaton"/-->
 	<!-- Some T3 items get treated as T2 -->
 	<item name="meleeWpnClubT3SteelClub"/>
 	<item name="meleeWpnSledgeT3SteelSledgehammer"/>
@@ -4198,31 +4224,32 @@ If there is no hit the default quality is used.
 <lootgroup name="groupQuestWeaponsRangedT1" loot_quality_template="questT1QualTemplate">
 	<item name="gunRifleT1HuntingRifle"/>
 	<item name="gunShotgunT1DoubleBarrel"/>
-	<item name="gunMGT1AK47"/>
+	<!--item name="gunMGT1AK47"/-->
 	<item name="gunBowT1WoodenBow"/>
 	<item name="gunBowT1IronCrossbow"/>
-	<item name="gunHandgunT1Pistol"/>
+	<item name="gunHandgunT1666Revolver"/> <!-- Switched with gunHandgunT1Pistol for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupQuestWeaponsRangedT2" loot_quality_template="questT2QualTemplate">
 	<item name="gunRifleT2LeverActionRifle"/>
-	<item name="gunMGT2TacticalAR"/>
+	<item name="gunRifleT2LeverActionRifleWinchester"/> <!-- Wild West Mod -->
+	<!--item name="gunMGT2TacticalAR"/-->
 	<item name="gunShotgunT2PumpShotgun"/>
-	<item name="gunHandgunT2Magnum44"/>
-	<item name="gunBotT2JunkTurret"/>
+	<item name="gunHandgunT2RavenRevolver"/> <!-- Switched with gunHandgunT2Magnum44 for Wild West Mod -->
+	<item name="WildWestgunBotT2JunkTurret"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
 	<!-- Some T3 items get treated as T2 -->
-	<item name="gunBowT3CompoundBow"/>
-	<item name="gunBowT3CompoundCrossbow"/>
+	<!--item name="gunBowT3CompoundBow"/-->
+	<!--item name="gunBowT3CompoundCrossbow"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestWeaponsRangedT3" loot_quality_template="questT3QualTemplate">
-	<item name="gunRifleT3SniperRifle"/>
-	<item name="gunExplosivesT3RocketLauncher"/>
-	<item name="gunShotgunT3AutoShotgun"/>
-	<item name="gunMGT3M60"/>
-	<item name="gunHandgunT3SMG5"/>
-	<item name="gunHandgunT3DesertVulture"/>
-	<item name="gunBotT3JunkDrone"/>
+	<item name="gunRifleT2LeverActionRifleLegendaryTribeWinchester"/> <!-- Switched with gunRifleT3SniperRifle for Wild West Mod -->
+	<!--item name="gunExplosivesT3RocketLauncher"/-->
+	<!--item name="gunShotgunT3AutoShotgun"/-->
+	<!--item name="gunMGT3M60"/-->
+	<!--item name="gunHandgunT3SMG5"/-->
+	<item name="gunHandgunT3SchofieldRevolver"/> <!-- Switched with gunHandgunT3DesertVulture for Wild West Mod -->
+	<!--item name="gunBotT3JunkDrone"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestWeaponsRanged">
@@ -4252,13 +4279,13 @@ If there is no hit the default quality is used.
 	<item name="ammoCrossbowBoltFlaming" count="25" loot_prob_template="QuestT2Prob"/>
 	<item name="ammoArrowExploding" count="20" loot_prob_template="QuestT2Prob"/>
 	<item name="ammoCrossbowBoltExploding" count="20" loot_prob_template="QuestT2Prob"/>
-	<item name="ammoRocketFrag" count="5" loot_prob_template="QuestT3Prob"/>
-	<item name="thrownAmmoPipeBomb" count="10" loot_prob_template="QuestT1Prob"/>
+	<!--item name="ammoRocketFrag" count="5" loot_prob_template="QuestT3Prob"/-->
+	<!--item name="thrownAmmoPipeBomb" count="10" loot_prob_template="QuestT1Prob"/-->
 	<item name="thrownDynamite" count="5" loot_prob_template="QuestT2Prob"/>
 	<item name="thrownAmmoMolotovCocktail" count="10" loot_prob_template="QuestT1Prob"/>
-	<item name="thrownGrenade" count="10"  loot_prob_template="QuestT2Prob"/>
-	<item name="thrownGrenadeContact" count="10" loot_prob_template="QuestT3Prob"/>
-	<item name="thrownTimedCharge" count="5" loot_prob_template="QuestT3Prob"/>
+	<!--item name="thrownGrenade" count="10"  loot_prob_template="QuestT2Prob"/-->
+	<!--item name="thrownGrenadeContact" count="10" loot_prob_template="QuestT3Prob"/-->
+	<item name="thrownTimedDynamite" count="5" loot_prob_template="QuestT3Prob"/> <!-- Switched with thrownTimedCharge for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupQuestArmorT1" loot_quality_template="questT1QualTemplate">
@@ -4285,7 +4312,7 @@ If there is no hit the default quality is used.
 	<item name="armorSteelChest"/>
 	<item name="armorSteelGloves"/>
 	<item name="armorSteelHelmet"/>
-	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" loot_prob_template="medLow"/>
+	<!--item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" loot_prob_template="medLow"/-->
 	<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1"/>
 </lootgroup>
 
@@ -4299,7 +4326,7 @@ If there is no hit the default quality is used.
 	<item name="drugVitamins" count="2,4" prob="1.5"/>
 	<item name="medicalFirstAidBandage" count="5" prob="1.5"/>
 	<item name="medicalFirstAidKit" count="3" prob="1.5"/>
-	<item name="drugAntibiotics" count="1,3" prob="1.5"/>
+	<!--item name="drugAntibiotics" count="1,3" prob="1.5"/-->
 	<item name="drugHerbalAntibiotics" count="2,4" prob="1.5"/> 
 	<item name="drugPainkillers" count="2,3" prob="1.5"/>
 	<item name="drugSteroids" count="3,5" loot_prob_template="QuestT2Prob"/>
@@ -4448,37 +4475,37 @@ If there is no hit the default quality is used.
 	<item name="questRewardT0HandgunBundle"/>
 	<item name="questRewardT0RifleBundle"/>
 	<item name="questRewardT0ShotgunBundle"/>
-	<item name="questRewardT0MachineGunBundle"/>
+	<!--item name="questRewardT0MachineGunBundle"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestT1Firearms">
 	<item name="questRewardT1HandgunBundle"/>
 	<item name="questRewardT1ShotgunBundle"/>
 	<item name="questRewardT1RifleBundle"/>
-	<item name="questRewardT1MachineGunBundle"/>
+	<!--item name="questRewardT1MachineGunBundle"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestT2Firearms">
 	<item name="questRewardT2HandgunBundle"/>
 	<item name="questRewardT2ShotgunBundle"/>
 	<item name="questRewardT2RifleBundle"/>
-	<item name="questRewardT2MachineGunBundle"/>
+	<!--item name="questRewardT2MachineGunBundle"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestT3Firearms">
 	<item name="questRewardT3HandgunBundle"/>
-	<item name="questRewardT3SMGBundle"/>
-	<item name="questRewardT3ShotgunBundle"/>
+	<!--item name="questRewardT3SMGBundle"/-->
+	<!--item name="questRewardT3ShotgunBundle"/-->
 	<item name="questRewardT3RifleBundle"/>
-	<item name="questRewardT3MachineGunBundle"/>
+	<!--item name="questRewardT3MachineGunBundle"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestT3LegendaryFirearms">
 	<item name="questRewardT3HandgunLegendaryBundle"/>
-	<item name="questRewardT3SMGLegendaryBundle"/>
-	<item name="questRewardT3ShotgunLegendaryBundle"/>
+	<!--item name="questRewardT3SMGLegendaryBundle"/-->
+	<!--item name="questRewardT3ShotgunLegendaryBundle"/-->
 	<item name="questRewardT3RifleLegendaryBundle"/>
-	<item name="questRewardT3MachineGunLegendaryBundle"/>
+	<!--item name="questRewardT3MachineGunLegendaryBundle"/-->
 </lootgroup>
 
 <lootgroup name="groupQuestT0LightArmor" count="all">
@@ -4661,6 +4688,11 @@ If there is no hit the default quality is used.
 	<item group="schematicsModsAndGeneralRare" loot_prob_template="low"/>
 </lootgroup>
 
+<!-- Custom Wild West Group Reward Additions -->
+<lootgroup name="groupSarsparilla" count="all">
+	<item name="drinkCanMegaCrush" count="6"/>
+</lootgroup>
+
 <!-- *** Bird_Nest -->
 <lootgroup name="groupBirdNest01" count="1">
 	<item name="resourceFeather" count="1"/>
@@ -4669,6 +4701,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupBirdNest02" count="1,2">
 	<item name="foodEgg" loot_prob_template="medLow"/>
 	<item name="resourceFeather" count="1,5" loot_prob_template="high"/>
+	<item name="CaughtChick" loot_prob_template="veryLow"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupBirdNest" count="all">
@@ -5093,6 +5126,12 @@ If there is no hit the default quality is used.
 	<item name="foodMeatStew"/>
 	<item name="foodShamChowder"/>
 	<item name="foodHoboStew"/>
+	<item name="foodChickenStew"/> <!-- Wild West Mod -->
+	<item name="foodcottagebake"/> <!-- Wild West Mod -->
+	<item name="foodRubaboo"/> <!-- Wild West Mod -->
+	<item name="foodCrawfishGumbo"/> <!-- Wild West Mod -->
+	<item name="foodChowder"/> <!-- Wild West Mod -->
+	<item name="foodCampfireBeans"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <!-- *** A20_Drink_Groups -->
@@ -5109,7 +5148,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupDrinksRare">
-	<item name="drinkYuccaJuiceSmoothie"/>
+	<!--item name="drinkYuccaJuiceSmoothie"/-->
 	<item name="drinkJarBlackStrapCoffee"/>
 	<item name="drinkJarPureMineralWater"/>
 	<item name="drinkCanMegaCrush"/>
@@ -5192,7 +5231,7 @@ If there is no hit the default quality is used.
 <!-- *** A20_Medical_Groups -->
 <lootgroup name="groupMedicalCommon" count="1">
 	<item name="resourceCloth" count="1,3"/>
-	<item name="resourceScrapPolymers" count="1,3"/>
+	<item name="resourceScrapPolymers" count="5,10"/> <!-- 1,3 -->
 	<item name="resourcePaper" count="1,3"/>
 	<item name="medicalBandage" loot_prob_template="medHigh"/>
 	<item name="resourceSewingKit" loot_prob_template="medHigh"/>
@@ -5215,7 +5254,7 @@ If there is no hit the default quality is used.
 	<item name="medicalFirstAidKit"/>
 	<item name="drugFortBites"/>
 	<item name="drugRecog"/>
-	<item name="drugAntibiotics" loot_prob_template="veryLow"/>
+	<item name="drugHerbalAntibiotics" loot_prob_template="med"/> <!-- Replaced for drugAntibiotics -->
 </lootgroup>
 
 <!-- *** A20_Small_Medical_Pile_Groups -->
@@ -5356,13 +5395,15 @@ If there is no hit the default quality is used.
 
 <!-- *** BeerCooler_Loot -->
 <lootgroup name="groupBeerCooler01">
-	<item name="drinkJarBeer" loot_prob_template="high"/>
-	<item group="groupFoodCommon" loot_prob_template="low"/>
-	<item group="groupDrinksCommon" loot_prob_template="low"/>
+	<item name="drinkJarBeer" loot_prob_template="low"/> <!-- Lowered -->
+	<item group="groupFoodCommon" loot_prob_template="low"/> <!-- Same -->
+	<item group="groupFoodUncommon" loot_prob_template="veryLow"/> <!-- New -->
+	<item group="groupDrinksCommon" loot_prob_template="med"/> <!-- Same -->
+	<item name="drinkCanMegaCrush" count="1" loot_prob_template="veryLow"/> <!-- New -->
 </lootgroup>
 
 <lootgroup name="groupBeerCooler" count="all">
-	<item group="groupBeerCooler01" count="1"/>
+	<item group="groupBeerCooler01" count="1,2"/> <!-- From 1 to 1,2 since many other sources have been removed -->
 </lootgroup>
 
 <!-- *** CoffeeMaker_Loot -->
@@ -5579,6 +5620,10 @@ If there is no hit the default quality is used.
 	<item name="bookNightStalkerStealthDamage"/>
 	<item name="bookNightStalkerThiefAdrenaline"/>
 	<item name="bookNightStalkerTwilightThief"/>
+	
+	<item name="qc_eliminatehorde"/> <!-- Wild West Mod -->
+	<item name="qc_eliminatetoysoldiers"/> <!-- Wild West Mod -->
+	
 </lootgroup>
 
 <lootgroup name="groupGunSafeSecure" count="all">
@@ -5724,6 +5769,8 @@ If there is no hit the default quality is used.
 	<item group="groupToolsT1Wrench" loot_prob_template="low"/>
 	<item name="resourceAcid" count="1" loot_prob_template="med"/>
 	<item name="meleeWpnBladeT1HuntingKnife" loot_prob_template="veryLow"/>
+	<item name="meleeWpnBladeT1HuntingKnifeObsidian" loot_prob_template="veryLow"/>	
+	<item name="meleeWpnBladeT1HuntingKnifeMedusa" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupSinks" count="all">
@@ -5756,7 +5803,7 @@ If there is no hit the default quality is used.
 	<item group="skillMagazines" count="1" loot_prob_template="veryLow"/>
 	<item group="booksRareOnlyScaled" loot_prob_template="veryLow"/>
 	<item group="groupValuablesSmall" loot_prob_template="low"/>
-	<item name="resourceLockPick" count="1,2" loot_prob_template="veryLow"/>
+	<item name="resourceLockPick" count="3,6" loot_prob_template="veryLow"/> <!-- 1,2 -->
 </lootgroup>
 
 <lootgroup name="groupJunk" count="all">
@@ -5786,7 +5833,7 @@ If there is no hit the default quality is used.
 	<item group="booksRareOnlyScaled" loot_prob_template="veryLow"/>
 	<item group="skillMagazines" count="1" loot_prob_template="veryLow"/>
 	<item group="groupValuablesSmall" loot_prob_template="low"/>
-	<item name="resourceLockPick" count="1,2" loot_prob_template="veryLow"/>
+	<item name="resourceLockPick" count="3,6" loot_prob_template="veryLow"/> <!-- 1,2 -->
 </lootgroup>
 
 <lootgroup name="groupJunkNoBMats" count="all">
@@ -5840,7 +5887,8 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupRottenChest03">
-	<item name="meleeToolRepairT0TazasStoneAxe" loot_prob_template="veryLow"/>
+	<item name="meleeToolRepairT2Tomahawk1" loot_prob_template="veryLow"/> <!-- Replacing meleeToolRepairT0TazasStoneAxe -->
+	<item name="meleeToolRepairT2Tomahawk2" loot_prob_template="veryLow"/> <!-- Replacing meleeToolRepairT0TazasStoneAxe -->
 	<item name="drugHerbalAntibiotics" count="1,2" loot_prob_template="veryLow"/>
 </lootgroup>
 
@@ -5856,7 +5904,8 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupOldWestChest02">
-	<item name="meleeToolRepairT0TazasStoneAxe" loot_prob_template="veryLow"/>
+	<item name="meleeToolRepairT2Tomahawk1" loot_prob_template="veryLow"/> <!-- Replacing meleeToolRepairT0TazasStoneAxe -->
+	<item name="meleeToolRepairT2Tomahawk2" loot_prob_template="veryLow"/> <!-- Replacing meleeToolRepairT0TazasStoneAxe -->
 </lootgroup>
 
 <lootgroup name="groupOldWestChest" count="all">
@@ -5889,7 +5938,7 @@ If there is no hit the default quality is used.
 	<item group="groupAmmoMedium" loot_prob_template="med"/>
 	<item group="groupAmmoLarge" loot_prob_template="low"/>
 	<item group="groupTreasureMaps" loot_prob_template="veryLow"/>
-	<item name="meleeToolFlashlight02" loot_prob_template="veryLow"/>
+	<!--item name="meleeToolFlashlight02" loot_prob_template="veryLow"/-->
 </lootgroup>
 
 <lootgroup name="groupMilitaryFootlocker02">
@@ -5897,7 +5946,7 @@ If there is no hit the default quality is used.
 	<item group="groupArmorModsScaled" loot_prob_template="low"/>
 	<item name="meleeWpnBladeT1HuntingKnife" loot_prob_template="veryLow"/>
 	<item name="meleeWpnKnucklesT1IronKnuckles" loot_prob_template="veryLow"/>
-	<item name="gunHandgunT1Pistol" loot_prob_template="veryLow"/>
+	<item name="gunHandgunT1666Revolver" loot_prob_template="veryLow"/> <!-- Replaced gunHandgunT1Pistol -->
 </lootgroup>
 
 <lootgroup name="groupMilitaryFootlocker" count="all">
@@ -5984,7 +6033,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupPurse02">
 	<item name="oldCash"  count="5,10" loot_prob_template="high"/>
 	<item name="casinoCoin"  count="5,10" loot_prob_template="low"/>
-	<item name="resourceLockPick"  count="1,3" loot_prob_template="low"/>
+	<item name="resourceLockPick"  count="3,6" loot_prob_template="low"/> <!-- 1,3 -->
 </lootgroup>
 
 <lootgroup name="groupPurse03">
@@ -6141,7 +6190,9 @@ If there is no hit the default quality is used.
 	<item name="resourceGlue" count="1,5"/>
 	<item name="resourceOilShale" count="10,30"/>
 	<item name="drugPainkillers" count="1"/>
-	<item name="drugAntibiotics"/>
+	<!--item name="drugAntibiotics"/-->
+	<item name="drugHerbalAntibiotics" count="1,2"/> <!-- Wild West Mod -->
+	<item name="toolBeaker" count="1"/> <!-- Wild West Mod -->	
 </lootgroup>
 
 <lootgroup name="groupChemistryStationLoot03">
@@ -6181,13 +6232,13 @@ If there is no hit the default quality is used.
 <!-- *** Battery_Bank -->
 <lootgroup name="groupBattBank" count="all">
 	<item name="resourceScrapLead" count="10,30"/>
-	<item name="carBattery" loot_prob_template="low" force_prob="true"/>
+	<!--item name="carBattery" loot_prob_template="low" force_prob="true"/-->
 </lootgroup>
 
 <!-- *** Generator_Bank -->
 <lootgroup name="groupGenBank" count="all">
 	<item name="resourceScrapIron" count="10,30"/>
-	<item name="smallEngine" loot_prob_template="low" force_prob="true"/>
+	<!--item name="smallEngine" loot_prob_template="low" force_prob="true"/-->
 </lootgroup>
 
 <!-- *** Utility_Cart -->
@@ -6217,7 +6268,7 @@ If there is no hit the default quality is used.
 
 <lootgroup name="groupRollingToolbox03">
 	<item name="meleeToolPaintTool" loot_prob_template="med"/>
-	<item name="meleeToolWireTool" loot_prob_template="medLow"/>
+	<!--item name="meleeToolWireTool" loot_prob_template="medLow"/-->
 	<item group="groupToolsT1Wrench" loot_prob_template="low"/>
 	<item group="groupToolsT1ClawHammer" loot_prob_template="veryLow"/>
 	<item name="resourceForgedSteel" count="1,4" loot_prob_template="veryLow"/>
@@ -6237,7 +6288,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <!-- *** MoPower_Loot -->
-<lootgroup name="groupStunBaton">
+<lootgroup name="groupStunBaton"> <!-- REMOVE FURTHER DOWN -->
 	<item name="roboticsSkillMagazine" loot_prob_template="high"/>
 	<item name="meleeWpnBatonT2StunBatonParts" loot_prob_template="med"/>
 	<item name="meleeWpnBatonT2StunBaton" loot_prob_template="med"/>
@@ -6253,7 +6304,7 @@ If there is no hit the default quality is used.
 	<item name="bookTechJunkie7Hydraulics"/>
 </lootgroup>
 
-<lootgroup name="groupBotSchematics">
+<lootgroup name="groupBotSchematics"> <!-- REMOVE FURTHER DOWN -->
 	<item name="roboticsSkillMagazine" loot_prob_template="high"/>
 	<item name="modRoboticDroneCargoModSchematic" loot_prob_template="low"/>
 	<item name="modRoboticDroneMedicModSchematic" loot_prob_template="low"/>
@@ -6262,7 +6313,7 @@ If there is no hit the default quality is used.
 	<item name="modRoboticDroneMoraleBoosterModSchematic" loot_prob_template="low"/>
 </lootgroup>
 
-<lootgroup name="groupDrone">
+<lootgroup name="groupDrone"> <!-- REMOVE FURTHER DOWN -->
 	<item name="gunBotRoboticsParts" count="1,4" loot_prob_template="med"/>
 	<item name="modRoboticDroneCargoMod" loot_prob_template="low"/>
 	<item name="modRoboticDroneMedicMod" loot_prob_template="low"/>
@@ -6273,52 +6324,52 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupRobotics">
-	<item name="gunBotRoboticsParts" count="1,4" loot_prob_template="med"/>
-	<item name="gunBotT1JunkSledge" loot_prob_template="veryLow"/>
-	<item name="gunBotT2JunkTurret" loot_prob_template="veryLow"/>
-	<item group="groupDrone" loot_prob_template="ProbT3"/>
+	<!--item name="gunBotRoboticsParts" count="1,4" loot_prob_template="med"/-->
+	<!--item name="gunBotT1JunkSledge" loot_prob_template="veryLow"/-->
+	<item name="WildWestgunBotT2JunkTurret" loot_prob_template="veryLow"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
+	<!--item group="groupDrone" loot_prob_template="ProbT3"/-->
 </lootgroup>
 
 <lootgroup name="groupMoPowerShelves">
 	<item name="resourceScrapPolymers" count="2,4" loot_prob_template="med"/>
 	<item name="resourceScrapIron" count="2,10" loot_prob_template="med"/>
 	<item name="resourcePaper" count="2,4" loot_prob_template="med"/>
-	<item name="resourceHeadlight" count="1" loot_prob_template="med"/>
+	<!--item name="resourceHeadlight" count="1" loot_prob_template="med"/-->
 	<item name="resourceElectricParts" count="1,2" loot_prob_template="medLow"/>
 	<item name="resourceMechanicalParts" count="1,2" loot_prob_template="medLow"/>
-	<item name="electricianSkillMagazine" loot_prob_template="high"/>
-	<item name="trapsSkillMagazine" loot_prob_template="med"/>
+	<!--item name="electricianSkillMagazine" loot_prob_template="high"/-->
+	<!--item name="trapsSkillMagazine" loot_prob_template="med"/-->
 	<item group="groupElectricalDevices" loot_prob_template="veryLow"/>
 </lootgroup>
 
 <lootgroup name="groupMoPower01">
 	<item name="resourceElectricParts" count="1,2" loot_prob_template="med"/>
 	<item name="resourceMechanicalParts" count="1,2" loot_prob_template="med"/>
-	<item name="resourceHeadlight" count="1,2" loot_prob_template="med"/>
-	<item name="electricianSkillMagazine" loot_prob_template="high"/>
-	<item name="trapsSkillMagazine" loot_prob_template="med"/>
+	<!--item name="resourceHeadlight" count="1,2" loot_prob_template="med"/-->
+	<!--item name="electricianSkillMagazine" loot_prob_template="high"/-->
+	<!--item name="trapsSkillMagazine" loot_prob_template="med"/-->
 </lootgroup>
 
 <lootgroup name="groupMoPower02">
 	<item name="roboticsSkillMagazine" loot_prob_template="high"/>
 	<item name="vehiclesSkillMagazine" loot_prob_template="med"/>
-	<item name="electricianSkillMagazine" loot_prob_template="high"/>
-	<item name="trapsSkillMagazine" loot_prob_template="med"/>
+	<!--item name="electricianSkillMagazine" loot_prob_template="high"/-->
+	<!--item name="trapsSkillMagazine" loot_prob_template="med"/-->
 </lootgroup>
 
 <lootgroup name="groupMoPower03">
 	<item name="carBattery" loot_prob_template="medLow"/>
-	<item group="groupStunBaton" loot_prob_template="med"/>
+	<!--item group="groupStunBaton" loot_prob_template="med"/-->
 	<item group="groupTechJunkieBooks" loot_prob_template="med"/>
 	<item group="groupRobotics" loot_prob_template="low"/>
 </lootgroup>
 
 <lootgroup name="groupMoPower04">
 	<item group="groupElectricalDevices" loot_prob_template="med"/>
-	<item name="electricianSkillMagazine" loot_prob_template="high"/>
-	<item name="trapsSkillMagazine" loot_prob_template="med"/>
-	<item group="groupBotSchematics" loot_prob_template="low"/>
-	<item name="meleeToolWireTool" loot_prob_template="veryLow"/>
+	<!--item name="electricianSkillMagazine" loot_prob_template="high"/-->
+	<!--item name="trapsSkillMagazine" loot_prob_template="med"/-->
+	<!--item group="groupBotSchematics" loot_prob_template="low"/-->
+	<!--item name="meleeToolWireTool" loot_prob_template="veryLow"/-->
 </lootgroup>
 
 <lootgroup name="groupMoPower" count="all">
@@ -6597,8 +6648,8 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponModsScaled" loot_prob_template="medLow"/>
 	<item group="groupWeaponsAllScaled" loot_prob_template="medLow"/>
 	<item group="perkBooks" loot_prob_template="low"/>
-	<item name="resourceRepairKit" count="1,2" loot_prob_template="low"/>
-	<item name="meleeToolFlashlight02" loot_prob_template="low"/>
+	<item name="resourceRepairKit" count="3,6" loot_prob_template="low"/> <!-- 1,2 -->
+	<!--item name="meleeToolFlashlight02" loot_prob_template="low"/-->
 </lootgroup>
 
 <lootgroup name="groupBackpacks" count="all">
@@ -6645,8 +6696,10 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupToilet02">
-	<item name="gunHandgunT1Pistol" loot_prob_template="veryLow"/>
+	<item name="gunHandgunT1666Revolver" loot_prob_template="veryLow"/>	
 	<item name="meleeWpnBladeT1HuntingKnife" loot_prob_template="veryLow"/>
+	<item name="meleeWpnBladeT1HuntingKnifeObsidian" loot_prob_template="veryLow"/>	
+	<item name="meleeWpnBladeT1HuntingKnifeMedusa" loot_prob_template="veryLow"/>
 	<item name="plantedCorn1" count="1" loot_prob_template="veryLow"/>
 </lootgroup>
 
@@ -6700,10 +6753,11 @@ If there is no hit the default quality is used.
 <lootgroup name="groupHuntingRanged">
 	<item name="gunBowT0PrimitiveBow" loot_prob_template="ProbT0"/>
 	<item name="gunBowT1WoodenBow" loot_prob_template="ProbT1"/>
-	<item name="gunBowT3CompoundBow" loot_prob_template="ProbT3"/>
+	<!--item name="gunBowT3CompoundBow" loot_prob_template="ProbT3"/-->
 	<item name="gunBowT1IronCrossbow" loot_prob_template="ProbT0"/>
-	<item name="gunBowT3CompoundCrossbow" loot_prob_template="ProbT3"/>
+	<!--item name="gunBowT3CompoundCrossbow" loot_prob_template="ProbT3"/-->
 	<item name="gunRifleT1HuntingRifle" loot_prob_template="ProbT1"/>
+	<item name="gunRifleT2LeverActionRifleWinchester" loot_prob_template="ProbT3"/>
 </lootgroup>
 
 <lootgroup name="groupSavageCountryCrate01">
@@ -6766,7 +6820,7 @@ If there is no hit the default quality is used.
 	<item name="oldCash" count="150,500" loot_prob_template="med"/>
 	<item group="groupMedicalRare" loot_prob_template="medHigh"/>
 	<item group="groupTreasureMaps" loot_prob_template="low"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/>
+	<!--item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/-->
 </lootgroup>
 
 <lootgroup name="groupZpackReg" count="all">
@@ -6793,7 +6847,7 @@ If there is no hit the default quality is used.
 	<item group="groupArmorScaled" loot_prob_template="medHigh"/>
 	<item group="groupCraftingRare" loot_prob_template="med"/>
 	<item name="armorMiningHelmet" mods="modArmorHelmetLight" mod_chance="1" loot_prob_template="veryLow"/>
-	<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" loot_prob_template="veryLow"/>
+	<!--item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" loot_prob_template="veryLow"/-->
 </lootgroup>
 
 <lootgroup name="groupZpackStrong03">
@@ -6803,7 +6857,7 @@ If there is no hit the default quality is used.
 	<item name="oldCash" count="150,800" loot_prob_template="med"/>
 	<item group="groupMedicalRare" loot_prob_template="medHigh"/>
 	<item group="groupTreasureMaps" loot_prob_template="low"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/>
+	<!--item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/-->
 	<item group="groupModAllScaled" loot_prob_template="med"/>
 	<item group="vehiclePartsTiered" loot_prob_template="med"/>
 </lootgroup>
@@ -6843,7 +6897,7 @@ If there is no hit the default quality is used.
 	<item name="oldCash" count="150,800" loot_prob_template="med"/>
 	<item group="groupMedicalRare" loot_prob_template="medHigh"/>
 	<item group="groupTreasureMaps" loot_prob_template="low"/>
-	<item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/>
+	<!--item name="apparelNightvisionGoggles" loot_prob_template="veryLow"/-->
 	<item group="groupModAllScaled" loot_prob_template="med"/>
 	<item group="vehiclePartsTiered" loot_prob_template="med"/>
 </lootgroup>
@@ -7070,7 +7124,7 @@ If there is no hit the default quality is used.
 	<item name="resourceSewingKit" count="5,10" loot_prob_template="high"/>
 	<item name="resourceLockPick" count="5" loot_prob_template="medHigh"/>
 	<item name="resourceAcid" count="1,2" loot_prob_template="med"/>
-	<item name="thrownTimedCharge" count="5" loot_prob_template="medLow"/>
+	<item name="thrownTimedDynamite" count="5" loot_prob_template="medLow"/> <!-- Switched with thrownTimedCharge for Wild West Mod -->
 	<item name="toolBeaker" count="1" loot_prob_template="medLow"/>
 	<item name="harvestingToolsSkillMagazine" count="1" loot_prob_template="med"/>
 	<item name="repairToolsSkillMagazine" count="1" loot_prob_template="med"/>
@@ -7283,13 +7337,16 @@ If there is no hit the default quality is used.
 	<item name="drinkJarGrandpasForgettingElixir" count="1" loot_prob_template="low"/>
 </lootgroup>
 
-<lootgroup name="groupHardenedChestT5_08">
-	<item name="questRewardDartTrapBundle" count="1"/>
-	<item name="questRewardBladeTrapBundle" count="1"/>
-	<item name="questRewardSecuritySystemBundle" count="1"/>
-	<item name="questRewardShotgunTurretBundle" count="1"/>
-	<item name="questRewardAutoTurretBundle" count="1"/>
-	<item name="questRewardT4FoodBundle" count="1"/>
+<lootgroup name="groupHardenedChestT5_08"> <!-- Wild West Mod Amendment -->
+	<!--item name="questRewardDartTrapBundle" count="1"/-->
+	<!--item name="questRewardBladeTrapBundle" count="1"/-->
+	<!--item name="questRewardSecuritySystemBundle" count="1"/-->
+	<!--item name="questRewardShotgunTurretBundle" count="1"/-->
+	<!--item name="questRewardAutoTurretBundle" count="1"/-->
+	<!--item name="questRewardT4FoodBundle" count="1"/-->
+	<item group="groupHardenedChestT4_01" count="1"/> <!-- Ammo -->
+	<item group="groupHardenedChestT4_02" count="1"/> <!-- Ammo -->
+	<item group="groupHardenedChestT4_03" count="1"/> <!-- Ammo -->
 </lootgroup>
 
 <lootgroup name="groupHardenedChestT5" count="all">
@@ -7300,7 +7357,7 @@ If there is no hit the default quality is used.
 	<item group="groupHardenedChestT5_05" count="2"/> <!-- Books/Schematics -->
 	<item group="groupHardenedChestT5_06" count="2"/> <!-- Bonus Items -->
 	<item group="groupHardenedChestT5_07" count="1"/> <!-- Cash-n-Prizes -->
-	<item group="groupHardenedChestT5_08" count="1"/> <!-- T5 Bonus Items -->
+	<item group="groupHardenedChestT5_08" count="2"/> <!-- T5 Bonus Items --> <!-- From 1 to 2 to replace modern and innappropriate items with ammo -->
 </lootgroup>
 
 <!-- *** INFESTED_LOOT -->
@@ -7311,28 +7368,29 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnSledgeT3SteelSledgehammer"/>
 	<item name="meleeWpnKnucklesT3SteelKnuckles"/>
 	<item name="meleeWpnBladeT3Machete"/>
-	<item name="meleeWpnBatonT2StunBaton"/>
+	<!--item name="meleeWpnBatonT2StunBaton"/-->
 	<item name="meleeToolAxeT2SteelAxe"/>
 	<item name="meleeToolPickT2SteelPickaxe"/>
 	<item name="meleeToolShovelT2SteelShovel"/>
-	<item name="meleeToolAxeT3Chainsaw"/>
-	<item name="meleeToolPickT3Auger"/>
-	<item name="meleeToolRepairT3Nailgun"/>
-	<item name="meleeToolSalvageT3ImpactDriver"/>
-	<item name="gunBowT3CompoundCrossbow"/>
+	<!--item name="meleeToolAxeT3Chainsaw"/-->
+	<!--item name="meleeToolPickT3Auger"/-->
+	<!--item name="meleeToolRepairT3Nailgun"/-->
+	<!--item name="meleeToolSalvageT3ImpactDriver"/-->
+	<!--item name="gunBowT3CompoundCrossbow"/-->
 	<item name="gunRifleT2LeverActionRifle"/>
-	<item name="gunMGT2TacticalAR"/>
+	<item name="gunRifleT2LeverActionRifleWinchester"/> <!-- Wild West Mod -->
+	<!--item name="gunMGT2TacticalAR"/-->
 	<item name="gunShotgunT2PumpShotgun"/>
-	<item name="gunHandgunT2Magnum44"/>
-	<item name="gunRifleT3SniperRifle"/>
-	<item name="gunExplosivesT3RocketLauncher"/>
-	<item name="gunShotgunT3AutoShotgun"/>
-	<item name="gunMGT3M60"/>
-	<item name="gunHandgunT3SMG5"/>
-	<item name="gunHandgunT3DesertVulture"/>
-	<item name="gunBotT3JunkDrone"/>
-	<item name="gunBotT2JunkTurret"/>
-	<item name="gunBotT1JunkSledge"/>
+	<item name="gunHandgunT2RavenRevolver"/> <!-- Switched with gunHandgunT2Magnum44 for Wild West Mod -->
+	<item name="gunRifleT2LeverActionRifleLegendaryTribeWinchester"/> <!-- Switched with gunRifleT3SniperRifle for Wild West Mod -->
+	<!--item name="gunExplosivesT3RocketLauncher"/-->
+	<!--item name="gunShotgunT3AutoShotgun"/-->
+	<!--item name="gunMGT3M60"/-->
+	<!--item name="gunHandgunT3SMG5"/-->
+	<item name="gunHandgunT3SchofieldRevolver"/> <!-- Switched with gunHandgunT3DesertVulture for Wild West Mod -->
+	<!--item name="gunBotT3JunkDrone"/-->
+	<item name="WildWestgunBotT2JunkTurret"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
+	<!--item name="gunBotT1JunkSledge"/-->
 </lootgroup>
 
 <lootgroup name="groupInfestedT1" count="all">
@@ -7391,9 +7449,9 @@ If there is no hit the default quality is used.
 
 <lootgroup name="groupDesks02">
 	<item group="groupMedicalCommon" loot_prob_template="high"/>
-	<item name="meleeToolFlashlight02" loot_prob_template="veryLow"/>
+	<!--item name="meleeToolFlashlight02" loot_prob_template="veryLow"/-->
 	<item name="apparelCigar" loot_prob_template="veryLow"/>
-	<item name="gunHandgunT1Pistol" loot_prob_template="veryLow"/>
+	<item name="gunHandgunT1666Revolver" loot_prob_template="veryLow"/> <!-- Replaced gunHandgunT1Pistol -->
 </lootgroup>
 
 <lootgroup name="groupDesks" count="all">
@@ -7431,7 +7489,7 @@ If there is no hit the default quality is used.
 	<item group="groupMedicalCommon" loot_prob_template="low"/>
 	<item group="groupAmmoSmall" loot_prob_template="low"/>
 	<item name="oldCash" count="1,20" loot_prob_template="low"/>
-	<item name="gunHandgunT1Pistol" loot_prob_template="veryLow"/>
+	<item name="gunHandgunT1666Revolver" loot_prob_template="veryLow"/> <!-- Replaced gunHandgunT1Pistol -->
 </lootgroup>
 
 <lootgroup name="groupNightstand" count="all">
@@ -7554,7 +7612,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupConstructionCrate02">
-	<item name="meleeToolWireTool" loot_prob_template="med"/>
+	<!--item name="meleeToolWireTool" loot_prob_template="med"/-->
 	<item group="groupElectricalDevices" loot_prob_template="med"/>
 	<item name="resourceForgedSteel" count="5,10" loot_prob_template="medLow"/>
 	<item name="resourceForgedIron" count="5,10" loot_prob_template="medLow"/>
@@ -7577,6 +7635,12 @@ If there is no hit the default quality is used.
 	<item name="foodMeatStew" loot_prob_template="low"/>
 	<item name="foodShamChowder" loot_prob_template="low"/>
 	<item name="foodHoboStew" loot_prob_template="low"/>
+	<item name="foodChickenStew" loot_prob_template="low"/> <!-- Wild West Mod -->
+	<item name="foodcottagebake" loot_prob_template="low"/> <!-- Wild West Mod -->
+	<item name="foodRubaboo" loot_prob_template="low"/> <!-- Wild West Mod -->
+	<item name="foodCrawfishGumbo" loot_prob_template="low"/> <!-- Wild West Mod -->
+	<item name="foodChowder" loot_prob_template="low"/> <!-- Wild West Mod -->
+	<item name="foodCampfireBeans" loot_prob_template="low"/> <!-- Wild West Mod -->
 	<item name="foodCornOnTheCob" count="2,4"/>
 	<item name="foodBakedPotato" count="2,4"/>
 	<item name="foodCornBread" count="2,4"/>
@@ -7607,7 +7671,7 @@ If there is no hit the default quality is used.
 	<item name="drugSteroids" count="1"/>
 	<item name="foodHoney" count="1"/>
 	<item name="drugHerbalAntibiotics" count="1"/>
-	<item name="drugAntibiotics" count="1"/>
+	<!--item name="drugAntibiotics" count="1"/-->
 </lootgroup>
 
 <!-- *** Air_Drop -->
@@ -7631,7 +7695,7 @@ If there is no hit the default quality is used.
 	<item group="groupQuestT2RangedMods"/>
 	<item group="groupQuestFarmPlotsT2"/>
 	<item group="groupQuestT1Firearms"/>
-	<item group="groupQuestNailgun"/>
+	<!--item group="groupQuestNailgun"/-->
 	<item group="groupQuestT0LightArmorBonus"/>
 	<item group="groupQuestT0HeavyArmorBonus"/>
 	<item group="groupQuestForgedIron"/>
@@ -7821,7 +7885,7 @@ If there is no hit the default quality is used.
 	<item name="ammo762mmBulletAP" count="50,75"/>
 	<item name="ammoShotgunSlug" count="15,30"/>
 	<item name="ammoShotgunBreachingSlug" count="15,30"/>
-	<item name="ammoRocketHE" count="1,5"/>
+	<!--item name="ammoRocketHE" count="1,5"/-->
 </lootgroup>
 
 <lootgroup name="twitch_ammospecial0" count="all">
@@ -7891,7 +7955,7 @@ If there is no hit the default quality is used.
 	<item name="ammo762mmBulletAP" count="100,150"/>
 	<item name="ammoShotgunSlug" count="30,60"/>
 	<item name="ammoShotgunBreachingSlug" count="30,60"/>
-	<item name="ammoRocketHE" count="1,5"/>
+	<!--item name="ammoRocketHE" count="1,5"/-->
 </lootgroup>
 
 <lootgroup name="twitch_reward_ammospecial1" count="all">
@@ -7908,6 +7972,7 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnBladeT0BoneKnife"/>
 	<item name="meleeWpnSpearT0StoneSpear"/>
 	<item name="meleeWpnBatonT0PipeBaton" />
+	<item name="meleeWpnClubT0Ladle" /> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="twitch_tier1melee" count="1">
@@ -7916,6 +7981,7 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnKnucklesT1IronKnuckles"/>
 	<item name="meleeWpnBladeT1HuntingKnife"/>
 	<item name="meleeWpnSpearT1IronSpear"/>
+	<item name="meleeWpnClubT1OldPan" /> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="twitch_tier2melee" count="1">
@@ -7923,8 +7989,9 @@ If there is no hit the default quality is used.
 	<item name="meleeWpnSledgeT3SteelSledgehammer"/>
 	<item name="meleeWpnKnucklesT3SteelKnuckles"/>
 	<item name="meleeWpnBladeT3Machete"/>
-	<item name="meleeWpnBatonT2StunBaton"/>
+	<!--item name="meleeWpnBatonT2StunBaton"/-->
 	<item name="meleeWpnSpearT3SteelSpear"/>
+	<item name="meleeWpnClubT3Skillet" /> <!-- Wild West Mod -->
 </lootgroup>
 
 <!-- *** Twitch_T0_Weapons -->
@@ -8419,6 +8486,11 @@ If there is no hit the default quality is used.
 	<item name="foodBaconAndEggs" count="2,4"/>
 	<item name="foodBlueberryPie" count="2,3"/>
 	<item name="foodVegetableStew" count="2,4"/>
+	<item name="foodWildWestBaconAndEggsAndAcornHardtack" count="2,4"/> <!-- Wild West Mod -->
+	<item name="foodWildWestPineConeJamPancakes" count="2,4"/> <!-- Wild West Mod -->
+	<item name="foodEggQuiche" count="2,4"/> <!-- Wild West Mod -->
+	<item name="foodEggSandwich" count="2,4"/> <!-- Wild West Mod -->
+	<item name="foodFriedCatfish" count="2,4"/> <!-- Wild West Mod -->	
 </lootgroup>
 
 <lootgroup name="twitch_foodT2" count="1">
@@ -8431,6 +8503,12 @@ If there is no hit the default quality is used.
 	<item name="foodPumpkinBread" count="2,3"/>
 	<item name="foodTunaFishGravyToast" count="2,3"/>
 	<item name="foodSteakAndPotato" count="2,3"/>
+	<item name="foodChickenStew" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodcottagebake" count="2,3"/> <!-- Wild West Mod -->	
+	<item name="foodRubaboo" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodCrawfishGumbo" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodChowder" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodCampfireBeans" count="2,3"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="twitch_foodT3" count="1">
@@ -8439,6 +8517,12 @@ If there is no hit the default quality is used.
 	<item name="foodSpaghetti" count="2,3"/>
 	<item name="foodGumboStew" count="2,3"/>
 	<item name="foodShepardsPie" count="2,3"/>
+	<item name="foodChickenStew" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodcottagebake" count="2,3"/> <!-- Wild West Mod -->	
+	<item name="foodRubaboo" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodCrawfishGumbo" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodChowder" count="2,3"/> <!-- Wild West Mod -->
+	<item name="foodCampfireBeans" count="2,3"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="twitch_drink" count="1">
@@ -8446,7 +8530,7 @@ If there is no hit the default quality is used.
 	<item name="drinkJarBoiledWater" count="1,2"/>
 	<item name="drinkJarRedTea" count="1,2"/>
 	<item name="drinkJarYuccaJuice" count="1,2"/>
-	<item name="drinkYuccaJuiceSmoothie" count="1,2"/>
+	<item name="drinkYuccaJuiceCooler" count="1,2"/> <!-- Replaces drinkYuccaJuiceSmoothie -->
 </lootgroup>
 
 <lootgroup name="twitch_drinkspecial1" count="1">
@@ -9933,13 +10017,13 @@ If there is no hit the default quality is used.
 	<item group="groupReinforcedChestT3"/>
 </lootcontainer>
 
-<!-- cntHardenedChestSecure, T4_Hardened_Chest  -->
-<lootcontainer name="hardenedChestT4" count="1" size="8,9" sound_open="UseActions/chest_tier4_open" sound_close="UseActions/chest_tier4_close" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<!-- cntHardenedChestSecure, T4_Hardened_Chest  --> <!-- Changed electronic open/close sounds to T3 -->
+<lootcontainer name="hardenedChestT4" count="1" size="8,9" sound_open="UseActions/chest_tier3_open" sound_close="UseActions/chest_tier3_close" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
 	<item group="groupHardenedChestT4"/>
 </lootcontainer>
 
-<!-- cntHardenedChestSecureT5, T5_Hardened_Chest  -->
-<lootcontainer name="hardenedChestT5" count="1" size="8,9" sound_open="UseActions/chest_tier5_open" sound_close="UseActions/chest_tier5_close" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
+<!-- cntHardenedChestSecureT5, T5_Hardened_Chest  --> <!-- Changed electronic open/close sounds to T3 -->
+<lootcontainer name="hardenedChestT5" count="1" size="8,9" sound_open="UseActions/chest_tier3_open" sound_close="UseActions/chest_tier3_close" loot_quality_template="qualPlus1Template" ignore_loot_abundance="true">
 	<item group="groupHardenedChestT5"/>
 </lootcontainer>
 
@@ -10228,6 +10312,22 @@ If there is no hit the default quality is used.
 
 <!-- WILD WEST MOD CUSTOM CONTENT -->
 
+<!-- Custom content from here -->
+
+	<!-- BEE HIVES -->	
+
+	<lootcontainer name="Honey" count="1" size="7,2" destroy_on_close="true" sound_open="UseActions/BeeHiveOpen" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="foodHoneyComb" count="2,3" prob="1" />
+	</lootcontainer>
+	
+	<!-- CHICKEN COOPS -->	
+
+	<lootcontainer name="EggsReady" count="1" size="6,2" destroy_on_close="true" sound_open="UseActions/Chicken6Sounds" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="foodEgg" count="3,5" prob="1"/>
+		<item name="resourceFeather" count="3,6" prob="0.75"/>
+		<item name="GrownChicken" count="1" prob="0.5"/>
+	</lootcontainer>
+	
 	<!-- Goldilocks -->
 	<lootgroup name="Goldilocks">
 		<item name="resourceGoldNugget" count="1,4"/>
@@ -10241,7 +10341,7 @@ If there is no hit the default quality is used.
 	</lootgroup>
 
 	<!-- sluice box -->
-	<lootcontainer id="773" name="sluicebox" count="2" size="1" sound_open="UseActions/open_toolchest" sound_close="UseActions/close_toolchest" loot_quality_template="qualBaseTemplate">
+	<lootcontainer name="sluicebox" count="2" size="1" sound_open="UseActions/open_toolchest" sound_close="UseActions/close_toolchest" loot_quality_template="qualBaseTemplate">
 		<item group="groupSluicebox"/>
 	</lootcontainer>
 
@@ -10256,8 +10356,30 @@ If there is no hit the default quality is used.
 		<item group="schematicsModsAndGeneralRare" count="1,2"/>
 	</lootgroup>	
 	
-	<lootcontainer id="774" name="WildWestTreasure_01" count="1" size="7,5" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template">
+	<lootcontainer name="WildWestTreasure_01" count="1" size="7,5" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template">
 		<item group="groupWildWestTreasure"/>
+	</lootcontainer>
+
+	<!-- Oakraven Fish Trap Loot -->
+	<lootcontainer name="cntFishTrap" count="1,4" size="7,2" destroy_on_close="true" sound_open="bucketplace_water" sound_close="silencefiller" loot_quality_template="qualBaseTemplate">
+		<item name="foodPintoBeans" count="5,10" prob="0.375"/>
+		<item name="foodOkra" count="5,10" prob="0.375"/>
+		<item name="foodCrawfish" count="5,10" prob="0.375"/>
+		<item name="resourceYuccaFibers" count="10,20" prob="0.3"/>
+		<item name="resourceCloth" count="2,5" prob="0.3"/>		
+		<item name="foodRottingFlesh" count="2,5" prob="0.3"/>		
+		<item name="oldCash" count="10,20" prob="0.2"/>
+		<item name="resourceBone" count="1,5" prob="0.2"/>	
+		<item name="foodCropPotato" count="1,2" prob="0.1"/>
+		<item name="foodCropCorn" count="1,2" prob="0.1"/>
+		<item name="foodCropMushrooms" count="1,2" prob="0.1"/>
+		<item name="foodCropBlueberries" count="1,5" prob="0.1"/>
+		<item name="foodCropPumpkin" count="1" prob="0.1"/>
+		<item name="resourceCatfish" count="1" prob="0.09"/>		
+		<item name="apparelCowboyBoots" count="1" prob="0.035"/>
+		<item name="apparelCowboyHat" count="1" prob="0.035"/>
+		<item name="modArmorCowboyHat" count="1" prob="0.03"/>
+		<item name="modArmorCowboyBoots" count="1" prob="0.03"/>		
 	</lootcontainer>
 
 </set>

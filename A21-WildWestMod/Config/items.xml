@@ -10,8 +10,6 @@
 	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/effect_group/display_value[@name='dBlockRepairAmount']/@value">850</set><!-- 400 Default -->	
 	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Upgrade_hit_offset']/@value">-5</set><!-- 1 Hit Upgrade -->	
 	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">3</set><!-- 3 Shots per mag -->
-	<set xpath="/items/item[@name='questRewardT2HandgunBundle']/property[@name='CustomIcon']/@value">bundleRifle</set><!-- Switching Icon -->
-	<set xpath="/items/item[@name='questRewardT2HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT2LeverActionRifleWinchester,ammo44MagnumBulletBall</set><!-- Removing Magnum for Winchester -->
 	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/newfireaxe.unity3d?newfireaxe</set><!-- Replacing Fire Axe for older variant -->
 	<!-- Ammo Stacking and Unlocking -->
 	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">1500</set><!-- x5 of default -->	
@@ -154,9 +152,12 @@
 	<set xpath="/items/item[@name='questRewardT1RangedModsBundle']/property[@class='Action0']/property[@name='Random_item']/@value">modGunBipod,modGunChoke,modGunDuckbill,modGunForegrip,modGunMeleeTheHunter,modGunMuzzleBrake,modGunScopeSmall,modShotgunSawedOffBarrel</set>	
 	<set xpath="/items/item[@name='questRewardT2RangedModsBundle']/property[@class='Action0']/property[@name='Random_item']/@value">modGunBarrelExtender,modGunCrippleEm,modGunBowArrowRest,modGunRetractingStock,modGunScopeMedium,modGunSoundSuppressorSilencer,modGunShotgunTubeExtenderMagazine</set>
 	<set xpath="/items/item[@name='questRewardT3RangedModsBundle']/property[@class='Action0']/property[@name='Random_item']/@value">modGunBowPolymerString,modGunScopeLarge,modGunDrumMagazineExtender</set>
-	<set xpath="/items/item[@name='questRewardT3HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set>
-	<set xpath="/items/item[@name='questRewardT3HandgunLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set>
-
+	<set xpath="/items/item[@name='questRewardT1HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT1666Revolver,ammo9mmBulletBall,handgunsSkillMagazine</set><!-- Removing Pistol for 666 -->
+	<set xpath="/items/item[@name='questRewardT2HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT2RavenRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set><!-- Removing Magnum for Raven -->
+	<set xpath="/items/item[@name='questRewardT3HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set><!-- Removing Desert Vulture for Schofield -->
+	<set xpath="/items/item[@name='questRewardT3HandgunLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set><!-- Removing Desert Vulture for Schofield -->
+	<set xpath="/items/item[@name='questRewardT3RifleBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT2LeverActionRifleLegendaryTribeWinchester,ammo44MagnumBulletBall,riflesSkillMagazine</set><!-- Removing Sniper for Legendary -->
+	
 	<!-- Weather Durable Poncho -->
 	<set xpath="/items/item[@name='apparelCoatLeatherPoncho']/effect_group/passive_effect[@name='HypothermalResist']/@value">10.8,13.2</set><!-- 2.8,5.2 -->
 	<set xpath="/items/item[@name='apparelCoatLeatherPoncho']/effect_group/passive_effect[@name='HyperthermalResist']/@value">14.5,18.3</set><!-- 10.5,14.3 -->
