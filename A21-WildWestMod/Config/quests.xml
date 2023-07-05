@@ -2394,13 +2394,13 @@
 		<property name="offer_key" value="Accept this Quest to begin the Homestead Challenge Pt.2. Add farming features around your cabin." />
 		<property name="name_key" value="From tiny seeds: 1"/>
 		<property name="subtitle_key" value="Homestead Challenge Pt.2"/>
-		<property name="description_key" value="Craft a Water Wells and Stands helper on the Workbench. Select the Rustic Water Well, and place it near your cabin. It can fill up your jars and buckets with water."/>
+		<property name="description_key" value="Craft a Dew Collector and place it near your cabin. It can catch water over time."/>
 		<property name="icon" value="ui_game_symbol_map_house"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="veryeasy"/>
 		<property name="shareable" value="false"/>
 
-		<objective type="BlockPlace" id="WaterWell" value="1" phase="1"/>
+		<objective type="BlockPlace" id="cntDewCollector" value="1" phase="1"/>
 
 		<reward type="Exp" value="2500"/>
 		<reward type="Quest" id="quest_homestead05"/>		

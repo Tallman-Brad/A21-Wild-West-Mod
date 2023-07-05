@@ -154,6 +154,14 @@
 	<set xpath="/blocks/block[@name='cntCementMixerBustedRandomLootHelper']/property[@name='ModelOffset']/@value">0,0.5,0</set>	
 <!-- Wood Saw -->
 	<set xpath="/blocks/block[@name='tableSaw']/property[@name='Model']/@value">#@modfolder:Resources/CementMixer2.unity3d?TableSaw2</set>
+<!-- Dew Collector -->
+	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='Model']/@value">#@modfolder:Resources/WaterWells.unity3d?WaterWell</set>
+	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MultiBlockDim']/@value">2,2,2</set>
+	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MinConvertTime']/@value">14400</set>  <!-- 4 hours with default at 21600 for 6 game hours -->
+	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MaxConvertTime']/@value">25200</set> <!-- 7 hours with default at 36000 for 10 game hours -->
+	<append xpath="/blocks/block[@name='cntDewCollector']">
+		<property name="ModelOffset" value="-0.5,0.5,0"/>
+	</append>
 	
 	<!-- Apples for the Wild West due to Zero Rotten Trash Plastic Bags -->
 	
