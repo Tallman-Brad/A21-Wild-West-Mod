@@ -4499,11 +4499,21 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	
 <!-- Steam Horse -->	
 
+	<recipe name="vehicleSteamVelocipedePlaceable" count="1" craft_time="300" craft_area="workbench" tags="learnable">
+		<ingredient name="resourceForgedIron" count="100"/>
+		<ingredient name="resourceForgedSteel" count="10"/>		
+		<ingredient name="resourceLeather" count="20"/>
+		<ingredient name="drinkJarBoiledWater" count="50"/>		
+		<ingredient name="resourceScrapPolymers" count="30"/>
+	</recipe>
+	
+<!-- Steam Horse -->	
+
 	<recipe name="vehicleSteamHorsePlaceable" count="1" craft_time="300" craft_area="workbench" tags="learnable">
 		<ingredient name="resourceForgedIron" count="200"/>
 		<ingredient name="resourceForgedSteel" count="25"/>		
 		<ingredient name="resourceLeather" count="50"/>
-		<ingredient name="drinkJarBoiledWater" count="100"/>		
+		<ingredient name="drinkJarBoiledWater" count="80"/>		
 		<ingredient name="resourceScrapPolymers" count="50"/>
 	</recipe>
 		
