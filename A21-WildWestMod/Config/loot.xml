@@ -2736,7 +2736,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupWeaponsT2_TurretsSyndrome" loot_quality_template="QLTemplateT2">
-	<item name="WildWestgunBotT2JunkTurret"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
+	<item name="gunBotT2JunkTurretWildWest"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupWeaponsT3_TurretsSyndrome" loot_quality_template="QLTemplateT3"> <!-- REMOVE FURTHER DOWN -->
@@ -4236,7 +4236,7 @@ If there is no hit the default quality is used.
 	<!--item name="gunMGT2TacticalAR"/-->
 	<item name="gunShotgunT2PumpShotgun"/>
 	<item name="gunHandgunT2RavenRevolver"/> <!-- Switched with gunHandgunT2Magnum44 for Wild West Mod -->
-	<item name="WildWestgunBotT2JunkTurret"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
+	<item name="gunBotT2JunkTurretWildWest"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
 	<!-- Some T3 items get treated as T2 -->
 	<!--item name="gunBowT3CompoundBow"/-->
 	<!--item name="gunBowT3CompoundCrossbow"/-->
@@ -6326,7 +6326,7 @@ If there is no hit the default quality is used.
 <lootgroup name="groupRobotics">
 	<!--item name="gunBotRoboticsParts" count="1,4" loot_prob_template="med"/-->
 	<!--item name="gunBotT1JunkSledge" loot_prob_template="veryLow"/-->
-	<item name="WildWestgunBotT2JunkTurret" loot_prob_template="veryLow"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
+	<item name="gunBotT2JunkTurretWildWest" loot_prob_template="veryLow"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
 	<!--item group="groupDrone" loot_prob_template="ProbT3"/-->
 </lootgroup>
 
@@ -7389,7 +7389,7 @@ If there is no hit the default quality is used.
 	<!--item name="gunHandgunT3SMG5"/-->
 	<item name="gunHandgunT3SchofieldRevolver"/> <!-- Switched with gunHandgunT3DesertVulture for Wild West Mod -->
 	<!--item name="gunBotT3JunkDrone"/-->
-	<item name="WildWestgunBotT2JunkTurret"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
+	<item name="gunBotT2JunkTurretWildWest"/> <!-- Switched with gunBotT2JunkTurret for Wild West Mod -->
 	<!--item name="gunBotT1JunkSledge"/-->
 </lootgroup>
 
