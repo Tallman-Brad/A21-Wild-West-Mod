@@ -231,5 +231,194 @@
 		animalZombieFeralChicken, .45
 		animalBisonZombieBear, .45
 	</csv>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS40']">
+		guppyVultureBurnt	
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS80']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .1
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS121']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS153']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .3
+		guppyRadiatedMommaVultureBurnt, .2
+		guppyRadiatedFireMommaVultureBurnt, .1
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS195']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .3
+		guppyRadiatedMommaVultureBurnt, .2
+		guppyRadiatedFireMommaVultureBurnt, .1
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS304']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS407']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS501']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS600']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS704']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS802']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS904']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1010']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1206']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1412']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1601']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1811']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1999']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2207']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2407']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2612']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2805']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3003']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3204']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3410']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3601']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3814']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
+	
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4013']">
+		guppyVultureBurnt
+		guppyMommaVultureBurnt, .4
+		guppyRadiatedMommaVultureBurnt, .3
+		guppyRadiatedFireMommaVultureBurnt, .2
+	</set>
 
 </wildwestmod>

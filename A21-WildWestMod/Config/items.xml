@@ -3285,8 +3285,8 @@
 			<property name="Infinite_ammo" value="true"/>
 			<property name="Magazine_items" value="ammoProjectileZombieFeralGunslinger"/>
 			<!-- property name="Sound_warning" value="hulkvomitwarning"/-->
-			<property name="Sound_start" value="pipe_pistol_fire"/> <!-- Gunslinger -->
-			<property name="Sound_loop" value="pipe_pistol_fire"/> <!-- Gunslinger -->
+			<property name="Sound_start" value="44magnum_fire"/> <!-- Gunslinger -->
+			<property name="Sound_loop" value="44magnum_fire"/> <!-- Gunslinger -->
 			<property name="Sound_end" value=""/> <!-- Gunslinger -->
 			<property name="Sound_empty" value="dryfire"/> <!-- Gunslinger -->
 			<property name="Sound_reload" value="pistol_reload"/> <!-- Gunslinger -->
@@ -3340,6 +3340,7 @@
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"><!--InfectionRegular-->
 				<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/><!--AbrasionRegular-->
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="44magnum_fire"/>
 		</effect_group>
 	</item>
 	
@@ -3360,8 +3361,8 @@
 			<property name="Infinite_ammo" value="true"/>
 			<property name="Magazine_items" value="ammoProjectileZombieRadiatedGunslinger"/>
 			<!-- property name="Sound_warning" value="hulkvomitwarning"/-->
-			<property name="Sound_start" value="pipe_pistol_fire"/> <!-- Feral Gunslinger -->
-			<property name="Sound_loop" value="pipe_pistol_fire"/> <!-- Feral Gunslinger -->
+			<property name="Sound_start" value="44magnum_fire"/> <!-- Feral Gunslinger -->
+			<property name="Sound_loop" value="44magnum_fire"/> <!-- Feral Gunslinger -->
 			<property name="Sound_end" value=""/> <!-- Feral Gunslinger -->
 			<property name="Sound_empty" value="dryfire"/> <!-- Feral Gunslinger -->
 			<property name="Sound_reload" value="pistol_reload"/> <!-- Feral Gunslinger -->
@@ -3414,6 +3415,7 @@
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"><!--InfectionRegular-->
 				<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/><!--AbrasionRegular-->
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="44magnum_fire"/>
 		</effect_group>
 	</item>
 	
@@ -3434,8 +3436,8 @@
 			<property name="Infinite_ammo" value="true"/>
 			<property name="Magazine_items" value="ammoProjectileZombieRadiatedGunslinger"/>
 			<!-- property name="Sound_warning" value="hulkvomitwarning"/-->
-			<property name="Sound_start" value="pipe_pistol_fire"/> <!-- Feral Gunslinger -->
-			<property name="Sound_loop" value="pipe_pistol_fire"/> <!-- Feral Gunslinger -->
+			<property name="Sound_start" value="44magnum_fire"/> <!-- Feral Gunslinger -->
+			<property name="Sound_loop" value="44magnum_fire"/> <!-- Feral Gunslinger -->
 			<property name="Sound_end" value=""/> <!-- Feral Gunslinger -->
 			<property name="Sound_empty" value="dryfire"/> <!-- Feral Gunslinger -->
 			<property name="Sound_reload" value="pistol_reload"/> <!-- Feral Gunslinger -->
@@ -3489,6 +3491,7 @@
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"><!--InfectionRegular-->
 				<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/><!--AbrasionRegular-->
+			<triggered_effect trigger="onSelfDamagedOther" action="PlaySound" sound="44magnum_fire"/>
 		</effect_group>
 	</item>
 	

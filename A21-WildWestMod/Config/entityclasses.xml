@@ -708,6 +708,8 @@
 		<!-- Feral Gunslinger Wight -->
 	<entity_class name="zombieWightFeralGunslinger" extends="zombieWightFeral">
 		<property name="Tags" value="entity,zombie,walker,feral"/>
+		<property name="Class" value="EntityZombieCop"/> <!-- Required to activate melee audio for gunfire -->
+		<property name="ExplodeHealthThreshold" value="0"/>
 
 		<!-- Gameplay zombieWightFeral -->
 		<property name="DismemberMultiplierHead" value=".6"/><property name="DismemberMultiplierArms" value=".6"/><property name="DismemberMultiplierLegs" value=".6"/><!-- Feral Wight Gunslinger -->
@@ -739,7 +741,9 @@
 		<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZWightRadiated.prefab"/>
 		<property name="ReplaceMaterial1" value="@:Entities/Zombies/Zombies/Materials/rad_eye.mat"/>
 		<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
-
+		<property name="Class" value="EntityZombieCop"/> <!-- Required to activate melee audio for gunfire -->
+		<property name="ExplodeHealthThreshold" value="0"/>
+		
 		<property name="LegCrawlerThreshold" value="0"/>
 		<property name="LegCrippleThreshold" value="0.01"/>
 		<property name="KnockdownProneDamageThreshold" value="0.45"/>
@@ -786,6 +790,8 @@
 	<property name="Tags" value="entity,zombie,walker,feral"/>
 	<!-- <property name="Buffs" value="buffLegendaryBoss"/> -->
 	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZSuitFeral.prefab"/>
+	<property name="Class" value="EntityZombieCop"/> <!-- Required to activate melee audio for gunfire -->
+	<property name="ExplodeHealthThreshold" value="0"/>
 
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
