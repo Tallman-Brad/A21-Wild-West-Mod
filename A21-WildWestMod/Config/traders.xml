@@ -691,7 +691,7 @@
 			<item name="sledgehammersSkillMagazine" count="1,3"/>
 			<item name="workstationSkillMagazine" count="1,3"/>
 			<item name="roboticsSkillMagazine" count="1,3"/>
-			<item name="vehiclesSkillMagazine" count="1,3"/>
+			<item name="vehiclesSkillMagazine" count="2,6"/> <!-- Wild West Mod from 1,3 -->
 			<!--item name="electricianSkillMagazine" count="1,3"/-->
 			<!--item name="trapsSkillMagazine" count="1,3"/-->
 		</trader_item_group>
