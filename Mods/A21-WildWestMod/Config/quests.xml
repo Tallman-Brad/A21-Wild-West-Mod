@@ -2341,21 +2341,21 @@
 		<property name="offer_key" value="Accept this Quest to begin the Homestead Challenge Pt.1. Begin by constructing your cabin." />
 		<property name="name_key" value="Home is where the hearth is: 2"/>
 		<property name="subtitle_key" value="Homestead Challenge Pt.1"/>
-		<property name="description_key" value="Collect 18 wood. Craft and place 2 doors, and upgrade them."/>
+		<property name="description_key" value="Collect 20 wood. Craft and place 2 doors."/>
 		<property name="icon" value="ui_game_symbol_map_house"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="veryeasy"/>
 		<property name="shareable" value="false"/>
 		
-		<objective type="FetchKeep" id="resourceWood" value="16" phase="1"/>
+		<objective type="FetchKeep" id="resourceWood" value="20" phase="1"/>
 		<objective type="Craft">
 			<property name="phase" value="2"/>
-			<property name="item" value="secureDoorWooden"/>
+			<property name="item" value="oldWoodDoor"/>
 			<property name="count" value="2"/>
 		</objective>
 
-		<objective type="BlockPlace" id="secureDoorWooden" value="2" phase="2"/>
-		<objective type="BlockUpgrade" id="secureDoorWooden" value="2" phase="2"/>		
+		<objective type="BlockPlace" id="oldWoodDoor" value="2" phase="2"/>
+		<!--objective type="BlockUpgrade" id="secureDoorWooden" value="2" phase="2"/-->		
 
 		<reward type="Exp" value="250"/>
 		<reward type="Quest" id="quest_homestead03"/>
