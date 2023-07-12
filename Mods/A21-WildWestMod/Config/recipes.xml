@@ -255,32 +255,36 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe>
 
 <recipe name="ammoJunkTurretRegular" count="1">
-	<ingredient name="resourceScrapLead" count="3"/>
-</recipe>
+	<ingredient name="resourceScrapIron" count="3"/>
+	<ingredient name="ammoGasCan" count="1"/>	
+</recipe> <!-- Wild West Mod Values -->
 
 <recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceScrapLead" count="2400"/>
-</recipe>
+	<ingredient name="resourceScrapIron" count="2400"/>
+	<ingredient name="ammoGasCan" count="800"/>	
+</recipe> <!-- Wild West Mod Values -->
 
 <recipe name="ammoJunkTurretShell" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceScrapLead" count="1"/>
+	<ingredient name="resourceScrapIron" count="1"/>
 	<ingredient name="resourceBuckshot" count="1"/>
-</recipe>
+	<ingredient name="ammoGasCan" count="1"/>	
+</recipe> <!-- Wild West Mod Values -->
 
 <recipe name="ammoBundleJunkTurretShell" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceScrapLead" count="800"/>
+	<ingredient name="resourceScrapIron" count="800"/>
 	<ingredient name="resourceBuckshot" count="800"/>
-</recipe>
+	<ingredient name="ammoGasCan" count="800"/>
+</recipe> <!-- Wild West Mod Values -->
 
 <recipe name="ammoJunkTurretAP" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceScrapLead" count="3"/>
-	<ingredient name="resourceScrapIron" count="3"/>
-</recipe>
+	<ingredient name="resourceScrapIron" count="6"/>
+	<ingredient name="ammoGasCan" count="1"/>
+</recipe> <!-- Wild West Mod Values -->
 
 <recipe name="ammoBundleJunkTurretAP" count="1" craft_time="360" craft_area="workbench" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceScrapLead" count="2400"/>
-	<ingredient name="resourceScrapIron" count="2400"/>
-</recipe>
+	<ingredient name="resourceScrapIron" count="4800"/>
+	<ingredient name="ammoGasCan" count="800"/>
+</recipe> <!-- Wild West Mod Values -->
 
 <recipe name="ammoArrowFlaming" count="1" craft_time="12" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceArrowHeadSteelAP" count="1"/>
