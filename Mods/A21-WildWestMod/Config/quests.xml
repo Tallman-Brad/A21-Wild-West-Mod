@@ -1909,7 +1909,7 @@
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
 		<reward type="Item" id="qc_eliminatehorde" value="1"/> <!-- Wild West Mod -->
-		<reward type="LootItem" id="vehicleWWMHorseT1Placeable" ischosen="true" isfixed="true" value="2"/> <!-- Was groupQuestBicycle -->
+		<reward type="Item" id="vehicleWWMHorseT1Placeable" ischosen="true" isfixed="true" value="1"/> <!-- Was groupQuestBicycle -->
 		<reward type="Item" id="resourceWaterFilter" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestcasinoCoinT1" ischosen="true" value="2"/>
 		<reward type="LootItem" id="groupQuestHelmetLightSchematic" ischosen="true" value="2"/>
@@ -1942,7 +1942,7 @@
 		<property name="reward_choices_count" value="5" />
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
-		<reward type="LootItem" id="vehicleWWMHorseT2Placeable" ischosen="true" isfixed="true" value="1"/> <!-- Wild West Mod -->
+		<reward type="Item" id="vehicleWWMHorseT2Placeable" ischosen="true" isfixed="true" value="1"/> <!-- Wild West Mod -->
 		<!--reward type="LootItem" id="groupQuestMinibikeParts" ischosen="true" value="3"/-->
 		<reward type="LootItem" id="groupQuestcasinoCoinT2" ischosen="true" value="3"/>
 		<reward type="LootItem" id="groupQuestMiningHelmet" ischosen="true" value="3"/>
