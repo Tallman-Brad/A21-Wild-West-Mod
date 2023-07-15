@@ -131,10 +131,10 @@
 			<stack_type value="ignore"/>
 			<effect_group>
 				<!--triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Gun" transform_path="turret_targeting"/-->
-				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.73,0.33" local_rotation="10,0,0" parent_transform="Gun"/>				
-				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="0,0.5,0.5" local_rotation="90,0,180" parent_transform="Gun"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.54,0.33" local_rotation="10,0,0" parent_transform="Gun"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="0,0.4,0.5" local_rotation="90,0,180" parent_transform="Gun"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_01Prefab" local_offset="0,0.2,0.3" local_rotation="180,90,90" parent_transform="Gun"/>
-				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_02Prefab" local_offset="0.85,0.2,-0.35" local_rotation="180,-160,90" parent_transform="Gun"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_02Prefab" local_offset="0.65,0.2,-0.3" local_rotation="180,-160,90" parent_transform="Gun"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_03Prefab" local_offset="0.35,0.2,0.05" local_rotation="180,160,90" parent_transform="Gun"/>				
 			</effect_group>
 		</buff>	
