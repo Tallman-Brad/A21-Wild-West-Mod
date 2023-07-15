@@ -1031,12 +1031,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	</effect_group>
 </recipe--> <!-- trap -->
 
-<recipe name="cntDewCollector" count="1" tags="learnable,workbenchCrafting">
+<recipe name="cntDewCollectorVariantHelper" count="1" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceWaterFilter" count="1"/>
 	<ingredient name="resourceScrapPolymers" count="100"/>
 	<ingredient name="resourceMetalPipe" count="4"/>
 	<ingredient name="resourceDuctTape" count="4"/>
-</recipe>
+</recipe> <!-- Bundled cntDewCollector into Variant Helper -->
 
 <!-- <recipe name="drinkJarEmpty" count="1" material_based="true" craft_area="forge" tags="perkAdvancedEngineering"> -->
 	<!-- <ingredient name="unit_glass" count="10"/> -->

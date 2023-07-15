@@ -555,11 +555,15 @@ drugSteroidsDesc,items,Medical,,,"Grizzly Gain decreases encumbrance, allowing y
 drinkCanMegaCrush,items,Food,,,Wild West Sarsaparilla,,,,,,,,,,,,,
 drinkCanMegaCrushDesc,items,Food,,,"Remedial and energizing. Helps you pick up the pace. Run 50% faster.",,,,,,,,,,,,,
 barracksChair,blocks,Block,,,Deck Chair,,,,,,,,,,,,,
-dewCollectorDesc,blocks,block,,,"Collects groundwater over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
+
+cntDewCollectorVariantHelper,blocks,block,,,Water Collector,,,,,,,,,,,,,
+cntRainDanceCatcherDesc,blocks,block,,,"Collects groundwater over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
+cntRainDanceCatcher,blocks,block,,,Rain Dance Catcher,,,,,,,,,,,,,
+dewCollectorDesc,blocks,block,,,"Catches rain over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
 cntDewCollector,blocks,block,,,Groundwater Collector,,,,,,,,,,,,,
 resourceWaterFilterDesc,items,item,,,"A component used in the crafting of a Groundwater Collector.",,,,,,,,,,,,,
-workstationsT1-1,progression,Attribute,,,Tier 1: Groundwater Collector,,,,,,,,,,,,,
-xuiDewCollector,UI,XUI,,,Groundwater Collector,,,,,,,,,,,,,
+workstationsT1-1,progression,Attribute,,,Tier 1: Water Collector,,,,,,,,,,,,,
+xuiDewCollector,UI,XUI,,,Water Collector,,,,,,,,,,,,,
 
 modVehicleSuperCharger,item_modifiers,Mod,,,Horse Sugar Cubes Mod,,,,,,,,,,,,,
 modVehicleSuperChargerDesc,item_modifiers,Mod,,,"This horse sugar cubes mod increases acceleration and top speed.",,,,,,,,,,,,,
