@@ -2333,13 +2333,17 @@
 	
 	<!-- Oakraven Fish Traps -->
 
-<block name="FishTrapEmpty">
+<!-- FISH TRAP -->
+	<block name="FishTrapEmpty">
 	<property name="DescriptionKey" value="FishTrapEmptyDesc"/>
 	<property name="DisplayInfo" value="Name"/>
 	<property name="CustomIcon" value="resourceFishTrapCone"/>
 	<property name="CreativeMode" value="Player"/>
-	<property name="Group" value="Tools/Traps"/>
+	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
+	<!--property name="UnlockedBy" value="perkLivingOffTheLand"/--> <!-- No longer used -->
 	<property name="Material" value="Mwood_weak"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="WaterFlow" value="permitted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/FishTrapsCone.unity3d?TubeFishTrap1"/>	
@@ -2356,36 +2360,48 @@
 	<property name="CanPickup" value="true"/>
 	</block>
 
-	
 	<block name="FishTrapBaited">
 	<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="resourceFishTrapCone"/>	
 	<property name="Material" value="Mwood_weak"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="WaterFlow" value="permitted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/FishTrapsCone.unity3d?TubeFishTrapBate"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 			<property name="PlantGrowing.LightLevelGrow" value="0"/>
-			<property name="PlantGrowing.GrowthRate" value="60"/> 
+			<property name="PlantGrowing.GrowthRate" value="50"/> 
 			<property name="PlantGrowing.IsRandom" value="false"/>
 			<property name="PlantGrowing.LightLevelStay" value="0"/>
 	<property name="PlantGrowing.Next" value="FishTrapLoot"/>
 	<property name="Group" value="Food/Cooking"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="5"/>		
+	</property>	
 	</block>
 
 	<block name="FishTrapLoot">
-	<property name="Extends" value="cntToolBoxOpenWhite"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="resourceFishTrapCone"/>	
 	<property name="Material" value="Mwood_weak"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/FishTrapsCone.unity3d?TubeFishTrapFish"/>
+	<property name="Class" value="Loot"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="LootList" value="cntFishTrap"/>
 	<property name="CreativeMode" value="Player"/>
 	<drop event="Destroy" count="0" />
 	<property name="DowngradeBlock" value="FishTrapEmpty"/>
+	<property class="RepairItems">
+		<property name="resourceWood" value="5"/>		
+	</property>	
 	</block>
 	
 	<!-- Clucking Bells Screamer Bell -->
