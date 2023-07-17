@@ -81,7 +81,7 @@
             <property name="Group" value="Mods"/>
 			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
             <property name="EconomicValue" value="50"/>
-            <!--effect_group tiered="false">
+            <effect_group tiered="false">
                 <triggered_effect trigger="onSelfEquipStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Rabbit/RABBIT" parent_transform="Head" local_offset="-0.1,0,0.09" local_rotation="0,-35,90">
                     <requirement name="!IsFPV"/>
                 </triggered_effect>
@@ -89,7 +89,7 @@
                     <requirement name="IsFPV"/>
                 </triggered_effect>
                 <triggered_effect trigger="onSelfEquipStop" action="RemovePrefabFromEntity" prefab="Entities/Animals/Rabbit/RABBIT"/>
-            </effect_group-->
+            </effect_group>
             <effect_group tiered="false">
             <passive_effect name="HypothermalResist" operation="base_add" value="15.0"/> <!-- Skull Cap 10.5,13.2 -->
             <passive_effect name="HyperthermalResist" operation="base_add" value="5.0"/> <!-- Skull Cap 1.5,2.5 -->
@@ -101,6 +101,7 @@
 	<item_modifier name="modArmorSnowHareShoeWarmer" installable_tags="armorFeet" modifier_tags="thermal" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
 		<property name="DisplayType" value="modTempResist"/>
+        <property name="CustomIcon" value="modArmorSnowHareShoeWarmer"/>
 
 		<effect_group tiered="false">
 			<passive_effect name="HypothermalResist" operation="base_add" value="10"/>
@@ -111,6 +112,7 @@
 
 	<item_modifier name="modGunBowArrowHandleGrip" installable_tags="bow" modifier_tags="specialDamage" blocked_tags="noMods" type="attachment">
 		<property name="Extends" value="modGeneralMaster"/>
+        <property name="CustomIcon" value="modGunBowArrowHandleGrip"/>
 		<property name="UnlockedBy" value="modGunBowArrowHandleGripSchematic"/>
 		<property name="TraderStageTemplate" value="modsTier2"/>
 		<!--Do +15% damage to evil / undead-->
