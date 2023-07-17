@@ -154,6 +154,13 @@
 	<set xpath="/blocks/block[@name='cntCementMixerBustedRandomLootHelper']/property[@name='ModelOffset']/@value">0,0.5,0</set>	
 <!-- Wood Saw -->
 	<set xpath="/blocks/block[@name='tableSaw']/property[@name='Model']/@value">#@modfolder:Resources/CementMixer2.unity3d?TableSaw2</set>
+<!-- Decorative Logs Walls and Door -->
+	<set xpath="/blocks/block[@name='doorWoodLargeGate']/property[@name='MaxDamage']/@value">1000</set>
+ 	<append xpath="/blocks/block[@name='doorWoodLargeGate']/property[@name='Group']/@value">,Decor/Miscellaneous</append>
+	<append xpath="/blocks/block[@name='logWallLeft']">
+		<property name="MaxDamage" value="1000"/>
+		<property name="Group" value="Building,advBuilding,Decor/Miscellaneous"/>
+	</append>
 <!-- Dew Collector -->
 	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='Model']/@value">#@modfolder:Resources/WaterWells.unity3d?WaterWell</set>
 	<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MultiBlockDim']/@value">2,2,2</set>
@@ -270,6 +277,17 @@
 <!-- Custom Content From Here -->
 
 	<append xpath="/blocks">
+	
+<block name="LogWallsVariantHelper">
+	<property name="Extends" value="logWallLeft"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="logWallLeft"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="Group" value="Building,advBuilding,Decor/Miscellaneous"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="logWallLeft,logWallLeft2,logWallRight,logWallRight2,logWallLeftSpikes,logWallLeftSpikes2,logWallRightSpikes,logWallRightSpikes2,logWallPillar,logWallPillarCap,logWallPillarCap2"/>
+</block>
 
 <block name="cntDewCollectorVariantHelper">
 	<property name="Extends" value="cntDewCollector"/>		

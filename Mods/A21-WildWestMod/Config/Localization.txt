@@ -1043,6 +1043,7 @@ cluckingbellsTrap,blocks,Block,,,Chuckwagon Dinner Bell,,,,,,,,,,,,,
 cluckingbellsTrapDesc,blocks,Block,,,"Place the Chuckwagon Dinner Bell on a flat surface and Strike it to announce that dinner has been served. A Screamer Scout will pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing.\n\nIt can be repaired with brass.",,,,,,,,,,,,,
 cluckingbellsTrapOn,blocks,Block,,,Chuckwagon Dinner Bell,,,,,,,,,,,,,
 cluckingbellsTrapOnDesc,blocks,Block,,,"Place the Chuckwagon Dinner Bell on a flat surface and Strike it to announce that dinner has been served. A Screamer Scout will pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing.\n\nIt can be repaired with brass.",,,,,,,,,,,,,
+LogWallsVariantHelper,blocks,block,,,Large Wood Walls,,,,,,,,,,,,,
 
 fogLightGrey,blocks,Block,,,Fog (Light Grey),,,,,,,,,,,,,
 fogLightGreyDesc,blocks,Block,,,"This is a light grey decorative fog block. Responds well to lighting.",,,,,,,,,,,,,
