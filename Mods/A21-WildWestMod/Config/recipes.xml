@@ -918,10 +918,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 </recipe-->
 
 <recipe name="cementMixer" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceForgedIron" count="25"/>
+	<ingredient name="resourceForgedIron" count="30"/>
 	<ingredient name="resourceSpring" count="4"/>
-	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="resourceMetalPipe" count="10"/>
 	<ingredient name="resourceMechanicalParts" count="10"/>
+	<ingredient name="resourceAnimalFat" count="5"/>
 </recipe>
 
 <recipe name="chemistryStation" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">

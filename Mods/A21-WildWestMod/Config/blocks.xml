@@ -1336,9 +1336,7 @@
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="EconomicValue" value="50"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="RawChickenLeg" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="ChickenBreastRaw" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="RawChickenWings" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="10"/>
 	<drop event="Harvest" name="resourceFeather" tag="butcherHarvest" count="1"/>
 	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
 	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>

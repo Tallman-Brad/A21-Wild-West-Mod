@@ -6358,7 +6358,7 @@ If there is no hit the default quality is used.
 </lootgroup>
 
 <lootgroup name="groupMoPower03">
-	<item name="carBattery" loot_prob_template="medLow"/>
+	<!--item name="carBattery" loot_prob_template="medLow"/-->
 	<!--item group="groupStunBaton" loot_prob_template="med"/-->
 	<item group="groupTechJunkieBooks" loot_prob_template="med"/>
 	<item group="groupRobotics" loot_prob_template="low"/>
