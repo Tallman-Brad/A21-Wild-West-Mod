@@ -97,7 +97,7 @@
 			<item name="meleeWpnSledgeT1IronSledgehammer" quality="2,5"/>
 			<item name="meleeWpnKnucklesT1IronKnuckles" quality="2,5"/>
 		<!-- *** Melee_T2 -->	
-			<item name="meleeWpnBatonT2StunBaton" quality="2,5"/>
+			<!--item name="meleeWpnBatonT2StunBaton" quality="2,5"/-->
 		<!-- *** Melee_T3 -->
 			<item name="meleeWpnBladeT3Machete" quality="2,5"/>
 			<item name="meleeWpnBladeT3MacheteMini" quality="2,5"/> <!-- Wild West Mod -->
