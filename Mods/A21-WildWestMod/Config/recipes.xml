@@ -4373,7 +4373,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="unit_clay" count="3"/>
 	</recipe>
 
-	<recipe name="FishTrapEmpty" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+	<recipe name="FishTrapEmpty" count="1" craft_area="workbench" tags="workbenchCrafting">
 		<ingredient name="resourceWood" count="100"/>
 		<ingredient name="resourceRockSmall" count="5"/>
 		<ingredient name="resourceScrapIron" count="25"/>
