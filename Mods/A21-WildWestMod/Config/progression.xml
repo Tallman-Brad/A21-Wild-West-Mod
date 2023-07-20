@@ -524,7 +524,7 @@
 			<!--unlock_entry item="thrownGrenadeContact" unlock_tier="2" /-->
 			<!--unlock_entry item="mineHubcap" unlock_tier="3" /-->
 		</display_entry>
-		<display_entry icon="timertnt,resourceGunPowderBundle,cntKeroseneBarrel" name_key="explosivesT3-1,explosivesT3-2,explosivesT3-3" has_quality="false" unlock_level="25" >
+		<display_entry icon="timertnt,resourceGunPowderBundle,cntKeroseneBarrel" name_key="explosivesT3-1,explosivesT3-2,explosivesT3-3" has_quality="false" unlock_level="25,30,35" >
 			<unlock_entry item="thrownTimedDynamite" unlock_tier="1" />
 			<unlock_entry item="resourceGunPowderBundle" unlock_tier="2" />
 			<unlock_entry item="cntKeroseneBarrel" unlock_tier="3" />
