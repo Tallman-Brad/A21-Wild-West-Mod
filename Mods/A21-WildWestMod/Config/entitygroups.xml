@@ -31,6 +31,7 @@
 		guppyRadiatedMommaVultureBurnt, .5
 		zombieMolotovSoldierFeral, .5
 		guppyRadiatedFireMommaVultureBurnt, .5
+		zombieBehemoth, .5
 		zombieSpiderFeralFireGlider, .25	
 	</set>
 	
@@ -59,6 +60,7 @@
 		guppyRadiatedMommaVultureBurnt, .5
 		zombieMolotovSoldierFeral, .5
 		guppyRadiatedFireMommaVultureBurnt, .5
+		zombieBehemothRadiated, .5
 		zombieSpiderFeralFireGlider, .25	
 	</set>
 	
@@ -74,17 +76,17 @@
 	
 <!-- *** DESERT ANIMALS -->
 	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']/text()" delim="\n" op="add" >
-		animalDesertHare, 7
+		animalDesertHare, 9
 		animalBisonBoar, 5
 		animalBisonBear, .5
-		guppyVultureBurnt, 15		
+		guppyVultureBurnt, 14		
 	</csv>
 	
 <!-- *** SNOW ANIMALS -->	
 	<csv xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']/text()" delim="\n" op="add" >
-		animalSnowHare, 13
+		animalSnowHare, 12
 		animalWolf, 10
-		animalWildWestSnowBear, 7
+		animalWildWestSnowBear, 9
 	</csv>
 	
 <!-- *** FOREST ANIMALS -->

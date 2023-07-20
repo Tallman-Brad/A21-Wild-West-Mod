@@ -253,6 +253,7 @@ roboticsSkillMagazine,items,Robotics,,,Scrap Spitter Inventor,,,,,,,,,,,,,
 roboticsSkillMagazineDesc,items,Robotics,,,"Learn to create scrap spitters from everyday junk and be the envy of your peers!\n\nImproves scrap spitter crafting skill.",,,,,,,,,,,,,
 craftingRoboticsDesc,progression,Attribute,,,"Reading [DECEA3]Scrap Spitter Inventor[-] will increase the quality of scrap spitters. Boost loot odds\nwith [DECEA3]Scrap Spitter Inventor[-]",,,,,,,,,,,,,
 craftingRoboticsName,progression,Attribute,,,Scrap Spitter,,,,,,,,,,,,,
+explosivesT3-1,progression,Attribute,,,Tier 1: Timed Dynamite (Ammo),,,,,,,,,,,,,
 
 perkWasteTreasuresAcidDesc,progression,perk  book,,,"Adds a chance to harvest acid from wagons and medical equipment.",,,,,,,,,,,,,
 perkWasteTreasuresAcidLongDesc,progression,perk  book,,,"Acid: Acid is an extremely rare and powerful crafting agent. I figured out this tip to sometimes harvest a little from wagons and medical equipment. Adds a chance to harvest acid from wagons, medical equipment and acid barrels.",,,,,,,,,,,,,
@@ -396,6 +397,8 @@ ZombieHammerSpammerWildWest,entityclasses,Entity,,,Railroad Hammer Spammer,,,,,,
 zombieWendigo,entityclasses,Entity,,,Wendisnow,,,,,,,,,,,,,
 zombieWendigoRadiatedShower,entityclasses,Entity,,,Radiated Shower Wendigo,,,,,,,,,,,,,
 zombieDemolition,entityclasses,Entity,,,Destructive Wendigo,,,,,,,,,,,,,
+zombieBehemoth,entityclasses,Entity,,,Shape Shifter Behemoth
+zombieBehemothRadiated,entityclasses,Entity,,,Radiated Shape Shifter Behemoth
 qc_eliminatezombies,items,item,,,Contract: Eliminate Zombies,,,,,,,,,,,,,
 qc_eliminatezombiesDesc,items,item,,,"A contract issued by the Wild West Settlement. Seek out and eliminate Zombies of any kind based on the requirements displayed. This quest is started automatically, and ultimately loops, when meeting the first trader but can be reactived if removed.",,,,,,,,,,,,,
 qc_eliminatetoysoldiers,items,item,,,Contract: Eliminate Toy Soldiers,,,,,,,,,,,,,
