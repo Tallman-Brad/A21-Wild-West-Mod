@@ -2987,7 +2987,7 @@ If there is no hit the default quality is used.
 	<item name="modGunDuckbill"/>
 	<!--item name="modGunFlashlight"/-->
 	<item name="modGunForegrip"/>
-	<item name="modGunMagazineExtender"/>
+	<!--item name="modGunMagazineExtender"/-->
 	<item name="modGunMeleeTheHunter"/>
 	<item name="modGunMuzzleBrake"/>
 	<item name="modGunScopeSmall"/>
@@ -3450,7 +3450,7 @@ If there is no hit the default quality is used.
 	<item name="modGunBowArrowHandleGripSchematic"/> <!-- Wild West Mod -->
 	<item name="modGunChokeSchematic"/>
 	<item name="modGunCrippleEmSchematic"/>
-	<item name="modGunMagazineExtenderSchematic"/>
+	<!--item name="modGunMagazineExtenderSchematic"/-->
 	<item name="modGunMuzzleBrakeSchematic"/>
 	<!--item name="modGunReflexSightSchematic"/-->
 	<item name="modGunScopeMediumSchematic"/>
