@@ -2246,7 +2246,7 @@
 	<property name="FusePrimeOnActivate" value="true"/>
 	<property name="FuseTime" value="6"/> <!-- End: Needed for  time in sec, max 6 --> <!-- Default is 4 -->
 	<property name="StickPercent" value="1"/>
-	<property name="UnlockedBy" value="craftingExplosives"/>
+	<property name="UnlockedBy" value="craftingExplosives"/><!-- perkDemolitionsExpert -->
 	<property name="Group" value="Ammo/Weapons,Ammo"/>
 	<property name="SoundUnholster" value="charge_unholster"/>
 	<property name="SoundStick" value="charge_stick"/>
