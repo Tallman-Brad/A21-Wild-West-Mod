@@ -2541,6 +2541,7 @@
 	<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 	<property name="Material" value="Mwood_regular"/>
 	<property name="Group" value="Ammo/Weapons,Ammo"/>
+	<property name="UnlockedBy" value="craftingExplosives"/><!-- perkDemolitionsExpert -->
 	<property name="Path" value="solid"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanDecorateOnSlopes" value="false"/>

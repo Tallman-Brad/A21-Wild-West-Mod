@@ -524,15 +524,15 @@
 			<!--unlock_entry item="thrownGrenadeContact" unlock_tier="2" /-->
 			<!--unlock_entry item="mineHubcap" unlock_tier="3" /-->
 		</display_entry>
-		<display_entry icon="thrownTimedDynamite,resourceGunPowderBundle" name_key="explosivesT3-1,explosivesT3-2" has_quality="false" unlock_level="25" >
+		<display_entry icon="thrownTimedDynamite,resourceGunPowderBundle,cntKeroseneBarrel" name_key="explosivesT3-1,explosivesT3-2,explosivesT3-3" has_quality="false" unlock_level="25" >
 			<unlock_entry item="thrownTimedDynamite" unlock_tier="1" />
 			<unlock_entry item="resourceGunPowderBundle" unlock_tier="2" />
-			<!--unlock_entry item="thrownTimedDynamite" unlock_tier="3" /-->
+			<unlock_entry item="cntKeroseneBarrel" unlock_tier="3" />
 		</display_entry>
 				<!--display_entry icon="ammoRocketFrag" name_key="explosivesT4" has_quality="false" unlock_level="45" >
 			<unlock_entry item="resourceRocketTip,resourceRocketCasing,ammoRocketFrag,ammoRocketHE" unlock_tier="1" />
-		</display_entry>
-		<display_entry icon="gunExplosivesT3RocketLauncher" name_key="explosivesT5" has_quality="true" unlock_level="55,65,75,85,100" >
+		</display_entry-->
+		<!--display_entry icon="gunExplosivesT3RocketLauncher" name_key="explosivesT5" has_quality="true" unlock_level="55,65,75,85,100" >
 			<unlock_entry item="gunExplosivesT3RocketLauncher" unlock_tier="1" />
 		</display_entry-->
 
@@ -548,6 +548,7 @@
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="mineAirFilter"/-->
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="thrownTimedDynamite"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="resourceGunPowderBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="cntKeroseneBarrel"/>
 
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="resourceRocketTip,resourceRocketCasing,ammoRocketFrag,ammoRocketHE"/-->
 
