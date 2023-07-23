@@ -3,7 +3,8 @@
 <!-- *** BIOME_GROUPS -->
 	<!-- *** BIOME_ZOMBIES_NIGHT_GROUP -->
 	<csv xpath="/entitygroups/entitygroup[@name='ZombiesNight']/text()" delim="\n" op="add" >
-		zombieSpiderFeralFireGlider, .085	
+		zombieSpiderFeralFireGlider, .085
+		animalSnake, .001		
 	</csv>
 
 <!-- *** BIOME_ZOMBIES_WASTELAND_GROUP -->
@@ -32,7 +33,8 @@
 		zombieMolotovSoldierFeral, .5
 		guppyRadiatedFireMommaVultureBurnt, .5
 		zombieBehemoth, .5
-		zombieSpiderFeralFireGlider, .25	
+		zombieSpiderFeralFireGlider, .25
+		animalSnake, .001		
 	</set>
 	
 <!-- *** BIOME_ZOMBIES_WASTELAND_NIGHT_GROUP -->
@@ -61,7 +63,8 @@
 		zombieMolotovSoldierFeral, .5
 		guppyRadiatedFireMommaVultureBurnt, .5
 		zombieBehemothRadiated, .5
-		zombieSpiderFeralFireGlider, .25	
+		zombieSpiderFeralFireGlider, .25
+		animalSnake, .001		
 	</set>
 	
 <!-- *** INTEGRATION FOR ANIMALS -->
@@ -71,7 +74,8 @@
 		animalZombieWastelandCraterBear, 15
 		animalBossGrace, 15
 		animalZombieLargeVulture, 10
-		animalZombieFeralChicken, 10	
+		animalZombieFeralChicken, 10
+		animalSnake, .001		
 	</csv>
 	
 <!-- *** DESERT ANIMALS -->
@@ -79,7 +83,8 @@
 		animalDesertHare, 9
 		animalBisonBoar, 5
 		animalBisonBear, .5
-		guppyVultureBurnt, 14		
+		guppyVultureBurnt, 14
+		animalSnake, .001		
 	</csv>
 	
 <!-- *** SNOW ANIMALS -->	
@@ -87,6 +92,7 @@
 		animalSnowHare, 12
 		animalWolf, 10
 		animalWildWestSnowBear, 9
+		animalSnake, .001		
 	</csv>
 	
 <!-- *** FOREST ANIMALS -->
@@ -98,6 +104,7 @@
 		animalBear, 1
 		animalWolf, 1
 		animalDireWolf, .05
+		animalSnake, .001		
 	</csv>
 	
 	<!-- Custom Groups -->
@@ -232,6 +239,7 @@
 		animalZombieLargeVulture, .45
 		animalZombieFeralChicken, .45
 		animalBisonZombieBear, .45
+		animalSnake, .001
 	</csv>
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS40']">
