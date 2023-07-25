@@ -1066,7 +1066,7 @@
 <!-- Winchester Rifle -->
 
 <item name="gunRifleT2LeverActionRifleWinchester">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
+	<property name="Tags" value="weapon,revolver,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="85"/>
 	<property name="Meshfile" value="#@modfolder:Resources/VintageRifle.unity3d?VintageRifle"/>
@@ -1168,7 +1168,7 @@
 <!-- Legendary Tribe Winchester -->
 
 <item name="gunRifleT2LeverActionRifleLegendaryTribeWinchester">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
+	<property name="Tags" value="weapon,revolver,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="85"/>
 	<property name="Meshfile" value="#@modfolder:Resources/VintageRifle.unity3d?VintageRifle"/>
