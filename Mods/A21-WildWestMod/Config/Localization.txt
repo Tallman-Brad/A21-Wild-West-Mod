@@ -427,7 +427,7 @@ sleeperZombieWastelandCraterBearAnimal,blocks,SleeperSpawn,,,Sleeper Zombie Crat
 resourceZombieWastelandCraterBearTooth,items,item,,,Zombie Crater Bear Tooth,,,,,,,,,,,,,
 resourceZombieWastelandCraterBearToothDesc,items,item,,,"This tooth can be used as a trigger for the Gatling Protype. It is the only object to have both the strength and flexibility to withstand the vibrations of a Gatling Protoype in rapid fire mode. It is also used to repair the Gatling Protoype.",,,,,,,,,,,,,
 resourceStagAntler,items,item,,,Stag Antler,,,,,,,,,,,,,
-resourceStagAntlerDesc,items,item,,,"This antler can be used as part of a recipe for the Stag Spear. It increases strength while reducing weight.",,,,,,,,,,,,,
+resourceStagAntlerDesc,items,item,,,"This antler can be used as part of a recipe for the Antler Bow Handle Grip Mod.",,,,,,,,,,,,,
 animalDesertHare,entityclasses,Entity,,,Desert Hare,,,,,,,,,,,,,
 resourceDesertHarePelt,items,item,,,Desert Hare Pelt,,,,,,,,,,,,,
 resourceDesertHarePeltDesc,items,item,,,"This pelt can be used as part of a recipe for the Desert Hare Hat Mod. This mod is added in the head armour dye area. It greatly increases resistance to the cold (+15) and offers moderate protection against the heat (+5). The Desert Biome can go below freezing point at night when the Desert Hare is most active.",,,,,,,,,,,,,
