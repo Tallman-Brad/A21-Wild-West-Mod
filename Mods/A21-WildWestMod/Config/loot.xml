@@ -2836,7 +2836,7 @@ If there is no hit the default quality is used.
 	<item group="groupWeaponsT0_Gunslinger"/>
 	<item group="groupWeaponsT0_Boomstick"/>
 	<item group="groupWeaponsT0_DeadEye"/>
-	<item group="groupWeaponsT0_Machinegunner"/>
+	<!--item group="groupWeaponsT0_Machinegunner"/-->
 	<item group="groupWeaponsT0_Archery"/>
 	<item group="groupWeaponsT1_Demolitionist"/>
 </lootgroup>
