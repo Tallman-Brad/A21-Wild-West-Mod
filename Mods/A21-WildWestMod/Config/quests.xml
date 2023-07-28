@@ -2894,9 +2894,11 @@
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
 	
-			<!-- Phase 1: Travel -->  
-			<objective type="RandomGoto" value="150-250" phase="1">
+			<!-- Phase 1: Travel --> 
+			<objective type="RandomGotoNPC" phase="1">
 				<property name="completion_distance" value="50"/>
+				<property name="distance" value="350-600"/>
+				<property name="nav_object" value="quest" />
 			</objective>			
 			
 			<!-- Phase 2: Start Quest -->			
@@ -2929,9 +2931,11 @@
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
 	
-			<!-- Phase 1: Travel -->  
-			<objective type="RandomGoto" value="150-250" phase="1">
+			<!-- Phase 1: Travel --> 
+			<objective type="RandomGotoNPC" phase="1">
 				<property name="completion_distance" value="50"/>
+				<property name="distance" value="350-600"/>
+				<property name="nav_object" value="quest" />
 			</objective>			
 			
 			<!-- Phase 2: Start Quest -->			
@@ -2963,9 +2967,11 @@
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
 	
-			<!-- Phase 1: Travel -->  
-			<objective type="RandomGoto" value="150-250" phase="1">
+			<!-- Phase 1: Travel --> 
+			<objective type="RandomGotoNPC" phase="1">
 				<property name="completion_distance" value="50"/>
+				<property name="distance" value="350-600"/>
+				<property name="nav_object" value="quest" />
 			</objective>			
 			
 			<!-- Phase 2: Start Quest -->			
@@ -2998,9 +3004,11 @@
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
 	
-			<!-- Phase 1: Travel -->  
-			<objective type="RandomGoto" value="150-250" phase="1">
+			<!-- Phase 1: Travel --> 
+			<objective type="RandomGotoNPC" phase="1">
 				<property name="completion_distance" value="50"/>
+				<property name="distance" value="350-600"/>
+				<property name="nav_object" value="quest" />
 			</objective>			
 			
 			<!-- Phase 2: Start Quest -->			
@@ -3159,9 +3167,11 @@
 			<action type="TrackQuest"/>
 <!--		<action type="ShowTip" value="tutorialTip_eliminatehorde"/> -->
 		
-			<!-- Phase 1: Travel -->  
-			<objective type="RandomGoto" value="500-800" phase="1">
+			<!-- Phase 1: Travel --> 
+			<objective type="RandomGotoNPC" phase="1">
 				<property name="completion_distance" value="50"/>
+				<property name="distance" value="500-800"/>
+				<property name="nav_object" value="quest" />
 			</objective>
 			
 			<!-- Phase 2: Start Quest -->
@@ -3235,10 +3245,11 @@
 			<property name="completion_key" value="challenge_eliminatehorde03_completion"/>
 			<action type="TrackQuest"/>
 
-			<!-- Phase 1: Travel -->
-			
-			<objective type="RandomGoto" value="400-600" phase="1">
+			<!-- Phase 1: Travel --> 
+			<objective type="RandomGotoNPC" phase="1">
 				<property name="completion_distance" value="50"/>
+				<property name="distance" value="400-600"/>
+				<property name="nav_object" value="quest" />
 			</objective>
 			
 			<!-- Phase 2: Start Quest --> 
@@ -3309,10 +3320,11 @@
 			<property name="completion_key" value="challenge_eliminatehorde04_completion"/>
 			<action type="TrackQuest"/>
 
-			<!-- Phase 1: Travel -->
-
-			<objective type="RandomGoto" value="300-500" phase="1">
+			<!-- Phase 1: Travel --> 
+			<objective type="RandomGotoNPC" phase="1">
 				<property name="completion_distance" value="50"/>
+				<property name="distance" value="300-500"/>
+				<property name="nav_object" value="quest" />
 			</objective>
 			
 			<!-- Phase 2: Start Quest -->
