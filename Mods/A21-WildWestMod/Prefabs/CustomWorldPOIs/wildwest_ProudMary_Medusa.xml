@@ -7,7 +7,7 @@
   <property name="AllowTopSoilDecorations" value="True" />
   <property name="DifficultyTier" value="4" />
   <property name="ShowQuestClearCount" value="2" />
-  <property name="QuestTags" value="clear, fetch, restore_power, infected" />
+  <property name="QuestTags" value="clear, fetch, restore_power, infested" />
   <property name="TraderArea" value="False" />
   <property name="PrefabSize" value="58, 34, 60" />
   <property name="RotationToFaceNorth" value="2" />
