@@ -2286,7 +2286,7 @@
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="250"/> <!-- STK food -->
+	<property name="Stacknumber" value="2500"/> <!-- STK food -->
 	<property name="EconomicValue" value="54"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -2315,7 +2315,7 @@
 	<property name="Material" value="Morganic" />
 	<property name="HoldType" value="21" />
 	<property name="CraftingIngredientTime" value="8" />
-	<property name="Stacknumber" value="20" />
+	<property name="Stacknumber" value="50" />
 	<property class="Action1">
 		<property name="Class" value="Repair"/>
 		<property name="Repair_amount" value="50"/>
@@ -2347,7 +2347,7 @@
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="20"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="36"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -2379,7 +2379,7 @@
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
