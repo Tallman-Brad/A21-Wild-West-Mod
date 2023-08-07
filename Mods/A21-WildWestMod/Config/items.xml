@@ -2510,7 +2510,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="124"/>
-	<property name="UnlockedBy" value="craftingFood"/>	
+	<!--property name="UnlockedBy" value="craftingFood"/-->	
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
