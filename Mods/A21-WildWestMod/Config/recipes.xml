@@ -3870,7 +3870,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="foodCanStock" count="1"/>		
 	</recipe>
 
-	<recipe name="foodWildWestTinCanTucker" count="1" craft_time="50" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<recipe name="foodWildWestTinCanTucker" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
 		<ingredient name="foodCanChicken" count="1"/> <!-- Food 15 / Health 7 -->
 		<ingredient name="foodCanCatfood" count="1"/> <!-- Food 10 / Health 5 -->
 		<ingredient name="foodCanMiso" count="1"/> <!-- Food 10 / Health 5 / Water 10 -->
@@ -3906,7 +3906,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceGlue" count="1"/>
 	</recipe>
 
-	<recipe name="foodHoneyBread" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<recipe name="foodHoneyBread" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot">
 	<ingredient name="foodHoneyComb" count="2"/>
 	<ingredient name="foodCornMeal" count="2"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -3914,7 +3914,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceAnimalFat" count="1"/>
 	</recipe>
 
-	<recipe name="foodHoneyPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<recipe name="foodHoneyPumpkinPie" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot">
 	<ingredient name="foodHoneyComb" count="2"/>
 	<ingredient name="foodCropPumpkin" count="2"/>
 	<ingredient name="foodEgg" count="1"/>
@@ -3942,7 +3942,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceWood" count="50"/>
 	</recipe>	
 	
-	<recipe name="foodEggQuiche" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+	<recipe name="foodEggQuiche" count="1" craft_time="18" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 	<ingredient name="foodEgg" count="3"/>
 	<ingredient name="foodCornMeal" count="5"/>
 	<ingredient name="foodRawMeat" count="1"/>
@@ -3950,7 +3950,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="foodCropMushrooms" count="1"/>		
 	</recipe>
 	
-	<recipe name="foodEggSandwich" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+	<recipe name="foodEggSandwich" count="1" craft_time="12" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
 	<ingredient name="foodEggBoiled" count="2"/>
 	<ingredient name="foodWildWestAcornFlour" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -4224,7 +4224,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="treePlantedOak1m" count="6"/>
 	</recipe>
 
-    <recipe name="foodWildWestAcornHardtack" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+    <recipe name="foodWildWestAcornHardtack" count="1" craft_time="12" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
 	    <ingredient name="foodWildWestAcornFlour" count="1"/>
 	    <ingredient name="drinkJarBoiledWater" count="1"/>
     </recipe>
@@ -4238,7 +4238,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	</effect_group>
     </recipe>
 	
-    <recipe name="foodWildWestPineConeJam" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+    <recipe name="foodWildWestPineConeJam" count="1" craft_time="18" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
 	    <ingredient name="treePlantedMountainPine1m" count="6"/>
 	    <ingredient name="foodHoney" count="1"/>
 	    <ingredient name="drinkJarBoiledWater" count="1"/>		
@@ -4250,7 +4250,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	    <ingredient name="foodEgg" count="2"/>		
     </recipe>
 	
-	<recipe name="foodFriedCatfish" count="2" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<recipe name="foodFriedCatfish" count="2" craft_time="36" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 		<ingredient name="resourceCatfish" count="1"/>
 		<ingredient name="foodCropPotato" count="3"/>
 		<ingredient name="resourceAnimalFat" count="2"/>
@@ -4270,14 +4270,14 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="treePlantedMountainPine1m" count="6"/>
 	</recipe>
 	
-	<recipe name="foodBlueberryPemmican" count="2" craft_time="240" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
+	<recipe name="foodBlueberryPemmican" count="2" craft_time="18" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
 		<ingredient name="foodCropBlueberries" count="5"/>
 		<ingredient name="resourceAnimalFat" count="2"/>
 		<ingredient name="foodPineNuts" count="1"/>		
 		<ingredient name="foodRawMeat" count="5"/>
 	</recipe>
 	
-	<recipe name="foodRubaboo" count="1" craft_time="90" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+	<recipe name="foodRubaboo" count="1" craft_time="48" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 		<ingredient name="foodBlueberryPemmican" count="2"/>
 		<ingredient name="foodCropPotato" count="2"/>
 		<ingredient name="foodCropCorn" count="2"/>
@@ -4285,7 +4285,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="foodCanStock" count="1"/>
 	</recipe>
 	
-	<recipe name="foodTallmanBradJerky" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
+	<recipe name="foodTallmanBradJerky" count="1" craft_time="12" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
 		<ingredient name="foodHoneyComb" count="1"/>		
 		<ingredient name="foodRawMeat" count="5"/>
 	</recipe>
@@ -4387,7 +4387,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="resourceHook" count="2"/>
 	</recipe>
 	
-<recipe name="foodCampfireBeans" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+<recipe name="foodCampfireBeans" count="1" craft_time="36" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="foodRawMeat" count="5"/>
 	<ingredient name="foodPintoBeans" count="16"/>
 	<ingredient name="foodCanChili" count="1"/>
@@ -4398,7 +4398,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	</effect_group>
 </recipe>
 
-<recipe name="foodChowder" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+<recipe name="foodChowder" count="1" craft_time="48" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="foodCanSalmon" count="1"/>
 	<ingredient name="foodCropPotato" count="2"/>
 	<ingredient name="foodBoarMilk" count="2"/>
@@ -4406,7 +4406,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="foodPintoBeans" count="10"/>
 </recipe>
 
-<recipe name="foodCrawfishGumbo" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+<recipe name="foodCrawfishGumbo" count="1" craft_time="48" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="foodWildWestAcornFlour" count="1"/>
 	<ingredient name="foodCanStock" count="1"/>
 	<ingredient name="foodOkra" count="16"/>
@@ -4425,7 +4425,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 
 	<!-- Apple Pie -->
 	
-	<recipe name="foodApplePie" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+	<recipe name="foodApplePie" count="1" craft_time="18" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
 		<ingredient name="foodApple" count="2"/>
 		<ingredient name="foodWildWestAcornFlour" count="1"/>
 		<ingredient name="foodEgg" count="1"/>
