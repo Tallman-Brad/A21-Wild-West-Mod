@@ -1136,7 +1136,7 @@ QC_zombieYoRadiated,entityclasses,Entity,,,Radiated Horde Yo,,,,,,,,,,,,,
 QC_zombieFatCopRadiated,entityclasses,Entity,,,Radiated Horde Cop,,,,,,,,,,,,,
 QC_zombieBikerRadiated,entityclasses,Entity,,,Radiated Horde Biker,,,,,,,,,,,,,
 
-loadingTipWildWestTomahawk,UI,Loading Screen,x,,"The Tomahawk is a multi purpose weapon and tool. It can attack, upgrade, repair, chop, and mine. Craft to Quality Level 6 with Miner 69'er.",,,,,,,,,,,,,
+loadingTipWildWestTomahawk,UI,Loading Screen,x,,"The Tomahawk is a multi purpose weapon and tool. It can attack, upgrade, repair, chop, and mine. Craft to Quality Level 5 with Miner 69'er, but find in loot, and at the traders' at Quality Level 6.",,,,,,,,,,,,,
 loadingTipWildWestTomahawk_title,UI,Loading Screen,x,,Tomahawk,,,,,,,,,,,,,
 loadingTipWildWestHordeNight,UI,Loading Screen,x,,"Wild West blood moon horde nights can be managed with Wild West traps, scrap spitters, the gatling, and a stag spear with weighted head mod.",,,,,,,,,,,,,
 loadingTipWildWestHordeNight_title,UI,Loading Screen,x,,Wild West Blood Moon,,,,,,,,,,,,,
