@@ -157,6 +157,7 @@
 	<set xpath="/items/item[@name='questRewardT3HandgunBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set><!-- Removing Desert Vulture for Schofield -->
 	<set xpath="/items/item[@name='questRewardT3HandgunLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunHandgunT3SchofieldRevolver,ammo44MagnumBulletBall,handgunsSkillMagazine</set><!-- Removing Desert Vulture for Schofield -->
 	<set xpath="/items/item[@name='questRewardT3RifleBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT2LeverActionRifleLegendaryTribeWinchester,ammo44MagnumBulletBall,riflesSkillMagazine</set><!-- Removing Sniper for Legendary -->
+	<set xpath="/items/item[@name='questRewardT3RifleLegendaryBundle']/property[@class='Action0']/property[@name='Create_item']/@value">gunRifleT2LeverActionRifleLegendaryTribeWinchester,ammo44MagnumBulletBall,riflesSkillMagazine</set><!-- Removing Sniper for Legendary -->
 	
 	<!-- Weather Durable Poncho -->
 	<set xpath="/items/item[@name='apparelCoatLeatherPoncho']/effect_group/passive_effect[@name='HypothermalResist']/@value">10.8,13.2</set><!-- 2.8,5.2 -->
