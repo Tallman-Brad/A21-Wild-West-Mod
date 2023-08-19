@@ -51,6 +51,22 @@
         </item_property_overrides>        
     </append>
 
+	<append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
+
+       <item_property_overrides name="meleeWpnClubT3Skillet">
+            <property name="FlameEffect" value="#@modfolder:Resources/pan.unity3d?Skilletflame"/>
+       </item_property_overrides>
+
+       <item_property_overrides name="meleeWpnClubT1OldPan">
+            <property name="FlameEffect" value="#@modfolder:Resources/pan.unity3d?PanFlames"/>
+       </item_property_overrides>
+
+       <item_property_overrides name="meleeWpnClubT0Ladle">
+            <property name="FlameEffect" value="#@modfolder:Resources/pan.unity3d?LadleFlame"/>
+        </item_property_overrides>
+
+    </append>
+
 <append xpath="/item_modifiers">
 
 <!-- Cowboy Boots Mod -->
