@@ -495,7 +495,8 @@
 	<property name="RootMotion" value="false"/>
 	<property name="RagdollOnDeathChance" value=".5"/>
 	<property name="PhysicsBody" value="bear"/>
-	<property name="Mesh" value="#@modfolder:Resources/WildWestAnimals.unity3d?BisonWildWest"/>	
+	<property name="LookAtAngle" value="0"/>
+	<property name="Mesh" value="#@modfolder:Resources/WWBison.unity3d?BisonD"/>	
 	<property name="Mass" value="600"/>
 
 	<property name="AITask-1" value="BreakBlock"/>
@@ -594,7 +595,8 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="PhysicsBody" value="boar"/>
-	<property name="Mesh" value="#@modfolder:Resources/WildWestAnimals.unity3d?BisonWildWest"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Mesh" value="#@modfolder:Resources/WWBison.unity3d?BisonD"/>
 	<property name="Mass" value="200"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="RootMotion" value="false"/>
