@@ -756,7 +756,7 @@
 		<property name="unstickForce" value="1"/>
 		<property name="turboScale" value="1.5, 1.3"/>
 		<property name="velocityMax" value="9.33, 6"/>
-		<property name="waterDrag_y_velScale_velMaxScale" value="1.0, 0.5, .25"/> <!-- 1.8, .9, .1 -->
+		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, 0.9, .15"/> <!-- 1.8, .9, .1 -->  <!-- previous ww values 1.0, 0.5, .25 -->
 		<property name="wheelPtlScale" value="1"/>
 		
 		<property name="hornSound" value="horseHorn"/>
@@ -876,7 +876,7 @@
 		<property name="cameraTurnRate" value=".2, .35"/>
 		<property name="motorTorque" value="5000, 5000"/>
 		<property name="brakeTorque" value="5000"/>
-		<property name="upAngleMax" value="50"/>
+		<property name="upAngleMax" value="60"/>
 		<property name="upForce" value="1"/>
 		<property name="steerRate" value="130"/>
 		<property name="steerCenteringRate" value="90"/>
@@ -889,7 +889,7 @@
 		<property name="unstickForce" value="1"/>
 		<property name="turboScale" value="1.5, 1.3"/>
 		<property name="velocityMax" value="10.33, 6"/>
-		<property name="waterDrag_y_velScale_velMaxScale" value="1.0, 0.5, .25"/> <!-- 1.8, .9, .1 -->
+		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, 0.9, .15"/> <!-- 1.8, .9, .1 -->  <!-- previous ww values 1.0, 0.5, .25 -->
 		<property name="wheelPtlScale" value="1"/>
 		
 		<property name="hornSound" value="horseHorn"/>
@@ -1009,7 +1009,7 @@
 		<property name="cameraTurnRate" value=".2, .35"/>
 		<property name="motorTorque" value="5000, 5000"/>
 		<property name="brakeTorque" value="5000"/>
-		<property name="upAngleMax" value="50"/>
+		<property name="upAngleMax" value="70"/>
 		<property name="upForce" value="1"/>
 		<property name="steerRate" value="130"/>
 		<property name="steerCenteringRate" value="90"/>
@@ -1022,7 +1022,7 @@
 		<property name="unstickForce" value="1"/>
 		<property name="turboScale" value="1.5, 1.3"/>
 		<property name="velocityMax" value="11.33, 6"/>
-		<property name="waterDrag_y_velScale_velMaxScale" value="1.0, 0.5, .25"/> <!-- 1.8, .9, .1 -->
+		<property name="waterDrag_y_velScale_velMaxScale" value="1.7, 0.9, .15"/> <!-- 1.8, .9, .1 -->  <!-- previous ww values 1.0, 0.5, .25 -->
 		<property name="wheelPtlScale" value="1"/>
 		
 		<property name="hornSound" value="horseHorn"/>

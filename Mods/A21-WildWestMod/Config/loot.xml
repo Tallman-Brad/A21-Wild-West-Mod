@@ -3512,7 +3512,7 @@ If there is no hit the default quality is used.
 
 <!-- *** T2_Vehicle_Mod_Schematics -->
 <lootgroup name="vehicleModSchematics03">
-	<item name="modVehicleExpandedSeatSchematic"/>
+<!--	<item name="modVehicleExpandedSeatSchematic"/> -->    <!-- #####################-->
 	<item name="modVehicleSuperChargerSchematic"/>
 </lootgroup>
 
@@ -3923,7 +3923,7 @@ If there is no hit the default quality is used.
 	<item name="modVehicleOffRoadHeadlights" loot_prob_template="ProbT1Cap"/>
 	<item name="modVehicleFuelSaver" loot_prob_template="ProbT1Cap"/>
 	<item name="modVehicleReserveFuelTank" loot_prob_template="ProbT2Cap"/>
-	<item name="modVehicleExpandedSeat" loot_prob_template="ProbT3"/>
+<!--	<item name="modVehicleExpandedSeat" loot_prob_template="ProbT3"/> -->    <!-- #####################-->
 	<item name="modVehicleSuperCharger" loot_prob_template="ProbT3"/>
 </lootgroup>
 

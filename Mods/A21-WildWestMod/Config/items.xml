@@ -2883,6 +2883,7 @@
 			<property name="Extends" value="meleeHandAnimalZombieVulture"/>
 			<property name="CreativeMode" value="None"/>
 			<property class="Action0">
+			    <property name="Range" value="1.65"/>
 				<property name="Delay" value=".7"/>
 				<property name="DamageEntity" value="12"/>
 				<property name="DamageBlock" value="150"/>
@@ -3793,7 +3794,7 @@
 	<effect_group name="SteamBikePlaceable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="4"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="4000"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="3000"/>   <!-- 4000 -->
 	</effect_group>
 </item>	
 
@@ -3814,7 +3815,7 @@
 	<effect_group name="SteamHorsePlaceable" tiered="false">
 		<passive_effect name="ModSlots" operation="base_set" value="5"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="8500"/>     <!-- 7500 -->
 	</effect_group>
 </item>
 
