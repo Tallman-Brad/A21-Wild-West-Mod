@@ -874,7 +874,7 @@
 			<item name="modVehicleFuelSaverSchematic"/>
 			<item name="modVehicleOffRoadHeadlightsSchematic"/>
 			<item name="modVehicleSuperChargerSchematic"/>
-			<item name="modVehicleExpandedSeatSchematic"/>
+		<!--	<item name="modVehicleExpandedSeatSchematic"/> -->
 			<item name="modVehicleReserveFuelTankSchematic"/>
 		</trader_item_group>
 
