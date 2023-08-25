@@ -3369,7 +3369,7 @@
 			
 			<reward type="SkillPoints" value="1" chainreward="true"/>
 			<reward type="Item" id="casinoCoin" value="4000"/>
-			<reward type="Item" id="toolBellowsSchematic" ischosen="true" isfixed="true" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
 			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
 			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
 			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="3"/>
