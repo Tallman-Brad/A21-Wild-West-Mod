@@ -5,6 +5,10 @@
 <set xpath="/Sounds/SoundDataNode[@name='charge_keypress_armed']/AudioClip/@ClipName">Sounds/Weapons/weapon_jam2</set>
 <set xpath="/Sounds/SoundDataNode[@name='Supply_Crate_Plane_lp']/AudioClip/@ClipName">#@modfolder:Resources/Steamsounds.unity3d?SteamTrainChug Away</set>
 
+<!-- TMB Horse clang removal -->
+
+<remove xpath="/Sounds/SoundDataNode[@name='vwheel_bounce']"/>
+
   <append xpath="/Sounds">
   
 <!-- Gatling Gun - Thank you to Snufkin for base inspiration -->
@@ -131,6 +135,14 @@
 	<LowestPitch name="0.8"/>
 	<HighestPitch name="0.95"/>
 	<LocalCrouchVolumeScale value="0.25"/> <CrouchNoiseScale value="0.05"/> <NoiseScale value=".1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<!-- TMB Horse Clang removal -->
+
+<SoundDataNode name="vwheel_bounce"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<Noise ID="0" noise="1" time="0" muffled_when_crouched="0.65"/>
+	<AudioClip ClipName="Sounds/Step/crawlerstepsand2"/>
+	<MaxVoices value="0"/> <MaxRepeatRate value="0.01"/>
+ </SoundDataNode>
 
   </append>
 
