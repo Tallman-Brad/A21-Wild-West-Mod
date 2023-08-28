@@ -9582,6 +9582,10 @@ If there is no hit the default quality is used.
 <lootcontainer name="vehicleMinibike" count="0" size="9,3" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
 </lootcontainer>
 
+<!-- vehicleT3Horse storage -->
+<lootcontainer name="vehicleT3Horse" count="0" size="9,7" sound_open="UseActions/open_shopping_basket" open_time="0" sound_close="UseActions/close_shopping_basket" loot_quality_template="qualBaseTemplate">
+</lootcontainer>
+
 <!-- vehicleMotorcycle storage -->
 <lootcontainer name="vehicleMotorcycle" count="0" size="9,4" sound_open="UseActions/vehicle_storage_open" open_time="0" sound_close="UseActions/vehicle_storage_close" loot_quality_template="qualBaseTemplate">
 </lootcontainer>

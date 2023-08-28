@@ -375,8 +375,6 @@
 	
 	<entity_class name="animalZombieWastelandCraterBear" extends="animalBear">
 	<property name="Tags" value="entity,animal,zombie,hostile,bear"/>
-	<property name="ReplaceMaterial0" value="Entities/Animals/Boar/Materials/GRACE"/>
-	<property name="ReplaceMaterial1" value="Materials/UMAFur_ZombieBear"/>
 
 	<property name="AIFeralSense" value="1.2"/>
 	<property name="AITask-1" value="BreakBlock"/>
@@ -411,6 +409,7 @@
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 
 	<effect_group name="Base Effects">
+        <triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="CraterBear"/>
 		<passive_effect name="HealthMax" operation="base_set" value="2200"/>
 	</effect_group>
 </entity_class>
@@ -1432,7 +1431,7 @@
 			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
 			<property name="Class" value="EntityVJeep"/>
 			<property name="Parent" value="Cars"/>
-			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?MedievalHorse.prefab"/>
+			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?HorseT1.prefab"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="organic"/>
 			<property name="IgnoreTrigger" value="true"/>
@@ -1454,11 +1453,11 @@
 			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
 			<property name="Class" value="EntityVJeep"/>
 			<property name="Parent" value="Cars"/>
-			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?MedievalHorse.prefab"/>
+			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?HorseT2.prefab"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="organic"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="vehicleMotorcycle"/>
+			<property name="LootListAlive" value="vehicleGyrocopter"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="Explosion.ParticleIndex" value="6"/>
 			<property name="Explosion.RadiusBlocks" value="5"/>
@@ -1476,11 +1475,11 @@
 			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
 			<property name="Class" value="EntityVJeep"/>
 			<property name="Parent" value="Cars"/>
-			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?MedievalHorse.prefab"/>
+			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?HorseT3.prefab"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="organic"/>
 			<property name="IgnoreTrigger" value="true"/>
-			<property name="LootListAlive" value="vehicle4x4Truck"/>
+			<property name="LootListAlive" value="vehicleT3Horse"/>
 			<property name="IsEnemyEntity" value="false"/>
 			<property name="Explosion.ParticleIndex" value="6"/>
 			<property name="Explosion.RadiusBlocks" value="5"/>

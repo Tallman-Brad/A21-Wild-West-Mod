@@ -2783,6 +2783,657 @@
     <property name="FilterTags" value="floot,fdecor,fother,ffurniture"/>	
 </block>
 
+<!-- New Oakraven Wagons -->
+
+<block name="JailWagon">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>	
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/>
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="lock"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?JailWagon"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="500"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="JailWagonOpen"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+	<property name="DowngradeEvent" value="JailWagon" />
+</block>
+
+<block name="JailWagonOpen">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?JailWagonstage2"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="JailWagonBroken"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="JailWagonBroken">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/>
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?JailWagonstage3"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="35,90" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0003"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+
+<block name="OldWagon">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?OldWagon"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="OldWagonBroken"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="OldWagonBroken">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?OldWagonBroken"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="OldWagonSmashed"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0003"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="OldWagonSmashed">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/>
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?OldWagonParts"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="35,90" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0004"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="MailWagon">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="bookcase"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?MailWagon6"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="MailWagonBroken"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0001"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="MailWagonBroken">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="bookcase"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?MailWagonStage2"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="MailWagonSmashed"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="MailWagonSmashed">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="bookcase"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/>
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?MailWagonStage3"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="35,90" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0003"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="WaterWagon">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?WaterWagonOak"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="WaterWagonBroken"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="WaterWagonBroken">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?WaterWagonOakmid"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="WaterWagonSmashed"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0003"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="WaterWagonSmashed">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/>
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?WaterWagonOakend"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="35,90" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0004"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="Stagecoach">
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?stagecoachOak"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="2,2,5"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="StagecoachBroken"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>	
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0002"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="StagecoachBroken">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/> 
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?stagecoachOak2"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="2,2,5"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="DowngradeBlock" value="StagecoachSmashed"/>
+	<drop event="Harvest" name="resourceForgedIron" count="1,2" tag="salvageHarvest"/>
+		<drop event="Harvest" name="resourceWood" count="10,20" tag="allHarvest"/>	
+		<drop event="Harvest" name="resourceCloth" count="3,6" tag="allHarvest"/>
+		<drop event="Harvest" name="foodRottingFlesh" count="3,6" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGunPowder" count="1,10" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceDuctTape" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceGlue" count="1" prob="0.3" tag="allHarvest"/>
+		<drop event="Harvest" name="resourceOil" count="1" prob="0.3" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0003"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
+<block name="StagecoachSmashed">
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="LootStageMod" value="0.05"/>
+	<property name="LootStageBonus" value="10"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="5"/> 
+		<property name="RadiusBlocks" value="3.5"/> 
+		<property name="BlockDamage" value="500"/>
+		<property name="RadiusEntities" value="5"/> 
+		<property name="EntityDamage" value="250"/> 
+	</property>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?stagecoachOak3"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="2,2,5"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="WaterFlow" value="permitted"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="MaxDamage" value="250"/>
+	<property name="PassThroughDamage" value="true"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="35,90" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="SortOrder1" value="B851"/>
+	<property name="SortOrder2" value="0004"/>
+	<property name="FilterTags" value="MC_building,SC_automotive,A21_NEW"/>
+</block>
+
 </append>
 
 </wildwestmod>
