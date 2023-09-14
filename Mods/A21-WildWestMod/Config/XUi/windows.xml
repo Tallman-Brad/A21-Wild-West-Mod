@@ -191,11 +191,11 @@
 <append xpath="/windows">
 	<window name="HUDLeftStatBars">
 		<rect name="hud" pos="30,192" rows="2" cols="1" width="168" side="right">
-			<rect width="160" height="37" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}">
+			<rect width="137" height="37" controller="HUDStatBar" stat_type="Stealth" visible="{statvisible}"> <!-- bar was 160 but overlapping -->
 				
 				<filledsprite depth="4" name="BarContent" color="{stealthcolor}" type="filled" fill="0" />
 				<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_stealth2" size="27,27" pos="32,-18" pivot="center" foregroundlayer="true"/>
-				<label depth="6" name="TextContent" pos="44,-19" font_size="26" color="[white]" justify="center" pivot="left" text="{statcurrent}" width="125" height="35"/>
+				<label depth="6" name="TextContent" pos="44,-19" font_size="26" color="[white]" justify="center" pivot="left" text="{statcurrent}" width="60" height="35"/> <!-- width number was 125 and this shifts left -->
 
 				<texture depth="9" pos="-25,-19" width="192" height="37" pivot="left" texture="@modfolder:Textures/horse_shoe_border.png"/>
 			</rect>				
