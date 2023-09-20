@@ -614,7 +614,28 @@
 		<block name="cntCar03SedanDamage2v05" prob="1"/>
 		<block name="cntCar03SedanDamage2v06" prob="1"/>
 		<block name="cntCar03SedanDamage2v07" prob="1"/>
+
+
+<!-- Oak's Wagons random spawn -->
+		<block name="JailWagon" prob=".15"/>
+		<block name="OldWagon" prob=".3"/>
+		<block name="MailWagon" prob=".2"/>
+		<block name="WaterWagon" prob=".3"/>
+		<block name="Stagecoach" prob=".2"/>
+
+		<block name="JailWagonOpen" prob=".1"/>
+		<block name="OldWagonBroken" prob=".2"/>
+		<block name="MailWagonBroken" prob=".1"/>
+		<block name="WaterWagonBroken" prob=".1"/>
+		<block name="StagecoachBroken" prob=".1"/>
 		
+		<block name="JailWagonBroken" prob=".15"/>
+		<block name="OldWagonSmashed" prob=".3"/>
+		<block name="MailWagonSmashed" prob=".2"/>
+		<block name="WaterWagonSmashed" prob=".2"/>
+		<block name="StagecoachSmashed" prob=".2"/>
+
+	
 		<!--block name="burntSedan01" prob="1"/>
 		<block name="burntSedan01" prob="1"/>
 		<block name="burntSedan01" prob="1"/>
@@ -3564,6 +3585,17 @@
 		<block name="traderClothesRackWallSweaterMilitary" prob=".9"/>
 		<block name="traderClothesRackWallTShirtsMilitary" prob=".9"/>
 	</placeholder>
+
+<!-- Respawning crystal rocks -->
+
+	<placeholder name="RockRandomHelper">
+            <block name="bluerock22" prob=".3"/> <!-- blackrock2 -->
+            <block name="bluerock33" prob=".3"/> <!-- blackrock1 -->
+            <block name="lightblueRock" prob=".3"/> <!-- bluerock -->
+            <block name="greenrock" prob=".3"/> <!-- greenrock -->
+    </placeholder>
+
+
 
 	<!-- You CAN now use an air block and create random non-blocks.
 		The downside is that there will be no error message if a NAMED block is not found (misspelled),

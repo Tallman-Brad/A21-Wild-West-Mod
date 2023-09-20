@@ -18,9 +18,9 @@
 		<property name="cameraTurnRate" value=".2, .35"/>
 		<property name="upAngleMax" value="70"/>
 		<property name="upForce" value="1"/>
-		<property name="steerRate" value="130"/>
-		<property name="steerCenteringRate" value="90"/>
-		<property name="tiltAngleMax" value="20"/>
+		<property name="steerRate" value="130"/>     <!-- original 130 -->
+		<property name="steerCenteringRate" value="90"/>   <!-- original 90 -->
+		<property name="tiltAngleMax" value="20"/>  <!-- 20 -->
 		<property name="tiltThreshold" value="3"/>
 		<property name="tiltDampening" value=".22"/>
 		<property name="tiltDampenThreshold" value="8"/>

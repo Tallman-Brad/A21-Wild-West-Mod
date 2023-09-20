@@ -2338,7 +2338,7 @@ If there is no hit the default quality is used.
 	<item name="modArmorBallCap" loot_prob_template="low"/>
 	<item name="modArmorCowboyHat" loot_prob_template="low"/>
 	<item name="armorClothHat"/>
-	<item name="armorFootballHelmet"/>
+<!--<item name="armorFootballHelmet"/> -->
 </lootgroup>
 
 <lootgroup name="groupApparelFaceCover">
@@ -2860,7 +2860,7 @@ If there is no hit the default quality is used.
 	<!--item group="groupWeaponsT2_Machinegunner"/-->
 	<!--item group="groupWeaponsT3_Archery"/-->
 	<item group="groupWeaponsT2_Gunslinger"/>
-	<item group="groupWeaponsT2_TurretsSyndrome"/>
+	<!--<item group="groupWeaponsT2_TurretsSyndrome"/>-->
 </lootgroup>
 
 <!-- *** T3_Ranged_Weapons -->
@@ -3589,7 +3589,7 @@ If there is no hit the default quality is used.
 <!-- *** Electrical_Devices -->
 <lootgroup name="groupElectricalDevices">
 	<item name="resourceElectricParts" count="10,20" loot_prob_template="high"/> <!-- 5,10 -->
-	<!--item name="electricwirerelay" count="5,15" loot_prob_template="med"/-->
+	<item name="electricwirerelay" count="5,15" loot_prob_template="med"/>      <!-- re added -->
 	<!--item name="electrictimerrelay" count="1,3" loot_prob_template="med"/-->
 	<!--item name="ceilingLight01_player" count="1,6" loot_prob_template="med"/-->
 	<!--item name="switch" count="1,3" loot_prob_template="med"/-->
@@ -3701,8 +3701,12 @@ If there is no hit the default quality is used.
 <!-- *** Rare_Ores -->
 <lootgroup name="rareOres">
 	<item name="resourceSilverNugget" count="1,5"/>
+	<item name="resourceGreenCrystal" count="1,3" loot_prob_template="medLow"/> <!-- WW Mod -->
+	<item name="resourceBlueCrystal" count="1,3" loot_prob_template="medLow"/> <!-- WW Mod -->
+	<item name="resourceBlackCrystal" count="1,3" loot_prob_template="medLow"/> <!-- WW Mod -->
 	<item name="resourceGoldNugget" count="1,4" loot_prob_template="medLow"/>
 	<item name="resourceRawDiamond" count="1,3" loot_prob_template="veryLow"/>
+
 </lootgroup>
 
 <!-- *** Metalpipe_Scrap -->
@@ -4375,17 +4379,17 @@ If there is no hit the default quality is used.
 	<item name="questRewardMinibikePartsBundle"/>
 </lootgroup>
 
-<lootgroup name="groupQuestMotorcycleParts" count="all">
+<!-- <lootgroup name="groupQuestMotorcycleParts" count="all">
 	<item name="questRewardMotorcyclePartsBundle"/>
-</lootgroup>
+</lootgroup> -->
 
-<lootgroup name="groupQuest4x4Parts" count="all">
+<!-- <lootgroup name="groupQuest4x4Parts" count="all">
 	<item name="questReward4x4PartsBundle"/>
-</lootgroup>
+</lootgroup> -->
 
-<lootgroup name="groupQuestGyrocopterParts" count="all">
+<!-- <lootgroup name="groupQuestGyrocopterParts" count="all">
 	<item name="questRewardGyrocopterPartsBundle"/>
-</lootgroup>
+</lootgroup> -->
 
 <lootgroup name="groupQuestHelmetLightSchematic" count="all">
 	<item name="modArmorHelmetLightSchematic"/>
@@ -4395,16 +4399,16 @@ If there is no hit the default quality is used.
 	<item name="questRewardMiningHelmetBundle"/>
 </lootgroup>
 
-<lootgroup name="groupQuestNightVisionGoggles" count="all">
+<!-- <lootgroup name="groupQuestNightVisionGoggles" count="all">
 	<item name="apparelNightvisionGoggles"/>
-</lootgroup>
+</lootgroup> -->
 
 <lootgroup name="groupQuestLockPicks" count="all">
 	<item name="resourceLockPick" count="10"/>
 </lootgroup>
 
 <lootgroup name="groupQuestTimedCharges" count="all">
-	<item name="thrownTimedCharge" count="10"/>
+	<item name="thrownTimedDynamite" count="10"/>       <!-- Switched with thrownTimedCharge for Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupQuestForge" count="all">
@@ -4580,9 +4584,9 @@ If there is no hit the default quality is used.
 	<item name="meleeToolRepairT1ClawHammer"/>
 </lootgroup>
 
-<lootgroup name="groupQuestNailgun" count="all">
+<!-- <lootgroup name="groupQuestNailgun" count="all">
 	<item name="meleeToolRepairT3Nailgun"/>
-</lootgroup>
+</lootgroup> -->
 
 <lootgroup name="groupQuestT2Food" count="all">
 	<item name="questRewardT2FoodBundle"/>
@@ -4624,7 +4628,7 @@ If there is no hit the default quality is used.
 	<item name="questRewardT2TrapsBundle"/>
 </lootgroup>
 
-<lootgroup name="groupQuestDartTrap" count="all">
+<!-- <lootgroup name="groupQuestDartTrap" count="all">
 	<item name="questRewardDartTrapBundle"/>
 </lootgroup>
 
@@ -4654,7 +4658,7 @@ If there is no hit the default quality is used.
 
 <lootgroup name="groupQuestSolarBank" count="all">
 	<item name="questRewardSolarBankBundle"/>
-</lootgroup>
+</lootgroup> -->
 
 <lootgroup name="groupQuestT1MeleeMods" count="all">
 	<item name="questRewardT1MeleeModsBundle"/>
@@ -10379,12 +10383,57 @@ If there is no hit the default quality is used.
 		<item name="foodCropMushrooms" count="1,2" prob="0.1"/>
 		<item name="foodCropBlueberries" count="1,5" prob="0.1"/>
 		<item name="foodCropPumpkin" count="1" prob="0.1"/>
-		<item name="resourceCatfish" count="1" prob="0.09"/>		
+		<item name="resourceCatfish" count="1" prob="0.2"/>		<!-- 0.09 -->
 		<item name="apparelCowboyBoots" count="1" prob="0.035"/>
 		<item name="apparelCowboyHat" count="1" prob="0.035"/>
 		<item name="modArmorCowboyHat" count="1" prob="0.03"/>
 		<item name="modArmorCowboyBoots" count="1" prob="0.03"/>		
 	</lootcontainer>
+
+
+<!-- Wild West Wagons Loot -->
+
+<!-- Water Wagon -->
+	<!-- Water plus Farming related loot-->
+	<lootgroup name="groupWaterWagon" count="all">
+		<item name="drinkJarRiverWater" count="2,5"/>
+		<item name="foodPintoBeans" count="5,10" prob="0.3"/>
+		<item name="foodOkra" count="5,10" prob="0.3"/>
+		<item name="foodCropPotato" count="1,5" prob="0.1"/>
+		<item name="foodCropCorn" count="1,5" prob="0.1"/>		
+		<item name="apparelCowboyHat" count="1" prob="0.05"/>	
+	</lootgroup>
+
+	<lootcontainer name="WaterWagon" count="1,2" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate">
+	<item group="groupWaterWagon" count="1"/>
+	</lootcontainer>
+
+<!-- Jail Wagon -->
+	<!-- guard's ammo, reward cash for prisoners -->
+	<lootgroup name="groupJailWagon" count="all">
+		<item group="groupAmmoPileSmall"/>
+		<item name="oldCash" count="10,200" prob="0.3"/>
+		<item name="apparelCowboyBoots" count="0,1" prob="0.1"/>
+	
+	</lootgroup>
+
+	<lootcontainer name="JailWagon" count="1,2" size="6,2" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" loot_quality_template="qualBaseTemplate">
+	<item group="groupJailWagon" count="1"/>
+	</lootcontainer>
+
+<!-- Stage Coach -->
+	<!-- Passenger luggage or items from/to market -->
+	<lootgroup name="groupStageCoach" count="all">
+		<item group="groupSavageCountryCrate"/>
+		<item name="oldCash" count="100,200" prob="0.3"/>
+		<item name="GrownChicken" count="1" prob="0.1"/>
+	
+	</lootgroup>
+
+	<lootcontainer name="StageCoach" count="1,2" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+	<item group="groupStageCoach" count="1"/>
+	</lootcontainer>
+
 
 </set>
 

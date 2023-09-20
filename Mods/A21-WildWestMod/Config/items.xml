@@ -131,6 +131,8 @@
 	<!-- Bundle Stacking -->
 	<set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Stacknumber']/@value">25</set><!-- x5 of default -->
 
+
+
 	<!-- Append Stacking -->	
 	<append xpath="/items/item[@name='medicalPlasterCast']">
 		<property name="Stacknumber" value="20"/> <!-- STK resource -->	
@@ -3508,137 +3510,7 @@
 		</effect_group>
 	</item>
 	
-<item name="meleeHandZombieBehemoth">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="Degradation" value="99999" param1="true"/>
-	<property class="Action0">
-		<property name="Range" value="1.5"/>
-		<property name="DamageEntity" value="35"/>
-		<property name="DamageBlock" value="500"/>
-		<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>
-	</property>
-	<property class="Action1"> <!-- UseAction -->
-		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
-		<property name="Delay" value=".2"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="20"/>
-		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="ammoProjectileZombieBehemoth"/>
-		<property name="Sound_warning" value=""/>
-		<property name="Sound_start" value=""/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value=""/>
-		<property name="Sound_reload" value=""/>
-		<property name="Buff" value="buffBurningZombie"/>
-	</property>
-	<effect_group name="meleeHandZombieBehemoth" tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="MaxRange" operation="base_set" value="20"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="10"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
-		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInjuryBleedingZombie"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInfectionCatch"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffInjuryStunned01"/>
-		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="30"/><!--InfectionRegular-->
-	</effect_group>
-</item>
-
-<item name="ammoProjectileZombieBehemoth">
-	<property name="Meshfile" value="particleeffects/p_fire_small"/>
-	<property name="Material" value="Morganic"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action1">
-		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="3"/>
-		<property name="DamageBlock" value="25"/>
-		<property name="Explosion.ParticleIndex" value="0"/>
-		<property name="Velocity" value="18"/>
-		<property name="FlyTime" value=".2"/>
-		<property name="LifeTime" value="2"/>
-		<property name="CollisionRadius" value=".5"/>
-		<property name="DamageBonus.earth" value="0"/>
-		<property name="Buff" value="buffBurningZombie"/>
-	</property>
-	<effect_group name="ammoProjectileZombieBehemoth" tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0.5" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".8" tags="buffBurningZombie"/>
-	</effect_group>
-</item>
-
-<item name="meleeHandZombieBehemothRadiated">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property name="Degradation" value="99999" param1="true"/>
-	<property class="Action0">
-		<property name="Range" value="1.5"/>
-		<property name="DamageEntity" value="40"/>
-		<property name="DamageBlock" value="1000"/>
-		<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffInjuryStunned01"/>
-	</property>
-	<property class="Action1"> <!-- UseAction -->
-		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
-		<property name="Delay" value=".2"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Range" value="20"/>
-		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="ammoProjectileZombieBehemothRadiated"/>
-		<property name="Sound_warning" value=""/>
-		<property name="Sound_start" value=""/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value=""/>
-		<property name="Sound_reload" value=""/>
-		<property name="Buff" value="buffBurningZombie"/>
-	</property>
-	<effect_group name="meleeHandZombieBehemothRadiated" tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageFalloffRange" operation="base_set" value="50"/>
-		<passive_effect name="MaxRange" operation="base_set" value="20"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="10"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="10"/>
-		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
-		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value="1"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInjuryBleedingZombie"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".20" tags="buffInfectionCatch"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffInjuryStunned01"/>
-		<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" target="other" cvar="infectionZombieHit" operation="set" value="30"/><!--InfectionRegular-->
-	</effect_group>
-</item>
-
-<item name="ammoProjectileZombieBehemothRadiated">
-	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Vomit/vomitBulbPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action1">
-		<property name="Class" value="Projectile"/>
-		<property name="DamageEntity" value="4"/>
-		<property name="DamageBlock" value="50"/>
-		<property name="Explosion.ParticleIndex" value="0"/>
-		<property name="Velocity" value="18"/>
-		<property name="FlyTime" value=".2"/>
-		<property name="LifeTime" value="2"/>
-		<property name="CollisionRadius" value=".5"/>
-		<property name="DamageBonus.earth" value="0"/>
-		<property name="Buff" value="buffBurningZombie"/>
-	</property>
-	<effect_group name="ammoProjectileZombieBehemoth" tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0" tags="earth"/>
-		<passive_effect name="DamageModifier" operation="perc_set" value="0.5" tags="stone"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="1.2" tags="metal"/>
-		<passive_effect name="BuffProcChance" operation="base_set" value=".8" tags="buffBurningZombie"/>
-	</effect_group>
-</item>
+<!-- removed Behemoth -->
 	
 	<!-- Wild West Quests -->
 	
@@ -4001,21 +3873,81 @@
 			<property name="Group" value="Resources"/>
 		</item>
 		
-		<!-- Hack to force-load entities on game boot -->
-		<item name="BehemothLoadingHack">
-			<property name="CreativeMode" value="None"/>
-			<property name="CustomIcon" value="missingIcon"/><property name="CustomIconTint" value="90ff90"/>
+		<!-- Hack to force-load entities on game boot -->  <!-- removed -->
+
+	
+<!-- Resource Crystals -->
+	
+			<item name="resourceGreenCrystal">
+			<property name="DescriptionKey" value="resourceGreenCrystalDesc"/>
+	        <property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="greencrystal"/>
+	        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="MresourceAcid"/>
+	        <property name="Weight" value="10"/>
+	        <property name="Stacknumber" value="10"/>
+	        <property name="EconomicValue" value="50"/>
+<!--	        <property name="EconomicBundleSize" value="1"/> -->
+	        <property name="Group" value="Resources,Chemicals"/>
+        </item>
+		
+		<item name="resourceBlueCrystal">
+			<property name="DescriptionKey" value="resourceBlueCrystalDesc"/>
+	        <property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="bluecrystal"/>
+	        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="MresourceAcid"/>
+	        <property name="Weight" value="10"/>
+	        <property name="Stacknumber" value="10"/>
+	        <property name="EconomicValue" value="50"/>
+<!--	        <property name="EconomicBundleSize" value="1"/> -->
+	        <property name="Group" value="Resources,Chemicals"/>
+        </item>
+		
+		<item name="resourceBlackCrystal">
+			<property name="DescriptionKey" value="resourceBlackCrystalDesc"/>
+	        <property name="HoldType" value="45"/>
+			<property name="CustomIcon" value="blackcrystal"/>
+	        <property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	        <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	        <property name="Material" value="MresourceAcid"/>
+	        <property name="Weight" value="10"/>
+	        <property name="Stacknumber" value="10"/>
+	        <property name="EconomicValue" value="50"/>
+<!--	        <property name="EconomicBundleSize" value="1"/> -->
+	        <property name="Group" value="Resources,Chemicals"/>
+       </item>
+
+
+<!-- Blue Crystal Battery (Turbine ingredient) -->
+	
+		<item name="blueCrystalBattery">
+			<property name="DescriptionKey" value="blueCrystalBatteryDesc"/>
 			<property name="HoldType" value="45"/>
-			<property name="HoldingItemHidden" value="true"/>
-			<property name="Meshfile" value="#@modfolder:Resources/Behemoths.unity3d?LoadingHack.prefab"/>
-			<property name="DropMeshfile" value="#@modfolder:Resources/Behemoths.unity3d?LoadingHack.prefab"/>
-			<property name="Material" value="MresourceScrapIron"/>
-			<property name="Weight" value="1"/>
-			<property name="Stacknumber" value="1"/> <!-- STK resource -->
-			<property name="EconomicValue" value="1"/>
-			<property name="EconomicBundleSize" value="1000"/>
-			<property name="Group" value="Resources"/>
+			<property name="CustomIcon" value="bluecrystalbattery"/>
+			<property name="Tags" value="junk"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceScrapLeadLarge"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="Weight" value="100"/>
+			<property name="EconomicValue" value="500"/>
+			<property name="Group" value="Resources,Chemicals"/>
+	<property class="Attributes">
+		<property name="DegradationMax" value="1000,6000"/> <!-- needed for electrical calculations -->
+		<property name="BatteryMaxLoadInVolts" value="24, 36"/>
+		<property name="BatteryDischargeTimeInMinutes" value="30,90"/>
+	</property>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="5000,10000" tier="1,6"/>
+	</effect_group>
 		</item>
+	
+
+
 	
 	</append>		
 	

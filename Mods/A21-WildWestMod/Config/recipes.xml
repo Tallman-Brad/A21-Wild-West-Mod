@@ -799,6 +799,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceWood" count="10"/>
 </recipe>
 
+
 <!--recipe name="carBattery" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
 	<ingredient name="resourceScrapLead" count="180"/>
 	<ingredient name="resourceAcid" count="4"/>
@@ -2246,10 +2247,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceWood" count="1"/>
 </recipe>
 
-<!--recipe name="meleeToolWireTool" count="1" craft_area="workbench" tags="workbenchCrafting">
+
+<!-- re added wire tool -->
+
+<recipe name="meleeToolWireTool" count="1" craft_area="workbench" tags="workbenchCrafting">
 	<ingredient name="resourceForgedSteel" count="9"/>
 	<ingredient name="resourceMechanicalParts" count="3"/>
-</recipe-->
+</recipe>
 
 <recipe name="meleeToolSalvageT1Wrench" count="1" tags="learnable,perkSalvageOperations">
 	<ingredient name="resourceForgedIron" count="12"/>
@@ -2452,13 +2456,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceSewingKit" count="1"/>
 </recipe>
 
-<recipe name="modArmorPlatingReinforced" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
-	<ingredient name="resourceForgedIron" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="10"/>
-	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-</recipe>
 
 <recipe name="modArmorStoragePocket" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceScrapPolymers" count="10"/>
@@ -4560,15 +4557,50 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="ammoGasCan" count="3000"/>
 	</recipe>
 	
-	<recipe name="vehicleBalloon4Placeable" count="1" craft_area="workbench" tags="learnable">
-		<ingredient name="resourceScrapPolymers" count="50"/>
-		<ingredient name="resourceLeather" count="50"/>
-		<ingredient name="resourceDuctTape" count="50"/>		
-		<ingredient name="resourceCloth" count="1500"/>
-		<ingredient name="ammoGasCan" count="3000"/>
-	</recipe>
+<!-- Black Crystal Armor Mod -->
 
-</set>
+<recipe name="modArmorPlatingReinforced" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+	<ingredient name="resourceLeather" count="4"/>
+	<ingredient name="resourceGlue" count="4"/>
+	<ingredient name="resourceBlackCrystal" count="20"/>
+	<ingredient name="resourceNail" count="10"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+</recipe>
+
+<!-- Blue Crystal Battery -->
+
+<recipe name="blueCrystalBattery" count="1" craft_time="300" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="resourceForgedIron" count="3"/>
+	<ingredient name="drinkJarBoiledWater" count="6"/>
+	<ingredient name="resourceAcid" count="3"/>
+	<ingredient name="resourceBlueCrystal" count="24"/>
+</recipe>
+
+<!-- Wind Turbine -->
+	
+    <recipe name="windturbine" count="1" craft_area="workbench" tags="workbenchCrafting">
+        <ingredient name="resourceWood" count="600"/>
+        <ingredient name="resourceNail" count="100"/>
+        <ingredient name="resourceMechanicalParts" count="10"/>
+        <ingredient name="resourceOil" count="5"/>
+    </recipe>
+
+<!-- ww electric fence -->
+
+    <recipe name="electricfencepost" count="1" craft_area="workbench" tags="workbenchCrafting">
+        <ingredient name="resourceWood" count="2"/>
+        <ingredient name="resourceNail" count="5"/>
+        <ingredient name="resourceForgedIron" count="3"/>
+    </recipe>
+
+<!-- ww electric fence small -->
+	
+	<recipe name="electricfencepostSmall" count="1" craft_area="workbench" tags="workbenchCrafting">
+        <ingredient name="resourceWood" count="1"/>
+        <ingredient name="resourceNail" count="3"/>
+        <ingredient name="resourceForgedIron" count="2"/>
+    </recipe>
+
 
 <!-- Standardized order for mod ingredients -->
 	<!-- resourceCloth -->
@@ -4586,5 +4618,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<!-- resourceSewingKit -->
 	<!-- resourceAcid -->
 	<!-- oddball resources like a flashlight at the bottom -->
+	
+
+	</set>	
 	
 </wildwestmod>

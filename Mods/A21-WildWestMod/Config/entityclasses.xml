@@ -25,9 +25,9 @@
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">40</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">60</set>	
     <!-- PLAYER STARTING ITEMS -->	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminateferalgunslingerwight,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminateferalgunslingerwight,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_eliminateferalgunslingerwight,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>
 	<!-- PLAYER RUNNING STAMINA -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT'][@operation='perc_add'][@value='-1.45'][@tags='running']/@value">-1.325</set><!-- Default is -1.45 -->
 
@@ -44,6 +44,16 @@
 		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieWendigoRadiatedShowerAOE"/>		
 	</effect_group>
 	</append>
+
+
+	<!-- New Nurse Model (Not a nurse) -->
+
+<!-- 	
+	<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='Mesh']/@value">#@modfolder:Resources/Nurse.unity3d?Nurse</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/Nurse.unity3d?Nurse2</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/Nurse.unity3d?Nurse3</set>
+-->	
+
 	
 	<!-- Default Entities wearing Decorative Hats by Buff -->
 	<append xpath="/entity_classes/entity_class[@name='zombieBoe']/effect_group">
@@ -927,7 +937,7 @@
             <property name="RootMotion" value="true"/>
             <property name="IsEnemyEntity" value="true"/>             
             <property name="AvatarController" value="AvatarAnimalController"/> 
-            <property name="Mesh" value="#@modfolder:Resources/a20burntvulture.unity3d?gupBurnedVultureHumanoid"/>
+            <property name="Mesh" value="#@modfolder:Resources/a20burntvulture.unity3d?gupBurnedVultureTeeth"/>
             <property name="ExperienceGain" value="300"/>
             <property name="DeadBodyHitPoints" value="200"/>
 			<property name="PhysicsBody" value="zombieStandard"/>			
@@ -981,7 +991,7 @@
             <property name="RootMotion" value="true"/>
             <property name="IsEnemyEntity" value="true"/>             
             <property name="AvatarController" value="AvatarAnimalController"/> 
-            <property name="Mesh" value="#@modfolder:Resources/a20burntvulture.unity3d?gupBurnedVultureHumanoid"/>
+            <property name="Mesh" value="#@modfolder:Resources/a20burntvulture.unity3d?gupBurnedVultureTeeth"/>
             <property name="ExperienceGain" value="900"/>
             <property name="DeadBodyHitPoints" value="200"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -1038,8 +1048,7 @@
             <property name="RootMotion" value="true"/>
             <property name="IsEnemyEntity" value="true"/>             
             <property name="AvatarController" value="AvatarAnimalController"/> 
-            <property name="Mesh" value="#@modfolder:Resources/gupBurntVultureRad.unity3d?gupburnedvulturehumanoidrad"/>
-			<property name="ReplaceMaterial0" value="Entities/Animals/Boar/Materials/GRACE"/>
+            <property name="Mesh" value="#@modfolder:Resources/a20burntvulture.unity3d?gupBurnedVultureGreen"/>
             <property name="ExperienceGain" value="1200"/>
             <property name="DeadBodyHitPoints" value="200"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -1098,8 +1107,7 @@
             <property name="RootMotion" value="true"/>
             <property name="IsEnemyEntity" value="true"/>             
             <property name="AvatarController" value="AvatarAnimalController"/> 
-            <property name="Mesh" value="#@modfolder:Resources/gupBurntVultureRad.unity3d?gupburnedvulturehumanoidrad"/>
-			<property name="ReplaceMaterial0" value="Entities/Animals/Boar/Materials/GRACE"/>
+            <property name="Mesh" value="#@modfolder:Resources/a20burntvulture.unity3d?gupBurnedVultureRed"/>
             <property name="ExperienceGain" value="1200"/>
             <property name="DeadBodyHitPoints" value="200"/>
 			<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
@@ -1145,119 +1153,7 @@
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>				
 			</effect_group>  
         </entity_class>
-		
-		<!-- KhaineGB Behemoth -->
-		
-		<entity_class name="zombieBehemoth" extends="zombieTemplateMale">
-			<property name="UserSpawnType" value="Menu"/>
-			<property name="Tags" value="entity,zombie,walker,feral,behemoth,cp"/>
-			<property name="Prefab" value="NPC"/>
-			<property name="Class" value="EntityZombieCop"/>
-			<property name="ExplodeHealthThreshold" value="0"/>
-			<property name="SoundRandom" value="crawler_roam"/>
-			<property name="SoundAlert" value="crawler_alert"/>
-			<property name="SoundSense" value="crawler_sense"/>
-			<property name="SoundHurt" value="crawler_pain"/>
-			<property name="SoundDeath" value="crawler_death"/>
-			<property name="SoundAttack" value="crawler_attack"/>
-			<property name="SoundSleeperSense" value="sleepersense"/>
-			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
-			<property name="Mesh" value="#@modfolder:Resources/Behemoths.unity3d?zombieBehemoth" />
-			<property name="AvatarController" value="AvatarZombieController"/>
-			<property name="ModelType" value="Standard"/>
-			<property name="WalkType" value="2"/>
-			<property name="Mass" value="500"/>
-			<property name="ExperienceGain" value="2800"/>
-			<property name="DeadBodyHitPoints" value="700"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
-			<property name="PhysicsBody" value="Behemoth"/>
-			<property name="RootMotion" value="true"/>
-			<property name="HasDeathAnim" value="false"/>
-			<property name="HasRagdoll" value="true"/>
-			<property name="HandItem" value="meleeHandZombieBehemoth"/>
-			<property name="DanceType" value="1" />
-			
-			<property name="PainResistPerHit" value="100"/>
-			<property name="Dismemberment" value="true"/>
-			
-			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=5"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer"/>
-			<property name="AITask-4" value="ApproachSpot"/>
-			<property name="AITask-5" value="Look"/>
-			<property name="AITask-6" value="Wander"/>
-			<property name="AITask-7" value=""/><!-- Marks end, so we don't inheirit -->
-			
-			<!-- Gameplay -->
-			<property name="MoveSpeed" value="0.06"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
-			<property name="SizeScale" value="0.95"/>
 
-			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="2500"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-			</effect_group>
-		</entity_class>
-		
-		<entity_class name="zombieBehemothRadiated" extends="zombieTemplateMale">
-			<property name="UserSpawnType" value="Menu"/>
-			<property name="Tags" value="entity,zombie,walker,feral,radiated,behemoth,cp"/>
-			<property name="Prefab" value="NPC"/>
-			<property name="Class" value="EntityZombieCop"/>
-			<property name="ExplodeHealthThreshold" value="0"/>
-			<property name="SoundRandom" value="crawler_roam"/>
-			<property name="SoundAlert" value="crawler_alert"/>
-			<property name="SoundSense" value="crawler_sense"/>
-			<property name="SoundHurt" value="crawler_pain"/>
-			<property name="SoundDeath" value="crawler_death"/>
-			<property name="SoundAttack" value="crawler_attack"/>
-			<property name="SoundSleeperSense" value="sleepersense"/>
-			<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
-			<property name="Mesh" value="#@modfolder:Resources/Behemoths.unity3d?zombieBehemothRadiated" />
-			<property name="AvatarController" value="AvatarZombieController"/>
-			<property name="ModelType" value="Standard"/>
-			<property name="WalkType" value="2"/>
-			<property name="Mass" value="500"/>
-			<property name="ExperienceGain" value="3850"/>
-			<property name="DeadBodyHitPoints" value="700"/>
-			<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
-			<property name="LootDropProb" value="1"/>
-			<property name="PhysicsBody" value="Behemoth"/>
-			<property name="RootMotion" value="true"/>
-			<property name="HasDeathAnim" value="false"/>
-			<property name="HasRagdoll" value="true"/>
-			<property name="HandItem" value="meleeHandZombieBehemothRadiated"/>
-			<property name="DanceType" value="1" />
-			
-			<property name="PainResistPerHit" value="100"/>
-			<property name="Dismemberment" value="true"/>
-			
-			<property name="AITask-1" value="BreakBlock"/>
-			<property name="AITask-2" value="RangedAttackTarget" data="itemType=1;cooldown=4;duration=5"/>
-			<property name="AITask-3" value="ApproachAndAttackTarget" data="class=EntityEnemyAnimal,0,EntityPlayer"/>
-			<property name="AITask-4" value="ApproachSpot"/>
-			<property name="AITask-5" value="Look"/>
-			<property name="AITask-6" value="Wander"/>
-			<property name="AITask-7" value=""/><!-- Marks end, so we don't inheirit -->
-			
-			<!-- Gameplay -->
-			<property name="MoveSpeed" value="0.06"/>
-			<property name="MoveSpeedAggro" value=".5, 1.35"/>
-			
-			<property name="SizeScale" value="1"/>
-
-			<effect_group name="Base Effects">
-				<passive_effect name="HealthMax" operation="base_set" value="3500"/>
-				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
-				<passive_effect name="EntityDamage" operation="perc_add" value="0.25"/> 
-				<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3.7"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-			</effect_group>
-		</entity_class>
 	
 		<!-- LazMan's Eliminate the Horde -->
 	

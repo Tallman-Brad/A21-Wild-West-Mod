@@ -83,6 +83,11 @@
 	<set xpath="/worldgeneration/pois/poi[@name='City Asphalt']/@blockname">terrGravel</set>
 	<set xpath="/worldgeneration/pois/poi[@name='Country Road Asphalt']/@blockname">terrGravel</set>
 	
+	<!-- Setting more vehicles to appear in certain biomes and on paths -->
+	<set xpath="//biome[@name='desert']/subbiome[1]/decorations[1]/decoration[@blockname='carsRandomHelper']/@prob">0.02</set>
+	<set xpath="//biome[@name='wasteland']/subbiome[1]/decorations[1]/decoration[@blockname='carsRandomHelper']/@prob">0.5</set>
+	<set xpath="//poi[@name='Road Gravel']/blockontop[@blockname='carsRandomHelper']/@prob">0.002</set>
+	
 	<!-- WASTELAND CUSTOMISATION -->
 	<!-- Removing mines and hubcaps in Water and Wasteland -->
 	<!-- remove xpath="//biome[@name='underwater']/subbiome/decorations/decoration[@blockname='hubcapNoMine']"/ -->
