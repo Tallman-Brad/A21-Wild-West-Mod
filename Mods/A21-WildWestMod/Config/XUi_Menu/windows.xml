@@ -4,6 +4,7 @@
 	<remove xpath="//window[@name='mainMenuLogo']"/>
 	
 	<set xpath="/windows/window[@name='menuBackground']/texture/@texture">@modfolder(A21-WildWestMod):Textures/background.png</set>
+	<set xpath="/windows/window[@name='loadingScreen']/texture[@name='loading_image']/@texture">@modfolder(A21-WildWestMod):Textures/loadingimage.png</set>
 	
 	<append xpath="/windows">	
 	<window name="mainMenuLogo" anchor="CenterCenter" pos="0,0" width="1387" height="780" depth="-2">
