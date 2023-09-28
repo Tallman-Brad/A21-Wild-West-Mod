@@ -1,13 +1,16 @@
 <wildwestmod>
 
-		<!-- Horse - Zilox and Darkstardragon -->
+	<!-- Remove Demolition and Readd to removed extends and hat issue -->
+	<remove xpath="/entity_classes/entity_class[@name='zombieDemolition']"/>
 
-		<append xpath="/entity_classes/entity_class[@name='playerMale']">
-			<effect_group>	
-				<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
-				<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
-			</effect_group>
-		</append>
+	<!-- Horse - Zilox and Darkstardragon -->
+
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>	
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
+			<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
+		</effect_group>
+	</append>
 
 	<!-- Supply Drop -->
 		<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/HotAirBalloon2.unity3d?HotAirBalloon2</set>
@@ -30,21 +33,6 @@
 	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>
 	<!-- PLAYER RUNNING STAMINA -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT'][@operation='perc_add'][@value='-1.45'][@tags='running']/@value">-1.325</set><!-- Default is -1.45 -->
-
-	<!-- Demolition Model, Drop and Harvest -->
-	<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='Mesh']/@value">#@modfolder:Resources/windigo2.unity3d?WendigoOld5</set>
-
-	<append xpath="/entity_classes/entity_class[@name='zombieDemolition']">
-	<property name="DeadBodyHitPoints" value="100"/>	
-	<drop event="Harvest" name="resourceStagAntler" tag="butcherHarvest" count="1,2"/>
-	<effect_group name="Rad Base Effects">
-		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
-		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
-		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieWendigoRadiatedShowerAOE"/>		
-	</effect_group>
-	</append>
-
 
 	<!-- New Nurse Model (Not a nurse) -->
 
@@ -105,6 +93,115 @@
 	</append>	
 	
 <append xpath="/entity_classes">
+
+<!-- Wendigo Demolition -->
+
+<entity_class name="zombieDemolition" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="Tags" value="entity,zombie,walker,boss"/>
+	<property name="Mesh" value="#@modfolder:Resources/windigo2.unity3d?WendigoOld5"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="Mass" value="300"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="AIPathCostScale" value=".35, .55"/>
+	<property name="MoveSpeedAggro" value="0.3, 1.35"/> <!-- fit, regular -->
+
+	<property name="AITask" value="
+	BreakBlock|
+	DestroyArea|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+	<property name="SoundRandom" value="demolitionzroam"/>
+	<property name="SoundAlert" value="demolitionzalert"/>
+	<property name="SoundAttack" value="demolitionzattack"/>
+	<property name="SoundHurt" value="demolitionzpain"/>
+	<property name="SoundDeath" value="demolitionzdeath"/>
+	<property name="SoundSense" value="demolitionzsense"/>
+	<property name="SoundFootstepModifier" value="bear_footstep"/>
+
+	<!-- Gameplay zombieDemolition -->
+	<property name="HandItem" value="meleeHandZombieDemolition"/>
+	<property name="JumpMaxDistance" value="1, 2"/>
+	<property name="PainResistPerHit" value=".5"/>
+	<property name="Explosion.ParticleIndex" value="2"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="5000"/>
+	<property name="Explosion.EntityDamage" value="800"/>
+	<property name="Explosion.DamageBonus.earth" value=".1"/>
+	<property name="StompsSpikes" value="true"/>
+	<property name="ExplodeDelay" value="2"/>
+	<property name="ExplodeHealthThreshold" value="0"/> <!-- Disable Health explosion -->
+	<property name="SoundExplodeWarn" value="demolitionzexplodewarning"/>
+	<property name="SoundTick" value="demolitionz_beep,.5,.9"/>
+
+	<property name="ExperienceGain" value="750"/>
+	<property name="LootDropEntityClass" value="EntityLootContainerBoss"/>
+	<property name="LootDropProb" value=".3"/>
+	<property name="DeadBodyHitPoints" value="100"/>
+	<drop event="Harvest" name="resourceStagAntler" tag="butcherHarvest" count="1,2"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+		<passive_effect name="DamageModifier" operation="perc_set" value="1" tags="head"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="60"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+	</effect_group>
+	
+	<effect_group name="Rad Base Effects">
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="zombieWendigoRadiatedShowerAOE"/>		
+	</effect_group>	
+</entity_class>
+
+<!-- Wendigo Snow -->
+
+<entity_class name="SnowWendigo" extends="zombieTemplateMale">
+            <property name="UserSpawnType" value="Menu"/>
+            <property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+            <property name="Mesh" value="#@modfolder:Resources/windigo.unity3d?WendigoOld4"/>
+            <property name="ModelType" value="Standard"/>
+            <property name="WalkType" value="2"/>
+            <property name="Mass" value="230"/>
+            <property name="RootMotion" value="true"/>
+            <property name="HasDeathAnim" value="true"/>
+            <property name="SoundRandom" value="zombielumberjack_roam"/>
+            <property name="SoundAlert" value="zombielumberjack_alert"/>
+            <property name="SoundAttack" value="zombielumberjack_attack"/>
+            <property name="SoundHurt" value="zombielumberjack_pain"/>
+            <property name="SoundDeath" value="zombielumberjack_death"/>
+            <property name="SoundSense" value="zombielumberjack_sense"/>
+            <property name="SoundFootstepModifier" value="zombielumberjack_footstep"/>
+
+              <!-- Gameplay zombieLumberjack -->
+			<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
+			<property name="PainResistPerHit" value=".7"/><!-- Feral -->
+			<property name="MoveSpeedAggro" value="0.6, 1.45"/> <!-- fit, feral -->
+			<property name="JumpMaxDistance" value="4.6, 5"/>
+            <property name="HandItem" value="meleeHandZombieStrong"/>
+            <property name="ExperienceGain" value="750"/><!-- XP strong -->
+            <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".3"/>
+			<property name="DeadBodyHitPoints" value="100"/>
+			<drop event="Harvest" name="resourceStagAntler" tag="butcherHarvest" count="1,2"/>
+		
+        <effect_group name="Base Effects">
+            <passive_effect name="HealthMax" operation="base_set" value="775"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+        </effect_group>
+        
+      </entity_class>
 
 <!-- Wild West Steam Spitter -->
 	
