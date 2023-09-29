@@ -1693,7 +1693,7 @@
   <decoration type="model" name="wildwest_business_06" position="2141,37,-2454" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_Courthouse_Medusa" position="1812,36,-2363" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_docks_01" position="2671,18,-1242" rotation="1" y_is_groundlevel="true" />
-  <decoration type="model" name="wildwest_stonecave_01_arramus" position="-2180,33,-2541" rotation="3" y_is_groundlevel="true" />
+  <decoration type="model" name="wildwest_stonecave_01_arramus" position="-2180,33,-2541" rotation="1" y_is_groundlevel="true" />
   <decoration type="model" name="wildwest_venom_mine_TMB" position="-2068,33,-2461" rotation="2" y_is_groundlevel="true" />
   <decoration type="model" name="trader_JenWW_arramus" position="-2011,37,-933" rotation="3" y_is_groundlevel="true" />
   <decoration type="model" name="trader_hugh" position="447,61,-2121" rotation="3" y_is_groundlevel="true" />
