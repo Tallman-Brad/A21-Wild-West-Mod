@@ -1,5 +1,9 @@
 <wildwestmod>
 
+	<!-- Change old forge input window to the new one - KhaineGB -->
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowForgeInput']/@name">windowThreeForgeInput</set>
+	<set xpath="/xui/ruleset/window_group[@name='workstation_forge']/window[@name='windowOutput']/@name">windowThreeForgeOutput</set>
+
 	<!-- New compass addition for GPS brain implant -->	
 	<remove xpath="/xui/ruleset/window_group[@name='compass']/window[@name='windowEntering']"></remove>
 

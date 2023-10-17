@@ -8,23 +8,27 @@
   <property name="DifficultyTier" value="2" />
   <property name="ShowQuestClearCount" value="1" />
   <property name="Tags" value="wilderness" />
-  <property name="QuestTags" value="clear, fetch" />
+  <property name="QuestTags" value="clear, fetch, restore_power, infested" />
   <property name="TraderArea" value="False" />
   <property name="PrefabSize" value="50, 12, 50" />
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="none" />
   <property name="YOffset" value="-2" />
-  <property name="SleeperVolumeSize" value="26, 3, 11#8, 2, 15#15, 3, 12#17, 3, 13#17, 3, 10#14, 4, 12#11, 3, 11#26, 3, 14" />
-  <property name="SleeperVolumeStart" value="21, 2, 10#13, 2, 4#32, 3, 21#30, 2, 33#3, 2, 19#3, 6, 17#20, 2, 21#3, 2, 32" />
+  <property name="SleeperVolumeSize" value="30, 8, 15#13, 5, 13#10, 3, 11#8, 3, 7#12, 3, 11#12, 4, 11#17, 3, 12#31, 3, 14" />
+  <property name="SleeperVolumeStart" value="17, 2, 5#4, 2, 4#34, 3, 21#34, 2, 35#5, 2, 17#5, 6, 17#17, 2, 20#3, 2, 32" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="animalZombieVulture,1,2,animalSnake,1,2,S_-Group_Generic_Zombie,6,7,S_-Group_Generic_Zombie,1,2,S_-Group_Generic_Zombie,7,8,S_-Group_Generic_Zombie,5,6,S_-Group_Generic_Zombie,1,2,S_-Group_Generic_Zombie,1,1" />
+  <property name="SleeperVolumeGroup" value="animalZombieVulture,1,2,animalSnake,1,2,S_-_Group_Zom_Soldier,4,6,S_-_Group_Lab_Worker,2,3,S_-_Group_Zom_Soldier,4,6,S_-_Group_Zom_Soldier,4,6,S_-_Group_Zom_Soldier,1,2,S_-Group_Generic_Zombie,2,3" />
   <property name="SleeperIsLootVolume" value="False,False,False,False,False,False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False" />
-  <property name="SleeperVolumeFlags" value="2,2,2,2,2,2,2,2" />
+  <property name="SleeperVolumeFlags" value="2,2,0,0,0,0,2,0" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # " />
   <property class="IndexedBlockOffsets">
     <property class="quest_wood">
       <property name="0" value="28, 2, 13" />
+    </property>
+    <property class="POILight">
+      <property name="0" value="33, 5, 26" />
+      <property name="1" value="33, 4, 38" />
     </property>
     <property class="FetchContainer">
       <property name="0" value="39, 2, 37" />
@@ -34,24 +38,23 @@
       <property name="1" value="36, 3, 29" />
       <property name="2" value="34, 2, 38" />
     </property>
-    <property class="POILight">
-      <property name="0" value="33, 5, 26" />
-      <property name="1" value="33, 4, 38" />
-    </property>
     <property class="Rally">
       <property name="0" value="29, 2, 2" />
     </property>
+    <property class="QuestRestorePower">
+      <property name="0" value="39, 2, 40" />
+    </property>
   </property>
   <property class="Stats">
-    <property name="TotalVertices" value="853267" />
-    <property name="TotalTriangles" value="640703" />
+    <property name="TotalVertices" value="825846" />
+    <property name="TotalTriangles" value="541903" />
     <property class="BlockEntities">
-      <property name="Vertices" value="667245" />
-      <property name="Triangles" value="505629" />
+      <property name="Vertices" value="639562" />
+      <property name="Triangles" value="406701" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="178400" />
-      <property name="Triangles" value="123678" />
+      <property name="Vertices" value="178670" />
+      <property name="Triangles" value="123822" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -74,8 +77,8 @@
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes6">
-      <property name="Vertices" value="6710" />
-      <property name="Triangles" value="10940" />
+      <property name="Vertices" value="6702" />
+      <property name="Triangles" value="10924" />
     </property>
   </property>
 </prefab>
