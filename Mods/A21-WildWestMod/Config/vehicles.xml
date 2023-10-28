@@ -799,7 +799,7 @@
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 		</property>
@@ -932,7 +932,7 @@
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 		</property>
@@ -1080,7 +1080,7 @@
 			<property name="gear4" value="
 								500,2500, -2000,1000,2000, 500,9999,9999,
 								,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.31, -.08, .6, .9, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 		</property>
