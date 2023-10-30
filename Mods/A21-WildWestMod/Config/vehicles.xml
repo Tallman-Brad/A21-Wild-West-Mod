@@ -780,20 +780,20 @@
 			<property name="gear1" value="
 								500,2500, -1400,800,0, 700,2200,900,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
+								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horse_gallop,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear2" value="
 								500,2500, -2000,1000,2000, 600,2200,800,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear4" value="
@@ -913,20 +913,20 @@
 			<property name="gear1" value="
 								500,2500, -1400,800,0, 700,2200,900,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
+								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horse_gallop,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear2" value="
 								500,2500, -2000,1000,2000, 600,2200,800,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear4" value="
@@ -1061,20 +1061,20 @@
 			<property name="gear1" value="
 								500,2500, -1400,800,0, 700,2200,900,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
+								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horse_gallop,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear2" value="
 								500,2500, -2000,1000,2000, 600,2200,800,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.25, -.05, .2, .4, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear3" value="
 								500,2500, -2000,1000,2000, 500,2200,1000,
 								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/none,
+								Vehicles/Suv/horse_gallop,
 								-.28, -.07, .3, .6, -1, 1, .1, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear4" value="
