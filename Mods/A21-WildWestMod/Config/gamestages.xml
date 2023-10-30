@@ -2,7 +2,7 @@
 
 	<!-- A little customised but original by JaxTeller718 from JaxTeller718-BiggerWanderingHordes - https://ravenhearst.enjin.com/ -->
 	<!-- +10 for zombies entity hordes and +1 for animals -->
-
+	
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='01']/spawn[@group='wanderingHordeStageGS1' 	and @num='05']/@num">15</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='02']/spawn[@group='wanderingHordeStageGS2' 	and @num='10']/@num">20</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='03']/spawn[@group='FwanderingHordeStageGS1' 	and @num='04']/@num">05</set>
@@ -31,7 +31,7 @@
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='26']/spawn[@group='wanderingHordeStageGS36' 	and @num='07']/@num">17</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='27']/spawn[@group='VultureGroup' 				and @num='06']/@num">07</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='28']/spawn[@group='wanderingHordeStageGS41' 	and @num='09']/@num">19</set>
-	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='29']/spawn[@group='FwanderingHordeStageGS27' 	and @num='07']/@num">17</set>
+	<!-- Mutant Rats Below for 29 -->
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='30']/spawn[@group='FwanderingHordeStageGS31' 	and @num='10']/@num">20</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='31']/spawn[@group='FwanderingHordeStageGS35' 	and @num='09']/@num">19</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='32']/spawn[@group='wanderingHordeStageGS46' 	and @num='09']/@num">19</set>
@@ -51,8 +51,21 @@
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='46']/spawn[@group='FwanderingHordeStageGS54' 	and @num='11']/@num">21</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='47']/spawn[@group='VultureGroup' 				and @num='08']/@num">09</set>
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='48']/spawn[@group='FwanderingHordeStageGS59' 	and @num='10']/@num">20</set>
-	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='49']/spawn[@group='FwanderingHordeStageGS64' 	and @num='08']/@num">18</set>
+	<!-- Mutant Rats Below for 49 -->
 	<set xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='50']/spawn[@group='ZombieBearsGroup' 			and @num='02']/@num">03</set>
+
+	<remove xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='29']"/>
+	<remove xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[@stage='49']"/>
+	<insertAfter xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[28]">
+		<gamestage stage="29">
+			<spawn group="zombieTheRatGroup" num="17" maxAlive="30" duration="09"/>
+		</gamestage>
+	</insertAfter>
+	<insertAfter xpath="/gamestages/spawner[@name='WanderingHorde']/gamestage[48]">
+		<gamestage stage="49">
+			<spawn group="zombieTheRatGroup" num="18" maxAlive="30" duration="09"/>
+		</gamestage>
+	</insertAfter>
 
 	<append xpath="/gamestages">
 	

@@ -1135,6 +1135,8 @@
 		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 		<property name="Shape" value="ModelEntity"/>
 		<property name="Model" value="#@modfolder:Resources/birdnest.unity3d?birdnestPrefab" />
+		<property name="ModelOffset" value="0,0.5,0"/>
+		<property name="GndAlign" value="1"/>
 		<property name="PlantGrowing.FertileLevel" value="0"/>
 		<property name="PlantGrowing.LightLevelGrow" value="0"/>
 		<property name="PlantGrowing.GrowthRate" value="180"/> <!-- 3 days for 60 minute days - Domestic coops take precendent over nests -->
@@ -1156,18 +1158,20 @@
 		<property name="Shape" value="ModelEntity"/>
 		<property name="Model" value="#@modfolder:Resources/birdnest.unity3d?birdnestEggs" />
 		<property name="LootList" value="birdNest"/>
-		<property name="ModelOffset" value="0,0.5,0"/>
-		<property name="GndAlign" value="0"/>
+		<property name="ModelOffset" value="0,0,0"/>
+		<property name="GndAlign" value="1"/>
 		<property name="CreativeMode" value="Player"/>
 		<property name="DowngradeBlock" value="birdnestEmpty"/>
 		<property name="IndexName" value="quest_feather"/>		
 	</block>
 
 	<block name="cntBirdnestCorner">
-		<property name="Extends" value="cntBirdnest"/>
-		<property name="CustomIcon" value="cntBirdnest"/>
-		<property name="ModelOffset" value="0.2,0.5,0.2"/>		
-		<property name="GndAlign" value="0"/>
+	<property name="Extends" value="cntBirdnest"/>
+	<property name="CustomIcon" value="cntBirdnest"/>
+	<property name="ItemTypeIcon" value="triangle"/>
+	<property name="ModelOffset" value="0.2,0,0.2"/>
+	<property name="GndAlign" value="0"/>
+	<property name="SortOrder2" value="0001"/>
 	</block>	
 
 <block name="WoodCoopEmpty">

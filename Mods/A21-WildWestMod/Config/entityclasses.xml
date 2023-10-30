@@ -3,6 +3,24 @@
 	<!-- Remove Demolition and Readd to removed extends and hat issue -->
 	<remove xpath="/entity_classes/entity_class[@name='zombieDemolition']"/>
 
+	<!-- Remove utility worker -->
+	<remove xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']"/>
+
+	<!-- Remove utility worker feral -->
+	<remove xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']"/>
+
+	<!-- Remove utility worker radiated-->
+	<remove xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerRadiated']"/>
+
+	<!-- Remove Nurse -->
+	<remove xpath="/entity_classes/entity_class[@name='zombieNurse']"/>
+
+	<!-- Remove Nurse feral -->
+	<remove xpath="/entity_classes/entity_class[@name='zombieNurseFeral']"/>
+
+	<!-- Remove Nurse radiated-->
+	<remove xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']"/>
+
 	<!-- Horse - Zilox and Darkstardragon -->
 
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
@@ -28,21 +46,12 @@
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity'][@value='27']/@value">40</set>
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize'][@value='45']/@value">60</set>	
     <!-- PLAYER STARTING ITEMS -->	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>	
-	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01</set>
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvival')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01,qc_eliminateferalgunslingerwight</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalSP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01,qc_eliminateferalgunslingerwight</set>	
+	<set xpath="/entity_classes/entity_class[contains(@name,'playerMale')]/property[contains(@name,'GameModeSurvivalMP')]/@value">drinkJarBoiledWater,foodWildWestPineConeJamPancakes,medicalFirstAidBandage,meleeToolTorch,keystoneBlock,qc_hunterquest_eliminateanimals,qc_homestead01,qc_chuckwagondinnerbell01,qc_eliminateferalgunslingerwight</set>
 	<!-- PLAYER RUNNING STAMINA -->
 	<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='StaminaChangeOT'][@operation='perc_add'][@value='-1.45'][@tags='running']/@value">-1.325</set><!-- Default is -1.45 -->
 
-	<!-- New Nurse Model (Not a nurse) -->
-
-<!-- 	
-	<set xpath="/entity_classes/entity_class[@name='zombieNurse']/property[@name='Mesh']/@value">#@modfolder:Resources/Nurse.unity3d?Nurse</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/Nurse.unity3d?Nurse2</set>
-	<set xpath="/entity_classes/entity_class[@name='zombieNurseRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/Nurse.unity3d?Nurse3</set>
--->	
-
-	
 	<!-- Default Entities wearing Decorative Hats by Buff -->
 	<append xpath="/entity_classes/entity_class[@name='zombieBoe']/effect_group">
 			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="zombieBoeHat1WildWestDeco"/>
@@ -90,7 +99,12 @@
 		
 	<append xpath="/entity_classes/entity_class[@name='animalBoar']">
 	<drop event="Harvest" name="foodBoarMilk" tag="butcherHarvest" count="1,2"/>
-	</append>	
+	</append>
+
+<!-- Medusa Screamer -->
+<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse</set>
+<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse3</set>
+<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse2</set>	
 	
 <append xpath="/entity_classes">
 
@@ -199,9 +213,273 @@
             <passive_effect name="HealthMax" operation="base_set" value="775"/>
 			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="3"/>
 			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
-        </effect_group>
-        
+        </effect_group>        
       </entity_class>
+	  
+<!-- The Rat -->
+
+<entity_class name="zombieTheRat" extends="zombieTemplateMale">
+	        <property name="UserSpawnType" value="Menu"/>
+	        <property name="Tags" value="entity,zombie,spider"/>
+	        <property name="Mesh" value="#@modfolder:Resources/Rat3.unity3d?Rat3"/>
+	        <property name="ModelType" value="Standard"/>
+	        <property name="WalkType" value="22"/>
+	        <property name="Mass" value="230"/>
+			<property name="LookAtAngle" value="0"/>
+	        <property name="RootMotion" value="true"/>
+	        <property name="HasDeathAnim" value="true"/>
+			<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+			<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+			<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+			<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+			<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+			<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+			
+	<property name="AITask" value="
+	Leap|
+	BreakBlock|
+	DestroyArea|
+	Territorial|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+	          <!-- Gameplay zombieTheRat -->
+	        <property name="MoveSpeedAggro" value="0.6, 1.45"/>
+	        <property name="JumpMaxDistance" value="12, 14"/>
+	        <property name="HandItem" value="meleeHandZombie02Feral"/>
+	        <property name="ExperienceGain" value="350"/><!-- XP strong -->
+	        <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	    <effect_group name="Base Effects">
+		    <passive_effect name="HealthMax" operation="base_set" value="200"/>
+	    </effect_group>		
+      </entity_class>
+
+<!-- The Rat Feral -->
+
+<entity_class name="zombieTheRatFeral" extends="zombieTemplateMale">
+	        <property name="UserSpawnType" value="Menu"/>
+	        <property name="Tags" value="entity,zombie,feral,spider"/>
+	        <property name="Mesh" value="#@modfolder:Resources/Rat3.unity3d?Rat3Fad"/>   <!-- yes, Rat3Fad -->
+	        <property name="ModelType" value="Standard"/>
+	        <property name="WalkType" value="22"/>
+	        <property name="Mass" value="230"/>
+			<property name="LookAtAngle" value="0"/>
+	        <property name="RootMotion" value="true"/>
+	        <property name="HasDeathAnim" value="true"/>
+			<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+			<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+			<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+			<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+			<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+			<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+
+	<property name="AITask" value="
+	Leap|
+	BreakBlock|
+	DestroyArea|
+	Territorial|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+	          <!-- Gameplay zombieTheRat -->
+	        <property name="MoveSpeedAggro" value="0.8, 1.75"/>
+	        <property name="JumpMaxDistance" value="14, 16"/>
+	        <property name="HandItem" value="meleeHandZombie02Feral"/>
+	        <property name="ExperienceGain" value="750"/><!-- XP strong -->
+	        <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".03"/> <!-- Feral -->
+	    <effect_group name="Base Effects">
+		    <passive_effect name="HealthMax" operation="base_set" value="450"/>
+	    </effect_group>		
+      </entity_class>
+
+<!-- The Rat Radiated -->
+
+<entity_class name="zombieTheRatRadiated" extends="zombieTemplateMale">
+	        <property name="UserSpawnType" value="Menu"/>
+	        <property name="Tags" value="entity,zombie,feral,spider,radiated"/>
+	        <property name="Mesh" value="#@modfolder:Resources/Rat3.unity3d?Rat3Rad"/>
+	        <property name="ModelType" value="Standard"/>
+	        <property name="WalkType" value="22"/>
+	        <property name="Mass" value="230"/>
+			<property name="LookAtAngle" value="0"/>
+	        <property name="RootMotion" value="true"/>
+	        <property name="HasDeathAnim" value="true"/>
+			<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+			<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+			<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+			<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+			<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+			<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+
+	<property name="AITask" value="
+	Leap|
+	BreakBlock|
+	DestroyArea|
+	Territorial|
+	ApproachDistraction|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+	          <!-- Gameplay zombieTheRat -->
+	        <property name="MoveSpeedAggro" value="0.8, 1.75"/>
+	        <property name="JumpMaxDistance" value="14, 16"/>
+	        <property name="HandItem" value="meleeHandZombie02Feral"/>
+	        <property name="ExperienceGain" value="1200"/><!-- XP strong -->
+	        <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			<property name="LootDropProb" value=".05"/>
+	    <effect_group name="Base Effects">
+		    <passive_effect name="HealthMax" operation="base_set" value="750"/>
+			<passive_effect name="EntityDamage" operation="perc_add" value="1"/> <!-- Boss damage -->
+			<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/> <!-- Boss regen, 1% -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+	    </effect_group>		
+      </entity_class>
+
+
+<!-- The Gambler (replaces utility worker) -->
+
+<entity_class name="zombieUtilityWorker" extends="zombieTemplateMale">
+	        <property name="UserSpawnType" value="Menu"/>
+	        <property name="Tags" value="entity,zombie,walker"/>
+	        <property name="Mesh" value="#@modfolder:Resources/Oak.unity3d?Oak"/>
+	        <property name="ModelType" value="Standard"/>
+	        <property name="WalkType" value="2"/>
+	        <property name="Mass" value="230"/>
+	        <property name="RootMotion" value="true"/>
+	        <property name="HasDeathAnim" value="true"/>
+	        <property name="SoundRandom" value="zombielumberjack_roam"/>
+	        <property name="SoundAlert" value="zombielumberjack_alert"/>
+	        <property name="SoundAttack" value="zombielumberjack_attack"/>
+	        <property name="SoundHurt" value="zombielumberjack_pain"/>
+	        <property name="SoundDeath" value="zombielumberjack_death"/>
+	        <property name="SoundSense" value="zombielumberjack_sense"/>
+	        <property name="SoundFootstepModifier" value="zombielumberjack_footstep"/>
+
+	          <!-- Gameplay zombieLumberjack -->
+	        <property name="MoveSpeedAggro" value="0.2, 1.2"/>
+	        <property name="JumpMaxDistance" value=".8, 1.1"/>
+			<property name="HandItem" value="meleeHandZombieWorker"/>
+	    <effect_group name="Base Effects">
+		    <passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+	    </effect_group>		
+      </entity_class>
+
+<!-- Gambler Feral -->  
+<entity_class name="zombieUtilityWorkerFeral" extends="zombieUtilityWorker">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#@modfolder:Resources/Oak.unity3d?Oak2"/>
+
+	<!-- Gameplay zombieUtilityWorkerFeral -->
+	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>
+	<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
+	<property name="ExperienceGain" value="750"/><!-- XP grunt feral -->
+	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="350"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+	</effect_group>
+</entity_class>
+
+<!-- Gambler Radiated -->
+		<!-- *** ZOMBIE_UTILITY_WORKER_RADIATED -->
+<entity_class name="zombieUtilityWorkerRadiated" extends="zombieUtilityWorkerFeral">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Mesh" value="#@modfolder:Resources/Oak.unity3d?Oak3"/>
+
+	<!-- Gameplay zombieUtilityWorkerRadiated -->
+	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+	<property name="ExperienceGain" value="1200"/><!-- XP grunt radiated -->
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1100"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1"/> <!-- Boss damage -->
+		<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/> <!-- Boss regen, 1% -->
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+	</effect_group>
+</entity_class>	
+
+
+<!-- Michaela (replaces Nurse) -->
+
+<entity_class name="zombieNurse" extends="zombieTemplateShort">
+	        <property name="UserSpawnType" value="Menu"/>
+	        <property name="Tags" value="entity,zombie,walker"/>
+	        <property name="Mesh" value="#@modfolder:Resources/Nurse.unity3d?Nurse"/>
+			<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+			<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+			<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+			<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+			<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+			<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	        <property name="ModelType" value="Standard"/>
+	        <property name="WalkType" value="7"/>
+	        <property name="Mass" value="130"/>
+	        <property name="RootMotion" value="true"/>
+	        <property name="HasDeathAnim" value="true"/>
+
+
+	<!-- Gameplay Michaela -->
+	<property name="MoveSpeedAggro" value="0.3, 1.35"/> <!-- slim, regular -->
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="125"/>
+	</effect_group>		
+      </entity_class>
+
+<!-- Michaela Feral -->  
+<entity_class name="zombieNurseFeral" extends="zombieNurse">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="#@modfolder:Resources/Nurse.unity3d?Nurse2"/>
+
+	<!-- Gameplay michaelaFeral -->
+	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
+	<property name="MoveSpeedAggro" value=".6, 1.45"/>
+	<property name="JumpMaxDistance" value="4.6, 5"/>
+	<property name="HandItem" value="meleeHandZombieShortFeral"/>
+	<property name="ExperienceGain" value="750"/><!-- XP grunt feral -->
+	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="300"/>
+		<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+	</effect_group>
+</entity_class>
+
+<!-- Michaela Radiated -->
+
+<entity_class name="zombieNurseRadiated" extends="zombieNurseFeral">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Mesh" value="#@modfolder:Resources/Nurse.unity3d?Nurse3"/>
+
+	<!-- Gameplay michaelaRadiated -->
+	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+	<property name="ExperienceGain" value="1200"/><!-- XP grunt radiated -->
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="550"/>
+		<passive_effect name="EntityDamage" operation="perc_add" value="1"/> <!-- Boss damage -->
+		<passive_effect name="HealthChangeOT" operation="base_set" value="1.4"/> <!-- Boss regen, 1% -->
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+	</effect_group>
+</entity_class>	
 
 <!-- Wild West Steam Spitter -->
 	
@@ -296,66 +574,66 @@
 	</effect_group>
 </entity_class>
 	
-		<!-- CUSTOM Bear - Snow Bear -->	
-	
-	<entity_class name="animalWildWestSnowBear" extends="animalTemplateHostile">
-		<property name="UserSpawnType" value="Menu"/>
-		<property name="Tags" value="entity,animal,boss,hostile,bear,animalwildwestsnowbear,perkAT03"/>	
-		<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
-		<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
-		<property name="AvatarController" value="AvatarAnimalController"/>
-		<property name="ModelType" value="Standard"/>
-		<property name="HasRagdoll" value="true"/>
-		<property name="HasDeathAnim" value="true"/>
-		<property name="RootMotion" value="true"/>
-		<property name="RagdollOnDeathChance" value=".5"/>
-		<property name="PhysicsBody" value="bear"/>
-		<property name="Mass" value="600"/>
-		<property name="Prefab" value="/Entities/Animals/Bear/animalBearStandardRagdoll"/>
-		<property name="ReplaceMaterial0" value="@:Other/Items/Misc/Materials/snowball.mat"/>
-		
-		<property name="HandItem" value="meleeHandAnimalBear"/>
-		<property name="AITask-1" value="BreakBlock"/>
-		<property name="AITask-2" value="DestroyArea"/>
-		<property name="AITask-3" value="Territorial"/>
-		<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityPlayer,25"/>
-		<property name="AITask-5" value="ApproachSpot"/>
-		<property name="AITask-6" value="Look"/>
-		<property name="AITask-7" value="Wander"/>
-		<property name="AITask-8" value=""/>
-		<property name="AITarget-1" value="SetAsTargetIfHurt"/>
-		<property name="AITarget-2" value="BlockingTargetTask"/>
-		<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,13,8"/>
-		<property name="AITarget-4" value=""/>
-
-		<property name="SoundHurt" value="Animals/Bear/bearpain"/>
-		<property name="SoundDeath" value="Animals/Bear/beardeath"/>
-		<property name="SoundRandom" value="Animals/Bear/bearroam"/>
-		<property name="SoundSense" value="Animals/Bear/bearsense"/>
-		<property name="SoundAlert" value="Animals/Bear/bearalert"/>
-		<property name="SoundAttack" value="Animals/Bear/bearattack"/>
-		<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
-		<property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
-
-		<!-- Gameplay -->
-		<property name="PainResistPerHit" value="1"/>
-		<property name="ExperienceGain" value="1100"/> <!-- XP strong -->
-		<property name="DeadBodyHitPoints" value="600"/>	
-
-		<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-		<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="60"/> <!-- animalBear is 50 -->
-		<drop event="Harvest" name="resourceCatfish" tag="butcherHarvest" count="1"/>		
-		<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
-		<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
-		<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
-		<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
-		<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
-		<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
-		<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
-		<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+<!-- Snow Bear -->
+<entity_class name="animalWildWestSnowBear" extends="zombieTemplateMale"> <!-- required setting -->
+			<property name="UserSpawnType" value="Menu"/>    
+            <property name="SizeScale" value="1"/> 
+			<property name="Tags" value="entity,animal,zombie,hostile,bear,animalWildWestSnowBear,UMA2"/>
+            <property name="HasRagdoll" value="false"/>
+            <property name="HasDeathAnim" value="true"/>
+            <property name="RootMotion" value="true"/>
+            <property name="IsEnemyEntity" value="true"/>             
+            <property name="AvatarController" value="AvatarAnimalController"/> 
+            <property name="Mesh" value="#@modfolder:Resources/animalBear.unity3d?animalBear"/>
+            <property name="PainResistPerHit" value="1"/>
+			<property name="ExperienceGain" value="1300"/>
+            <property name="DeadBodyHitPoints" value="600"/>
+			<property name="PhysicsBody" value="zombieStandard"/>			
+            <property name="Mass" value="600"/>
+            <property name="Weight" value="80"/>
+			<property name="SoundHurt" value="Animals/Bear/bearpain"/>
+	<property name="SoundHurt" value="Animals/Bear/bearpain"/>
+	<property name="SoundDeath" value="Animals/Bear/beardeath"/>
+	<property name="SoundRandom" value="Animals/Bear/bearroam"/>
+	<property name="SoundSense" value="Animals/Bear/bearsense"/>
+	<property name="SoundAlert" value="Animals/Bear/bearalert"/>
+	<property name="SoundAttack" value="Animals/Bear/bearattack"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityPlayer,25,EntityBandit,25,EntityAnimalStag,40,EntityZombie,30"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,13,8,EntityBandit,0,-6,EntityAnimalStag,0,0,EntityZombie,0,-6"/>
+	<property name="AITarget-4" value=""/>
+			<property name="HandItem" value="meleeHandAnimalBear"/>
+            <property name="MaxViewAngle" value="360"/>
+			<property name="LookAtAngle" value="0"/>
+            <property name="MoveSpeed" value=".65"/>
+            <property name="MoveSpeedAggro" value="1.25, 1.45"/> 
+            <property name="MoveSpeedPanic" value="1.5"/>
+			<property name="ParticleOnDeath" value="blood_death"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="TimeStayAfterDeath" value="60" />
+  
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="60"/> <!-- animalBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 
 		<effect_group name="Base Effects">
-		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="animalWildWestSnowBearDeco"/>
 			<passive_effect name="HealthMax" operation="base_set" value="1600"/>
 			<passive_effect name="HealthMax" operation="perc_add" value="0"/> <!-- Animal HP scale -->
 			<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
@@ -366,6 +644,8 @@
 		</effect_group>
 	</entity_class>
 	
+
+
 		<!-- CUSTOM Rabbit - Snow Hare -->
 		
 	<entity_class name="animalSnowHare" extends="animalTemplateTimid">
@@ -375,8 +655,7 @@
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
 	<property name="Class" value="EntityAnimalRabbit"/>
 	<property name="SizeScale" value="1.8"/>	
-	<property name="Prefab" value="/Entities/Animals/Rabbit/RABBIT"/>
-	<property name="ReplaceMaterial0" value="@:Other/Items/Misc/Materials/snowball.mat"/>
+	<property name="Prefab" value="#@modfolder:Resources/SnowRabbit.unity3d?SnowRabbit"/>
 	<property name="Parent" value="Animals"/>
 	<property name="Faction" value="animals"/>
 	<property name="PhysicsBody" value="rabbit"/>
@@ -397,7 +676,7 @@
 
 	<!-- Gameplay  -->
 	<property name="PainResistPerHit" value=".9"/>
-	<property name="MoveSpeed" value="1.2,1.5"/>
+	<property name="MoveSpeed" value="1.2, 1.5"/>
 	<property name="MoveSpeedPanic" value="2.25"/> <!-- Rabbit 1.55 -->	
 	<property name="SwimSpeed" value="1.7"/>
 	<property name="SwimStrokeRate" value="1.8,2.0"/>
@@ -417,7 +696,7 @@
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="180"/>
+		<passive_effect name="HealthMax" operation="base_set" value="30"/> <!-- regular rabbit 10 -->
 	</effect_group>
 
 	<property name="NavObject" value="animaltracking_rabbit" />
@@ -432,7 +711,7 @@
 	<property name="TrackerIcon" value="ui_game_symbol_tracking_rabbit"/>
 	<property name="Class" value="EntityAnimalRabbit"/>
 	<property name="SizeScale" value="1.8"/>	
-	<property name="Prefab" value="/Entities/Animals/Rabbit/RABBIT"/>
+	<property name="Prefab" value="#@modfolder:Resources/SnowRabbit.unity3d?DesertRabbit"/>
 	<property name="Parent" value="Animals"/>
 	<property name="Faction" value="animals"/>
 	<property name="PhysicsBody" value="rabbit"/>
@@ -453,7 +732,7 @@
 
 	<!-- Gameplay  -->
 	<property name="PainResistPerHit" value=".9"/>
-	<property name="MoveSpeed" value="1.2,1.5"/>
+	<property name="MoveSpeed" value="1.2, 1.5"/>
 	<property name="MoveSpeedPanic" value="2.25"/> <!-- Rabbit 1.55 -->	
 	<property name="SwimSpeed" value="1.7"/>
 	<property name="SwimStrokeRate" value="1.8,2.0"/>
@@ -472,7 +751,7 @@
 	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="180"/>
+		<passive_effect name="HealthMax" operation="base_set" value="30"/> <!-- regular rabbit 10 -->
 	</effect_group>
 
 	<property name="NavObject" value="animaltracking_rabbit" />
@@ -588,6 +867,69 @@
 		</entity_class>
 		
 		<!-- CUSTOM Bison -->
+
+<!-- Bison regular -->
+
+<entity_class name="animalBisonBoar" extends="animalTemplateHostile">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,animal,hostile,boar,perkAT02,perkAT03,radiated"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_pig"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_pig"/>
+	<property name="IsEnemyEntity" value="false"/><!-- override hostile template setting so he can spawn in safe zones -->
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="true"/>
+	<property name="PhysicsBody" value="boar"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Mesh" value="#@modfolder:Resources/BisonNew.unity3d?BisonD"/>
+	<property name="Mass" value="200"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="RootMotion" value="false"/>
+	<property name="RagdollOnDeathChance" value=".5"/>
+
+	<property name="SoundRandom" value="Animals/Boar/boarroam"/>
+	<property name="SoundAlert" value="Animals/Boar/boaralert"/>
+	<property name="SoundHurt" value="Animals/Boar/boarpain"/>
+	<property name="SoundDeath" value="Animals/Boar/boardeath"/>
+	<property name="SoundAttack" value="Animals/Boar/boarattack"/>
+	<property name="SoundSense" value="Animals/Boar/boarsense"/>
+	<property name="SoundGiveUp" value="Animals/Boar/boargiveup"/>
+
+	<!-- Gameplay  -->
+	<property name="PainResistPerHit" value=".75"/>
+	<property name="MoveSpeed" value="0.2"/>
+	<property name="MoveSpeedAggro" value="1.3, 1.3"/>
+	<property name="MoveSpeedPanic" value="1.6"/>
+
+	<property name="HandItem" value="meleeHandAnimalWolf"/>
+
+	<!-- Gameplay  -->
+	<property name="PainResistPerHit" value="1"/>
+	<property name="ExperienceGain" value="-2500"/><!-- XP Minus -->
+	<property name="DeadBodyHitPoints" value="600"/>
+
+	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> <!-- animalBear -->
+	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
+	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
+	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1600"/>
+				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_boar,clear_sleeper" />
+</entity_class>
+
+<!-- Bison Hostile -->
 		
 <entity_class name="animalBisonBear" extends="animalTemplateHostile">
 	<property name="UserSpawnType" value="Menu"/>
@@ -602,7 +944,7 @@
 	<property name="RagdollOnDeathChance" value=".5"/>
 	<property name="PhysicsBody" value="bear"/>
 	<property name="LookAtAngle" value="0"/>
-	<property name="Mesh" value="#@modfolder:Resources/WWBison.unity3d?BisonD"/>	
+	<property name="Mesh" value="#@modfolder:Resources/BisonNew.unity3d?BisonD"/>	
 	<property name="Mass" value="600"/>
 
 	<property name="AITask-1" value="BreakBlock"/>
@@ -650,11 +992,11 @@
 	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_bear,clear_sleeper" />
 </entity_class>
 
-	<entity_class name="animalBisonZombieBear" extends="animalBisonBear">
-	<property name="Tags" value="entity,animal,zombie,hostile,bear"/>
-	<property name="ReplaceMaterial0" value="Entities/Animals/Bear/Materials/zBear"/>
-	<property name="ReplaceMaterial1" value="Materials/UMAFur_ZombieBear"/>
+<!-- Bison Zombie -->
 
+<entity_class name="animalBisonZombieBear" extends="animalBisonBear">
+	<property name="Tags" value="entity,animal,zombie,hostile,bear"/>
+    <property name="Mesh" value="#@modfolder:Resources/BisonNew.unity3d?BisonZed"/>
 	<property name="AIFeralSense" value="1.2"/>
 	<property name="AITask-1" value="BreakBlock"/>
 	<property name="AITask-2" value="DestroyArea"/>
@@ -673,7 +1015,7 @@
 	<!-- Gameplay  -->
 	<property name="HandItem" value="meleeHandAnimalZombieBear"/>
 
-	<property name="ExperienceGain" value="750"/><!-- XP strong -->
+	<property name="ExperienceGain" value="1000"/><!-- XP strong --> <!-- from 750 -->
 	<property name="DeadBodyHitPoints" value="600"/>
 	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
 	<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="50"/> <!-- animalZombieBear -->
@@ -691,63 +1033,116 @@
 	</effect_group>
 </entity_class>
 
-<entity_class name="animalBisonBoar" extends="animalTemplateHostile">
+<!-- Animal Small Bat -->
+		<entity_class name="animalSmallBat" extends="animalTemplateHostile">
+	<property name="Class" value="EntityVulture"/>
 	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,animal,hostile,boar,perkAT02,perkAT03,radiated"/>
-	<property name="MapIcon" value="ui_game_symbol_tracking_pig"/>
-	<property name="TrackerIcon" value="ui_game_symbol_tracking_pig"/>
-	<property name="IsEnemyEntity" value="false"/><!-- override hostile template setting so he can spawn in safe zones -->
+	<property name="EntityFlags" value="animal,zombie"/>
+	<property name="EntityType" value="Zombie"/>
+	<property name="Tags" value="entity,animal,zombie,hostile,vulture"/>
+	<property name="AvatarController" value="AvatarAnimalController"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="HasRagdoll" value="false"/>
+	<property name="PhysicsBody" value="vulture"/>
+	<property name="Mass" value="35"/>
+	<property name="Mesh" value="#@modfolder:Resources/AnimalsOak.unity3d?SmallBat"/>
+	<property name="SizeScale" value=".7"/>
+
+	<property name="AITask-1" value=""/>
+	<property name="AITarget-1" value=""/>
+
+	<property name="SoundRandom" value="BatsChittering"/>
+	<property name="SoundAlert" value="BatsChittering"/>
+	<property name="SoundHurt" value="BatsChittering"/>
+	<property name="SoundDeath" value="Animals/rabbitdeath"/>
+	<property name="SoundAttack" value="BatAttack"/>
+	<property name="SoundSense" value="BatsChittering"/>
+	<property name="SoundGiveUp" value="BatsChittering"/>
+	<!-- Stealth -->
+	<property name="SightRange" value="50"/> <!-- vulture 70 -->
+
+	<!-- Gameplay  -->
+	<property name="MoveSpeed" value="1"/>
+	<property name="MoveSpeedAggro" value="2.1, 2.1"/> <!-- Used when player in vehicle -->
+	<property name="MaxTurnSpeed" value="190"/>
+
+	<property name="HandItem" value="meleeHandAnimalZombieVulture"/>
+	<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+	<property name="DismemberMultiplierLegs" value="0"/>
+	<property name="PainResistPerHit" value="-1"/> <!-- no pain -->
+
+	<property name="DeadBodyHitPoints" value="80"/>
+    <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/>
+    <drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="1"/>
+    <drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="1"/>
+    <drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+    <drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="30"/>
+	</effect_group>
+</entity_class>
+
+<!-- Animal Small Scorpion -->
+<entity_class name="animalScorpion" extends="animalTemplateHostile">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,animal,hostile,bear,perkAT03"/>
+	<property name="MapIcon" value="ui_game_symbol_tracking_bear"/>
+	<property name="TrackerIcon" value="ui_game_symbol_tracking_bear"/>
 	<property name="AvatarController" value="AvatarAnimalController"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="HasRagdoll" value="true"/>
-	<property name="PhysicsBody" value="boar"/>
-	<property name="LookAtAngle" value="0"/>
-	<property name="Mesh" value="#@modfolder:Resources/WWBison.unity3d?BisonD"/>
-	<property name="Mass" value="200"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="RootMotion" value="false"/>
 	<property name="RagdollOnDeathChance" value=".5"/>
+	<property name="PhysicsBody" value="bear"/>
+	<property name="LookAtAngle" value="0"/>
+	<property name="Mesh" value="#@modfolder:Resources/AnimalsOak.unity3d?scorpion"/>	
+	<property name="Mass" value="100"/>
 
-	<property name="SoundRandom" value="Animals/Boar/boarroam"/>
-	<property name="SoundAlert" value="Animals/Boar/boaralert"/>
-	<property name="SoundHurt" value="Animals/Boar/boarpain"/>
-	<property name="SoundDeath" value="Animals/Boar/boardeath"/>
-	<property name="SoundAttack" value="Animals/Boar/boarattack"/>
-	<property name="SoundSense" value="Animals/Boar/boarsense"/>
-	<property name="SoundGiveUp" value="Animals/Boar/boargiveup"/>
+	<property name="AITask-1" value="BreakBlock"/>
+	<property name="AITask-2" value="DestroyArea"/>
+	<property name="AITask-3" value="Territorial"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityAnimalStag,40,EntityPlayer,25,EntityZombie,30"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Look"/>
+	<property name="AITask-7" value="Wander"/>
+	<property name="AITask-8" value=""/>
+	<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+	<property name="AITarget-2" value="BlockingTargetTask"/>
+	<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,13,8,EntityAnimalStag,0,0,EntityZombie,0,0"/>
+	<property name="AITarget-4" value=""/>
 
-	<!-- Gameplay  -->
-	<property name="PainResistPerHit" value=".75"/>
-	<property name="MoveSpeed" value="0.2"/>
-	<property name="MoveSpeedAggro" value="1.3, 1.3"/>
-	<property name="MoveSpeedPanic" value="1.6"/>
-
-	<property name="HandItem" value="meleeHandAnimalWolf"/>
+	<property name="SoundHurt" value=""/>
+    <property name="SoundDeath" value="ScorpionGoreBurst"/>
+    <property name="SoundRandom" value=""/>
+    <property name="SoundSense" value=""/>
+    <property name="SoundAlert" value=""/>
+    <property name="SoundAttack" value="ScorpionStrike"/>
+    <property name="SoundFootstepModifier" value=""/>
+    <property name="SoundGiveUp" value=""/>
 
 	<!-- Gameplay  -->
 	<property name="PainResistPerHit" value="1"/>
-	<property name="ExperienceGain" value="-2500"/><!-- XP Minus -->
-	<property name="DeadBodyHitPoints" value="600"/>
-
-	<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
-	<drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="50"/> <!-- animalBear -->
-	<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="15"/>
-	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="5"/>
-	<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="25"/>
-	<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
-	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
-	<drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
-	<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
-	<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+	<property name="ExperienceGain" value="150"/><!-- XP strong -->
+	<property name="DeadBodyHitPoints" value="100"/>
+	
+    <drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+    <drop event="Harvest" name="foodRawMeat" tag="butcherHarvest" count="1"/>
+	<drop event="Harvest" name="resourceOil" tag="butcherHarvest" count="2"/>
+	<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="2"/>
+    <drop event="Harvest" name="resourceAnimalFat" tag="allToolsHarvest" count="1"/>
+    <drop event="Harvest" name="foodRawMeat" count="1" tag="WasteTreasuresCompleteHarvest"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="1600"/>
-				<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
-				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		<passive_effect name="HealthMax" operation="base_set" value="30"/> <!-- intentionally low -->
 	</effect_group>
 
-	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_boar,clear_sleeper" />
+	<property name="NavObject" value="twitch_spawn,twitch_spawn_other,animaltracking_bear,clear_sleeper" />
 </entity_class>
 
 		<!-- CUSTOM Mama Barker -->

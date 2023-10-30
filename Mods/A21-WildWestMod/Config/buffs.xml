@@ -137,15 +137,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_02Prefab" local_offset="0.65,0.2,-0.3" local_rotation="180,-160,90" parent_transform="Gun"/>
 				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Sandbags/sandbag_single_03Prefab" local_offset="0.35,0.2,0.05" local_rotation="180,160,90" parent_transform="Gun"/>				
 			</effect_group>
-		</buff>	
-	
-<!-- Wild West Snow Bear -->
-	
-		<buff name="animalWildWestSnowBearDeco" hidden="true">
-			<effect_group>		
-				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/animals/catfish/animalcatfish" local_offset="0,-0.19,0.49" local_rotation="270,0,90" parent_transform="Head"/>		
-			</effect_group>
-		</buff>	
+		</buff>
 	
 <!-- Wight Gunslinger -->
 

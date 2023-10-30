@@ -214,7 +214,7 @@
 	<property name="Tags" value="knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill"/>
 	<property name="DisplayType" value="meleeKnife"/>
 	<property name="HoldType" value="36"/>
-	<property name="Meshfile" value="#@modfolder:Resources/hunterknife.unity3d?hunterknife"/>
+	<property name="Meshfile" value="#@modfolder:Resources/knife1.unity3d?knife1"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>

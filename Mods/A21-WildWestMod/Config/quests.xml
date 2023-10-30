@@ -2682,7 +2682,7 @@
 	<!-- Adds the "Chuckwagon Dinner Bell Challenge" -->	
 	<!-- Chuckwagon Dinner Bell Craft and Place -->
 		<quest id="quest_chuckwagondinnerbell01">
-		<property name="offer_key" value="Accept this Quest to begin the Chuckwagon Dinner Bell Challenge. Craft a Chuckwagon Dinner Bell and place it on a flat surface. Strike it to announce that dinner has been served. A Screamer Scout will hear the sound, pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing. Receive 1 Skill Point for eliminating 250 Screamer Scouts. This quest continually loops." />
+		<property name="offer_key" value="Accept this Quest to begin the Chuckwagon Dinner Bell Challenge. Craft a Chuckwagon Dinner Bell and place it on a flat surface. Strike it to announce that dinner has been served. A Screamer Scout will hear the sound, pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing. Receive 2 Skill Points for eliminating 200 Screamer Scouts. This quest continually loops." />
 		<property name="name_key" value="Chuckwagon Dinner Bell"/>
 		<property name="subtitle_key" value="Chuckwagon Dinner Bell"/>
 		<property name="description_key" value="Craft a Chuckwagon Dinner Bell and place it on a flat surface. Strike it to announce that dinner has been served. A Screamer Scout will hear the sound, pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing."/>
@@ -2699,7 +2699,7 @@
 	
 	<!-- Adds the "Zombie Looping" Bounty Quest -->
 	<quest id="quest_chuckwagondinnerbell02">
-	<property name="offer_key" value="Accept this Quest to begin the Chuckwagon Dinner Bell Challenge. Craft a Chuckwagon Dinner Bell and place it on a flat surface. Strike it to announce that dinner has been served. A Screamer Scout will hear the sound, pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing. Receive 1 Skill Point for eliminating 250 Screamer Scouts. This quest continually loops." />       
+	<property name="offer_key" value="Accept this Quest to begin the Chuckwagon Dinner Bell Challenge. Craft a Chuckwagon Dinner Bell and place it on a flat surface. Strike it to announce that dinner has been served. A Screamer Scout will hear the sound, pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing. Receive 2 Skill Points for eliminating 200 Screamer Scouts. This quest continually loops." />       
     <property name="name_key" value="Screamer Scouts" />
 	<property name="subtitle_key" value="Screamer Scouts" />
 	<property name="description_key" value="Craft a Chuckwagon Dinner Bell and place it on a flat surface. Strike it to announce that dinner has been served. A Screamer Scout will hear the sound, pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing." />
@@ -2709,10 +2709,10 @@
 	<property name="difficulty" value="easy"/>
 	<property name="shareable" value="false"/>
 		
-			<objective type="EntityKill" id="zombieScreamer,zombieScreamerFeral,zombieScreamerRadiated" value="250"/>
+			<objective type="EntityKill" id="zombieScreamer,zombieScreamerFeral,zombieScreamerRadiated" value="200"/>
 
 	<reward type="Exp" value="5000"/>
-	<reward type="SkillPoints" value="1" chainreward="false"/>
+	<reward type="SkillPoints" value="2" chainreward="false"/>
 	<reward type="Quest" id="quest_chuckwagondinnerbell02">
 			<property name="chainquest" value="false"/>
 	</reward>	
@@ -2884,71 +2884,37 @@
 	
 	<!-- Adds the "Ma Tree Barker" Bounty Quest -->
 	<quest id="challenge_eliminatezombiefemalefatbarker">
-	<property name="offer_key" value="Accept this bounty quest to eliminate Ma Tree Barker, and her gang of log rustling lumberjacks. 1 Skill, 3500 XP, and 2500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest." />       
+	<property name="offer_key" value="Accept this bounty quest to eliminate Ma Tree Barker. She is only found in the Wasteland. 1 Skill, 3500 XP, and 2500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest, as her big sister comes next." />       
     <property name="name_key" value="Ma Tree Barker Bounty" />
 	<property name="subtitle_key" value="Ma Tree Barker Bounty" />
-	<property name="description_key" value="Eliminate Ma Tree Barker, and her gang of log rustling lumberjacks. 1 Skill, 3500 XP, and 2500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest." />
+	<property name="description_key" value="Eliminate Ma Tree Barker. She is only found in the Wasteland. 1 Skill, 3500 XP, and 2500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest, as her big sister comes next." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
-	
-			<!-- Phase 1: Travel --> 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="50"/>
-				<property name="distance" value="350-600"/>
-				<property name="nav_object" value="quest" />
-			</objective>			
-			
-			<!-- Phase 2: Start Quest -->			
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>			
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally" />
-			</objective>
-			
-			<!-- Phase 3: Eliminate Ma Tree Barker -->
-			<action type="SpawnEnemy" id="zombieLumberjackFeral" value="5" phase="3"/>			
-			<action type="SpawnEnemy" id="zombieFemaleFatBarker" value="1" phase="3"/>			
-			<objective type="EntityKill" id="zombieFemaleFatBarker" value="1" phase="3"/>
+		
+	<objective type="EntityKill" id="zombieFemaleFatBarker" value="1" phase="1"/>
 		
 	<reward type="Exp" value="3500"/>
 	<reward type="Item" id="casinoCoin" value="2500"/>
 	<reward type="SkillPoints" value="1" chainreward="false"/>
 	<reward type="Item" id="qc_eliminatezombiefemalebigfatbarker" value="1"/>
 	</quest>
-
+	
 	<!-- Adds the "Big Ma Tree Barker" Bounty Quest -->
 	<quest id="challenge_eliminatezombiefemalebigfatbarker">
-	<property name="offer_key" value="Accept this bounty quest to eliminate Big Ma Tree Barker, and her gang of log rustling lumberjacks. 1 Skill, 4500 XP, and 3500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest." />       
+	<property name="offer_key" value="Accept this bounty quest to eliminate Big Ma Tree Barker. She is only found in the Wasteland. 1 Skill, 4500 XP, and 3500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest." />       
     <property name="name_key" value="Big Ma Tree Barker Bounty" />
 	<property name="subtitle_key" value="Big Ma Tree Barker Bounty" />
-	<property name="description_key" value="Eliminate Big Ma Tree Barker, and her gang of log rustling lumberjacks. 1 Skill, 4500 XP, and 3500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest." />
+	<property name="description_key" value="Eliminate Big Ma Tree Barker. She is only found in the Wasteland. 1 Skill, 4500 XP, and 3500 Liberty Coins for your troubles. Be warned, she is armed and dangerous. Prepare yourself properly for this bounty quest." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
-	
-			<!-- Phase 1: Travel --> 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="50"/>
-				<property name="distance" value="350-600"/>
-				<property name="nav_object" value="quest" />
-			</objective>			
-			
-			<!-- Phase 2: Start Quest -->			
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>			
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally" />
-			</objective>
-			
-			<!-- Phase 3: Eliminate Big Ma Tree Barker -->
-			<action type="SpawnEnemy" id="zombieLumberjackRadiated" value="7" phase="3"/>			
-			<action type="SpawnEnemy" id="zombieFemaleBigFatBarker" value="1" phase="3"/>			
-			<objective type="EntityKill" id="zombieFemaleBigFatBarker" value="1" phase="3"/>
+		
+	<objective type="EntityKill" id="zombieFemaleBigFatBarker" value="1" phase="1"/>
 		
 	<reward type="Exp" value="4500"/>
 	<reward type="Item" id="casinoCoin" value="3500"/>
@@ -2957,75 +2923,43 @@
 	
 	<!-- Adds the "Feral Gunslinger Wight" Bounty Quest -->
 	<quest id="challenge_eliminateferalgunslingerwight">
-	<property name="offer_key" value="Accept this bounty quest to eliminate the Feral Gunslinger Wight, and his side kicks. 1 Skill, 1500 XP, and 1000 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest." />       
+	<property name="offer_key" value="Accept this bounty quest to eliminate the Feral Gunslinger Wight. He is only found in the Wasteland. He can only be eliminated with a 666 Revolver to complete this Quest. 1 Skill, 1500 XP, and 1000 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest, as his stronger sibling comes after, and a 666 is not good enough for him." />       
     <property name="name_key" value="Feral Wight Gunslinger Bounty" />
 	<property name="subtitle_key" value="Feral Wight Gunslinger Bounty" />
-	<property name="description_key" value="Eliminate the Feral Gunslinger Wight. 1 Skill, 1500 XP, and 1000 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest." />
+	<property name="description_key" value="Eliminate the Feral Gunslinger Wight. He is only found in the Wasteland. He can only be eliminated with a 666 Revolver to complete this Quest. 1 Skill, 1500 XP, and 1000 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest, as his stronger sibling comes after, and a 666 is not good enough for him." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
-	
-			<!-- Phase 1: Travel --> 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="50"/>
-				<property name="distance" value="350-600"/>
-				<property name="nav_object" value="quest" />
-			</objective>			
-			
-			<!-- Phase 2: Start Quest -->			
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>			
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally" />
-			</objective>
-			
-			<!-- Phase 3: Eliminate the Feral Gunslinger Wight -->
-			<action type="SpawnEnemy" id="zombieWightFeral" value="2" phase="3"/>			
-			<action type="SpawnEnemy" id="zombieWightFeralGunslinger" value="1" phase="3"/>			
-			<objective type="EntityKill" id="zombieWightFeralGunslinger" value="1" phase="3"/>
+		
+	<objective type="EntityKill" id="zombieWightFeralGunslinger" value="1" phase="1"/>
+	<requirement type="Quests.Requirements.Holding" id="gunHandgunT1666Revolver"/>
 		
 	<reward type="Exp" value="1500"/>
 	<reward type="Item" id="casinoCoin" value="1000"/>
-	<reward type="SkillPoints" value="1" chainreward="true"/>
+	<reward type="SkillPoints" value="1" chainreward="false"/>
 	<reward type="Item" id="qc_eliminateradiatedgunslingerwight" value="1"/>
 	</quest>
 	
 	<!-- Adds the "Radiated Gunslinger Wight" Bounty Quest -->
 	<quest id="challenge_eliminateradiatedgunslingerwight">
-	<property name="offer_key" value="Accept this bounty quest to eliminate the Radiated Gunslinger Wight, and his side kicks. 1 Skill, 3500 XP, and 2500 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest." />       
+	<property name="offer_key" value="Accept this bounty quest to eliminate the Radiated Gunslinger Wight. He is only found in the Wasteland. He can only be eliminated with a Schofield Revolver to complete this Quest. 1 Skill, 1500 XP, and 1000 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest." />       
     <property name="name_key" value="Radiated Wight Gunslinger Bounty" />
 	<property name="subtitle_key" value="Radiated Wight Gunslinger Bounty" />
-	<property name="description_key" value="Eliminate the Radiated Gunslinger Wight. 1 Skill, 3500 XP, and 2500 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest." />
+	<property name="description_key" value="Eliminate the Radiated Gunslinger Wight. He is only found in the Wasteland. He can only be eliminated with a Schofield Revolver to complete this Quest. 1 Skill, 3500 XP, and 2500 Liberty Coins for your troubles. Be warned, he is armed and dangerous. Prepare yourself properly for this bounty quest." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
 	<property name="difficulty" value="medium"/>
 	<property name="shareable" value="false"/>
-	
-			<!-- Phase 1: Travel --> 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="50"/>
-				<property name="distance" value="350-600"/>
-				<property name="nav_object" value="quest" />
-			</objective>			
-			
-			<!-- Phase 2: Start Quest -->			
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>			
-				<property name="phase" value="2"/>
-				<property name="nav_object" value="rally" />
-			</objective>
-			
-			<!-- Phase 3: Eliminate the Feral Gunslinger Wight -->
-			<action type="SpawnEnemy" id="zombieWightRadiated" value="2" phase="3"/>			
-			<action type="SpawnEnemy" id="zombieWightRadiatedGunslinger" value="1" phase="3"/>			
-			<objective type="EntityKill" id="zombieWightRadiatedGunslinger" value="1" phase="3"/>
+		
+	<objective type="EntityKill" id="zombieWightRadiatedGunslinger" value="1" phase="1"/>
+	<requirement type="Quests.Requirements.Holding" id="gunHandgunT3SchofieldRevolver"/>
 		
 	<reward type="Exp" value="3500"/>
 	<reward type="Item" id="casinoCoin" value="2500"/>
-	<reward type="SkillPoints" value="1" chainreward="true"/>
+	<reward type="SkillPoints" value="1" chainreward="false"/>
 	</quest>
 	
     <!-- TMB's Animals Hunting Quest -->

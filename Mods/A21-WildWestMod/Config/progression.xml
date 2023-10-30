@@ -422,25 +422,26 @@
 	</crafting_skill>
 
 		<!-- *** HANDGUN_SKILLS -->
-	<crafting_skill name="craftingHandguns" max_level="100" parent="attCrafting" name_key="craftingHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_gunslinger">
+		<!-- reduced magazine range from 1-100 to 1-75 to remove redundant magazines -->
+	<crafting_skill name="craftingHandguns" max_level="75" parent="attCrafting" name_key="craftingHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_gunslinger">
 
 		<display_entry item="gunHandgunT0PipePistol" unlock_level="1,3,5,7,10" />
 		<display_entry item="gunHandgunT1666Revolver" unlock_level="11,13,16,19,22" />
 		<display_entry item="gunHandgunT2RavenRevolver" unlock_level="23,26,30,34,38" />
-		<display_entry item="gunHandgunT3SchofieldRevolver" unlock_level="39,46,53,60,67" />
+		<display_entry item="gunHandgunT3SchofieldRevolver" unlock_level="39,46,53,64,75" />  <!-- 39,46,53,60,67 -->
 		<!--display_entry item="gunHandgunT3DesertVulture" unlock_level="68,76,84,92,100" /-->
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="gunHandgunT0PipePistol"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="gunHandgunT1666Revolver"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,100" value="1" tags="gunHandgunT2RavenRevolver"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,100" value="1" tags="gunHandgunT3SchofieldRevolver"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,75" value="1" tags="gunHandgunT0PipePistol"/> <!-- 1,100 -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,75" value="1" tags="gunHandgunT1666Revolver"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="23,75" value="1" tags="gunHandgunT2RavenRevolver"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="39,75" value="1" tags="gunHandgunT3SchofieldRevolver"/>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="68,100" value="1" tags="gunHandgunT3DesertVulture"/-->
 
-			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="gunHandgunT0PipePistol"/>
-			<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,100" value="1,2,3,4,4" tags="gunHandgunT1666Revolver"/>
-			<passive_effect name="CraftingTier" operation="base_add" level="26,30,34,38,100" value="1,2,3,4,4" tags="gunHandgunT2RavenRevolver"/>
-			<passive_effect name="CraftingTier" operation="base_add" level="46,53,60,67,100" value="1,2,3,4,4" tags="gunHandgunT3SchofieldRevolver"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,75" value="1,2,3,4,4" tags="gunHandgunT0PipePistol"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,75" value="1,2,3,4,4" tags="gunHandgunT1666Revolver"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="26,30,34,38,75" value="1,2,3,4,4" tags="gunHandgunT2RavenRevolver"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="46,53,64,75" value="1,2,3,4" tags="gunHandgunT3SchofieldRevolver"/>  <!-- 46,53,60,67,100 -->
 			<!--passive_effect name="CraftingTier" operation="base_add" level="76,84,92,100" value="1,2,3,4" tags="gunHandgunT3DesertVulture"/-->
 		</effect_group>
 	</crafting_skill>
@@ -2129,7 +2130,7 @@
 
 			<!-- Once handgun crafting skill reaches 100, set the probability bonus of finding handgun crafting skill magazines to 0 -->
 			<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="handgunsCSM">
-				<requirement name="ProgressionLevel" progression_name="craftingHandguns" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="craftingHandguns" operation="Equals" value="75"/> <!-- 100 -->
 			</passive_effect>
 			
 			<!-- Increase the chance to find Pistol Pete books until each book is read -->
