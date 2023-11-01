@@ -76,9 +76,24 @@
 		<spawner name="animalZombieWastelandCraterBear" count="1"/>
 	</group>
 	
-	<!-- Guppy Vulture Group -->
+	<!-- Guppy Vulture Group with Rats and Bats for complete Family -->
 	<group name="Crispy_Family" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 		<spawner name="CripsyVariants" count="5,6" />
+	</group>
+	
+	<!-- Bat Swarm -->
+	<group name="Bat_Swarm" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="BatVariants" count="5,6" />
+	</group>
+	
+	<!-- Rat Pack -->
+	<group name="Rat_Pack" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="RatVariants" count="5,6" />
+	</group>
+	
+	<!-- Scorpion Nest -->
+	<group name="Scorpion_Nest" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="ScorpionVariants" count="5,6" />
 	</group>
 
 	<!-- Snow Bear Sleeper Group -->
@@ -95,7 +110,7 @@
 		</gamestage>
 	</spawner>
 	
-	<!-- Guppy Vulture Group with GS attribute for the family -->
+	<!-- Guppy Vulture Group with Rats and Bats for complete GS attribute for the Family -->
 	<spawner name="CripsyVariants">
 		<gamestage stage="1">
 			<spawn group="CripsyVariantsGroupGS01" num="1" maxAlive="1" duration="1" />
@@ -114,6 +129,72 @@
 		</gamestage>
 		<gamestage stage="800">
 			<spawn group="CripsyVariantsGroupGS800" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+	</spawner>
+	
+	<!-- Bat Swarm for complete GS attribute -->
+	<spawner name="BatVariants">
+		<gamestage stage="1">
+			<spawn group="BatVariantsGroupGS01" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="BatVariantsGroupGS50" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="100">
+			<spawn group="BatVariantsGroupGS100" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="200">
+			<spawn group="BatVariantsGroupGS200" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="400">
+			<spawn group="BatVariantsGroupGS400" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="800">
+			<spawn group="BatVariantsGroupGS800" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+	</spawner>
+	
+	<!-- Rat Pack for complete GS attribute -->
+	<spawner name="RatVariants">
+		<gamestage stage="1">
+			<spawn group="RatVariantsGroupGS01" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="RatVariantsGroupGS50" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="100">
+			<spawn group="RatVariantsGroupGS100" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="200">
+			<spawn group="RatVariantsGroupGS200" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="400">
+			<spawn group="RatVariantsGroupGS400" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="800">
+			<spawn group="RatVariantsGroupGS800" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+	</spawner>
+	
+	<!-- Scorpion Nest for complete GS attribute -->
+	<spawner name="ScorpionVariants">
+		<gamestage stage="1">
+			<spawn group="ScorpionVariantsGroupGS01" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="ScorpionVariantsGroupGS50" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="100">
+			<spawn group="ScorpionVariantsGroupGS100" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="200">
+			<spawn group="ScorpionVariantsGroupGS200" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="400">
+			<spawn group="ScorpionVariantsGroupGS400" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="800">
+			<spawn group="ScorpionVariantsGroupGS800" num="1" maxAlive="1" duration="1" />
 		</gamestage>
 	</spawner>
 	
