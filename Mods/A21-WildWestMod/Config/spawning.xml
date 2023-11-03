@@ -40,4 +40,28 @@
 		<spawn maxcount="10" respawndelay="0.3" time="Any" entitygroup="animalBisonBoar" tags="bison" spawnDeadChance="0" />
 	</append>
 	
+	<!-- Bat POI tag Group -->
+
+	<append xpath="/spawning/biome[@name='pine_forest']">
+		<spawn maxcount="12" respawndelay="0.3" time="Any" entitygroup="animalsmallbat" tags="smallbat" spawnDeadChance="0" />
+	</append>
+
+	<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="12" respawndelay="0.3" time="Any" entitygroup="animalsmallbat" tags="smallbat" spawnDeadChance="0" />
+	</append>
+	
+	<append xpath="/spawning/biome[@name='snow']">
+		<spawn maxcount="12" respawndelay="0.3" time="Any" entitygroup="animalsmallbat" tags="smallbat" spawnDeadChance="0" />
+	</append>
+	
+	<append xpath="/spawning/biome[@name='wasteland']">
+		<spawn maxcount="12" respawndelay="0.3" time="Any" entitygroup="animalsmallbat" tags="smallbat" spawnDeadChance="0" />
+	</append>
+	
+	<!-- Scorpion POI tag Group -->
+
+	<append xpath="/spawning/biome[@name='desert']">
+		<spawn maxcount="12" respawndelay="0.3" time="Any" entitygroup="animalScorpion" tags="scorpion" spawnDeadChance="0" />
+	</append>
+	
 </wildwestmod>

@@ -254,6 +254,18 @@
 		animalBisonBoar
 	</entitygroup>
 	
+	<!-- Bat POI Spawn Group -->
+	
+	<entitygroup name="animalsmallbat">
+		animalsmallbat
+	</entitygroup>
+	
+	<!-- Scorpion POI Spawn Group -->
+	
+	<entitygroup name="animalScorpion">
+		animalScorpion
+	</entitygroup>
+	
 	<!-- Snow Bear Sleeper Group -->
 
 	<entitygroup name="animalWildWestSnowBear">
