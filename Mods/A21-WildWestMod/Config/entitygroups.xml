@@ -256,8 +256,8 @@
 	
 	<!-- Bat POI Spawn Group -->
 	
-	<entitygroup name="animalsmallbat">
-		animalsmallbat
+	<entitygroup name="animalSmallBat">
+		animalSmallBat
 	</entitygroup>
 	
 	<!-- Scorpion POI Spawn Group -->
