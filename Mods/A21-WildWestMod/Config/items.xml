@@ -10,6 +10,9 @@
 	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/effect_group/display_value[@name='dBlockRepairAmount']/@value">850</set><!-- 400 Default -->	
 	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@class='Action1']/property[@name='Upgrade_hit_offset']/@value">-5</set><!-- 1 Hit Upgrade -->	
 	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group/passive_effect[@name='MagazineSize']/@value">3</set><!-- 3 Shots per mag -->
+	<set xpath="/items/item[@name='gunBowT0PrimitiveBow']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">0.16</set> <!-- .26 Default -->
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">0.11</set> <!-- .26 Default -->
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='AutoReload']/@value">true</set>
 	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/newfireaxe.unity3d?newfireaxe</set><!-- Replacing Fire Axe for older variant -->
 	<!-- Ammo Stacking and Unlocking -->
 	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">1500</set><!-- x5 of default -->	
@@ -1592,7 +1595,20 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modGunBowArrowHandleGrip" operation="set" value="1"/>
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
-		</item>		
+		</item>
+		
+<!-- Antler Bow Reload Mod Schematic -->
+
+		<item name="modArcheryReloadSchematic">
+			<property name="Extends" value="schematicMaster"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="modArcheryReload"/>
+			<property name="Unlocks" value="modArcheryReload"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="modArcheryReload" operation="set" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+		</item>	
 		
 <!-- Gatling Gun - Thank you to Snufkin for base inspiration -->
 

@@ -137,6 +137,21 @@
 			<passive_effect name="EntityDamage" operation="perc_add" value="0.15"/>
 		</effect_group>
 	</item_modifier>
+	
+<!-- Archery Reload Mod -->
+
+	<item_modifier name="modArcheryReload" installable_tags="perkArchery" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="CustomIcon" value="modArcheryReload"/>
+		<property name="UnlockedBy" value="modArcheryReloadSchematic"/>
+		<property name="TraderStageTemplate" value="modsTier2"/>
+		<property name="Material" value="Mcloth"/>
+		
+		<!-- Reload archery weapons 15% faster -->
+		<effect_group tiered="false">
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15"/>
+		</effect_group>
+	</item_modifier>
 
 <!-- Black Crystal Armor Mod -->
  	<item_modifier name="modArmorPlatingReinforced" installable_tags="armor" modifier_tags="resistance" blocked_tags="noMods" type="attachment">

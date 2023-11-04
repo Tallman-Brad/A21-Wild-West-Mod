@@ -4156,7 +4156,17 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 			<ingredient name="resourceCloth" count="10"/>		
 			<ingredient name="resourceGlue" count="1"/>
 			<ingredient name="resourceScrapPolymers" count="4"/>		
-		</recipe>	
+		</recipe>
+
+<!-- Antler Reload Mod -->
+	
+		<recipe name="modArcheryReload" count="1" craft_area="workbench" tags="learnable">
+			<ingredient name="resourceStagAntler" count="1"/>
+			<ingredient name="resourceLeather" count="3"/>
+			<ingredient name="resourceCloth" count="10"/>		
+			<ingredient name="resourceGlue" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>		
+		</recipe>		
 	
 <!-- Gatling Gun - Thank you to Snufkin for base inspiration -->
 	

@@ -3015,6 +3015,8 @@ If there is no hit the default quality is used.
 <!-- *** T3_Ranged_Mods -->
 <lootgroup name="modGunT3">
 	<item name="modGunBowPolymerString"/>
+	<item name="modGunBowArrowHandleGrip"/>
+	<item name="modArcheryReload"/>
 	<!-- <item name="modRoboticDroneArmorPlatingMod"/> -->
 	<!-- <item name="modRoboticDroneMoraleBoosterMod"/> -->
 	<!-- <item name="modRoboticDroneWeaponMod"/> -->
@@ -3449,6 +3451,7 @@ If there is no hit the default quality is used.
 	<item name="modGunBipodSchematic"/>
 	<item name="modGunBowArrowRestSchematic"/>
 	<item name="modGunBowArrowHandleGripSchematic"/> <!-- Wild West Mod -->
+	<item name="modArcheryReloadSchematic"/> <!-- Wild West Mod -->
 	<item name="modGunChokeSchematic"/>
 	<item name="modGunCrippleEmSchematic"/>
 	<!--item name="modGunMagazineExtenderSchematic"/-->

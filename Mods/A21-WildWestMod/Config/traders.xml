@@ -298,6 +298,7 @@
 			<item name="modGunSoundSuppressorSilencer"/>
 			<!--item name="modGunTriggerGroupBurst3"/-->
 			<item name="modGunBowArrowHandleGrip"/> <!-- Wild West Mod -->
+			<item name="modArcheryReload"/> <!-- Wild West Mod -->
 		<!-- *** T3_Ranged_Mods -->
 			<item name="modGunBowPolymerString"/>
 			<item name="modGunScopeLarge"/>
@@ -799,6 +800,7 @@
 			<item name="modShotgunSawedOffBarrelSchematic"/>
 			<item name="modGunCrippleEmSchematic"/>
 			<item name="modGunBowArrowHandleGripSchematic"/> <!-- Wild West Mod -->
+			<item name="modArcheryReloadSchematic"/> <!-- Wild West Mod -->
 			<item name="modGunBowArrowRestSchematic"/>
 			<item name="modGunBowPolymerStringSchematic"/>
 			<item name="modMeleeTemperedBladeSchematic"/>
@@ -907,8 +909,9 @@
 		</trader_item_group>
 
 		<trader_item_group name="rareBooks">
-			<item name="modGunBowArrowHandleGripSchematic"/>
-			<item name="modWeaponLubricationSchematic"/>
+			<item name="modGunBowArrowHandleGripSchematic"/> <!-- Wild West Mod -->
+			<item name="modArcheryReloadSchematic"/> <!-- Wild West Mod -->
+			<item name="modWeaponLubricationSchematic"/> <!-- Wild West Mod -->
 			<!-- <item name="meleeWpnBladeT3MacheteSchematic"/> -->
 			<!-- <item name="gunBowT3CompoundBowSchematic"/> -->
 			<!-- <item name="gunBowT3CompoundCrossbowSchematic"/> -->
