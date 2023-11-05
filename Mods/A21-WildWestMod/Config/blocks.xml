@@ -2854,7 +2854,8 @@
 <!-- New Oakraven Wagons -->
 
 <block name="JailWagon">
-    <property name="Extends" value="cntCar03SedanDamage0Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="Stage2Health" value="1"/>
     <property name="Class" value="Loot"/>
     <property name="LootList" value="JailWagon"/>
     <property name="CreativeMode" value="Player"/>
@@ -2878,7 +2879,8 @@
 </block>
 
 <block name="JailWagonOpen">
-    <property name="Extends" value="cntCar03SedanDamage1Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="Stage2Health" value="1"/>	
     <property name="Class" value="Loot"/>
     <property name="LootList" value="JailWagon"/>
     <property name="CreativeMode" value="Player"/>
@@ -2901,7 +2903,8 @@
 </block>
 
 <block name="JailWagonBroken">
-    <property name="Extends" value="cntCar03SedanDamage2Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage2Master"/>
+	<property name="Stage2Health" value="1"/>
     <property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="JailWagon"/>
     <property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?JailWagonstage3"/>
@@ -2918,7 +2921,8 @@
 
 
 <block name="OldWagon">
-    <property name="Extends" value="cntCar03SedanDamage0Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="Stage2Health" value="1"/>
     <property name="Class" value="Loot"/>
     <property name="LootList" value="cars"/>
     <property name="CreativeMode" value="Player"/>
@@ -2940,7 +2944,8 @@
 </block>
 
 <block name="OldWagonBroken">
-    <property name="Extends" value="cntCar03SedanDamage1Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="Stage2Health" value="1"/>
     <property name="Class" value="Loot"/>
 	<property name="LootList" value="cars"/>
     <property name="CreativeMode" value="Player"/>
@@ -2963,7 +2968,8 @@
 </block>
 
 <block name="OldWagonSmashed">
-    <property name="Extends" value="cntCar03SedanDamage2Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage2Master"/>
+	<property name="Stage2Health" value="1"/>	
     <property name="CreativeMode" value="Player"/>
 	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?OldWagonParts"/>
     <property name="TintColor" value=""/>
@@ -2978,6 +2984,7 @@
 
 <block name="MailWagon">
     <property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="Stage2Health" value="1"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="bookcase"/>
 	<property name="CustomIcon" value="JailWagon"/>
@@ -3001,6 +3008,7 @@
 
 <block name="MailWagonBroken">
     <property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="Stage2Health" value="1"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="bookcase"/>
@@ -3023,7 +3031,8 @@
 </block>
 
 <block name="MailWagonSmashed">
-    <property name="Extends" value="cntCar03SedanDamage2Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage2Master"/>
+	<property name="Stage2Health" value="1"/>	
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplode"/>
 	<property name="CustomIcon" value="JailWagon"/>
@@ -3041,6 +3050,7 @@
 
 <block name="WaterWagon">
     <property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="Stage2Health" value="1"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="WaterWagon"/>
 	<property name="CustomIcon" value="JailWagon"/>
@@ -3066,6 +3076,7 @@
 
 <block name="WaterWagonBroken">
     <property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="Stage2Health" value="1"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="waterCooler"/>
@@ -3089,7 +3100,8 @@
 </block>
 
 <block name="WaterWagonSmashed">
-    <property name="Extends" value="cntCar03SedanDamage2Master"/> 	
+    <property name="Extends" value="cntCar03SedanDamage2Master"/>
+	<property name="Stage2Health" value="1"/> 	
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="CarExplode"/>
 	<property name="CustomIcon" value="JailWagon"/>
@@ -3107,6 +3119,7 @@
 
 <block name="Stagecoach">
     <property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="Stage2Health" value="1"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="StageCoach"/>
     <property name="CreativeMode" value="Player"/>
@@ -3129,7 +3142,8 @@
 </block>
 
 <block name="StagecoachBroken">
-    <property name="Extends" value="cntCar03SedanDamage1Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="Stage2Health" value="1"/>	
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="StageCoach"/>
@@ -3152,7 +3166,8 @@
 </block>
 
 <block name="StagecoachSmashed">
-    <property name="Extends" value="cntCar03SedanDamage2Master"/> 
+    <property name="Extends" value="cntCar03SedanDamage2Master"/>
+	<property name="Stage2Health" value="1"/>	
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="JailWagon"/>
 	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?stagecoachOak3"/>
