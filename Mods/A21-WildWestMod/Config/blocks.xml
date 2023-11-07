@@ -2919,6 +2919,22 @@
     <property name="SortOrder2" value="0003"/>
 </block>
 
+	<!-- *** JAIL_WAGONS_VS_AIR_HELPERS -->
+<block name="cntCarJailWagonsRandomHelper">
+	<property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="Loot"/>
+	<property name="LootList" value="JailWagon"/>
+	<property name="CustomIcon" value="JailWagon"/>
+    <property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?JailWagon"/>
+    <property name="ModelOffset" value="0,0.5,0"/>
+    <property name="MultiBlockDim" value="5,2,2"/>
+	<property name="CustomIconTint" value="8080FF"/>
+	<property name="ItemTypeIcon" value="other"/>
+	<property name="SortOrder1" value="B879"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+</block>
 
 <block name="OldWagon">
     <property name="Extends" value="cntCar03SedanDamage0Master"/>
@@ -2980,6 +2996,23 @@
 	<drop event="Destroy" count="0"/>
 	<property name="SortOrder1" value="B851"/>
 	<property name="SortOrder2" value="0003"/>
+</block>
+
+	<!-- *** OLD_WAGONS_VS_AIR_HELPERS -->
+<block name="cntCarOldWagonsRandomHelper">
+	<property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?OldWagon"/>
+    <property name="ModelOffset" value="0,0.5,0"/>
+    <property name="MultiBlockDim" value="5,2,2"/>
+	<property name="CustomIconTint" value="8080FF"/>
+	<property name="ItemTypeIcon" value="other"/>
+	<property name="SortOrder1" value="B879"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
 </block>
 
 <block name="MailWagon">
@@ -3046,6 +3079,23 @@
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="SortOrder1" value="B851"/>
 	<property name="SortOrder2" value="0003"/>
+</block>
+
+	<!-- *** MAIL_WAGONS_VS_AIR_HELPERS -->
+<block name="cntCarMailWagonsRandomHelper">
+	<property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?MailWagon6"/>
+    <property name="ModelOffset" value="0,0.5,0"/>
+    <property name="MultiBlockDim" value="5,2,2"/>
+	<property name="CustomIconTint" value="8080FF"/>
+	<property name="ItemTypeIcon" value="other"/>
+	<property name="SortOrder1" value="B879"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
 </block>
 
 <block name="WaterWagon">
@@ -3117,6 +3167,23 @@
 	<property name="SortOrder2" value="0003"/>
 </block>
 
+	<!-- *** WATER_WAGONS_VS_AIR_HELPERS -->
+<block name="cntCarWaterWagonsRandomHelper">
+	<property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="Loot"/>
+	<property name="LootList" value="WaterWagon"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?WaterWagonOak"/>
+    <property name="ModelOffset" value="0,0.5,0"/>
+    <property name="MultiBlockDim" value="5,2,2"/>
+	<property name="CustomIconTint" value="8080FF"/>
+	<property name="ItemTypeIcon" value="other"/>
+	<property name="SortOrder1" value="B879"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+</block>
+
 <block name="Stagecoach">
     <property name="Extends" value="cntCar03SedanDamage0Master"/>
 	<property name="Stage2Health" value="1"/>
@@ -3182,7 +3249,22 @@
 	<property name="SortOrder2" value="0003"/>
 </block>
 
-	
+	<!-- *** STAGECOACHES_VS_AIR_HELPERS -->
+<block name="cntCarStagecoachesRandomHelper">
+	<property name="Extends" value="cntCar03SedanDamage0Master"/>
+	<property name="CreativeMode" value="Dev"/>
+    <property name="Class" value="Loot"/>
+	<property name="LootList" value="StageCoach"/>
+	<property name="CustomIcon" value="JailWagon"/>
+	<property name="Model" value="#@modfolder:Resources/OldWagons.unity3d?stagecoachOak"/>
+    <property name="ModelOffset" value="0,0.5,0"/>
+	<property name="MultiBlockDim" value="2,2,5"/>
+	<property name="CustomIconTint" value="8080FF"/>
+	<property name="ItemTypeIcon" value="other"/>
+	<property name="SortOrder1" value="B879"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="FilterTags" value="MC_helpers,SC_helperOutdoor"/>
+</block>	
 	
 <!-- Wind Turbine -->
 

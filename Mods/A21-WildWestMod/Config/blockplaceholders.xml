@@ -3594,8 +3594,66 @@
             <block name="lightblueRock" prob=".3"/> <!-- bluerock -->
             <block name="greenrock" prob=".3"/> <!-- greenrock -->
     </placeholder>
-
-
+	
+		<!-- *** JAIL_WAGONS_VS_AIR_HELPERS -->
+	<placeholder name="cntCarJailWagonsRandomHelper">
+		<block name="JailWagon" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="JailWagonOpen" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="JailWagonBroken" prob=".5"/>
+		<block name="air" prob="1"/>
+	</placeholder>
+	
+		<!-- *** OLD_WAGONS_VS_AIR_HELPERS -->
+	<placeholder name="cntCarOldWagonsRandomHelper">
+		<block name="OldWagon" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldWagonBroken" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="OldWagonSmashed" prob=".5"/>
+		<block name="air" prob="1"/>
+	</placeholder>
+	
+		<!-- *** MAIL_WAGONS_VS_AIR_HELPERS -->
+	<placeholder name="cntCarMailWagonsRandomHelper">
+		<block name="MailWagon" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MailWagonBroken" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="MailWagonSmashed" prob=".5"/>
+		<block name="air" prob="1"/>
+	</placeholder>
+	
+		<!-- *** WATER_WAGONS_VS_AIR_HELPERS -->
+	<placeholder name="cntCarWaterWagonsRandomHelper">
+		<block name="WaterWagon" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="WaterWagonBroken" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="WaterWagonSmashed" prob=".5"/>
+		<block name="air" prob="1"/>
+	</placeholder>
+	
+		<!-- *** WATER_WAGONS_VS_AIR_HELPERS -->
+	<placeholder name="cntCarWaterWagonsRandomHelper">
+		<block name="WaterWagon" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="WaterWagonBroken" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="WaterWagonSmashed" prob=".5"/>
+		<block name="air" prob="1"/>
+	</placeholder>
+	
+		<!-- *** STAGECOACHES_VS_AIR_HELPERS -->
+	<placeholder name="cntCarStagecoachesRandomHelper">
+		<block name="Stagecoach" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="StagecoachBroken" prob="1"/>
+		<block name="air" prob="1"/>
+		<block name="StagecoachSmashed" prob=".5"/>
+		<block name="air" prob="1"/>
+	</placeholder>
 
 	<!-- You CAN now use an air block and create random non-blocks.
 		The downside is that there will be no error message if a NAMED block is not found (misspelled),
