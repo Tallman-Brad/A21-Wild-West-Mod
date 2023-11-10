@@ -272,7 +272,7 @@
 				<rect pos="100,137" width="76" height="76" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="1" pos="-72,18" width="137" height="35" color="0,0,0,250" type="sliced" foregroundlayer="true"/>
-				<sprite name="BarContent" depth="2" pivot="center" size="192,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueHP" />
+				<sprite name="BarContent" depth="2" pivot="center" size="137,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueHP" />	<!-- 192,102 default size -->
 				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_health_cross" size="22,22" pos="-50,10" foregroundlayer="true"/>
 				<label depth="3" width="136" pos="-50,12" font_size="24" text="[DECEA3]{statcurrentwithmax}" color="[white]" effect="outline" upper_case="true" justify="center" />
 			</rect>
@@ -280,7 +280,7 @@
 				<rect pos="100,99" width="76" height="76" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="1" pos="-72,19" width="137" height="35" color="0,0,0,250" type="sliced" foregroundlayer="true"/>
-				<sprite name="BarContent" depth="2" pivot="center" size="192,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueStam" />
+				<sprite name="BarContent" depth="2" pivot="center" size="137,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueStam" />
 				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_horse_stamina" size="22,22" pos="-50,11" foregroundlayer="true"/>
 				<label depth="3" width="136" pos="-50,14" font_size="24" text="[DECEA3]{statcurrentwithmax}" color="[white]" effect="outline" upper_case="true" justify="center" />				
 			</rect>
@@ -289,7 +289,7 @@
 				<rect pos="100,62" width="76" height="76" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="1" pos="-72,19" width="137" height="35" color="0,0,0,250" type="sliced" foregroundlayer="true"/>
-				<sprite name="BarContent" depth="2" pivot="center" size="192,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueFood" />
+				<sprite name="BarContent" depth="2" pivot="center" size="137,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueFood" />
 				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_taco_food" size="22,22" pos="-50,11" foregroundlayer="true"/>
 				<label depth="3" width="136" pos="-50,14" font_size="24" text="[DECEA3]{statcurrentwithmax}" color="[white]" effect="outline" upper_case="true" justify="center" />				
 			</rect>
@@ -298,7 +298,7 @@
 				<rect pos="100,25" width="76" height="76" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
 				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="1" pos="-72,19" width="137" height="35" color="0,0,0,250" type="sliced" foregroundlayer="true"/>
-				<sprite name="BarContent" depth="2" pivot="center" size="192,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueWater" />
+				<sprite name="BarContent" depth="2" pivot="center" size="137,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueWater" />
 				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water_flask" size="22,22" pos="-50,11" foregroundlayer="true"/>
 				<label depth="3" width="136" pos="-50,14" font_size="24" text="[DECEA3]{statcurrentwithmax}" color="[white]" effect="outline" upper_case="true" justify="center" />				
 			</rect>
@@ -310,7 +310,7 @@
 				<label depth="6" name="TextContent" pos="-37,0" font_size="28" color="[white]" justify="center" width="118" height="40" pivot="left"/>
 			</panel>
 		</rect>
-							
+		
 	</window>
 	
 </append>		
