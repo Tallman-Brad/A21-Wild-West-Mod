@@ -14,6 +14,7 @@
 	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">0.11</set> <!-- .26 Default -->
 	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='AutoReload']/@value">true</set>
 	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/newfireaxe.unity3d?newfireaxe</set><!-- Replacing Fire Axe for older variant -->
+	<remove xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='TintColor']"/>
 	<!-- Ammo Stacking and Unlocking -->
 	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">1500</set><!-- x5 of default -->	
 	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1500</set><!-- x10 of default -->
