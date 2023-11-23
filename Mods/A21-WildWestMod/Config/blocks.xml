@@ -378,12 +378,19 @@
 		<property name="Group" value="Building,advBuilding"/>
 	</append>
 
-<!-- Chicken Coops -->
+<!-- Chicken Coops and Hives -->
 
 	<remove xpath="/blocks/block[@name='cntBirdnest']" />
 	<remove xpath="/blocks/block[@name='cntBirdnestCorner']" />
 	
 	<append xpath="/blocks/block[@name='treeMaster']" >
+		<drop event="Destroy" name="QueenBee" prob=".05" count="1"/>
+		<drop event="Destroy" name="CaughtChick" prob=".05" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='treeStump']" >
+		<drop event="Destroy" name="QueenBee" prob=".05" count="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='treeStumpPOI']" >
 		<drop event="Destroy" name="QueenBee" prob=".05" count="1"/>
 	</append>
 	

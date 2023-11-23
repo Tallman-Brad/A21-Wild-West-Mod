@@ -960,7 +960,7 @@ CaughtChickDesc,items,Item,,,"Use 2 Caught Chicks, with right mouse click, on an
 
 birdnestEmpty,blocks,Block,,,Empty Bird Nest,,,,,,,,,,,,,
 WoodCoopEmpty,blocks,Block,,,Chicken Coop - Wooden (Use 2 Chicks),,,,,,,,,,,,,
-WoodCoopEmptyDesc,blocks,Block,,,"Introduce 2 Caught Chicks to the Chicken Coop and over time they will grow and produce eggs and feathers. You can catch chicks in nests.",,,,,,,,,,,,,
+WoodCoopEmptyDesc,blocks,Block,,,"Introduce 2 Caught Chicks to the Chicken Coop and over time they will grow and produce eggs and feathers. You can catch chicks in nests and trees.",,,,,,,,,,,,,
 WoodCoopChicks,blocks,Block,,,[66ff00]Growth Stage,,,,,,,,,,,,,
 WoodCoopLaying,blocks,Block,,,[66ff00]Nesting Stage,,,,,,,,,,,,,
 WoodCoopWithEggs,blocks,Block,,,[66ff00]Ready for Gathering,,,,,,,,,,,,,
@@ -1202,7 +1202,7 @@ loadingTipWildWestInvisibleDye,UI,Loading Screen,x,,"Invisible dye can be crafte
 loadingTipWildWestInvisibleDye_title,UI,Loading Screen,x,,Invisible Dye,,,,,,,,,,,,,
 loadingTipWildWestHUD,UI,Loading Screen,x,,"The Wild West Mod custom HUD changes the design and placement of player stats, to provide a clear and supportive interface.",,,,,,,,,,,,,
 loadingTipWildWestHUD_title,UI,Loading Screen,x,,Wild West HUD,,,,,,,,,,,,,
-loadingTipWildWestHivesCoops,UI,Loading Screen,x,,"Players can craft bee hives and chicken coops to support the homestead. A Queen bee can be harvested from trees and baby chicks can be found in nests.",,,,,,,,,,,,,
+loadingTipWildWestHivesCoops,UI,Loading Screen,x,,"Players can craft bee hives and chicken coops to support the homestead. A Queen bee can be harvested from trees and baby chicks can be found in nests and trees.",,,,,,,,,,,,,
 loadingTipWildWestHivesCoops_title,UI,Loading Screen,x,,Bee Hives and Chicken Coops,,,,,,,,,,,,,
 loadingTipWildWestLights,UI,Loading Screen,x,,"If you fully break Wild West pianos, lights, coops, hives, and stoves they will be added to your inventory. They remain functional and can be placed again for use.",,,,,,,,,,,,,
 loadingTipWildWestLights_title,UI,Loading Screen,x,,Wild West Lights,,,,,,,,,,,,,

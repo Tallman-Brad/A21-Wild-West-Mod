@@ -1462,7 +1462,7 @@
 			<property name="ParticleOnDeath" value="blood_death"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="TimeStayAfterDeath" value="60" />
-  
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>  
 			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="6"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="3"/>
@@ -1519,7 +1519,7 @@
 			<property name="ParticleOnDeath" value="blood_death"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="TimeStayAfterDeath" value="60" />
-  
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>   
 			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="12"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
@@ -1576,7 +1576,7 @@
 			<property name="ParticleOnDeath" value="blood_death"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="TimeStayAfterDeath" value="60" />
-  
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>   
 			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="12"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
@@ -1632,7 +1632,7 @@
 			<property name="ParticleOnDeath" value="blood_death"/>
 			<property name="RotateToGround" value="true"/>
 			<property name="TimeStayAfterDeath" value="60" />
-  
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>   
 			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="12"/>
 			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
 			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
