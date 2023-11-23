@@ -2,7 +2,6 @@
 <prefab>
   <property name="CopyAirBlocks" value="True" />
   <property name="AllowTopSoilDecorations" value="False" />
-  <property name="Zoning" value="NavOnly" />
   <property name="TraderArea" value="False" />
   <property name="ExcludeDistantPOIMesh" value="False" />
   <property name="SleeperVolumeSize" value="10, 4, 6#11, 9, 11#5, 4, 21#11, 4, 9#4, 4, 5#12, 4, 8#10, 4, 12#11, 4, 8#12, 4, 3#12, 5, 23#4, 5, 17#12, 5, 23#9, 4, 8#3, 3, 3#3, 5, 9#9, 3, 6#9, 4, 9#10, 4, 6#7, 3, 7#10, 8, 11#5, 3, 6" />
@@ -11,10 +10,9 @@
   <property name="SleeperVolumeGameStageAdjust" value="" />
   <property name="SleeperIsLootVolume" value="True,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="DistantPOIYOffset" value="0" />
-  <property name="EditorGroups" value="navezgane only" />
   <property name="SleeperIsBossVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="DifficultyTier" value="4" />
-  <property name="QuestTags" value="clear, fetch, restore_power" />
+  <property name="QuestTags" value="clear, fetch, restore_power, infested" />
   <property name="ExcludePOICulling" value="False" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0,1,0,2,3,0,4,0,4,1,2,3,0,0,4,0,0,0" />
   <property name="SleeperVolumeFlags" value="2,0,0,0,0,0,2,0,2,2,0,0,2,0,2,0,2,2,0,2,0" />
@@ -22,14 +20,13 @@
   <property name="ShowQuestClearCount" value="2" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
   <property name="PrefabSize" value="53, 32, 54" />
-  <property name="Tags" value="navonly" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # # # # # # # # # # # # # " />
   <property class="Stats">
-    <property name="TotalVertices" value="1279119" />
-    <property name="TotalTriangles" value="844464" />
+    <property name="TotalVertices" value="1274420" />
+    <property name="TotalTriangles" value="842747" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1013704" />
-      <property name="Triangles" value="672908" />
+      <property name="Vertices" value="1009005" />
+      <property name="Triangles" value="671191" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="248807" />

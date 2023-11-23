@@ -2,7 +2,6 @@
 <prefab>
   <property name="CopyAirBlocks" value="False" />
   <property name="AllowTopSoilDecorations" value="False" />
-  <property name="Zoning" value="NavOnly" />
   <property name="TraderArea" value="False" />
   <property name="ExcludeDistantPOIMesh" value="False" />
   <property name="SleeperVolumeSize" value="11, 9, 8#5, 9, 14#11, 9, 6#12, 4, 17" />
@@ -11,9 +10,8 @@
   <property name="SleeperVolumeGameStageAdjust" value="" />
   <property name="SleeperIsLootVolume" value="False,False,False,False" />
   <property name="DistantPOIYOffset" value="0" />
-  <property name="EditorGroups" value="navezgane only" />
   <property name="DifficultyTier" value="2" />
-  <property name="QuestTags" value="clear, fetch" />
+  <property name="QuestTags" value="clear, fetch, infested" />
   <property name="SleeperIsBossVolume" value="False,False,False" />
   <property name="ExcludePOICulling" value="False" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0" />
@@ -22,14 +20,13 @@
   <property name="ShowQuestClearCount" value="1" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False" />
   <property name="PrefabSize" value="30, 17, 25" />
-  <property name="Tags" value="navonly" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # " />
   <property class="Stats">
-    <property name="TotalVertices" value="644551" />
-    <property name="TotalTriangles" value="757568" />
+    <property name="TotalVertices" value="641905" />
+    <property name="TotalTriangles" value="756509" />
     <property class="BlockEntities">
-      <property name="Vertices" value="599991" />
-      <property name="Triangles" value="729360" />
+      <property name="Vertices" value="597345" />
+      <property name="Triangles" value="728301" />
     </property>
     <property class="ChunkMeshes0">
       <property name="Vertices" value="43878" />
