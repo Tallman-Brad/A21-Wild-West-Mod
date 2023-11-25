@@ -141,9 +141,52 @@
 <SoundDataNode name="vwheel_bounce"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
 	<Noise ID="0" noise="1" time="0" muffled_when_crouched="0.65"/>
 	<AudioClip ClipName="Sounds/Step/crawlerstepsand2"/>
-	<MaxVoices value="0"/> <MaxRepeatRate value="0.01"/>
- </SoundDataNode>
+	<MaxVoices value="0"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
+
+<!-- Scorpion Sounds -->
+
+<SoundDataNode name="ScorpionStrike"> <AudioSource name="Sounds/AudioSource_Creatures100Meter"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/AnimalsOak.unity3d?Strike"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>	
+
+<SoundDataNode name="ScorpionGoreBurst"> <AudioSource name="Sounds/AudioSource_Creatures100Meter"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/AnimalsOak.unity3d?GoreBurst"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>	
+
+<!-- Bat Sounds -->
+	
+<SoundDataNode name="BatAttack"> <AudioSource name="Sounds/AudioSource_Creatures100Meter"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/AnimalsOak.unity3d?BatAttack"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>	
+
+<SoundDataNode name="BatsChittering"> <AudioSource name="Sounds/AudioSource_Creatures100Meter"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/AnimalsOak.unity3d?BatsChittering"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>		
 
   </append>
 
