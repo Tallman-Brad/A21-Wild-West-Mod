@@ -208,7 +208,8 @@
 			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
-			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>
+			<decoration type="block" blockname="treeStump" prob=".0001" rotatemax="7"/>			
 	</append>
 	<!-- Desert Sub Biome, Thick Grass and Shrubs-->
 	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.24']/decorations">
@@ -217,7 +218,8 @@
 			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
-			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>
+			<decoration type="block" blockname="treeStump" prob=".0001" rotatemax="7"/>			
 	</append>
 	<!-- Ore Sub Biome: oilDeposit *** -->
 	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.402']/decorations">
@@ -226,7 +228,8 @@
 			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
-			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>						
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>
+			<decoration type="block" blockname="treeStump" prob=".0001" rotatemax="7"/>						
 	</append>
 	<!-- Ore Sub Biome: potassiumNitrate -->
 	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.412']/decorations">
@@ -235,7 +238,8 @@
 			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
-			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>
+			<decoration type="block" blockname="treeStump" prob=".0001" rotatemax="7"/>			
 	</append>
 	<!-- Ore Sub Biome: leadOre -->
 	<append xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[@prob='0.442']/decorations">
@@ -244,7 +248,8 @@
 			<decoration type="prefab" name="deco_wildwest_desertoasis_01"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_02"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
-			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>			
+			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>
+			<decoration type="block" blockname="treeStump" prob=".0001" rotatemax="7"/>			
 	</append>
 	<!-- Decorations Main: Desert -->	
 	<append xpath="/worldgeneration/biomes/biome[@name='desert']/decorations">
@@ -255,7 +260,8 @@
 			<decoration type="prefab" name="deco_wildwest_desertoasis_03"  onslopes="false" prob=".00004" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_remnant_oldwest_03"  onslopes="false" prob=".00001" rotatemax="3"/>
 			<decoration type="prefab" name="deco_wildwest_prospector_dig_01_TMB"  onslopes="false" prob=".005" rotatemax="3"/> <!-- Duplicates in all sub biomes as well -->
-			<decoration type="prefab" name="deco_wildwest_prospector_dig_02_TMB"  onslopes="false" prob=".002" rotatemax="3"/> <!-- Duplicates in all sub biomes as well -->			
+			<decoration type="prefab" name="deco_wildwest_prospector_dig_02_TMB"  onslopes="false" prob=".002" rotatemax="3"/> <!-- Duplicates in all sub biomes as well -->
+			<decoration type="block" blockname="treeStump" prob=".0001" rotatemax="7"/>			
 	</append>	
 	
 </wildwestmod>

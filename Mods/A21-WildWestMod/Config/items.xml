@@ -3656,14 +3656,14 @@
 			</property>
 		</item>
 		
-		<!-- Adds the "Eliminate Horde" note -->
-		<item name="qc_eliminatehorde">
+		<!-- Adds the "Crispy Family and Friends" note -->
+		<item name="qc_eliminatecrispyfamily">
 			<property name="Extends" value="challengeQuestMaster"/>
-			<property name="DescriptionKey" value="qc_eliminatehordeDesc"/>
-			<property name="CustomIcon" value="hordequest"/>
+			<property name="DescriptionKey" value="qc_eliminatecrispyfamilyDesc"/>
+			<property name="CustomIcon" value="crispyfamily"/>
 			<property class="Action0">
 				<property name="UseAnimation" value="false"/>
-				<property name="QuestGiven" value="challenge_eliminatehorde01"/>
+				<property name="QuestGiven" value="challenge_eliminatecrispyfamily"/>
 			</property>
 		</item>
 

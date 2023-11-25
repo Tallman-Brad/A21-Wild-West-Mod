@@ -5629,7 +5629,6 @@ If there is no hit the default quality is used.
 	<item name="bookNightStalkerThiefAdrenaline"/>
 	<item name="bookNightStalkerTwilightThief"/>
 	
-	<item name="qc_eliminatehorde"/> <!-- Wild West Mod -->
 	<item name="qc_eliminatetoysoldiers"/> <!-- Wild West Mod -->
 	
 </lootgroup>

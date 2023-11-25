@@ -1645,45 +1645,6 @@
 				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>				
 			</effect_group>  
         </entity_class>
-
-	
-		<!-- LazMan's Eliminate the Horde -->
-	
-		<!-- Eliminate Horde 1/3 -->
-			<entity_class name="QC_zombieArlene" extends="zombieArlene"></entity_class>
-			<entity_class name="QC_zombieDarlene" extends="zombieDarlene"></entity_class>
-			<entity_class name="QC_zombieMarlene" extends="zombieMarlene"></entity_class>
-			<entity_class name="QC_zombieBoe" extends="zombieBoe"></entity_class>
-			<entity_class name="QC_zombieJoe" extends="zombieJoe"></entity_class>
-			<entity_class name="QC_zombieMoe" extends="zombieMoe"></entity_class>
-			<entity_class name="QC_zombieYo" extends="zombieYo"></entity_class>
-			<!-- Horde Leaders -->
-			<entity_class name="QC_zombieFatHawaiian" extends="zombieFatHawaiian"></entity_class>
-			<entity_class name="QC_zombieFemaleFat" extends="zombieFemaleFat"></entity_class>
-		
-		<!-- Eliminate Horde 2/3 -->
-			<entity_class name="QC_zombieArleneFeral" extends="zombieArleneFeral"></entity_class>
-			<entity_class name="QC_zombieDarleneFeral" extends="zombieDarleneFeral"></entity_class>
-			<entity_class name="QC_zombieMarleneFeral" extends="zombieMarleneFeral"></entity_class>
-			<entity_class name="QC_zombieBoeFeral" extends="zombieBoeFeral"></entity_class>
-			<entity_class name="QC_zombieJoeFeral" extends="zombieJoeFeral"></entity_class>
-			<entity_class name="QC_zombieMoeFeral" extends="zombieMoeFeral"></entity_class>
-			<entity_class name="QC_zombieYoFeral" extends="zombieYoFeral"></entity_class>
-			<!-- Horde Leaders -->
-			<entity_class name="QC_zombieSpiderFeral" extends="zombieSpiderFeral"></entity_class>
-			<entity_class name="QC_zombieWightFeral" extends="zombieWightFeral"></entity_class>
-		
-		<!-- Eliminate Horde 3/3 -->
-			<entity_class name="QC_zombieArleneRadiated" extends="zombieArleneRadiated"></entity_class>
-			<entity_class name="QC_zombieDarleneRadiated" extends="zombieDarleneRadiated"></entity_class>
-			<entity_class name="QC_zombieMarleneRadiated" extends="zombieMarleneRadiated"></entity_class>
-			<entity_class name="QC_zombieBoeRadiated" extends="zombieBoeRadiated"></entity_class>
-			<entity_class name="QC_zombieJoeRadiated" extends="zombieJoeRadiated"></entity_class>
-			<entity_class name="QC_zombieMoeRadiated" extends="zombieMoeRadiated"></entity_class>
-			<entity_class name="QC_zombieYoRadiated" extends="zombieYoRadiated"></entity_class>
-			<!-- Horde Leaders -->
-			<entity_class name="QC_zombieFatCopRadiated" extends="zombieFatCopRadiated"></entity_class>
-			<entity_class name="QC_zombieBikerRadiated" extends="zombieBikerRadiated"></entity_class>
 			
 <!-- VEHICLES -->
 

@@ -1908,7 +1908,7 @@
 		<property name="reward_choices_count" value="5" />
 
 		<reward type="Item" id="casinoCoin" value="2000"/>
-		<reward type="Item" id="qc_eliminatehorde" value="1"/> <!-- Wild West Mod -->
+		<reward type="Item" id="qc_eliminatecrispyfamily" value="1"/> <!-- Wild West Mod - was Horde Quest but A21 is not responding for Quest Marker -->
 		<reward type="Item" id="vehicleWWMHorseT1Placeable" ischosen="true" isfixed="true" value="1"/> <!-- Was groupQuestBicycle -->
 		<reward type="Item" id="resourceWaterFilter" ischosen="true" isfixed="true" value="2"/>
 		<reward type="LootItem" id="groupQuestcasinoCoinT1" ischosen="true" value="2"/>
@@ -3053,264 +3053,27 @@
 	<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>
 	
-<!-- LazMan's Eliminate the Horde -->
-	
-		<quest id="challenge_eliminatehorde01">
-
-			<property name="name_key" value="challenge_eliminatehorde01"/>
-			<property name="subtitle_key" value="challenge_eliminatehorde01_subtitle"/>
-			<property name="description_key" value="challenge_eliminatehorde01_description"/>
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="category_key" value="quest"/>
-			<property name="repeatable" value="true"/>
-			<property name="difficulty" value="easy"/>			
-			<property name="offer_key" value="challenge_eliminatehorde01_offer"/>
-			<property name="completiontype" value="TurnIn"/>
-			<property name="completion_key" value="challenge_eliminatehorde01_completion"/>
-			<action type="TrackQuest"/>
-			<action type="ShowTip" value="tutorialTip_eliminatehorde">
-					<property name="delay" value="3"/>
-			</action>
-
-			<objective type="Goto" id="trader" value="5" phase="1"/>
-			
-			<objective type="InteractWithNPC">
-				<property name="phase" value="2"/>
-			</objective>
-			
-			<reward type="Exp" value="500"/>
-			<reward type="Quest" id="challenge_eliminatehorde02"/>
-			<reward type="Item" id="resourceWood" value="500"/>
-			<reward type="Item" id="resourceCobblestones" value="200"/>				
-			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
-			
-		</quest>
-			
-		<quest id="challenge_eliminatehorde02">
-
-			<property name="name_key" value="challenge_eliminatehorde02"/>
-			<property name="subtitle_key" value="challenge_eliminatehorde02_subtitle"/>
-			<property name="description_key" value="challenge_eliminatehorde02_description"/>
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="category_key" value="quest"/>
-			<property name="repeatable" value="true"/>
-			<property name="difficulty" value="medium"/>			
-			<property name="offer_key" value="challenge_eliminatehorde02_description"/>
-			<property name="completiontype" value="TurnIn"/>
-			<property name="completion_key" value="challenge_eliminatehorde02_completion"/>
-			<action type="TrackQuest"/>
-<!--		<action type="ShowTip" value="tutorialTip_eliminatehorde"/> -->
+	<!-- Adds the "Crispy Family" Horde Quest -->
+	<quest id="challenge_eliminatecrispyfamily">
+	<property name="offer_key" value="Accept this bounty quest to eliminate 200 Crispy Family members and their Mutant Rat friends. 1 Skill, 10000 XP, and 5000 Liberty Coins for your troubles. This bounty quest continually loops, since their presence can be maintained, but never eradicated." />       
+    <property name="name_key" value="Crispy Family and Friends" />
+	<property name="subtitle_key" value="Crispy Family and Friends" />
+	<property name="description_key" value="Accept this bounty quest to eliminate 200 Crispy Family members and their Mutant Rat friends. 1 Skill, 10000 XP, and 5000 Liberty Coins for your troubles. This bounty quest continually loops, since their presence can be maintained, but never eradicated." />
+	<property name="icon" value="ui_game_symbol_crispy"/>
+	<property name="repeatable" value="true"/>
+	<property name="category_key" value="Quest"/>
+	<property name="difficulty" value="medium"/>
+	<property name="shareable" value="false"/>
 		
-			<!-- Phase 1: Travel --> 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="50"/>
-				<property name="distance" value="500-800"/>
-				<property name="nav_object" value="quest" />
-			</objective>
-			
-			<!-- Phase 2: Start Quest -->
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
-				<property name="phase" value="2"/>
-			</objective>
-
-			<!-- Phase 3: Build and Fortify -->
-			<objective type="StayWithin">
-				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>			
-			
-			<objective type="Craft">
-				<property name="phase" value="3"/>
-				<property name="item" value="cobblestoneShapes:VariantHelper"/>
-				<property name="count" value="20"/>
-			</objective>
-			<objective type="Craft">
-				<property name="phase" value="3"/>
-				<property name="item" value="trapSpikesWoodDmg0"/>
-				<property name="count" value="5"/>
-			</objective>		
-			
-			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="20" phase="3"/>
-			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="5" phase="3"/>
-			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
-			<!-- Removed upgrade feature as it causes NRE when checking quest in list. Too many to display. -->
-			<!-- [XUi] Error while updating window group 'quests': Index was out of range. -->
+			<objective type="EntityKill" id="guppyVultureBurnt,guppyMommaVultureBurnt,guppyRadiatedMommaVultureBurnt,guppyRadiatedFireMommaVultureBurnt,zombieTheRat,zombieTheRatFeral,zombieTheRatRadiated" value="200"/>
 		
-			<!-- Phase 4: Defend Against Horde -->		
-			
-			<action type="SpawnEnemy" id="QC_zombieArlene,QC_zombieDarlene,QC_zombieMarlene,QC_zombieBoe,QC_zombieJoe,QC_zombieMoe,QC_zombieYo" value="20" phase="4"/>
-			<action type="SpawnEnemy" id="QC_zombieFatHawaiian,QC_zombieFemaleFat" value="4" phase="4"/>
-			<objective type="EntityKill" id="QC_zombieArlene,QC_zombieDarlene,QC_zombieMarlene,QC_zombieBoe,QC_zombieJoe,QC_zombieMoe,QC_zombieYo,QC_zombieFatHawaiian,QC_zombieFemaleFat" value="16" phase="4"/>
-			
-			<!-- Phase 5: Quest turn in -->
-			
-			<objective type="InteractWithNPC">
-				<property name="phase" value="5"/>
-			</objective>
-			
-			<reward type="Item" id="casinoCoin" value="1000"/>
-
-			
-			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="2"/>
-			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="2"/>
-			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
-			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
-			<reward type="Quest" id="challenge_eliminatehorde03"/>
-			<reward type="Item" id="resourceWood" value="500"/>
-			<reward type="Item" id="resourceCobblestones" value="250"/>				
-			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
-			
-		</quest>
-		
-		<quest id="challenge_eliminatehorde03">
-
-			<property name="name_key" value="challenge_eliminatehorde03"/>
-			<property name="subtitle_key" value="challenge_eliminatehorde03_subtitle"/>
-			<property name="description_key" value="challenge_eliminatehorde03_description"/>
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="category_key" value="quest"/>
-			<property name="repeatable" value="true"/>
-			<property name="difficulty" value="hard"/>			
-			<property name="offer_key" value="challenge_eliminatehorde03_description"/>
-			<property name="completiontype" value="TurnIn"/>
-			<property name="completion_key" value="challenge_eliminatehorde03_completion"/>
-			<action type="TrackQuest"/>
-
-			<!-- Phase 1: Travel --> 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="50"/>
-				<property name="distance" value="400-600"/>
-				<property name="nav_object" value="quest" />
-			</objective>
-			
-			<!-- Phase 2: Start Quest --> 
-
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
-				<property name="phase" value="2"/>
-			</objective>
-
-			<!-- Phase 3: Build and Fortify -->
-			<objective type="StayWithin">
-				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>			
-			
-			<objective type="Craft">
-				<property name="phase" value="3"/>
-				<property name="item" value="cobblestoneShapes:VariantHelper"/>
-				<property name="count" value="25"/>
-			</objective>
-			<objective type="Craft">
-				<property name="phase" value="3"/>
-				<property name="item" value="trapSpikesWoodDmg0"/>
-				<property name="count" value="10"/>
-			</objective>		
-			
-			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="25" phase="3"/>
-			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="10" phase="3"/>
-			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
-		
-			<!-- Phase 4: Defend Against Horde -->		
-			
-			<action type="SpawnEnemy" id="QC_zombieArleneFeral,QC_zombieDarleneFeral,QC_zombieMarleneFeral,QC_zombieBoeFeral,QC_zombieJoeFeral,QC_zombieMoeFeral,QC_zombieYoFeral" value="20" phase="4"/>
-			<action type="SpawnEnemy" id="QC_zombieSpiderFeral,QC_zombieWight" value="4" phase="4"/>
-			<objective type="EntityKill" id="QC_zombieArleneFeral,QC_zombieDarleneFeral,QC_zombieMarleneFeral,QC_zombieBoeFeral,QC_zombieJoeFeral,QC_zombieMoeFeral,QC_zombieYoFeral,QC_zombieSpiderFeral,QC_zombieWight" value="16" phase="4"/>
-			
-			<!-- Phase 5: Quest turn in --> 
-			
-			<objective type="InteractWithNPC">
-				<property name="phase" value="5"/>
-			</objective>
-			
-			<reward type="Item" id="casinoCoin" value="2000"/>
-			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
-			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
-			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
-			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="3"/>
-			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
-			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
-			<reward type="Quest" id="challenge_eliminatehorde04"/>
-			<reward type="Item" id="resourceWood" value="500"/>
-			<reward type="Item" id="resourceCobblestones" value="500"/>				
-			<reward type="Item" id="flagPoleWhiteRiver" value="1"/>
-
-		</quest>
- 
-		<quest id="challenge_eliminatehorde04">
-
-			<property name="name_key" value="challenge_eliminatehorde04"/>
-			<property name="subtitle_key" value="challenge_eliminatehorde04_subtitle"/>
-			<property name="description_key" value="challenge_eliminatehorde04_description"/>
-			<property name="icon" value="ui_game_symbol_zombie"/>
-			<property name="category_key" value="quest"/>
-			<property name="repeatable" value="true"/>
-			<property name="difficulty" value="insane"/>			
-			<property name="offer_key" value="challenge_eliminatehorde04_description"/>
-			<property name="completiontype" value="TurnIn"/>
-			<property name="completion_key" value="challenge_eliminatehorde04_completion"/>
-			<action type="TrackQuest"/>
-
-			<!-- Phase 1: Travel --> 
-			<objective type="RandomGotoNPC" phase="1">
-				<property name="completion_distance" value="50"/>
-				<property name="distance" value="300-500"/>
-				<property name="nav_object" value="quest" />
-			</objective>
-			
-			<!-- Phase 2: Start Quest -->
-			
-			<objective type="RallyPoint">
-				<property name="start_mode" value="Create"/>
-				<property name="phase" value="2"/>
-			</objective>
-
-			<!-- Phase 3: Build and Fortify -->
-		<objective type="StayWithin">
-				<property name="phase" value="3"/>
-				<property name="radius" value="100"/>
-			</objective>			
-			
-			<objective type="Craft">
-				<property name="phase" value="3"/>
-				<property name="item" value="cobblestoneShapes:VariantHelper"/>
-				<property name="count" value="50"/>
-			</objective>
-			<objective type="Craft">
-				<property name="phase" value="3"/>
-				<property name="item" value="trapSpikesWoodDmg0"/>
-				<property name="count" value="15"/>
-			</objective>		
-			
-			<objective type="BlockPlace" id="cobblestoneShapes:VariantHelper" value="50" phase="3"/>
-			<objective type="BlockPlace" id="trapSpikesWoodDmg0" value="15" phase="3"/>
-			<objective type="BlockPlace" id="flagPoleWhiteRiver" value="1" phase="3"/>
-	
-			<!-- Phase 4: Defend Against Horde --> 		
-			
-			<action type="SpawnEnemy" id="QC_zombieArleneRadiated,QC_zombieDarleneRadiated,QC_zombieMarleneRadiated,QC_zombieBoeRadiated,QC_zombieJoeRadiated,QC_zombieMoeRadiated,QC_zombieYoRadiated" value="20" phase="4"/>
-			<action type="SpawnEnemy" id="QC_zombieFatCopRadiated,QC_zombieBikerRadiated" value="4" phase="4"/>
-			<objective type="EntityKill" id="QC_zombieArleneRadiated,QC_zombieDarleneRadiated,QC_zombieMarleneRadiated,QC_zombieBoeRadiated,QC_zombieJoeRadiated,QC_zombieMoeRadiated,QC_zombieYoRadiated,QC_zombieFatCopRadiated,QC_zombieBikerRadiated" value="16" phase="4"/>
-			
-			<!-- Phase 5: Quest turn in -->
-			
-			<objective type="InteractWithNPC">
-				<property name="phase" value="5"/>
-			</objective>
-			
-			<reward type="SkillPoints" value="1" chainreward="true"/>
-			<reward type="Item" id="casinoCoin" value="4000"/>
-			<reward type="LootItem" id="groupQuestTools" ischosen="true" isfixed="true" value="3"/>
-			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="3"/>
-			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
-			<reward type="LootItem" id="groupQuestWeapons,groupQuestWeaponsRanged" ischosen="true" value="3"/>
-			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
-			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
-						
-		</quest>
+	<reward type="Exp" value="10000"/>
+	<reward type="Item" id="casinoCoin" value="5000"/>	
+	<reward type="SkillPoints" value="1" chainreward="false"/>	
+	<reward type="Quest" id="challenge_eliminatecrispyfamily">
+			<property name="chainquest" value="false"/>
+	</reward>	
+	</quest>
 	
 </set>
 
