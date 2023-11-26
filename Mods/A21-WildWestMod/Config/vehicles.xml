@@ -759,7 +759,7 @@
 		<property name="wheelPtlScale" value="1"/>
 		
 		<property name="hornSound" value="horseHorn"/>
-
+		
 		<property class="chassis">
 			<property name="class" value="Chassis"/>
 			<property name="display_name" value="chassis"/>
@@ -779,11 +779,11 @@
 			<property name="foodDrain" value=".001,.002"/>
 			<property name="gear1" value="
 								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/horse_gallop,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horse_gallop,
-								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/horse_gallop
-								"/>
+								Vehicles/Suv/horseIdle,
+								Vehicles/Suv/horseIdle,
+								0, .7, 1, .1, -9, .12, .1, horseIdle, 
+								-.4, -.02, .7, .7, -.2, 9, .2, horse_gallop
+								"/>    <!-- horseIdle was horse_gallop -->
 			<property name="gear2" value="
 								500,2500, -2000,1000,2000, 600,2200,800,
 								Vehicles/Suv/horse_gallop,
@@ -912,9 +912,9 @@
 			<property name="foodDrain" value=".001,.002"/>
 			<property name="gear1" value="
 								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/horse_gallop,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horse_gallop,
+								Vehicles/Suv/horseIdle,
+								Vehicles/Suv/horseIdle,
+								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horseIdle,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear2" value="
@@ -1060,9 +1060,9 @@
 			<property name="foodDrain" value=".001,.002"/>
 			<property name="gear1" value="
 								500,2500, -1400,800,0, 700,2200,900,
-								Vehicles/Suv/horse_gallop,
-								Vehicles/Suv/horse_gallop,
-								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horse_gallop,
+								Vehicles/Suv/horseIdle,
+								Vehicles/Suv/horseIdle,
+								0, .7, 1, .1, -9, .12, .1, Vehicles/Suv/horseIdle,
 								-.4, -.02, .7, .7, -.2, 9, .2, Vehicles/Suv/horse_gallop
 								"/>
 			<property name="gear2" value="

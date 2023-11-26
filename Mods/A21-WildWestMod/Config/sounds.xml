@@ -98,6 +98,7 @@
 	<AudioClip ClipName="#@modfolder:Resources/A21NewBalloons.unity3d?oakstart"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
 
+
 <!-- Horsey -->
 
 <SoundDataNode name="horse_gallop"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
@@ -111,6 +112,13 @@
 	<AudioClip ClipName="#@modfolder:Resources/WWMHorsey.unity3d?snort"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="1"/> <MaxEntities name="6"/> <MaxRepeatRate value="0.01"/>
 	</SoundDataNode>
+	
+		<!-- Horse Idle Snort -->
+<SoundDataNode name="horseIdle"> <AudioSource name="Sounds/AudioSource_Vehicle"/>
+	<AudioClip ClipName="#@modfolder:Resources/HorseIdal.unity3d?HorseIdal" Loop="true"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> 
+</SoundDataNode>
+
 
 <!-- Oak Melee Pots and Pans -->
  
