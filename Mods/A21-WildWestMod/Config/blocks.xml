@@ -3341,7 +3341,7 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="EconomicValue" value="62"/>
 	<property name="TraderStageTemplate" value="electricTier1"/>
-	<property name="MaxDamage" value="200"/>
+	<property name="MaxDamage" value="500"/>
 	<property name="Buff" value="buffShocked"/>
 	<property name="BuffChance" value="1"/>
 	<property class="RepairItems">
@@ -3381,7 +3381,7 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="EconomicValue" value="62"/>
 	<property name="TraderStageTemplate" value="electricTier1"/>
-	<property name="MaxDamage" value="200"/>
+	<property name="MaxDamage" value="500"/>
 	<property name="Buff" value="buffShocked"/>
 	<property name="BuffChance" value="1"/>
 	<property class="RepairItems">

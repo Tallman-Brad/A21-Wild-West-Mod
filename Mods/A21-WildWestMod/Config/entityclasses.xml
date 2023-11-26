@@ -808,7 +808,7 @@
 			<property name="ExperienceGain" value="1000"/>
 			<property name="MapIcon" value="ui_game_symbol_tracking_chicken"/>
 			<property name="TrackerIcon" value="ui_game_symbol_tracking_chicken"/>
-			<property name="SizeScale" value="2.3"/>	
+			<property name="SizeScale" value="0.9"/>	
 			<property name="Prefab" value="/Entities/Animals/CHICKEN/chickenPrefab"/>		
 			<property name="Class" value="EntityEnemyAnimal"/>
 			<property name="Parent" value="Animals"/>
@@ -1456,6 +1456,7 @@
 			<property name="AITarget-5" value=""/>			
             <property name="MaxViewAngle" value="360"/>
 			<property name="LookAtAngle" value="0"/>
+			<property name="HandItem" value="meleeHandMasterCrispy"/>
             <property name="MoveSpeed" value=".65"/>
             <property name="MoveSpeedAggro" value="1.25, 1.45"/> 
             <property name="MoveSpeedPanic" value="1.5"/>
@@ -1512,7 +1513,7 @@
 			<property name="AITarget-5" value=""/>			
             <property name="MaxViewAngle" value="360"/>
 			<property name="LookAtAngle" value="0"/>
-			<property name="HandItem" value="meleeHandZombieStrong"/>			
+			<property name="HandItem" value="meleeHandZombieStrongMommaCrispy"/>			
             <property name="MoveSpeed" value=".85"/>
             <property name="MoveSpeedAggro" value="1.25, 1.45"/> 
             <property name="MoveSpeedPanic" value="1.5"/>
@@ -1569,7 +1570,7 @@
 			<property name="AITarget-5" value=""/>			
             <property name="MaxViewAngle" value="360"/>
 			<property name="LookAtAngle" value="0"/>
-			<property name="HandItem" value="meleeHandZombieStrong"/>			
+			<property name="HandItem" value="meleeHandZombieStrongMommaCrispy"/>			
             <property name="MoveSpeed" value=".85"/>
             <property name="MoveSpeedAggro" value="1.25, 1.45"/> 
             <property name="MoveSpeedPanic" value="1.5"/>
