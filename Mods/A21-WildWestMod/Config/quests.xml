@@ -2428,7 +2428,7 @@
 		<property name="offer_key" value="Accept this Quest to begin the Homestead Challenge Pt.2. Add farming features around your cabin." />
 		<property name="name_key" value="From tiny seeds: 3"/>
 		<property name="subtitle_key" value="Homestead Challenge Pt.2"/>
-		<property name="description_key" value="Craft a Bee Hives (Use Queen Bee) helper on the Workbench. Select the Square Bee Hive (Use Queen Bee), and place it near your cabin. You can find a Queen Bee by harvesting trees. Add the Queen Bee to the Bee Hive to start honey comb production."/>
+		<property name="description_key" value="Craft a Bee Hives helper on the Workbench. Select the Square Bee Hive, and place it near your cabin. You can find a Queen Bee by harvesting trees. Add the Queen Bee to the Bee Hive to start honey comb production."/>
 		<property name="icon" value="ui_game_symbol_map_house"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="veryeasy"/>
@@ -2445,7 +2445,7 @@
 		<property name="offer_key" value="Accept this Quest to begin the Homestead Challenge Pt.2. Add farming features around your cabin." />
 		<property name="name_key" value="From tiny seeds: 4"/>
 		<property name="subtitle_key" value="Homestead Challenge Pt.2"/>
-		<property name="description_key" value="Craft a Chicken Coops helper on the Workbench. Select the Chicken Coop - Wooden (Use 2 Chicks) and place it near your cabin. You can find Caught Chicks in birds' nests. Add 2 Caught Chicks to the Chicken Coop to start egg, feather, and domesticated chicken production. You will be rewarded with 6 seeds to populate the Farm Plots. This completes Pt.2."/>
+		<property name="description_key" value="Craft a Chicken Coops helper on the Workbench. Select the Chicken Coop - Wooden and place it near your cabin. You can find Caught Chicks in birds' nests. Add 2 Caught Chicks to the Chicken Coop to start egg, feather, and domesticated chicken production. You will be rewarded with 6 seeds to populate the Farm Plots. This completes Pt.2."/>
 		<property name="icon" value="ui_game_symbol_map_house"/>
 		<property name="category_key" value="quest"/>
 		<property name="difficulty" value="veryeasy"/>

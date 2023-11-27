@@ -4228,7 +4228,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <!-- Food and Drink -->
 
 	<recipe name="foodWildWestAcornFlour" count="1">
-		<ingredient name="treePlantedOak1m" count="6"/>
+		<ingredient name="treePlantedOak1m" count="4"/>
 	</recipe>
 
     <recipe name="foodWildWestAcornHardtack" count="1" craft_time="12" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
@@ -4246,7 +4246,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
     </recipe>
 	
     <recipe name="foodWildWestPineConeJam" count="1" craft_time="18" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
-	    <ingredient name="treePlantedMountainPine1m" count="6"/>
+	    <ingredient name="treePlantedMountainPine1m" count="4"/>
 	    <ingredient name="foodHoney" count="1"/>
 	    <ingredient name="drinkJarBoiledWater" count="1"/>		
     </recipe>
@@ -4274,7 +4274,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	</recipe>
 	
 	<recipe name="foodPineNuts" count="1">
-		<ingredient name="treePlantedMountainPine1m" count="6"/>
+		<ingredient name="treePlantedMountainPine1m" count="4"/>
 	</recipe>
 	
 	<recipe name="foodBlueberryPemmican" count="2" craft_time="18" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">

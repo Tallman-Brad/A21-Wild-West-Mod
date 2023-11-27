@@ -253,6 +253,20 @@
 	        <property name="HandItem" value="meleeHandZombie02Feral"/>
 	        <property name="ExperienceGain" value="350"/><!-- XP strong -->
 	        <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+			
+			<property name="DeadBodyHitPoints" value="600"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" tag="butcherHarvest" count="5"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
 	    <effect_group name="Base Effects">
 		    <passive_effect name="HealthMax" operation="base_set" value="200"/>
 	    </effect_group>		
@@ -296,6 +310,20 @@
 	        <property name="ExperienceGain" value="750"/><!-- XP strong -->
 	        <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".03"/> <!-- Feral -->
+
+			<property name="DeadBodyHitPoints" value="600"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" tag="butcherHarvest" count="5"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
 	    <effect_group name="Base Effects">
 		    <passive_effect name="HealthMax" operation="base_set" value="450"/>
 	    </effect_group>		
@@ -339,6 +367,20 @@
 	        <property name="ExperienceGain" value="1200"/><!-- XP strong -->
 	        <property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
 			<property name="LootDropProb" value=".05"/>
+			
+			<property name="DeadBodyHitPoints" value="600"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="6"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" tag="butcherHarvest" count="5"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="10"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourcePotassiumNitratePowder" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
 	    <effect_group name="Base Effects">
 		    <passive_effect name="HealthMax" operation="base_set" value="750"/>
 			<passive_effect name="EntityDamage" operation="perc_add" value="1"/> <!-- Boss damage -->
