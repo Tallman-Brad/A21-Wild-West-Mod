@@ -2115,7 +2115,7 @@
 			<passive_effect name="EntityDamage" operation="perc_add" level="0,5" value="0,.5" tags="perkGunslinger"/>
 
 			<passive_effect name="RoundsPerMinute" operation="perc_add" level="0,5" value="0,0.25" tags="perkGunslinger"/>
-			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="0,5" value="0,0.60" tags="perkGunslinger"/> <!-- From 0,0.30 -->
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="0,5" value="0,0.75" tags="perkGunslinger"/> <!-- From 0,0.30 -->
 
 			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="0,5" value="0,-.25" tags="perkGunslinger"/>
 
@@ -2871,7 +2871,7 @@
 		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="LockPickTime" operation="perc_subtract" level="1,3" value=".17,.375"/>
+			<passive_effect name="LockPickTime" operation="perc_subtract" level="1,3" value=".34,.75"/> <!-- From .17,.375 -->
 			<!-- <passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,3" value="1" tags="resourceLockPick"/> -->
 			<passive_effect name="LockPickBreakChance" operation="perc_subtract" level="1,3" value=".25,.75"/> <!-- From .1,.3 -->
 

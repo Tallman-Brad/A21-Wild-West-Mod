@@ -1769,7 +1769,7 @@
 	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="foodWildWestAcornFlour"/>
 	<property name="DescriptionKey" value="foodWildWestAcornFlourDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
@@ -1804,7 +1804,7 @@
 	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="foodWildWestAcornHardtack"/>
 	<property name="DescriptionKey" value="foodWildWestAcornHardtackDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -1838,7 +1838,7 @@
 	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="foodWildWestBaconAndEggsAndAcornHardtack"/>
 	<property name="DescriptionKey" value="foodWildWestBaconAndEggsAndAcornHardtackDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -1871,7 +1871,7 @@
 	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="foodWildWestPineConeJam"/>
 	<property name="DescriptionKey" value="foodWildWestPineConeJamDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="EconomicValue" value="80"/>
@@ -1903,7 +1903,7 @@
 	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="foodWildWestPineConeJamPancakes"/>
 	<property name="DescriptionKey" value="foodWildWestPineConeJamPancakesDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -1934,7 +1934,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -1960,7 +1960,7 @@
 
 <item name="resourceCatfish"> <!-- scrap material -->
 	<property name="HoldType" value="45"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<!--<property name="HoldType" value="2"/>
 	<property name="Meshfile" value="#Other/Items?Crafting/femur.fbx"/>-->
@@ -1977,7 +1977,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="food"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
 	<property name="Stacknumber" value="50"/> <!-- STK resource -->
@@ -2004,10 +2004,10 @@
 
 <item name="foodBoarMilk">
 	<property name="Tags" value="food"/>
-	<property name="HoldType" value="31"/>
+	<property name="HoldType" value="3"/>
 	<property name="DisplayType" value="foodWater"/>
 	<property name="DescriptionKey" value="foodBoarMilkDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/> <!-- STK food -->
@@ -2035,7 +2035,7 @@
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
 	<property name="DescriptionKey" value="foodShamBreadPuddingDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2062,7 +2062,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWaterNegative"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
@@ -2091,7 +2091,7 @@
 	<property name="HoldType" value="31"/>
 	<!-- <property name="DisplayType" value="food"/> -->
 	<property name="DisplayType" value="foodWaterNegative"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2119,7 +2119,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2179,7 +2179,7 @@
 	<property name="HoldType" value="3"/>
 	<property name="DisplayType" value="foodWater"/>
 	<property name="CustomIcon" value="drinkYuccaJuiceCooler"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mglass"/>
 	<property name="Stacknumber" value="50"/> <!-- STK drink -->
@@ -2222,7 +2222,7 @@
 	<property name="DisplayType" value="foodWater"/>
 	<property name="CustomIcon" value="foodWildWestTinCanTucker"/>
 	<property name="DescriptionKey" value="foodWildWestTinCanTuckerDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2315,7 +2315,7 @@
 	<property name="HoldType" value="31"/>
 	<property name="CustomIcon" value="honeycomb"/>
 	<property name="DisplayType" value="foodCureInfection"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="2500"/> <!-- STK food -->
@@ -2376,7 +2376,7 @@
 	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="bread2"/>
 	<property name="DescriptionKey" value="foodHoneyBreadDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2408,7 +2408,7 @@
 	<property name="DisplayType" value="foodCureInfection"/>
 	<property name="CustomIcon" value="oakpie"/>
 	<property name="DescriptionKey" value="foodHoneyPumpkinPieDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2503,7 +2503,7 @@
 	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="eggquiche"/>
 	<property name="DescriptionKey" value="foodEggQuicheDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2532,7 +2532,7 @@
 	<property name="DisplayType" value="food"/>
 	<property name="CustomIcon" value="eggsandwich"/>
 	<property name="DescriptionKey" value="foodEggSandwichDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2565,7 +2565,7 @@
 	<property name="DisplayType" value="foodWater"/>
 	<property name="CustomIcon" value="foodChickenStew"/>
 	<property name="DescriptionKey" value="foodChickenStewDesc"/>	
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2651,7 +2651,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWaterNegative"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
@@ -2679,7 +2679,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodRaw"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceCrop"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
@@ -2706,7 +2706,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodRaw"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MfoodRawMeat"/>
 	<property name="Stacknumber" value="1000"/> <!-- STK food -->
@@ -2739,7 +2739,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
 	<property name="Stacknumber" value="50"/> <!-- STK resource -->
@@ -2779,7 +2779,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mplants"/>
 	<property name="Stacknumber" value="50"/> <!-- STK resource -->
@@ -2818,7 +2818,7 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodWater"/>
-	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
@@ -2882,8 +2882,8 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="food"/>
-	<property name="Meshfile" value="@:Other/Items?Misc/parcelPrefab.prefab"/>
-	<property name="DropMeshfile" value="@:Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
 	<property name="EconomicValue" value="50"/>
