@@ -1592,7 +1592,7 @@
 		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="5" desc_key="reqStrengthLevel05"/></level_requirements>
 
 		<effect_group>
-			<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4,5" value="3,6,10,14,18"/>
+			<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4,5" value="4,8,12,16,20"/>
 			<effect_description level="1" desc_key="perkPackMuleRank1Desc" long_desc_key="perkPackMuleRank1LongDesc" />
 			<effect_description level="2" desc_key="perkPackMuleRank2Desc" long_desc_key="perkPackMuleRank2LongDesc"/>
 			<effect_description level="3" desc_key="perkPackMuleRank3Desc" long_desc_key="perkPackMuleRank3LongDesc"/>
