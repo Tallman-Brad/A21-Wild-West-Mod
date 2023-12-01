@@ -3945,7 +3945,8 @@
 	        <property name="Material" value="MresourceAcid"/>
 	        <property name="Weight" value="10"/>
 	        <property name="Stacknumber" value="100"/>
-	        <property name="EconomicValue" value="50"/>
+			<property name="FuelValue" value="1000"/>
+	        <property name="EconomicValue" value="20"/>
 <!--	        <property name="EconomicBundleSize" value="1"/> -->
 	        <property name="Group" value="Resources,Chemicals"/>
         </item>
@@ -3959,7 +3960,7 @@
 	        <property name="Material" value="MresourceAcid"/>
 	        <property name="Weight" value="10"/>
 	        <property name="Stacknumber" value="100"/>
-	        <property name="EconomicValue" value="50"/>
+	        <property name="EconomicValue" value="20"/>
 <!--	        <property name="EconomicBundleSize" value="1"/> -->
 	        <property name="Group" value="Resources,Chemicals"/>
         </item>
@@ -3973,7 +3974,7 @@
 	        <property name="Material" value="MresourceAcid"/>
 	        <property name="Weight" value="10"/>
 	        <property name="Stacknumber" value="100"/>
-	        <property name="EconomicValue" value="50"/>
+	        <property name="EconomicValue" value="20"/>
 <!--	        <property name="EconomicBundleSize" value="1"/> -->
 	        <property name="Group" value="Resources,Chemicals"/>
        </item>

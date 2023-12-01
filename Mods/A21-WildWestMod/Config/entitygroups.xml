@@ -331,15 +331,15 @@
 <!-- *** SCOUT_HORDE_STAGES -->	
 <!-- Add The Rat to Scout Horde Groups and tagged to Screamer of same type -->
     <csv xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHordeStageGS') and contains (text(), 'zombieScreamer')]/text()" delim="\n" op="add">
-        zombieTheRat, .5
+        zombieTheRat, 1.25
     </csv> <!-- GS 36 -->
 
     <csv xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHordeStageGS') and contains (text(), 'zombieScreamerFeral')]/text()" delim="\n" op="add">
-        zombieTheRatFeral, .5
+        zombieTheRatFeral, 1.25
     </csv> <!-- GS 198 -->
 
     <csv xpath="/entitygroups/entitygroup[starts-with(@name, 'scoutHordeStageGS') and contains (text(), 'zombieScreamerRadiated')]/text()" delim="\n" op="add">
-        zombieTheRatRadiated, .5
+        zombieTheRatRadiated, 1.25
     </csv> <!-- GS 164 -->
 	
 <!-- *** FERAL_HORDE_STAGES -->

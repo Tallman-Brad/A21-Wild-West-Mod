@@ -268,7 +268,7 @@
 			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
 			
 	    <effect_group name="Base Effects">
-		    <passive_effect name="HealthMax" operation="base_set" value="200"/>
+		    <passive_effect name="HealthMax" operation="base_set" value="250"/>
 	    </effect_group>		
       </entity_class>
 
