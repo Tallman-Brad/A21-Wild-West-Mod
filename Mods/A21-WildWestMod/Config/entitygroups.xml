@@ -8,23 +8,17 @@
 
 <!-- *** BIOME_ZOMBIES_WASTELAND_GROUP -->
 	<set xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
-		zombieBurnt, 3
-		zombieBurntFeral, 2
 		zombieBurntRadiated
 		zombieWightFeral, 1.5
 		zombieWightRadiated
-		zombieSoldier, .8
 		zombieSoldierFeral, 1.5
 		zombieSoldierRadiated
 		zombieTheRat, 2
 		zombieTheRatFeral, .8
 		zombieBusinessManRadiatedGunslinger, .8
-		zombieMutated, 2
 		zombieMutatedFeral, 1.5
 		zombieMutatedRadiated
-		zombieSpider, 2
 		zombieTheRatRadiated, .6
-		zombieSpiderFeral, 1.5
 		zombieSpiderRadiated
 		zombieWightFeralGunslinger, .8
 		zombieWightRadiatedGunslinger, .5
@@ -40,28 +34,22 @@
 	
 <!-- *** BIOME_ZOMBIES_WASTELAND_NIGHT_GROUP -->
 	<set xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
-		zombieBurnt, 3
-		zombieBurntFeral, 2
 		zombieBurntRadiated
 		zombieWightFeral, 1.5
 		zombieWightRadiated
-		zombieSoldier, .5
 		zombieSoldierFeral, 1.5
 		zombieSoldierRadiated
 		zombieTheRat, 3
 		zombieBusinessManRadiatedGunslinger, .8
 		zombieTheRatFeral, .8
-		zombieMutated, 2
 		zombieMutatedFeral, 1.5
 		zombieMutatedRadiated
-		zombieSpider, .5
 		zombieTheRatRadiated, .6
-		zombieSpiderFeral, 1.5
 		zombieSpiderRadiated
-		zombieWightFeralGunslinger, .8
-		zombieWightRadiatedGunslinger, .5
-		zombieFemaleFatBarker, .8		
-		zombieFemaleBigFatBarker, .5
+		zombieWightFeralGunslinger, 1.5
+		zombieWightRadiatedGunslinger, 1
+		zombieFemaleFatBarker, 1.5		
+		zombieFemaleBigFatBarker, 1
 		guppyVultureBurnt, 1.2
 		guppyMommaVultureBurnt, .8
 		guppyRadiatedMommaVultureBurnt, .5
