@@ -2038,7 +2038,7 @@
 		<reward type="Item" id="qc_tier5_bartertrade01" value="1"/> <!-- Wild West Mod -->
 		<!--reward type="LootItem" id="groupQuestGyrocopterParts" ischosen="true" value="6"/-->
 		<reward type="LootItem" id="groupQuestcasinoCoinT5" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSolarBank" ischosen="true" value="6"/>
+		<!--reward type="LootItem" id="groupQuestSolarBank" ischosen="true" value="6"/-->
 		<reward type="LootItem" id="groupQuestT2LightArmorBonus" ischosen="true" value="6"/>
 		<reward type="LootItem" id="groupQuestT2HeavyArmorBonus" ischosen="true" value="6"/>
 		<!--reward type="LootItem" id="groupQuestShotgunTurret" ischosen="true" value="6"/-->
