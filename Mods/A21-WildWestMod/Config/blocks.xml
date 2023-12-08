@@ -1722,8 +1722,9 @@
 	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?CactisTrap"/>
 	<property name="Group" value="Tools/Traps"/>	
 	<property name="BuffsWhenWalkedOn" value="triggerBleeding"/>
+	<property name="CanPickup" value="true"/>
 	<property class="RepairItems">
-		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceForgedIron" value="5"/>
 	</property>	
 </block>
 
@@ -1735,9 +1736,10 @@
 	<property name="Model" value="#@modfolder:Resources/OakTraps.unity3d?TarTrap"/>
 	<property name="Group" value="Tools/Traps"/>	
 	<property name="BuffsWhenWalkedOn" value="buffTar"/>
+	<property name="CanPickup" value="true"/>
 	<property class="RepairItems">
-		<property name="resourceForgedIron" value="10"/>
-	</property>	
+		<property name="resourceForgedIron" value="5"/>
+	</property>		
 </block>
 
 <!-- Wild West Traps -->
