@@ -286,7 +286,7 @@
 				<sprite depth="1" pos="-72,19" width="137" height="35" color="0,0,0,250" type="sliced" foregroundlayer="true"/>
 				<sprite name="BarContent" depth="2" pivot="center" size="137,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueFood" />
 				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_taco_food" size="22,22" pos="-50,11" foregroundlayer="true"/>
-				<label depth="3" width="136" pos="-50,14" font_size="24" text="[DECEA3]{statcurrentwithmax}" color="[white]" effect="outline" upper_case="true" justify="center" />				
+				<label depth="3" width="136" pos="-50,14" font_size="24" text="[DECEA3]{statcurrent}%" color="[white]" effect="outline" upper_case="true" justify="center" />				
 			</rect>
 			
 			                                                  <!-- Water -->
@@ -295,7 +295,7 @@
 				<sprite depth="1" pos="-72,19" width="137" height="35" color="0,0,0,250" type="sliced" foregroundlayer="true"/>
 				<sprite name="BarContent" depth="2" pivot="center" size="137,102" type="filled" filldirection="horizontal" fill="0" atlas="ItemIconAtlas" sprite="plaqueWater" />
 				<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_water_flask" size="22,22" pos="-50,11" foregroundlayer="true"/>
-				<label depth="3" width="136" pos="-50,14" font_size="24" text="[DECEA3]{statcurrentwithmax}" color="[white]" effect="outline" upper_case="true" justify="center" />				
+				<label depth="3" width="136" pos="-50,14" font_size="24" text="[DECEA3]{statcurrent}%" color="[white]" effect="outline" upper_case="true" justify="center" />				
 			</rect>
 	
 			<rect name="hud" pos="90,180" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
