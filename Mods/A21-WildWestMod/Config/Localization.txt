@@ -1102,9 +1102,9 @@ qc_fort01Desc,items,Quest - Challenge,,,"The Fort Challenge is an optional quest
 qc_chuckwagondinnerbell01,items,Quest - Challenge,,,"Chuckwagon Dinner Bell Challenge",,,,,,,,,,,,,
 qc_chuckwagondinnerbell01Desc,items,Quest - Challenge,,,"The Chuckwagon Dinner Bell Challenge is an optional quest. It requires you to craft a Chuckwagon Dinner Bell and place it on a flat surface. Placing the Chuckwagon Dinner Bell announces that dinner has been served. A Screamer Scout will pick up the scent, and invite her friends to the feast. Pick up the Chuckwagon Dinner Bell to stop any more Screamer Scouts from appearing. Receive 2 Skill Points for eliminating 200 Screamer Scouts. This quest continually loops.",,,,,,,,,,,,,
 
-qc_tier5_bartertrade01,items,Quest - Challenge,,,"Contract: Barter and Trade Gold",,,,,,,,,,,,,
-qc_tier5_bartertrade01Desc,items,Quest - Challenge,,,"A contract issued by the Wild West Settlement. Barter and Trade Gold.",,,,,,,,,,,,,
-quest_tier5_bartertrade,Quest,Quest Info,,,Tier 5 Barter and Trade,,,,,,,,,,,,,
+qc_tier5_bartertrade01,items,Quest - Challenge,,,"Mining Challenge",,,,,,,,,,,,,
+qc_tier5_bartertrade01Desc,items,Quest - Challenge,,,"The Mining Challenge is an optional quest. Get your pickaxe and mine for precious metals, crystals, and minerals. There will be other tasks along the way.",,,,,,,,,,,,,
+quest_tier5_bartertrade,Quest,Quest Info,,,Tier 5 Mining Challenge,,,,,,,,,,,,,
 quest_bartertrade_subtitle,Quest,Quest Info,,,Bring back Required Resources,,,,,,,,,,,,,
 quest_bartertrade_description,Quest,Quest Info,,,Bring back the required barter and trade resources. They will aid the settlement greatly.,,,,,,,,,,,,,
 quest_bartertrade_offer,Quest,Quest Info,,,"The settlement needs some specific resources to quench the demand. You will be rewarded with something worthy as a barter and trade exchange.",,,,,,,,,,,,,

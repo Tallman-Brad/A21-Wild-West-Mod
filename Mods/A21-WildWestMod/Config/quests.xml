@@ -2720,10 +2720,10 @@
 	
 	<!-- Adds the "Zombie Looping" Bounty Quest -->
 	<quest id="quest_eliminatezombies25">
-	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />       
+	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />       
     <property name="name_key" value="25 Infected Settlers" />
 	<property name="subtitle_key" value="25 Infected Settlers" />
-	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />
+	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -2739,10 +2739,10 @@
 	</quest>
 	
 	<quest id="quest_eliminatezombies50">
-	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />       
+	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />       
     <property name="name_key" value="50 Infected Settlers" />
 	<property name="subtitle_key" value="50 Infected Settlers" />
-	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />
+	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -2758,10 +2758,10 @@
 	</quest>
 	
 	<quest id="quest_eliminatezombies75">
-	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />       
+	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />       
     <property name="name_key" value="75 Infected Settlers" />
 	<property name="subtitle_key" value="75 Infected Settlers" />
-	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />
+	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -2777,10 +2777,10 @@
 	</quest>
 	
 	<quest id="quest_eliminatezombies100">
-	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />       
+	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />       
     <property name="name_key" value="100 Infected Settlers" />
 	<property name="subtitle_key" value="100 Infected Settlers" />
-	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />
+	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -2796,10 +2796,10 @@
 	</quest>
 	
 	<quest id="quest_eliminatezombies250">
-	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />       
+	<property name="offer_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />       
     <property name="name_key" value="250 Infected Settlers" />
 	<property name="subtitle_key" value="250 Infected Settlers" />
-	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 1 Skill. Start all over again." />
+	<property name="description_key" value="Accept this bounty quest to 'cure' the infected settlers. There are multiple stages which continuosly loop. Cure 25 for 1000 Liberty Coins, 50 for 5000 XP, 75 for 3000 Liberty Coins, 100 for 10000 XP, and 250 for 2 Skill. Start all over again." />
 	<property name="icon" value="ui_game_symbol_zombie"/>
 	<property name="repeatable" value="true"/>
 	<property name="category_key" value="Quest"/>
@@ -2808,60 +2808,153 @@
 		
 			<objective type="EntityKill" id="SnowWendigo,zombieArlene,zombieArleneFeral,zombieArleneRadiated,zombieBiker,zombieBikerFeral,zombieBikerRadiated,zombieBoe,zombieBoeFeral,zombieBoeRadiated,zombieBurnt,zombieBurntFeral,zombieBurntRadiated,zombieBusinessMan,zombieBusinessManFeral,zombieBusinessManRadiated,zombieBusinessManRadiatedGunslinger,zombieDarlene,zombieDarleneFeral,zombieDarleneRadiated,zombieDemolition,zombieFatCop,zombieFatCopFeral,zombieFatCopRadiated,zombieFatHawaiian,zombieFatHawaiianFeral,zombieFatHawaiianRadiated,zombieFemaleFat,zombieFemaleFatFeral,zombieFemaleFatRadiated,zombieFemaleFatBarker,zombieFemaleBigFatBarker,zombieJanitor,zombieJanitorFeral,zombieJanitorRadiated,zombieJoe,zombieJoeFeral,zombieJoeRadiated,zombieLab,zombieLabFeral,zombieLabRadiated,zombieLumberjack,zombieLumberjackFeral,zombieLumberjackRadiated,zombieLumberjackRadiatedAxe,zombieMaleHazmat,zombieMaleHazmatFeral,zombieMaleHazmatRadiated,zombieMarlene,zombieMarleneFeral,zombieMarleneRadiated,zombieMoe,zombieMoeFeral,zombieMoeRadiated,zombieMutated,zombieMutatedFeral,zombieMutatedRadiated,zombieNurse,zombieNurseFeral,zombieNurseRadiated,zombiePartyGirl,zombiePartyGirlFeral,zombiePartyGirlRadiated,zombieSkateboarder,zombieSkateboarderFeral,zombieSkateboarderRadiated,zombieSoldier,zombieSoldierFeral,zombieSoldierRadiated,zombieMolotovSoldierFeral,zombieSpider,zombieSpiderFeral,zombieSpiderRadiated,zombieSpiderFeralFireGlider,zombieSteve,zombieSteveCrawler,zombieSteveCrawlerFeral,zombieSteveCrawlerRadiated,zombieSteveFeral,zombieSteveRadiated,zombieTomClark,zombieTomClarkFeral,zombieTomClarkRadiated,zombieUtilityWorker,zombieUtilityWorkerFeral,zombieUtilityWorkerRadiated,zombieWight,zombieWightFeral,zombieWightRadiated,zombieWightFeralGunslinger,zombieWightRadiatedGunslinger,zombieYo,zombieYoFeral,zombieYoRadiated" value="250"/>
 	
-	<reward type="SkillPoints" value="1" chainreward="false"/>	
+	<reward type="SkillPoints" value="2" chainreward="false"/>	
 	<reward type="Quest" id="quest_eliminatezombies25">
 			<property name="chainquest" value="false"/>
 	</reward>	
 	</quest>
-	
-<!-- Custom Barter Trade --> <!-- Thank you to Bdubyah for this revised method -->
 
-<!-- Adds Tier 5 Completion - Fetch Gold and Barter Trade -->
+	<!-- Adds Tier 5 "Mining Challenge" Mining for Metals, Crystals, and Minerals -->
+	<!-- PART 1 - Mine, all Mine -->	
+	<!-- Fetching Iron, Lead, Stone, and Clay Resources -->
 		<quest id="tier5_bartertrade01">
-			<property name="name_key" value="quest_tier5_bartertrade"/>
-			<property name="subtitle_key" value="quest_bartertrade_subtitle"/>
-			<property name="description_key" value="quest_bartertrade_description"/>
-			<property name="icon" value="ui_game_symbol_quest"/>
-			<property name="repeatable" value="true"/>
-			<property name="category_key" value="challenge"/>
-			<property name="difficulty" value="medium"/>
-			<property name="difficulty_tier" value="5"/>
-			<property name="offer_key" value="quest_bartertrade_offer"/>
-			<property name="statement_key" value="quest_bartertrade_statement"/>
-			<property name="response_key" value="quest_bartertrade_response"/>
-			<property name="login_rally_reset" value="true"/>
+		<property name="offer_key" value="Accept this Quest to start the Mining Challenge Pt.1. Begin by mining or gathering Metals, Crystals, and Minerals. After that comes refining." />
+		<property name="name_key" value="Mine, all Mine: 1"/>
+		<property name="subtitle_key" value="Mining Challenge Pt.1"/>
+		<property name="description_key" value="Mine and gather 6000 Iron, 6000 Lead, 6000 Stone, and 6000 Clay."/>
+		<property name="icon" value="ui_game_symbol_mining"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="FetchKeep" id="resourceScrapIron" value="6000" phase="1"/>
+		<objective type="FetchKeep" id="resourceScrapLead" value="6000" phase="1"/>
+		<objective type="FetchKeep" id="resourceRockSmall" value="6000" phase="1"/>
+		<objective type="FetchKeep" id="resourceClayLump" value="6000" phase="1"/>
+		
+		<reward type="Exp" value="5000"/>
+		<reward type="Quest" id="tier5_bartertrade02"/>
+	</quest>
+	
+	<!-- Fetching Coal, Nitrate, Brass, and Sand Resources -->
+		<quest id="tier5_bartertrade02">
+		<property name="offer_key" value="Accept this Quest to start the Mining Challenge Pt.1. Begin by mining or gathering Metals, Crystals, and Minerals. After that comes refining." />
+		<property name="name_key" value="Mine, all Mine: 2"/>
+		<property name="subtitle_key" value="Mining Challenge Pt.1"/>
+		<property name="description_key" value="Mine and gather 6000 Coal, 6000 Potassium Nitrate, 6000 Brass, and 6000 Sand."/>
+		<property name="icon" value="ui_game_symbol_mining"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="veryeasy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="FetchKeep" id="resourceCoal" value="6000" phase="1"/>
+		<objective type="FetchKeep" id="resourcePotassiumNitratePowder" value="6000" phase="1"/>
+		<objective type="FetchKeep" id="resourceScrapBrass" value="6000" phase="1"/>
+		<objective type="FetchKeep" id="resourceCrushedSand" value="6000" phase="1"/>
+		
+		<reward type="Exp" value="5000"/>
+		<reward type="Quest" id="tier5_bartertrade03"/>
+	</quest>
+	
+	<!-- Fetching Shale, Silver, Gold, and Diamond Resources -->
+		<quest id="tier5_bartertrade03">
+		<property name="offer_key" value="Accept this Quest to start the Mining Challenge Pt.1. Begin by mining or gathering Metals, Crystals, and Minerals. After that comes refining." />
+		<property name="name_key" value="Mine, all Mine: 3"/>
+		<property name="subtitle_key" value="Mining Challenge Pt.1"/>
+		<property name="description_key" value="Mine and gather 6000 Shale, 60 Silver, 30 Gold, and 6 Diamonds."/>
+		<property name="icon" value="ui_game_symbol_mining"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="FetchKeep" id="resourceOilShale" value="6000" phase="1"/>
+		<objective type="FetchKeep" id="resourceSilverNugget" value="60" phase="1"/>
+		<objective type="FetchKeep" id="resourceGoldNugget" value="30" phase="1"/>
+		<objective type="FetchKeep" id="resourceRawDiamond" value="6" phase="1"/>
+		
+		<reward type="Exp" value="5000"/>
+		<reward type="Quest" id="tier5_bartertrade04"/>
+	</quest>
+	
+	<!-- Fetching Crystals -->
+		<quest id="tier5_bartertrade04">
+		<property name="offer_key" value="Accept this Quest to start the Mining Challenge Pt.1. Begin by mining or gathering Metals, Crystals, and Minerals. After that comes refining." />
+		<property name="name_key" value="Mine, all Mine: 4"/>
+		<property name="subtitle_key" value="Mining Challenge Pt.1"/>
+		<property name="description_key" value="Mine and gather 100 Green Crystals, 100 Blue Crystals, 100 Black Crystals, and 1 Crater Bear Tooth. You will receive a Diamond Tip Mod for completing Pt.1 and move onto to Pt.2"/>
+		<property name="icon" value="ui_game_symbol_mining"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="FetchKeep" id="resourceGreenCrystal" value="100" phase="1"/>
+		<objective type="FetchKeep" id="resourceBlueCrystal" value="100" phase="1"/>
+		<objective type="FetchKeep" id="resourceBlackCrystal" value="100" phase="1"/>
+		<objective type="FetchKeep" id="resourceZombieWastelandCraterBearTooth" value="1" phase="1"/>
+		
+		<reward type="Exp" value="5000"/>
+		<reward type="Item" id="modMeleeDiamondTip" value="1"/>
+		<reward type="Quest" id="tier5_bartertrade05"/>
+	</quest>
 
-			<property name="completiontype" value="TurnIn"/>
-			<property name="completion_key" value="quest_fetch_completion"/>
+	<!-- PART 2 - Refining -->		
+	<!-- Fetching Crystals -->
+		<quest id="tier5_bartertrade05">
+		<property name="offer_key" value="Accept this Quest to start the Mining Challenge Pt.2. Let's get refining. Upon completion you will be rewarded 2 Skill Points." />
+		<property name="name_key" value="Refine and Craft: 1"/>
+		<property name="subtitle_key" value="Mining Challenge Pt.2"/>
+		<property name="description_key" value="Refine, craft, and gather 250 Forged Iron, 100 Forged Steel, 500 Bullet Casings, 500 Bullet Tips, and 250 Buckshot."/>
+		<property name="icon" value="ui_game_symbol_mining"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="FetchKeep" id="resourceForgedIron" value="250" phase="1"/>
+		<objective type="FetchKeep" id="resourceForgedSteel" value="100" phase="1"/>
+		<objective type="FetchKeep" id="resourceBulletCasing" value="500" phase="1"/>
+		<objective type="FetchKeep" id="resourceBulletTip" value="500" phase="1"/>		
+		<objective type="FetchKeep" id="resourceBuckshot" value="250" phase="1"/>
+		
+		<reward type="Exp" value="5000"/>
+		<reward type="Quest" id="tier5_bartertrade06"/>
+	</quest>
+	
+	<quest id="tier5_bartertrade06">
+		<property name="offer_key" value="Accept this Quest to start the Mining Challenge Pt.2. Let's get refining. Upon completion you will be rewarded 2 Skill Points." />
+		<property name="name_key" value="Refine and Craft: 2"/>
+		<property name="subtitle_key" value="Mining Challenge Pt.2"/>
+		<property name="description_key" value="Refine, craft, and gather 4 Blue Crystal Batteries, 1 Wind Turbine, 2 Regular Electric Fence Posts, 2 Small Electric Fence Posts, and 1 Wire Tool. Use, store, or sell."/>
+		<property name="icon" value="ui_game_symbol_mining"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="FetchKeep" id="blueCrystalBattery" value="4" phase="1"/>
+		<objective type="FetchKeep" id="windturbine" value="1" phase="1"/>
+		<objective type="FetchKeep" id="electricfencepost" value="2" phase="1"/>
+		<objective type="FetchKeep" id="electricfencepostSmall" value="2" phase="1"/>		
+		<objective type="FetchKeep" id="meleeToolWireTool" value="1" phase="1"/>
+		
+		<reward type="Exp" value="5000"/>
+		<reward type="Quest" id="tier5_bartertrade07"/>
+	</quest>
+	
+	<quest id="tier5_bartertrade07">
+		<property name="offer_key" value="Accept this Quest to start the Mining Challenge Pt.2. Let's get refining. Upon completion you will be rewarded 5000 Liberty Coins and 2 Skill Points. This completes the Mining Challenge." />
+		<property name="name_key" value="Refine and Craft: 3"/>
+		<property name="subtitle_key" value="Mining Challenge Pt.2"/>
+		<property name="description_key" value="Craft and gather 5 Black Crystal Armor Mods. Use, store, or sell."/>
+		<property name="icon" value="ui_game_symbol_mining"/>
+		<property name="category_key" value="quest"/>
+		<property name="difficulty" value="easy"/>
+		<property name="shareable" value="false"/>
+		
+		<objective type="FetchKeep" id="modArmorPlatingReinforced" value="5" phase="1"/>
 
-			<objective type="ClosestPOIGoto">
-				<property name="distance" value="10"/>
-				<property name="phase" value="1"/>
-			</objective>
-
-			<objective type="Fetch" id="resourceGoldNugget" value="30" phase="2"/>
-
-			<objective type="ReturnToNPC">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
-
-			<objective type="InteractWithNPC">
-				<property name="phase" value="3"/>
-				<property name="nav_object" value="return_to_trader" />
-			</objective>
-			
-			<reward type="Exp" value="5000"/>
-			<reward type="Item" id="casinoCoin" value="5000"/>
-			<reward type="SkillPoints" value="1" chainreward="false"/>			
-
-			<reward type="LootItem" id="groupQuestT2Firearms" ischosen="true" isfixed="true" value="6"/>
-			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>			
-			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-			<reward type="LootItem" id="groupQuestT2Firearms" ischosen="true" isfixed="true" value="6"/>
-			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="6"/>
-			<reward type="LootItem" id="groupQuestAmmo,groupQuestSchematics,groupQuestMods" ischosen="true" value="6"/>
-		</quest>
+		<reward type="Exp" value="10000"/>
+		<reward type="Item" id="casinoCoin" value="5000"/>
+		<reward type="SkillPoints" value="2" chainreward="false"/>
+	</quest>
 	
 	<!-- Adds the "Toy Soldier" Bounty Quest -->
 	<quest id="challenge_eliminatetoysoldiers">

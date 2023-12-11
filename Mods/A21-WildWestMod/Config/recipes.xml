@@ -4577,7 +4577,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	
 <!-- Black Crystal Armor Mod -->
 
-<recipe name="modArmorPlatingReinforced" count="1" craft_area="chemistryStation" tags="learnable,chemStationCrafting">
+<recipe name="modArmorPlatingReinforced" count="1" craft_area="workbench" tags="learnable">
 	<ingredient name="resourceLeather" count="4"/>
 	<ingredient name="resourceGlue" count="4"/>
 	<ingredient name="resourceBlackCrystal" count="20"/>
