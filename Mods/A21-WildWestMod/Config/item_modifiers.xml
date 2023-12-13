@@ -85,6 +85,7 @@
 		<effect_group tiered="false">
 		<passive_effect name="HypothermalResist" operation="base_add" value="2.8,5.2"/>
 		<passive_effect name="HyperthermalResist" operation="base_add" value="3.5,4.5"/>
+		<passive_effect name="RunSpeed" operation="perc_add" value=".1"/><display_value name="dRunSpeed" value=".1"/>
 		</effect_group>
 	</item_modifier>
 

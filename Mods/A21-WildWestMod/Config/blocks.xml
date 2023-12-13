@@ -70,9 +70,9 @@
 	<set xpath="/blocks/block[@name='signSale01']/property[@name='Model']/@value">#@modfolder:Resources/NewWallpics.unity3d?signSale01New</set>
 	<set xpath="/blocks/block[@name='signPosterMovieTheaterLoneWolf']/property[@name='Model']/@value">#@modfolder:Resources/NewWallpics.unity3d?LoneWolfNew</set>
 	<set xpath="/blocks/block[@name='signPosterMovieTheaterMammasJustice']/property[@name='Model']/@value">#@modfolder:Resources/NewWallpics.unity3d?MammasJusticeNew</set>
-	<set xpath="/blocks/block[@name='cntMedicLootPileA']/property[@name='Model']/@value">#@modfolder:Resources/MedicalNew.unity3d?medic_loot_pile_ANew</set>
-	<set xpath="/blocks/block[@name='cntMedicLootPileB']/property[@name='Model']/@value">#@modfolder:Resources/MedicalNew.unity3d?medic_loot_pile_BNew</set>
-	<set xpath="/blocks/block[@name='cntMedicLootPileACorner']/property[@name='Model']/@value">#@modfolder:Resources/MedicalNew.unity3d?medic_loot_pile_ACornerNew</set>	
+	<!-- set xpath="/blocks/block[@name='cntMedicLootPileA']/property[@name='Model']/@value">#@modfolder:Resources/MedicalNew.unity3d?medic_loot_pile_ANew</set -->
+	<!-- set xpath="/blocks/block[@name='cntMedicLootPileB']/property[@name='Model']/@value">#@modfolder:Resources/MedicalNew.unity3d?medic_loot_pile_BNew</set -->
+	<!-- set xpath="/blocks/block[@name='cntMedicLootPileACorner']/property[@name='Model']/@value">#@modfolder:Resources/MedicalNew.unity3d?medic_loot_pile_ACornerNew</set -->	
 
 <!-- Mixed -->
 	<set xpath="/blocks/block[@name='cntCar03SedanDamage0v03']/property[@name='Model']/@value">Entities/OutdoorDecor/wildWestWagonPrefab</set>

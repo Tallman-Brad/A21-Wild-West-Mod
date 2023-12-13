@@ -2324,11 +2324,12 @@ If there is no hit the default quality is used.
 	<item name="apparelCoatLeatherDuster" mods="dye" mod_chance="0"/>
 	<item name="apparelCoatPufferCoat" mods="dye" mod_chance="0"/>
 	<item name="apparelCoatJacketGeneric" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatJacketLetterZU" mods="dye" mod_chance="0"/>
+	<!--item name="apparelCoatJacketLetterZU" mods="dye" mod_chance="0"/-->
 </lootgroup>
 
 <lootgroup name="groupApparelHats">
 	<!-- <item name="armorSantaHat" mods="dye" mod_chance="0"/> -->	<!-- *** HOLIDAY_ITEM -->
+	<item name="armorSantaHat" mods="dye" mod_chance="0"/>
 	<item name="apparelSkullCap" mods="dye" mod_chance="0"/>
 	<item name="apparelPressboyCap" mods="dye" mod_chance="0"/>
 	<item name="apparelBallCap" mods="dye" mod_chance="0"/>
@@ -2356,6 +2357,7 @@ If there is no hit the default quality is used.
 	<item name="apparelCowboyBoots"/>
 	<item name="apparelRunningShoesRegular" loot_prob_template="low"/>
 	<item name="apparelRunningShoesHP" loot_prob_template="veryLow"/>
+	<item name="modArmorCowboyBoots" loot_prob_template="low"/> <!-- Wild West Mod -->
 </lootgroup>
 
 <lootgroup name="groupApparelShoesAll">
@@ -9007,7 +9009,7 @@ If there is no hit the default quality is used.
 <lootgroup name="twitch_Home_Run_Gear">
 	<item name="apparelRunningShoesHP" mods="dye" mod_chance="0"/>
 	<item name="apparelBallCap" mods="dye" mod_chance="0"/>
-	<item name="apparelCoatJacketLetterZU" mods="dye" mod_chance="0"/>
+	<!--item name="apparelCoatJacketLetterZU" mods="dye" mod_chance="0"/-->
 </lootgroup>
 
 <lootgroup name="twitch_T1_Home_Run_Rewards" count="all" loot_quality_template="qualTwitchT2Template">
@@ -10398,7 +10400,7 @@ If there is no hit the default quality is used.
 
 <!-- Water Wagon -->
 	<!-- Water plus Farming related loot-->
-	<lootgroup name="groupWaterWagon" count="all">
+	<lootgroup name="groupWaterWagon" count="1,2">
 		<item name="drinkJarRiverWater" count="2,5"/>
 		<item name="foodPintoBeans" count="5,10" prob="0.3"/>
 		<item name="foodOkra" count="5,10" prob="0.3"/>
@@ -10413,11 +10415,11 @@ If there is no hit the default quality is used.
 
 <!-- Jail Wagon -->
 	<!-- guard's ammo, reward cash for prisoners -->
-	<lootgroup name="groupJailWagon" count="all">
+	<lootgroup name="groupJailWagon" count="1,2">
 		<item group="groupAmmoPileSmall"/>
 		<item name="oldCash" count="10,200" prob="0.3"/>
-		<item name="apparelCowboyBoots" count="0,1" prob="0.1"/>
-	
+		<item name="apparelCowboyBoots" count="1" prob="0.1"/>
+		<item name="modArmorCowboyBoots" count="1" prob="0.1"/>	
 	</lootgroup>
 
 	<lootcontainer name="JailWagon" count="1,2" size="6,2" sound_open="UseActions/open_dumpster" sound_close="UseActions/close_dumpster" loot_quality_template="qualBaseTemplate">
@@ -10426,7 +10428,7 @@ If there is no hit the default quality is used.
 
 <!-- Stage Coach -->
 	<!-- Passenger luggage or items from/to market -->
-	<lootgroup name="groupStageCoach" count="all">
+	<lootgroup name="groupStageCoach" count="1,2">
 		<item group="groupSavageCountryCrate"/>
 		<item name="oldCash" count="100,200" prob="0.3"/>
 		<item name="GrownChicken" count="1" prob="0.1"/>
