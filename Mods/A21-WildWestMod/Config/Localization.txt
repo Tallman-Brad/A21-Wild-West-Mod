@@ -600,11 +600,14 @@ drinkCanMegaCrushDesc,items,Food,,,"Remedial and energizing. Helps you pick up t
 barracksChair,blocks,Block,,,Deck Chair,,,,,,,,,,,,,
 
 cntDewCollectorVariantHelper,blocks,block,,,Water Collector,,,,,,,,,,,,,
-cntRainDanceCatcherDesc,blocks,block,,,"Collects groundwater over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
+cntRainDanceCatcherDesc,blocks,block,,,"Collects water over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
 cntRainDanceCatcher,blocks,block,,,Rain Dance Catcher,,,,,,,,,,,,,
-dewCollectorDesc,blocks,block,,,"Catches rain over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
-cntDewCollector,blocks,block,,,Groundwater Collector,,,,,,,,,,,,,
-resourceWaterFilterDesc,items,item,,,"A component used in the crafting of a Groundwater Collector.",,,,,,,,,,,,,
+dewCollectorDesc,blocks,block,,,"Collects groundwater over time for clean drinking water.\n\nRepair with Tree Resin.",,,,,,,,,,,,,
+cntOldWell,blocks,block,,,Old Well - Groundwater Collector,,,,,,,,,,,,,
+cntStoneWell,blocks,block,,,Stone Well - Groundwater Collector,,,,,,,,,,,,,
+cntWoodWell,blocks,block,,,Wood Well - Groundwater Collector,,,,,,,,,,,,,
+cntDewCollector,blocks,block,,,Barrel Well - Groundwater Collector,,,,,,,,,,,,,
+resourceWaterFilterDesc,items,item,,,"A component used in the crafting of a Water Collector.",,,,,,,,,,,,,
 workstationsT1-1,progression,Attribute,,,Tier 1: Water Collector,,,,,,,,,,,,,
 xuiDewCollector,UI,XUI,,,Water Collector,,,,,,,,,,,,,
 
