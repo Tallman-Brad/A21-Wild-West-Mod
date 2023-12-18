@@ -194,6 +194,9 @@
 	<append xpath="/blocks/block[@name='cntDewCollector']">
 		<property name="ModelOffset" value="-0.5,0.5,0"/>
 	</append>
+<!-- Switch and Wire Relay -->
+	<remove xpath="/blocks/block[@name='switch']/property[@name='UnlockedBy']"/>
+	<remove xpath="/blocks/block[@name='electricwirerelay']/property[@name='UnlockedBy']"/>
 	
 	<!-- Apples for the Wild West due to Zero Rotten Trash Plastic Bags -->
 	
@@ -1719,8 +1722,6 @@
         <property name="Shape" value="ModelEntity"/>
         <property name="Model" value="#@modfolder:Resources/oldwestlights.unity3d?lantern1"/>
 		<property name="Class" value="Door"/>
-		<property name="Tags" value="door"/>
-		<property name="BlockTag" value="Door"/>
 		<property name="PlaceEverywhere" value="true"/>
 		<property name="AllowAllRotations" value="true"/>
 		<property name="OpenSound" value="button4"/>
@@ -2428,7 +2429,6 @@
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/WoodChestwest1.unity3d?WoodChestwest1"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
-	<property name="Tags" value="door"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
@@ -2450,12 +2450,11 @@
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/WoodChestwest1.unity3d?WoodChestwest1"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
-	<property name="Tags" value="door"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="LootList" value="storageCrate"/>
-	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="1000"/>
 	<property name="FuelValue" value="300"/>
 	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
 	<property name="DowngradeBlock" value="WoodChestwest1Insecure"/>	
@@ -2472,7 +2471,7 @@
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="storageCrate"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="MaxDamage" value="400"/>
+	<property name="MaxDamage" value="500"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#@modfolder:Resources/WoodChestwest1.unity3d?WoodChestwest1"/>
@@ -2502,12 +2501,11 @@
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/WoodChestWestnew.unity3d?WoodChestWestnew"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
-	<property name="Tags" value="door"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="LootList" value="storageCrate"/>
-	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="1000"/>
 	<property name="FuelValue" value="300"/>
 	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
 	<property name="DowngradeBlock" value="WoodChestWestnewInsecure"/>	
@@ -2524,7 +2522,7 @@
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="storageCrate"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="MaxDamage" value="400"/>
+	<property name="MaxDamage" value="500"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#@modfolder:Resources/WoodChestWestnew.unity3d?WoodChestWestnew"/>
@@ -2544,12 +2542,11 @@
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="#@modfolder:Resources/WoodCratewest2.unity3d?WoodCratewest2"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
-	<property name="Tags" value="door"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="LootList" value="storageCrate"/>
-	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="400"/>
+	<property name="Material" value="Mmetal"/> <property name="MaxDamage" value="1000"/>
 	<property name="FuelValue" value="300"/>
 	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
 	<property name="DowngradeBlock" value="WoodCratewest2Insecure"/>	
@@ -2566,7 +2563,7 @@
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="storageCrate"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="MaxDamage" value="400"/>
+	<property name="MaxDamage" value="500"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="#@modfolder:Resources/WoodCratewest2.unity3d?WoodCratewest2"/>
@@ -3431,7 +3428,8 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="EconomicValue" value="500"/>
 	<property name="TraderStageTemplate" value="electricTier1"/>
-	<property name="TakeDelay" value="15"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="MaxDamage" value="2500"/>
 	<property class="RepairItems">
 		<property name="resourceWood" value="8"/>
 		<property name="resourceNail" value="8"/>
@@ -3471,7 +3469,7 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="EconomicValue" value="62"/>
 	<property name="TraderStageTemplate" value="electricTier1"/>
-	<property name="MaxDamage" value="500"/>
+	<property name="MaxDamage" value="750"/>
 	<property name="Buff" value="buffShocked"/>
 	<property name="BuffChance" value="1"/>
 	<property class="RepairItems">
@@ -3511,7 +3509,7 @@
 	<property name="StabilitySupport" value="false"/>
 	<property name="EconomicValue" value="62"/>
 	<property name="TraderStageTemplate" value="electricTier1"/>
-	<property name="MaxDamage" value="500"/>
+	<property name="MaxDamage" value="750"/>
 	<property name="Buff" value="buffShocked"/>
 	<property name="BuffChance" value="1"/>
 	<property class="RepairItems">

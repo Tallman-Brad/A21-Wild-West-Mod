@@ -4618,6 +4618,22 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
         <ingredient name="resourceNail" count="3"/>
         <ingredient name="resourceForgedIron" count="2"/>
     </recipe>
+	
+<!-- ww electric on/off switch custom vanilla recipe -->
+	
+	<recipe name="switch" count="1" craft_area="workbench" tags="workbenchCrafting" >
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceMechanicalParts" count="1"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+		<ingredient name="resourceGreenCrystal" count="1"/>
+	</recipe>
+
+<!-- ww electric wire relay -->
+
+	<recipe name="electricwirerelay" count="1" craft_area="workbench" tags="workbenchCrafting" >
+		<ingredient name="resourceForgedIron" count="2"/>
+		<ingredient name="resourceElectricParts" count="1"/>
+	</recipe>
 
 
 <!-- Standardized order for mod ingredients -->

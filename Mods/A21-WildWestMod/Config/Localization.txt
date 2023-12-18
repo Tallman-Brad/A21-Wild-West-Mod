@@ -1032,7 +1032,7 @@ woodchestwest2,blocks,Block,,,Wild West Treasure Chest,,,,,,,,,,,,,
 woodchestwest2Insecure,blocks,Block,,,Wild West Treasure Chest Unlocked,,,,,,,,,,,,,
 
 resourceGreenCrystal,items,item,,,Green Crystal,,,,,,,,,,,,,
-resourceGreenCrystalDesc,items,item,,,"Green Crystals slowly release a highly volatile combustible gas that can be used as a fuel source when broken, which you have quite possibly just done. Place it in a safe location between your cloth and fiber. Additional recipes have been stolen by Outlaws, and a posse will return with them soon to put it to other uses.",,,,,,,,,,,,,
+resourceGreenCrystalDesc,items,item,,,"Green Crystals can be used in recipes. They also release a highly volatile combustible gas that can be used as a fuel source when broken, which you have quite possibly just done. Place it in a safe location between your cloth and fiber. Additional recipes have been stolen by Outlaws, and a posse will return with them soon to put it to other uses.",,,,,,,,,,,,,
 resourceBlueCrystal,items,item,,,Blue Crystal,,,,,,,,,,,,,
 resourceBlueCrystalDesc,items,item,,,"Blue Crystals can be used to craft Blue Crystal Batteries at the Chemistry Station.",,,,,,,,,,,,,
 resourceBlackCrystal,items,item,,,Black Crystal,,,,,,,,,,,,,
