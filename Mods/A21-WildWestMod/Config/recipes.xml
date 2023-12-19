@@ -2399,8 +2399,8 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceScrapPolymers" count="2"/>
 	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceSewingKit" count="1"/>
-	<ingredient name="meleeToolFlashlight02" count="1"/>
+	<ingredient name="resourceOil" count="2"/> <!-- Default 1 sewing kit -->
+	<ingredient name="resourceBrokenGlass" count="10"/> <!-- Default 1 flashlight -->
 </recipe>
 
 <!--recipe name="modFuelTankSmall" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
