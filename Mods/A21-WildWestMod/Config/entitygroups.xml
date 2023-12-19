@@ -115,6 +115,8 @@
 	
 	<!-- Boss Group -->
 	
+	<append xpath="/entitygroups">
+	
 	<entitygroup name="BossVariantsGroupGS01">
 		zombieBurntRadiated
 		zombieWightFeral, 1.5
@@ -298,7 +300,6 @@
 	
 	<!-- Wasteland Crater and Select POIs -->
 
-	<append xpath="/entitygroups">	
 	<entitygroup name="animalZombieWastelandCraterBear">
 		animalZombieWastelandCraterBear
 	</entitygroup>
