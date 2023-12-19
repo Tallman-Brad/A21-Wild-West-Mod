@@ -111,6 +111,183 @@
 	
 	<!-- Custom Groups -->
 	
+	<!-- Boss Group -->
+	
+	<entitygroup name="BossVariantsGroupGS01">
+		zombieBurntRadiated
+		zombieWightFeral, 1.5
+		zombieWightRadiated
+		zombieSoldierFeral, 1.5
+		zombieSoldierRadiated
+		zombieTheRat, 1.5
+		zombieTheRatFeral
+		zombieBusinessManRadiatedGunslinger, .8
+		zombieMutatedFeral, 1.5
+		zombieMutatedRadiated
+		zombieTheRatRadiated, .8
+		zombieSpiderRadiated
+		guppyVultureBurnt, 1.5
+		guppyMommaVultureBurnt, .8
+		guppyRadiatedMommaVultureBurnt, .5
+		zombieMolotovSoldierFeral, .5
+		guppyRadiatedFireMommaVultureBurnt, .5
+		zombieSpiderFeralFireGlider, .25
+		zombieDemolition, .5
+		SnowWendigo, .5
+		animalZombieLargeVulture, .5
+		animalZombieFeralChicken, .5
+	</entitygroup>
+	<entitygroup name="BossVariantsGroupGS50">
+		zombieBurntRadiated
+		zombieWightFeral, 1.2
+		zombieWightRadiated
+		zombieSoldierFeral, 1.2
+		zombieSoldierRadiated
+		zombieTheRat, 1.2
+		zombieTheRatFeral
+		zombieBusinessManRadiatedGunslinger
+		zombieMutatedFeral
+		zombieMutatedRadiated
+		zombieTheRatRadiated
+		zombieSpiderRadiated
+		zombieWightFeralGunslinger
+		zombieWightRadiatedGunslinger
+		zombieFemaleFatBarker		
+		zombieFemaleBigFatBarker
+		guppyVultureBurnt
+		guppyMommaVultureBurnt
+		guppyRadiatedMommaVultureBurnt
+		zombieMolotovSoldierFeral
+		guppyRadiatedFireMommaVultureBurnt
+		zombieSpiderFeralFireGlider, .5
+		zombieDemolition, .5
+		SnowWendigo, .5
+		animalZombieBear, .5
+		animalZombieLargeVulture, .5
+		animalZombieFeralChicken, .5
+		animalBisonZombieBear, .5
+	</entitygroup>
+	<entitygroup name="BossVariantsGroupGS100">
+		zombieBurntRadiated
+		zombieWightFeral, .8
+		zombieWightRadiated
+		zombieSoldierFeral, .8
+		zombieSoldierRadiated
+		zombieTheRat, .8
+		zombieTheRatFeral
+		zombieBusinessManRadiatedGunslinger
+		zombieMutatedFeral, .8
+		zombieMutatedRadiated
+		zombieTheRatRadiated
+		zombieSpiderRadiated
+		zombieWightFeralGunslinger
+		zombieWightRadiatedGunslinger
+		zombieFemaleFatBarker		
+		zombieFemaleBigFatBarker
+		guppyVultureBurnt, .8
+		guppyMommaVultureBurnt
+		guppyRadiatedMommaVultureBurnt
+		zombieMolotovSoldierFeral
+		guppyRadiatedFireMommaVultureBurnt
+		zombieSpiderFeralFireGlider
+		zombieDemolition
+		SnowWendigo
+		animalZombieBear, .5
+		animalZombieLargeVulture, .5
+		animalZombieFeralChicken, .5
+		animalBisonZombieBear, .5
+	</entitygroup>
+	<entitygroup name="BossVariantsGroupGS200">
+		zombieBurntRadiated
+		zombieWightFeral, .5
+		zombieWightRadiated
+		zombieSoldierFeral, .5
+		zombieSoldierRadiated
+		zombieTheRat, .5
+		zombieTheRatFeral
+		zombieBusinessManRadiatedGunslinger
+		zombieMutatedFeral, .5
+		zombieMutatedRadiated
+		zombieTheRatRadiated
+		zombieSpiderRadiated
+		zombieWightFeralGunslinger
+		zombieWightRadiatedGunslinger
+		zombieFemaleFatBarker		
+		zombieFemaleBigFatBarker
+		guppyVultureBurnt, .5
+		guppyMommaVultureBurnt
+		guppyRadiatedMommaVultureBurnt
+		zombieMolotovSoldierFeral
+		guppyRadiatedFireMommaVultureBurnt
+		zombieSpiderFeralFireGlider
+		zombieDemolition
+		SnowWendigo
+		animalZombieBear, .5
+		animalZombieLargeVulture, .5
+		animalZombieFeralChicken, .5
+		animalBisonZombieBear, .5
+	</entitygroup>
+	<entitygroup name="BossVariantsGroupGS400">
+		zombieBurntRadiated
+		zombieWightFeral, .5
+		zombieWightRadiated
+		zombieSoldierFeral, .5
+		zombieSoldierRadiated
+		zombieTheRat, .5
+		zombieTheRatFeral
+		zombieBusinessManRadiatedGunslinger
+		zombieMutatedFeral, .5
+		zombieMutatedRadiated
+		zombieTheRatRadiated
+		zombieSpiderRadiated
+		zombieWightFeralGunslinger
+		zombieWightRadiatedGunslinger
+		zombieFemaleFatBarker		
+		zombieFemaleBigFatBarker
+		guppyVultureBurnt, .5
+		guppyMommaVultureBurnt
+		guppyRadiatedMommaVultureBurnt
+		zombieMolotovSoldierFeral
+		guppyRadiatedFireMommaVultureBurnt
+		zombieSpiderFeralFireGlider
+		zombieDemolition
+		SnowWendigo
+		animalZombieBear, .5
+		animalZombieLargeVulture, .5
+		animalZombieFeralChicken, .5
+		animalBisonZombieBear, .5
+	</entitygroup>
+	<entitygroup name="BossVariantsGroupGS800">
+		zombieBurntRadiated
+		zombieWightFeral, .5
+		zombieWightRadiated
+		zombieSoldierFeral, .5
+		zombieSoldierRadiated
+		zombieTheRat, .5
+		zombieTheRatFeral
+		zombieBusinessManRadiatedGunslinger
+		zombieMutatedFeral, .5
+		zombieMutatedRadiated
+		zombieTheRatRadiated
+		zombieSpiderRadiated
+		zombieWightFeralGunslinger
+		zombieWightRadiatedGunslinger
+		zombieFemaleFatBarker		
+		zombieFemaleBigFatBarker
+		guppyVultureBurnt, .5
+		guppyMommaVultureBurnt
+		guppyRadiatedMommaVultureBurnt
+		zombieMolotovSoldierFeral
+		guppyRadiatedFireMommaVultureBurnt
+		zombieSpiderFeralFireGlider
+		zombieDemolition
+		SnowWendigo
+		animalZombieBear, .5
+		animalZombieLargeVulture, .5
+		animalZombieFeralChicken, .5
+		animalBisonZombieBear, .5
+	</entitygroup>
+	
 	<!-- Wasteland Crater and Select POIs -->
 
 	<append xpath="/entitygroups">	

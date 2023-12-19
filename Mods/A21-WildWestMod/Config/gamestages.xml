@@ -71,6 +71,11 @@
 	
 	<!-- GROUPS -->
 	
+	<!-- Boss Group -->
+	<group name="Boss_Family" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		<spawner name="BossVariants" count="5,6" />
+	</group>
+	
 	<!-- Crater Bear although also added as a block type sleeper --> 
 	<group name="animalZombieWastelandCraterBear" emptyChance="0" decoyChance="0" decoy1hpChance="0">
 		<spawner name="animalZombieWastelandCraterBear" count="1"/>
@@ -102,6 +107,28 @@
 	</group>
 	
 	<!-- SPAWNERS -->
+	
+	<!-- Boss Group with gradual feed from hard to deadly -->
+	<spawner name="BossVariants">
+		<gamestage stage="1">
+			<spawn group="BossVariantsGroupGS01" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="50">
+			<spawn group="BossVariantsGroupGS50" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="100">
+			<spawn group="BossVariantsGroupGS100" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="200">
+			<spawn group="BossVariantsGroupGS200" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="400">
+			<spawn group="BossVariantsGroupGS400" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+		<gamestage stage="800">
+			<spawn group="BossVariantsGroupGS800" num="1" maxAlive="1" duration="1" />
+		</gamestage>
+	</spawner>
 
 	<!-- Crater Bear Spawner -->	
 	<spawner name="animalZombieWastelandCraterBear">
