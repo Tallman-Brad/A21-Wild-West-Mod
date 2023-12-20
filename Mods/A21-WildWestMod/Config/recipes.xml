@@ -786,13 +786,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceCloth" count="4"/>
 </recipe>
 
-<recipe name="appliancesVariantHelper" count="1">
+<!--recipe name="appliancesVariantHelper" count="1">
 	<ingredient name="resourceForgedIron" count="10"/>
 	<ingredient name="resourceMechanicalParts" count="5"/>
 	<ingredient name="resourceElectricParts" count="5"/>
 	<ingredient name="resourceMetalPipe" count="5"/>
 	<ingredient name="resourceHeadlight" count="1"/>
-</recipe>
+</recipe-->
 
 <recipe name="barbedFence" count="1"> <!-- trap -->
 	<ingredient name="resourceScrapIron" count="8"/>
