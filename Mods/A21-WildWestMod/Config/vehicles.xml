@@ -13,27 +13,26 @@
 	
 	<append xpath="/vehicles">
 	
-	<vehicle name="vehicleSteamVelocipede">
-		<property name="cameraDistance" value="3.5, 5"/>
-		<property name="cameraTurnRate" value=".2, .35"/>
-		<property name="upAngleMax" value="70"/>
-		<property name="upForce" value="1"/>
-		<property name="steerRate" value="130"/>     <!-- original 130 -->
-		<property name="steerCenteringRate" value="90"/>   <!-- original 90 -->
-		<property name="tiltAngleMax" value="20"/>  <!-- 20 -->
-		<property name="tiltThreshold" value="3"/>
-		<property name="tiltDampening" value=".22"/>
-		<property name="tiltDampenThreshold" value="8"/>
-		<property name="tiltUpForce" value="5"/>
-
-		<property name="motorTorque" value="1400, 500"/>
-		<property name="turboScale" value="1.5, 1.3"/>
-		<property name="velocityMax" value="9.33, 6"/>
-		<property name="brakeTorque" value="3000"/>
-		<property name="hopForce" value="3, .02"/>
-		<property name="unstickForce" value="1"/>
-		<property name="waterDrag_y_velScale_velMaxScale" value="1.0, 0.5, .3"/> <!-- 1.7, .9, .1 -->
-		<property name="wheelPtlScale" value="1"/>
+<vehicle name="vehicleSteamVelocipede">
+		<property name="cameraDistance" value="4, 5"/>
+			<property name="cameraTurnRate" value=".2, .35"/>
+			<property name="motorTorque" value="2000, 900"/>
+			<property name="turboScale" value="1.5, 1.3"/>
+			<property name="velocityMax" value="13, 12"/>
+			<property name="brakeTorque" value="4000"/>
+			<property name="upAngleMax" value="90"/>
+			<property name="upForce" value="5"/>
+			<property name="steerRate" value="150"/>
+			<property name="steerCenteringRate" value="110"/>
+			<property name="tiltAngleMax" value="15"/>
+			<property name="tiltThreshold" value="3"/>
+			<property name="tiltDampening" value="1.22"/>
+			<property name="tiltDampenThreshold" value="8"/>
+			<property name="tiltUpForce" value="5"/>
+			<property name="hopForce" value="1, 1"/>
+			<property name="unstickForce" value="1"/>
+			<property name="waterDrag_y_velScale_velMaxScale" value="1.7, .9, .1"/>
+			<property name="wheelPtlScale" value="1"/>
 
 		<property name="hornSound" value="motorbike_horn"/>
 

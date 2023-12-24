@@ -17,7 +17,7 @@
   <property name="SleeperVolumeSize" value="19, 3, 13#12, 3, 9#4, 3, 9#6, 4, 4#7, 3, 5#9, 3, 9" />
   <property name="SleeperVolumeStart" value="3, 2, 11#10, 3, 2#6, 3, 2#7, 6, 7#6, 7, 2#13, 7, 2" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0" />
-  <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,5,7,S_-Group_Generic_Zombie,1,2,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,4,7" />
+  <property name="SleeperVolumeGroup" value="S_-_Group_Ghost_Town,2,3,S_-_Group_Ghost_Town,5,7,S_-_Group_Ghost_Town,1,2,S_-_Group_Ghost_Town,2,3,S_-_Group_Ghost_Town,2,3,S_-_Group_Ghost_Town,4,7" />
   <property name="SleeperIsLootVolume" value="False,False,False,False,False,False" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False" />
   <property name="SleeperVolumeFlags" value="2,0,0,0,0,0" />

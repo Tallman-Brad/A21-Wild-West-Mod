@@ -14,7 +14,7 @@
   <property name="QuestTags" value="clear, fetch" />
   <property name="SleeperVolumeSize" value="11, 4, 15#11, 7, 3#9, 3, 6#9, 4, 8" />
   <property name="SleeperVolumeStart" value="4, 3, 8#4, 7, 14#5, 8, 8#5, 7, 17" />
-  <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,3,4,S_-Group_Generic_Zombie,3,4,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,2,3" />
+  <property name="SleeperVolumeGroup" value="S_-_Group_Ghost_Town,3,4,S_-Group_Generic_Zombie,3,4,S_-_Group_Ghost_Town,2,3,S_-Group_Generic_Zombie,2,3" />
   <property name="SleeperIsLootVolume" value="False,False,False,False" />
   <property name="SleeperIsBossVolume" value="False,False,False,False,False" />
   <property name="SleeperVolumeGroupId" value="0,0,0,0" />
