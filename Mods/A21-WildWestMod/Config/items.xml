@@ -1622,7 +1622,7 @@
 
 		<item name="gunGatling">			
 			<property name="DescriptionKey" value="gunGatlingDesc"/>			
-			<property name="Tags" value="weapon,ranged,gunGatling,reloadPenalty,gun,magazine,drumMagazine,bottomAttachments,selfLoading,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic"/>
+			<property name="Tags" value="weapon,ranged,gunGatling,reloadPenalty,gun,magazine,drumMagazine,bottomAttachments,selfLoading,attFortitude,perkMachineGunner,perkBookAutoWeapons,perkAutoWeaponsDrumMag,canHaveCosmetic,machinegunSkill"/>
 			<property name="DisplayType" value="rangedGun"/>
 			<property name="HoldType" value="60"/>
 			<property name="Meshfile" value="#@modfolder:Resources/m60MiniGun.unity3d?BradM60MiniGun"/>
@@ -1637,6 +1637,7 @@
 			<property name="Sound_Sight_Out" value="rifle_sight_out"/>
 			<property name="RepairExpMultiplier" value="10.8"/>
 			<property name="EconomicValue" value="1000"/>
+			<property name="UnlockedBy" value="craftingMachineGuns"/><!-- perkAutoWeaponsMachineGuns, -->
 			<property name="ShowQuality" value="true"/>
 			<property name="Group" value="Ammo/Weapons"/>
 			<property class="Action0">
