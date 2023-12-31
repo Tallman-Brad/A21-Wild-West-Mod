@@ -647,6 +647,7 @@ modWeaponLubricationDesc,item_modifiers,mod,,,"The Weapon Lubrication Mod lowers
 modWeaponLubricationSchematic,item_modifiers,Mod,,,Weapon Lubrication Mod Schematic,,,,,,,,,,,,,
 modMeleeStunBatonRepulsor,item_modifiers,Mod,,,Steel Spear Weighted Head Mod,,,,,,,,,,,,,
 modMeleeStunBatonRepulsorDesc,item_modifiers,Mod,,,Install this mod into a Steel Spear and send zombies flying.,,,,,,,,,,,,,
+modGunSoundSuppressorSilencerDesc,item_modifiers,mod,,,A sound suppressor greatly reduces the firing sound but reduces maximum range and damage.\nWorks best with small calibers and guns with a low rate of fire.\nWill not work on a pipe pistol revolver.,,,,,,,,,,,,,
 
 ammo762mmBulletAP,items,Ammo,,,AP .50-90 Sharps Ammo,,,,,,,,,,,,,
 ammo762mmBulletBall,items,Ammo,,,.50-90 Sharps Ammo,,,,,,,,,,,,,
