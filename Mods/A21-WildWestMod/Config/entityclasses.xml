@@ -32,7 +32,7 @@
 
 	<!-- Supply Drop -->
 		<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/HotAirBalloon2.unity3d?HotAirBalloon2</set>
-		<set xpath="/entity_classes/entity_class[@name='sc_General']/property[@name='Mesh']/@value">@:Entities/LootContainers/crate_storePrefab.prefab</set>
+		<set xpath="/entity_classes/entity_class[@name='sc_General']/property[@name='Mesh']/@value">#@modfolder:Resources/WWMsupplycrate.unity3d?SupplyCrateEntityPrefab</set>
 
 	<!-- Wild West Loot Bags -->		
 	<set xpath="/entity_classes/entity_class[@name='Backpack']/property[@name='Mesh']/@value">#@modfolder:Resources/NewDropBags.unity3d?zpackPrefabNew</set>
