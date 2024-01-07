@@ -534,7 +534,7 @@
 <!-- Wild West Oakraven Revolvers -->
 
 <item name="gunHandgunT1666Revolver"> <!-- Based on 9mm Pistol -->
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
+	<property name="Tags" value="Scope666,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="44"/>
 	<property name="Meshfile" value="#@modfolder:Resources/666revolver.unity3d?666revolver"/>
@@ -629,7 +629,7 @@
 </item>
 
 <item name="gunHandgunT2RavenRevolver">
-	<property name="Tags" value="weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
+	<property name="Tags" value="ScopeRaven,weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="44"/>
 	<property name="Meshfile" value="#@modfolder:Resources/revolver1875.unity3d?revolver1875"/>
@@ -729,7 +729,7 @@
 </item>
 
 <item name="gunHandgunT3SchofieldRevolver">
-	<property name="Tags" value="weapon,ranged,revolver,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
+	<property name="Tags" value="ScopeSchofield,weapon,ranged,revolver,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill"/>
 	<property name="DisplayType" value="rangedGun"/>
 	<property name="HoldType" value="44"/>
 	<property name="Meshfile" value="#@modfolder:Resources/schofieldrevolver.unity3d?schofieldrevolver"/>

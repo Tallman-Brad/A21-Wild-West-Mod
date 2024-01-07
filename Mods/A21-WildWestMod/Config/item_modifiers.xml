@@ -1,5 +1,32 @@
 ﻿<wildwestmod>
 
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">	
+		<!-- visible attachment: scope x2 -->
+			<effect_group tiered="false" name="internal attachment prefab (Wild West Mod)">
+				<requirement name="HoldingItemHasTags" tags="Scope666"/>
+				<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="@:Other/Items/Mods/Scopes/scope_2xPrefab.prefab" parent_transform="Handle/Scope" local_offset="0,-0.0375,0.025"/>
+			</effect_group>
+    </append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">	
+		<!-- visible attachment: scope x2 -->
+			<effect_group tiered="false" name="internal attachment prefab (Wild West Mod)">
+				<requirement name="HoldingItemHasTags" tags="ScopeRaven"/>
+				<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="@:Other/Items/Mods/Scopes/scope_2xPrefab.prefab" parent_transform="Handle/Scope" local_offset="0,-0.035,0.025"/>
+			</effect_group>
+    </append>
+	
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">	
+		<!-- visible attachment: scope x2 -->
+			<effect_group tiered="false" name="internal attachment prefab (Wild West Mod)">
+				<requirement name="HoldingItemHasTags" tags="ScopeSchofield"/>
+				<requirement name="HoldingItemHasTags" tags="attachmentsIncluded"/>
+					<triggered_effect trigger="onSelfHoldingItemCreated" action="AttachPrefabToHeldItem" prefab="@:Other/Items/Mods/Scopes/scope_2xPrefab.prefab" parent_transform="Handle/Scope" local_offset="0,-0.03,0.03"/>
+			</effect_group>
+    </append>
+
 <!-- Gatling Prototype Mods are not visible as it gets tricky to position on an old format model -->
 
 	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']/effect_group[@name='external attachment prefab (old way)']">
