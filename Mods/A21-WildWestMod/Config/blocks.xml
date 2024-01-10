@@ -3526,6 +3526,22 @@
 	<property name="FilterTags" value="MC_playerBlocks,SC_electrical,SC_traps"/>
 </block>
 
+<!-- Barrel dropped by Grin Bomber -->
+<block name="GrinBarrel">
+    <property name="Extends" value="mineCandyTin"/>
+    <property name="DisplayType" value="blockLandmine"/>
+    <property name="Explosion.RadiusBlocks" value="3"/>
+    <property name="Explosion.BlockDamage" value="0"/>
+    <property name="Explosion.RadiusEntities" value="3"/>
+    <property name="Explosion.EntityDamage" value="1000"/> <!-- Bonus high damage for shooting (was 800) -->
+    <property name="Stacknumber" value="20"/> <!-- STK explosives -->
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="#@modfolder:Resources/Grin.unity3d?GrinBarrel"/>
+    <property name="EconomicValue" value="146"/>
+    <property name="MaxDamage" value="5"/>
+    <property name="SortOrder1" value="B757"/>
+    <property name="SortOrder2" value="0003"/>
+</block>
 </append>
 
 </wildwestmod>

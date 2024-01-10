@@ -196,6 +196,128 @@
 	<HighestPitch name="1.0"/>
 	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>		
 
+<!-- ##### New Entities2 ##### -->
+
+    <SoundDataNode name="Grinroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh1"/>
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh2"/>
+<!--	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh3"/> removed echo laugh -->
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.65"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+	
+	<SoundDataNode name="Grinalert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh1"/>
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh2"/>
+<!--	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh3"/> removed echo laugh -->
+	<Channel name="Mouth"/>
+	<Priority name="4"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.75"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+	
+	<SoundDataNode name="Grinpain"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?MalePain1"/>
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?MalePain2"/>
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?MalePain3"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.75"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+	
+	<SoundDataNode name="Grinexplodewarning"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="Sounds/Weapons/Thrown/Pipebomb/light_pipebomb"/> <!-- #@modfolder:Resources/GrinSounds.unity3d?EvilLaugh1 -->
+	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh2"/>
+<!--	<AudioClip ClipName="#@modfolder:Resources/GrinSounds.unity3d?EvilLaugh3"/> removed echo laugh -->
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.75"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+
+               <!-- Horse -->
+
+<SoundDataNode name="Horseroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<AudioClip ClipName="#@modfolder:Resources/HorseKiller.unity3d?HorseStallionram2"/>
+	<AudioClip ClipName="#@modfolder:Resources/HorseKiller.unity3d?HorseWhinnyRam"/>
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.65"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+
+<SoundDataNode name="Horsealert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+	<AudioClip ClipName="#@modfolder:Resources/HorseKiller.unity3d?HorseWhineysens"/>
+	<Channel name="Mouth"/>
+	<Priority name="4"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.75"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+
+<SoundDataNode name="Horseattack"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/HorseKiller.unity3d?HorseAttackScream"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<maxVoicesPerEntity value="1"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>
+
+<SoundDataNode name="Horsesense"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/HorseKiller.unity3d?HorseWhineysens"/>
+	<Channel name="Mouth"/>
+	<Priority name="4"/>
+	<maxVoicesPerEntity value="1"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>
+
+<!-- Screaper Pet -->
+    <SoundDataNode name="Petroam"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+	<AudioClip ClipName="#@modfolder:Resources/Rat3.unity3d?RagePetroam"/>
+	<AudioClip ClipName="#@modfolder:Resources/Rat3.unity3d?RagePetroam2"/>
+	<Channel name="Mouth"/>
+	<Priority name="6"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.65"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+	
+	<SoundDataNode name="Petalert"> <AudioSource name="Sounds/AudioSource_CreatureSenseAlert"/>
+	<AudioClip ClipName="#@modfolder:Resources/Rat3.unity3d?SoundAlertPet"/>
+	<AudioClip ClipName="#@modfolder:Resources/Rat3.unity3d?SoundAlertPet2"/>
+	<Channel name="Mouth"/>
+	<Priority name="4"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.75"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="3"/> </SoundDataNode>
+	
+	<SoundDataNode name="Petpain"> <AudioSource name="Sounds/AudioSource_Pain"/>
+	<AudioClip ClipName="#@modfolder:Resources/Rat3.unity3d?Petpain"/>
+	<AudioClip ClipName="#@modfolder:Resources/Rat3.unity3d?Petpain2"/>
+	<Channel name="Mouth"/>
+	<Priority name="2"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.75"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="1.111"/> </SoundDataNode>
+	
+	<SoundDataNode name="PetAttack"> <AudioSource name="Sounds/AudioSource_Creatures100Meter"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/Rat3.unity3d?PetAttack"/>
+	<Channel name="Mouth"/>
+	<Priority name="3"/>
+	<maxVoicesPerEntity value="1"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.9"/> </SoundDataNode>
   </append>
 
 </wildwestmod>
