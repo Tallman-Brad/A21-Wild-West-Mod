@@ -1269,8 +1269,8 @@
 	<block name="birdnestEmpty">
 		<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
 		<property name="CreativeMode" value="Player"/>
-		<property name="Material" value="Mwood_weak"/>
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Material" value="MclothStable"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 		<property name="Shape" value="ModelEntity"/>
 		<property name="Model" value="#@modfolder:Resources/birdnest.unity3d?birdnestPrefab" />
 		<property name="ModelOffset" value="0,0.5,0"/>
@@ -1291,8 +1291,8 @@
 	<block name="cntBirdnest">
 		<property name="Extends" value="cntAmmoPileSmall"/>
 		<property name="CreativeMode" value="Player"/>
-		<property name="Material" value="Mwood_weak"/>
-		<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+		<property name="Material" value="MclothStable"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 		<property name="Shape" value="ModelEntity"/>
 		<property name="Model" value="#@modfolder:Resources/birdnest.unity3d?birdnestEggs" />
 		<property name="LootList" value="birdNest"/>
