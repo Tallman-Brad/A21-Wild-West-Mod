@@ -41,6 +41,13 @@
 			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
 			<crafting_category name="CFChemicals" icon="ui_game_symbol_chemistry" display_name="lblCategoryChemicals" />
 		</crafting_category_list>
+		
+		<crafting_category_list display_type="Ammobench">
+			<crafting_category name="Ammo/Weapons" icon="ui_game_symbol_ammopress" display_name="lblCategoryAmmoPress" />
+			<crafting_category name="RegularAmmo" icon="ui_game_symbol_ammopress_regularammo" display_name="lblCategoryAmmoPressRegularAmmo"/>
+			<crafting_category name="HPAmmo" icon="ui_game_symbol_ammopress_hpammo" display_name="lblCategoryAmmoPressHPAmmo"/>
+			<crafting_category name="APAmmo" icon="ui_game_symbol_ammopress_apammo" display_name="lblCategoryAmmoPressAPAmmo"/>
+		</crafting_category_list>
 	
 	</append>
 	

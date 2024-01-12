@@ -1062,6 +1062,14 @@ electricfencepostDesc,blocks,Electricity,,,"Wire up 2 or more of these and shock
 electricfencepostSmall,blocks,Electricity,,,Electric Fence Post (Small),,,,,,,,,,,,,
 electricfencepostSmallDesc,blocks,Electricity,,,"Wire up 2 or more of these and shock your enemies. Crafted at the Workbench.\n\nRepair with Wood and Forged Iron.",,,,,,,,,,,,,
 
+Ammobench,blocks,Workstation,,,Ammo Bench,,,,,,,,,,,,,
+AmmobenchDesc,blocks,Block,,,"The Ammo Bench allows players to craft ammunition in a compact standalone device.",,,,,,,,,,,,,
+workstationsT3-2OAB,progression,Attribute,,,Tier 2: Ammo Bench,,,,,,,,,,,,,
+lblCategoryAmmoPress,UI,Tooltip,,,Ammo,,Munition,Munición,Munitions,Munizioni,弾薬,탄약,Amunicja,Munição,Боеприпасы,Mühimmat,弹药
+lblCategoryAmmoPressRegularAmmo,UI,Tooltip,,,Regular Ammo,,,,,,,,,,,,,
+lblCategoryAmmoPressHPAmmo,UI,Tooltip,,,HP Ammo,,,,,,,,,,,,,
+lblCategoryAmmoPressAPAmmo,UI,Tooltip,,,AP Ammo,,,,,,,,,,,,,
+
 resourceFishBait,items,item,,,Fish Trap Bait (Use in Water),,,,,,,,,,,,,
 resourceFishBaitDesc,items,item,,,"Fish Trap Bait can be added to an empty Fish Trap. It will attract different kinds of fish and crustaceans. Water currents may also bring in unexpected items.",,,,,,,,,,,,,
 FishTrapEmpty,blocks,Block,,,Fish Trap (Needs Bait),,,,,,,,,,,,,

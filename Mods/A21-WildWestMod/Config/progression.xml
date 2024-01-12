@@ -792,8 +792,9 @@
 			<unlock_entry item="toolBellows" unlock_tier="3" />
 			<unlock_entry item="toolAnvil" unlock_tier="4" />
 		</display_entry>
-		<display_entry icon="cementMixer" name_key="workstationsT3-1" has_quality="false" unlock_level="30" >
+		<display_entry icon="cementMixer,Ammobench" name_key="workstationsT3-1,workstationsT3-2OAB" has_quality="false" unlock_level="30,40" >
 			<unlock_entry item="cementMixer" unlock_tier="1" />
+			<unlock_entry item="Ammobench" unlock_tier="2" />
 		</display_entry>
 		<display_entry icon="chemistryStation" name_key="workstationsT4" has_quality="false" unlock_level="50" >
 			<unlock_entry item="chemistryStation" unlock_tier="1" />
@@ -810,6 +811,7 @@
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="toolBellows"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="toolAnvil"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,100" value="1" tags="cementMixer"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="Ammobench"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="chemistryStation"/>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="toolForgeCrucible"/>
 		</effect_group>

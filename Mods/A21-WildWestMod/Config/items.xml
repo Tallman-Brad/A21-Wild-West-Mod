@@ -1,6 +1,93 @@
 <wildwestmod>
 
 	<!-- Vanilla Tweaks and Toggles -->
+	<!-- Adding Groups and Tags to Ammo for Ammo Bench -->
+	<append xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Group']/@value">,RegularAmmo</append>
+	<append xpath="/items/item[@name='ammoBundle9mmBulletBall']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammo9mmBulletHP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,HPAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle9mmBulletHP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,HPAmmo"/>
+	</append>	
+	<append xpath="/items/item[@name='ammo9mmBulletAP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle9mmBulletAP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+	</append>	
+
+	<append xpath="/items/item[@name='ammo44MagnumBulletBall']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle44MagnumBulletBall']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+	</append>	
+	<append xpath="/items/item[@name='ammo44MagnumBulletHP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,HPAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle44MagnumBulletHP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,HPAmmo"/>
+	</append>	
+	<append xpath="/items/item[@name='ammo44MagnumBulletAP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle44MagnumBulletAP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammo762mmBulletBall']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle762mmBulletBall']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammo762mmBulletHP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,HPAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle762mmBulletHP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,HPAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammo762mmBulletAP']">	
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundle762mmBulletAP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+	</append>	
+
+	<append xpath="/items/item[@name='ammoShotgunShell']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundleShotgunShell']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoShotgunBreachingSlug']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,RegularAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundleShotgunBreachingSlug']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+	</append>	
+	<append xpath="/items/item[@name='ammoShotgunSlug']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundleShotgunSlug']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+	</append>
+	
+	<append xpath="/items/item[@name='ammoJunkTurretRegular']/property[@name='Group']/@value">,RegularAmmo</append>
+	<append xpath="/items/item[@name='ammoBundleJunkTurretRegular']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,RegularAmmo"/>
+	</append>
+	<!-- ammoJunkTurretShell extends above -->
+	<!-- ammoBundleJunkTurretShell extends above -->
+	<append xpath="/items/item[@name='ammoJunkTurretAP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,Robotics,APAmmo"/>
+	</append>
+	<append xpath="/items/item[@name='ammoBundleJunkTurretAP']">		
+		<property name="Group" value="Ammo/Weapons,Ammo,APAmmo"/>
+	</append>
 	<!-- 0.2 reduction across all classes where appropriate - Crispy is a little more due to turkey neck -->	
 	<set xpath="/items/item[@name='meleeHandMaster']/property[@class='Action0']/property[@name='Range']/@value">1.45</set> <!-- Default 1.65 -->
 	<set xpath="/items/item[@name='meleeHandZombie01']/property[@class='Action0']/property[@name='Range']/@value">1.4</set> <!-- Default 1.6 and 02 is already 1.3 -->

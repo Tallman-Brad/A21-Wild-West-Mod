@@ -4642,7 +4642,197 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="resourceForgedIron" count="2"/>
 		<ingredient name="resourceElectricParts" count="1"/>
 	</recipe>
+	
+   <!-- AMMO BENCH -->
+							  
+	<recipe name="Ammobench" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<ingredient name="resourceForgedIron" count="25"/>
+		<ingredient name="resourceMechanicalParts" count="20"/>
+		<ingredient name="resourceScrapPolymers" count="20"/>
+		<ingredient name="resourceGlue" count="4"/>
+		<ingredient name="resourceWood" count="50"/>
+	</recipe>
+	
+	
+	<!-- AMMO BENCH RECIPES -->
+	
+<recipe name="ammo9mmBulletBall" count="1" craft_area="Ammobench" tags="workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
 
+<recipe name="ammoBundle9mmBulletBall" count="1" craft_time="140" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="70"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo9mmBulletHP" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="1"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle9mmBulletHP" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="70"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo9mmBulletAP" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle9mmBulletAP" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="120"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo44MagnumBulletBall" count="1" craft_area="Ammobench" tags="workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle44MagnumBulletBall" count="1" craft_time="140" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="120"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo44MagnumBulletHP" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="2"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle44MagnumBulletHP" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="120"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo44MagnumBulletAP" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle44MagnumBulletAP" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="200"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo762mmBulletBall" count="1" craft_area="Ammobench" tags="workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle762mmBulletBall" count="1" craft_time="140" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="80"/>
+	<ingredient name="resourceGunPowder" count="200"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo762mmBulletHP" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="3"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle762mmBulletHP" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="200"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammo762mmBulletAP" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+</recipe>
+
+<recipe name="ammoBundle762mmBulletAP" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="300"/>
+	<ingredient name="resourceBulletCasing" count="80"/>
+</recipe>
+
+<recipe name="ammoShotgunShell" count="1" craft_area="Ammobench" tags="workbenchCrafting">
+	<ingredient name="resourceBuckshot" count="1"/>
+	<ingredient name="resourceGunPowder" count="4"/>
+	<ingredient name="resourcePaper" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleShotgunShell" count="1" craft_time="140" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBuckshot" count="80"/>
+	<ingredient name="resourceGunPowder" count="220"/>
+	<ingredient name="resourcePaper" count="80"/>
+</recipe>
+
+<recipe name="ammoShotgunSlug" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="2"/>
+	<ingredient name="resourceGunPowder" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleShotgunSlug" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceBulletTip" count="160"/>
+	<ingredient name="resourceGunPowder" count="300"/>
+	<ingredient name="resourceScrapPolymers" count="80"/>
+</recipe>
+
+<recipe name="ammoShotgunBreachingSlug" count="1" craft_time="9" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="3"/>
+	<ingredient name="resourceClayLump" count="2"/>
+	<ingredient name="resourceGunPowder" count="4"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+</recipe>
+
+<recipe name="ammoBundleShotgunBreachingSlug" count="1" craft_time="260" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceForgedSteel" count="240"/>
+	<ingredient name="resourceClayLump" count="160"/>
+	<ingredient name="resourceGunPowder" count="220"/>
+	<ingredient name="resourceScrapPolymers" count="80"/>
+</recipe>
+
+<recipe name="ammoJunkTurretRegular" count="1">
+	<ingredient name="resourceScrapIron" count="3"/>
+	<ingredient name="ammoGasCan" count="1"/>	
+</recipe> <!-- Wild West Mod Values -->
+
+<recipe name="ammoBundleJunkTurretRegular" count="1" craft_time="360" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapIron" count="2400"/>
+	<ingredient name="ammoGasCan" count="800"/>	
+</recipe> <!-- Wild West Mod Values -->
+
+<recipe name="ammoJunkTurretShell" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapIron" count="1"/>
+	<ingredient name="resourceBuckshot" count="1"/>
+	<ingredient name="ammoGasCan" count="1"/>	
+</recipe> <!-- Wild West Mod Values -->
+
+<recipe name="ammoBundleJunkTurretShell" count="1" craft_time="360" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapIron" count="800"/>
+	<ingredient name="resourceBuckshot" count="800"/>
+	<ingredient name="ammoGasCan" count="800"/>
+</recipe> <!-- Wild West Mod Values -->
+
+<recipe name="ammoJunkTurretAP" count="1" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapIron" count="6"/>
+	<ingredient name="ammoGasCan" count="1"/>
+</recipe> <!-- Wild West Mod Values -->
+
+<recipe name="ammoBundleJunkTurretAP" count="1" craft_time="360" craft_area="Ammobench" tags="learnable,workbenchCrafting">
+	<ingredient name="resourceScrapIron" count="4800"/>
+	<ingredient name="ammoGasCan" count="800"/>
+</recipe> <!-- Wild West Mod Values -->
 
 <!-- Standardized order for mod ingredients -->
 	<!-- resourceCloth -->
@@ -4659,8 +4849,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<!-- resourceSpring -->
 	<!-- resourceSewingKit -->
 	<!-- resourceAcid -->
-	<!-- oddball resources like a flashlight at the bottom -->
-	
+	<!-- oddball resources like a flashlight at the bottom -->	
 
 	</set>	
 	
