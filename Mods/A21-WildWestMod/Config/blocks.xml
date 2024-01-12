@@ -2629,6 +2629,7 @@
 	<property name="Group" value="Basics,Food/Cooking,Building,advBuilding"/>
 	<!--property name="UnlockedBy" value="perkLivingOffTheLand"/--> <!-- No longer used -->
 	<property name="Material" value="Mwood_weak"/>
+	<property name="EconomicValue" value="60"/>
 	<property name="MaxDamage" value="250"/>
 	<property name="WaterFlow" value="permitted"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
