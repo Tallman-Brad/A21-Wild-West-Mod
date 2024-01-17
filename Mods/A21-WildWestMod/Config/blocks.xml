@@ -3603,6 +3603,230 @@
 	<property name="SortOrder1" value="70i0"/>
 </block>
 
+<!-- Added Craftable Jail Doors -->
+
+<block name="WWjailDoorSingle">
+	<!-- Class -->
+	<property name="Class" value="DoorSecure"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="OpenSound" value="door_jail_single_open"/>
+	<property name="CloseSound" value="door_jail_single_close"/>
+	<property name="IndexName" value="TraderOnOff"/>
+	<!-- UI_Info -->
+	<property name="CustomIconTint" value="A0A0A0"/>
+    <property name="TintColor" value="A0A0A0"/>
+	<property name="DescriptionKey" value="doorGroupDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Stacknumber" value="500"/>
+	<!-- Visual -->
+	<property name="Material" value="Msteel"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Doors/jailDoor/jailDoorPrefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="1,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="2000"/>
+	<property name="StartDamage" value="0"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="MeshDamage" value="
+		Door/DMG0, 2000,
+		Door/DMG1, 1200,
+		Door/DMG2, 850,
+		"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="9"/>
+	</property>
+	<property class="RepairItemsMeshDamage">
+		<property name="resourceForgedSteel" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="4,10" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10" tag="allHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B300"/>
+	<property name="SortOrder2" value="0000"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="Tags" value="door"/>
+	<property name="BlockTag" value="Door"/>
+	<property name="FilterTags" value="MC_building,SC_doors,A21_NEW"/>
+</block>
+
+<!-- Brown -->
+<block name="WWjailDoorBrown">
+	<property name="Extends" value="jailDoorWhite"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="CustomIconTint" value="7A6959"/>
+	<property name="TintColor" value="7A6959"/>
+	<property name="SortOrder2" value="0001"/> 
+</block>
+
+<!-- Yellow -->
+<block name="WWjailDoorYellow">
+	<property name="Extends" value="jailDoorWhite"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="CustomIconTint" value="908B6B"/>
+	<property name="TintColor" value="908B6B"/>
+	<property name="SortOrder2" value="0004"/> 
+</block>
+
+<!-- Green -->
+<block name="WWjailDoorGreen">
+	<property name="Extends" value="jailDoorWhite"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="CustomIconTint" value="717A62"/>
+	<property name="TintColor" value="717A62"/>
+	<property name="SortOrder2" value="0005"/> 
+</block>
+
+<!-- Blue -->
+<block name="WWjailDoorBlue">
+	<property name="Extends" value="jailDoorWhite"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="CustomIconTint" value="626F79"/>
+	<property name="TintColor" value="626F79"/>
+	<property name="SortOrder2" value="0006"/> 
+</block>
+
+<!-- Grey -->
+<block name="WWjailDoorGrey">
+	<property name="Extends" value="jailDoorWhite"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="CustomIconTint" value="757575"/>
+	<property name="TintColor" value="757575"/>
+	<property name="SortOrder2" value="0008"/> 
+</block>
+
+<!-- White -->
+<block name="WWjailDoorDouble">
+	<!-- Class -->
+	<property name="Class" value="DoorSecure"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="OpenSound" value="door_jail_double_open"/>
+	<property name="CloseSound" value="door_jail_double_close"/>
+	<property name="IndexName" value="TraderOnOff"/>
+	<!-- UI_Info -->
+	<property name="CustomIconTint" value="A0A0A0"/>
+	<property name="TintColor" value="A0A0A0"/>
+	<property name="DescriptionKey" value="doorGroupDesc"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="Stacknumber" value="500"/>
+	<!-- Visual -->
+	<property name="Material" value="Msteel"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Doors/jailDoorDouble/jailDoorDoublePrefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="MultiBlockDim" value="2,2,1"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="WaterFlow" value="permitted"/>
+	<!-- Placement -->
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="AllowAllRotations" value="true"/>
+	<property name="Collide" value="movement,melee,rocket"/>
+	<property name="StabilitySupport" value="false"/>
+	<!-- Interaction -->
+	<property name="MaxDamage" value="3000"/>
+	<property name="StartDamage" value="0"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="MeshDamage" value="
+		Door/DMG0, 3000,
+		Door/DMG1, 2000,
+		Door/DMG2, 1000,
+		"/>
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="9"/>
+	</property>
+	<property class="RepairItemsMeshDamage">
+		<property name="resourceForgedSteel" value="2"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="4,10" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10" tag="allHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<!-- Sorting -->
+	<property name="SortOrder1" value="B300"/>
+	<property name="SortOrder2" value="0100"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="Tags" value="door"/>
+	<property name="BlockTag" value="Door"/>
+	<property name="FilterTags" value="MC_building,SC_doors,A21_NEW"/>
+</block>
+
+<!-- Brown -->
+<block name="WWjailDoorDoubleBrown">
+	<property name="Extends" value="jailDoorDoubleWhite"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="CustomIconTint" value="7A6959"/>
+	<property name="TintColor" value="7A6959"/>
+	<property name="SortOrder2" value="0101"/> 
+</block>
+
+<!-- Yellow -->
+<block name="WWjailDoorDoubleYellow">
+	<property name="Extends" value="jailDoorDoubleWhite"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="CustomIconTint" value="908B6B"/>
+	<property name="TintColor" value="908B6B"/>
+	<property name="SortOrder2" value="0104"/> 
+</block>
+
+<!-- Green -->
+<block name="WWjailDoorDoubleGreen">
+	<property name="Extends" value="jailDoorDoubleWhite"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="CustomIconTint" value="717A62"/>
+	<property name="TintColor" value="717A62"/>
+	<property name="SortOrder2" value="0105"/> 
+</block>
+
+<!-- Blue -->
+<block name="WWjailDoorDoubleBlue">
+	<property name="Extends" value="jailDoorDoubleWhite"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="CustomIconTint" value="626F79"/>
+	<property name="TintColor" value="626F79"/>
+	<property name="SortOrder2" value="0106"/> 
+</block>
+
+<!-- Grey -->
+<block name="WWjailDoorDoubleGrey">
+	<property name="Extends" value="jailDoorDoubleWhite"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="CustomIconTint" value="757575"/>
+	<property name="TintColor" value="757575"/>
+	<property name="SortOrder2" value="0108"/> 
+</block>		
+
+<block name="cntjailDoorWhiteVariantHelper">
+	<property name="Extends" value="WWjailDoorSingle"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="WWjailDoorSingle,WWjailDoorBrown,WWjailDoorYellow,WWjailDoorGreen,WWjailDoorBlue,WWjailDoorGrey"/>
+</block>
+
+		
+<block name="cntjailDoorDoubleWhiteVariantHelper">
+	<property name="Extends" value="WWjailDoorDouble"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="WWjailDoorDouble,WWjailDoorDoubleBrown,WWjailDoorDoubleYellow,WWjailDoorDoubleGreen,WWjailDoorDoubleBlue,WWjailDoorDoubleGrey"/>
+</block>
+
 </append>
 
 </wildwestmod>
