@@ -4834,18 +4834,6 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="ammoGasCan" count="800"/>
 </recipe> <!-- Wild West Mod Values -->
 
-<recipe name="cntjailDoorWhiteVariantHelper" count="1" craft_area="workbench">
-	<ingredient name="resourceForgedSteel" count="22"/>
-	<ingredient name="resourceSpring" count="14"/>
-	<ingredient name="resourceMechanicalParts" count="10"/>
-</recipe>
-
-<recipe name="cntjailDoorDoubleWhiteVariantHelper" count="1" craft_area="workbench">
-	<ingredient name="resourceForgedSteel" count="32"/>
-	<ingredient name="resourceSpring" count="18"/>
-	<ingredient name="resourceMechanicalParts" count="15"/>
-</recipe>
-
 <!-- Standardized order for mod ingredients -->
 	<!-- resourceCloth -->
 	<!-- resourceScrapIron -->
