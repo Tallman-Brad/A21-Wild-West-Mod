@@ -530,6 +530,8 @@ cntKeroseneBarrel,blocks,Block,,,Kerosene Boom Barrel,,,,,,,,,,,,,
 cntKeroseneBarrelDesc,blocks,Block,,,"The Wild West Kerosene Boom Barrel can be placed gently but is too volatile to be picked up again. Shoot or hit to explode. Causes high entity damage but very low block damage. Can be lined up to trigger a domino effect.",,,,,,,,,,,,,
 
 cntCollapsedGeneratorbank,blocks,Container,,,Destroyed Steam Power Stove,,,,,,,,,,,,,
+cntjailDoorWhiteVariantHelper,blocks,Block,,,Jail Doors Single,,,,,,,,,,,,,
+cntjailDoorDoubleWhiteVariantHelper,blocks,Block,,,Jail Doors Double,,,,,,,,,,,,,
 generatorbank,blocks,Electricity,,,Stove Steam Power,,,,,,,,,,,,,
 questGeneratorLarge,blocks,Block,,,Large Quest Steam Power Stove,,,,,,,,,,,,,
 questGeneratorSmall,blocks,Block,,,Small Quest Steam Power Stove,,,,,,,,,,,,,

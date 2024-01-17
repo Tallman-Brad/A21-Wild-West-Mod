@@ -3603,6 +3603,29 @@
 	<property name="SortOrder1" value="70i0"/>
 </block>
 
+<!-- Added Craftable Jail Doors -->
+
+<block name="cntjailDoorWhiteVariantHelper">
+	<property name="Extends" value="jailDoorWhite"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="jailDoorWhite"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="jailDoorWhite,jailDoorBrown,jailDoorYellow,jailDoorGreen,jailDoorBlue,jailDoorGrey"/>
+</block>
+
+		
+<block name="cntjailDoorDoubleWhiteVariantHelper">
+	<property name="Extends" value="jailDoorDoubleWhite"/>		
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="jailDoorDoubleWhite"/>
+	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
+	<property name="ItemTypeIcon" value="all_blocks"/>
+	<property name="SelectAlternates" value="true"/>
+	<property name="PlaceAltBlockValue" value="jailDoorDoubleWhite,jailDoorDoubleBrown,jailDoorDoubleYellow,jailDoorDoubleGreen,jailDoorDoubleBlue,jailDoorDoubleGrey"/>
+</block>		
+
 </append>
 
 </wildwestmod>
