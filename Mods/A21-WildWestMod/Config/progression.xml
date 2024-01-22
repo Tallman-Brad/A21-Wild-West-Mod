@@ -257,16 +257,16 @@
 	</crafting_skill>
 
 		<!-- *** REPAIRING_TOOL_SKILLS -->
-	<crafting_skill name="craftingRepairTools" max_level="50" parent="attCrafting" name_key="craftingRepairToolsName" desc_key="craftingRepairToolsDesc" long_desc_key="craftingRepairToolsLongDesc" icon="ui_game_symbol_hammer">
+	<crafting_skill name="craftingRepairTools" max_level="25" parent="attCrafting" name_key="craftingRepairToolsName" desc_key="craftingRepairToolsDesc" long_desc_key="craftingRepairToolsLongDesc" icon="ui_game_symbol_hammer">
 
 		<display_entry item="meleeToolRepairT1ClawHammer" unlock_level="5,10,15,20,25" />
 		<!--display_entry item="meleeToolRepairT3Nailgun" unlock_level="26,30,35,40,50" /-->
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,50" value="1" tags="meleeToolRepairT1ClawHammer"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,25" value="1" tags="meleeToolRepairT1ClawHammer"/>
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,50" value="1" tags="meleeToolRepairT3Nailgun"/-->
 
-			<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,50" value="1,2,3,4,4" tags="meleeToolRepairT1ClawHammer"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="8,12,15,20,25" value="1,2,3,4,4" tags="meleeToolRepairT1ClawHammer"/> <!-- 10,15,20,25,50 -->
 			<!--passive_effect name="CraftingTier" operation="base_add" level="30,35,40,50" value="1,2,3,4" tags="meleeToolRepairT3Nailgun"/-->
 		</effect_group>
 	</crafting_skill>
@@ -818,7 +818,7 @@
 	</crafting_skill>
 
 		<!-- *** VEHICLE_SKILLS -->
-	<crafting_skill name="craftingVehicles" max_level="100" parent="attCrafting" name_key="craftingVehiclesName" desc_key="craftingVehiclesDesc" long_desc_key="craftingVehiclesLongDesc" icon="ui_game_symbol_balloon">
+	<crafting_skill name="craftingVehicles" max_level="75" parent="attCrafting" name_key="craftingVehiclesName" desc_key="craftingVehiclesDesc" long_desc_key="craftingVehiclesLongDesc" icon="ui_game_symbol_balloon"> <!-- maxlevel 100 -->
 
 		<display_entry icon="vehicleBicyclePlaceable" name_key="vehiclesT1" has_quality="false" unlock_level="5" >
 			<unlock_entry item="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan" unlock_tier="1" />
@@ -837,11 +837,11 @@
 		</display_entry>
 
 		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,100" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="vehicleSteamVelocipedePlaceable,ammoGasCanBundle,resourceOil"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,75" value="1" tags="vehicleBicycleChassis,vehicleBicycleHandlebars,vehicleWheels,ammoGasCan"/> <!-- 5,100 -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,75" value="1" tags="vehicleSteamVelocipedePlaceable,ammoGasCanBundle,resourceOil"/> <!-- 25,100 -->
 			<!--passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,100" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,ammoGasCanBundle"/-->
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,100" value="1" tags="vehicleSteamHorsePlaceable"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75,100" value="1" tags="vehicleBalloonPlaceable,vehicleBalloon2Placeable,vehicleBalloon3Placeable,vehicleBalloon4Placeable"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,75" value="1" tags="vehicleSteamHorsePlaceable"/> <!-- 50,100 -->
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="75" value="1" tags="vehicleBalloonPlaceable,vehicleBalloon2Placeable,vehicleBalloon3Placeable,vehicleBalloon4Placeable"/> <!-- 75,100 -->
 
 		</effect_group>
 	</crafting_skill>

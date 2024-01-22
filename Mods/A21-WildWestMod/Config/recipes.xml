@@ -779,11 +779,11 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 <!-- </recipe> -->
 
 <recipe name="apparelBallCap" count="1" tags="workbenchCrafting">
-	<ingredient name="resourceCloth" count="4"/>
+	<ingredient name="resourceCloth" count="40"/>
 </recipe>
 
 <recipe name="apparelBandana" count="1">
-	<ingredient name="resourceCloth" count="4"/>
+	<ingredient name="resourceCloth" count="40"/>
 </recipe>
 
 <!--recipe name="appliancesVariantHelper" count="1">
