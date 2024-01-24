@@ -2805,7 +2805,7 @@
 			</passive_effect>
 			<!-- Increase the chance to find repair tool crafting skill magazines with each perk rank up to crafting skill 50 -->
 			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="repairToolsCSM">
-				<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="LT" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="LT" value="25"/>
 			</passive_effect>
 
 			<!-- Once electrical crafting skill reaches 100, set the probability bonus of finding electrical crafting skill magazines to 0 -->
@@ -2822,7 +2822,7 @@
 			</passive_effect>
 			<!-- Once repair tool skill reaches 50, set the probability bonus of finding repair tool crafting skill magazines to 0 -->
 			<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="repairToolsCSM">
-				<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="Equals" value="50"/>
+				<requirement name="ProgressionLevel" progression_name="craftingRepairTools" operation="Equals" value="25"/>
 			</passive_effect>
 
 			<effect_description level="1" desc_key="perkAdvancedEngineeringRank1Desc" long_desc_key="perkAdvancedEngineeringRank1LongDesc"/>
@@ -2850,12 +2850,12 @@
 
 			<!-- Increase the chance to find vehicle crafting skill magazines with each perk rank up to crafting skill 100 -->
 			<passive_effect name="LootProb" operation="perc_add" level="1,5" value="2,10" tags="vehiclesCSM">
-				<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="LT" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="LT" value="75"/>
 			</passive_effect>
 
 			<!-- Once vehicle crafting skill reaches 100, set the probability bonus of finding vehicle crafting skill magazines to 0 -->
 			<passive_effect name="LootProb" operation="base_set" level="1,5" value="0,0" tags="vehiclesCSM">
-				<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="Equals" value="100"/>
+				<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="Equals" value="75"/>
 			</passive_effect>
 
 			<effect_description level="1" desc_key="perkGreaseMonkeyRank1Desc" long_desc_key="perkGreaseMonkeyRank1LongDesc"/>
