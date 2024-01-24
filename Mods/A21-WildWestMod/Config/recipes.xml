@@ -3875,15 +3875,15 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 		<ingredient name="foodCanPears" count="1"/> <!-- Food 10 / Health 5 / Water 5 -->	
 	</recipe>	
 
-<!-- Oakraven's Water Wells -->
+<!-- Oakraven's Water Wells --> <!-- For A21, these are purely for decorative purposes with no collection or loot functionality -->
 
-	<recipe name="WaterVariantHelper" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
+	<!--recipe name="WaterVariantHelper" count="1" craft_area="workbench" craft_time="180" tags="workbenchCrafting">
 		<ingredient name="resourceClayLump" count="200"/>
 		<ingredient name="resourceForgedIron" count="20"/>
 		<ingredient name="resourceWood" count="60"/>
 		<ingredient name="resourceRockSmall" count="200"/>
 		<ingredient name="resourceNail" count="10"/>
-	</recipe>
+	</recipe-->
 
 <!-- Oakraven's Bee Hives -->
 
