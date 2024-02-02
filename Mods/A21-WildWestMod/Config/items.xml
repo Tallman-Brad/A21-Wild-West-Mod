@@ -1852,9 +1852,9 @@
 <!-- Food and Drink -->		
 
 <item name="foodWildWestAcornFlour">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodCureInfection"/>
+	<property name="DisplayType" value="foodCureInfectionAndFoodWater"/>
 	<property name="CustomIcon" value="foodWildWestAcornFlour"/>
 	<property name="DescriptionKey" value="foodWildWestAcornFlourDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
@@ -1886,16 +1886,15 @@
 </item>
 
 <item name="foodWildWestAcornHardtack">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<!-- <property name="DisplayType" value="food"/> -->
-	<property name="DisplayType" value="foodCureInfection"/>
+	<property name="DisplayType" value="foodCureInfectionAndFoodWater"/>
 	<property name="CustomIcon" value="foodWildWestAcornHardtack"/>
 	<property name="DescriptionKey" value="foodWildWestAcornHardtackDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="16"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1921,9 +1920,9 @@
 </item>
 
 <item name="foodWildWestBaconAndEggsAndAcornHardtack">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="food"/>
+	<property name="DisplayType" value="foodCureInfectionAndFood"/>
 	<property name="CustomIcon" value="foodWildWestBaconAndEggsAndAcornHardtack"/>
 	<property name="DescriptionKey" value="foodWildWestBaconAndEggsAndAcornHardtackDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
@@ -1954,16 +1953,16 @@
 </item>
 
 <item name="foodWildWestPineConeJam">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodCureInfection"/>
+	<property name="DisplayType" value="foodCureInfectionAndFoodWater"/>
 	<property name="CustomIcon" value="foodWildWestPineConeJam"/>
 	<property name="DescriptionKey" value="foodWildWestPineConeJamDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="EconomicValue" value="80"/>
-	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
@@ -1975,7 +1974,7 @@
 	<effect_group tiered="false" name="Food Tier 1">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="20"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="5"/>		
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 
@@ -1986,9 +1985,9 @@
 </item>
 
 <item name="foodWildWestPineConeJamPancakes">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="food"/>
+	<property name="DisplayType" value="foodCureInfectionAndFood"/>
 	<property name="CustomIcon" value="foodWildWestPineConeJamPancakes"/>
 	<property name="DescriptionKey" value="foodWildWestPineConeJamPancakesDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
@@ -2232,9 +2231,9 @@
 </item>
 
 <item name="foodTallmanBradJerky">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodWaterNegative"/>
+	<property name="DisplayType" value="foodCureInfectionAndFoodWater"/>
 	<property name="CustomIcon" value="foodTallmanBradJerky"/>
 	<property name="DescriptionKey" value="foodTallmanBradJerkyDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
@@ -2398,11 +2397,11 @@
 <!-- Oakraven's Bee Hives -->
 
 <item name="foodHoneyComb">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="DescriptionKey" value="foodHoneyCombDesc"/>	
 	<property name="HoldType" value="31"/>
 	<property name="CustomIcon" value="honeycomb"/>
-	<property name="DisplayType" value="foodCureInfection"/>
+	<property name="DisplayType" value="foodCureInfectionAndFood"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
@@ -2459,9 +2458,9 @@
 </item>
 
 <item name="foodHoneyBread">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodCureInfection"/>
+	<property name="DisplayType" value="foodCureInfectionAndFood"/>
 	<property name="CustomIcon" value="bread2"/>
 	<property name="DescriptionKey" value="foodHoneyBreadDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
@@ -2491,9 +2490,9 @@
 </item>
 
 <item name="foodHoneyPumpkinPie">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodCureInfection"/>
+	<property name="DisplayType" value="foodCureInfectionAndFood"/>
 	<property name="CustomIcon" value="oakpie"/>
 	<property name="DescriptionKey" value="foodHoneyPumpkinPieDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
@@ -2615,9 +2614,9 @@
 </item>
 
 <item name="foodEggSandwich">
-	<property name="Tags" value="food"/>
+	<property name="Tags" value="food,medical,medicalSkill"/>
 	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="food"/>
+	<property name="DisplayType" value="foodCureInfectionAndFood"/>
 	<property name="CustomIcon" value="eggsandwich"/>
 	<property name="DescriptionKey" value="foodEggSandwichDesc"/>	
 	<property name="Meshfile" value="@:Other/Items/Misc/parcelPrefab.prefab"/>
@@ -2961,9 +2960,9 @@
 	</property>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
-	<effect_group tiered="false">
+	<!--effect_group tiered="false">
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffvehicleWWMHorseHeal" target="selfAOE" range="1.5" target_tags="wwmhorseapple"/>
-	</effect_group>
+	</effect_group-->
 </item>
 
 <item name="foodApplePie">

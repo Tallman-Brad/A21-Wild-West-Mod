@@ -12,7 +12,6 @@
   <property name="RotationToFaceNorth" value="2" />
   <property name="Zoning" value="none" />
   <property name="YOffset" value="-9" />
-  <property name="EditorGroups" value="test stuff" />
   <property name="PrefabSize" value="15, 17, 59" />
   <property name="SleeperVolumeSize" value="11, 13, 30" />
   <property name="SleeperVolumeStart" value="2, 0, 23" />
