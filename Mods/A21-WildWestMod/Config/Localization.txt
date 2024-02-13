@@ -1038,7 +1038,7 @@ BridgeStrut1x3,blocks,Block,,,Rail Track Bridge Strut 1x3,,,,,,,,,,,,,
 
 WildWestStorageVariantHelper,blocks,Block,,,Wild West Writable Storage,,,,,,,,,,,,,
 WoodChestwest1,blocks,Block,,,Wild West Wooden Chest,,,,,,,,,,,,,
-WoodChestwest11Insecure,blocks,Block,,,Wild West Wooden Chest Insecure,,,,,,,,,,,,,
+WoodChestwest1Insecure,blocks,Block,,,Wild West Wooden Chest Insecure,,,,,,,,,,,,,
 WoodChestWestnew,blocks,Block,,,Wild West Bound Chest,,,,,,,,,,,,,
 WoodChestWestnewInsecure,blocks,Block,,,Wild West Bound Chest Insecure,,,,,,,,,,,,,
 WoodCratewest2,blocks,Block,,,Wild West Wooden Crate,,,,,,,,,,,,,
