@@ -6,7 +6,7 @@
   <property name="DistantPOIYOffset" value="0" />
   <property name="AllowTopSoilDecorations" value="False" />
   <property name="DifficultyTier" value="2" />
-  <property name="QuestTags" value="clear, fetch" />
+  <property name="QuestTags" value="clear, fetch, restore_power, infested" />
   <property name="ShowQuestClearCount" value="1" />
   <property name="TraderArea" value="False" />
   <property name="RotationToFaceNorth" value="2" />
@@ -22,25 +22,25 @@
   <property name="POIMarkerPartSpawnChance" value="1" />
   <property name="EditorGroups" value="rural" />
   <property name="Tags" value="wilderness" />
-  <property name="SleeperVolumeSize" value="22, 3, 11#20, 3, 14#11, 6, 5#18, 3, 18#13, 3, 11#6, 3, 2#9, 4, 5#2, 2, 8#5, 7, 9#9, 6, 5#5, 3, 2" />
+  <property name="SleeperVolumeSize" value="22, 3, 11#20, 3, 14#11, 6, 5#18, 3, 18#13, 3, 11#6, 3, 2#9, 4, 5#2, 2, 10#5, 7, 9#9, 6, 5#5, 3, 2" />
   <property name="SleeperVolumeStart" value="34, 2, 47#1, 2, 45#5, 2, 40#41, 2, 25#41, 1, 36#21, 3, 50#41, 2, 11#31, 8, 46#51, 2, 11#41, 2, 16#54, 2, 43" />
   <property name="SleeperVolumeGroupId" value="3,0,0,0,3,0,0,0,0,0,3" />
-  <property name="SleeperVolumeGroup" value="S_-_Group_Ghost_Town,1,1,S_-Group_Generic_Zombie,3,3,S_-_Group_Zom_Badass,1,1,S_-_Group_Ghost_Town,2,3,S_-Group_Generic_Zombie,0,0,S_-_Group_Ghost_Town,1,2,zombieLab,1,1,S_-Group_Generic_Zombie,2,2,zombieNurse,1,1,animalSnake,0,1,S_-_Group_Ghost_Town,1,1" />
+  <property name="SleeperVolumeGroup" value="S_-_Group_Ghost_Town,1,2,S_-Group_Generic_Zombie,3,3,S_-_Group_Zom_Badass,1,2,S_-_Group_Ghost_Town,3,4,S_-Group_Generic_Zombie,0,0,S_-_Group_Ghost_Town,1,2,zombieLab,1,2,S_-Group_Generic_Zombie,2,2,zombieNurse,1,2,animalSnake,1,2,S_-_Group_Ghost_Town,1,1" />
   <property name="SleeperIsLootVolume" value="True,True,True,True,True,True,True,True,False,False,True" />
   <property name="SleeperIsQuestExclude" value="False,False,False,False,False,False,False,False,False,True,False" />
-  <property name="SleeperVolumeFlags" value="2,2,2,2,2,2,2,2,0,2,2" />
+  <property name="SleeperVolumeFlags" value="2,2,0,2,2,2,2,2,0,2,2" />
   <property name="PrefabSize" value="60, 17, 60" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # # # " />
   <property class="Stats">
-    <property name="TotalVertices" value="1011480" />
-    <property name="TotalTriangles" value="992222" />
+    <property name="TotalVertices" value="990191" />
+    <property name="TotalTriangles" value="887857" />
     <property class="BlockEntities">
-      <property name="Vertices" value="893036" />
-      <property name="Triangles" value="919212" />
+      <property name="Vertices" value="871598" />
+      <property name="Triangles" value="814768" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="108258" />
-      <property name="Triangles" value="56824" />
+      <property name="Vertices" value="108407" />
+      <property name="Triangles" value="56903" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
@@ -76,6 +76,9 @@
     </property>
     <property class="FetchContainer">
       <property name="0" value="40, 2, 31" />
+    </property>
+    <property class="QuestRestorePower">
+      <property name="0" value="55, 2, 17" />
     </property>
     <property class="TraderOnOff">
       <property name="0" value="50, 2, 18" />

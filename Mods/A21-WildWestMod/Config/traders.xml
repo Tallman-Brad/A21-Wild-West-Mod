@@ -259,13 +259,13 @@
 			<item name="modMeleeWeightedHead"/>
 			<item name="modMeleeGraveDigger"/>
 			<item name="modMeleeWoodSplitter"/>
-			<item name="modFuelTankSmall"/>
+			<!--item name="modFuelTankSmall"/-->
 		<!-- *** T2_Melee_Mods -->
 			<item name="modMeleeClubBurningShaft"/>
 			<item name="modMeleeClubBarbedWire"/>
 			<item name="modMeleeFortifyingGrip"/>
 			<item name="modMeleeBunkerBuster"/>
-			<item name="modFuelTankLarge"/>
+			<!--item name="modFuelTankLarge"/-->
 		<!-- *** T3_Melee_Mods -->
 			<item name="modMeleeClubMetalSpikes"/>
 			<item name="modMeleeErgonomicGrip"/>
