@@ -10,12 +10,12 @@
   <property name="TraderArea" value="False" />
   <property name="EditorGroups" value="house old" />
   <property name="YOffset" value="-22" />
-  <property name="SleeperVolumeSize" value="10, 5, 25#2, 3, 7#10, 6, 17#10, 4, 24#24, 13, 22#10, 5, 24#10, 7, 17#10, 5, 15#8, 5, 15#5, 8, 8#10, 6, 7#10, 5, 9#7, 4, 20#18, 4, 15" />
-  <property name="SleeperVolumeStart" value="40, 19, 48#48, 25, 60#40, 29, 56#40, 35, 49#40, 4, 53#51, 29, 49#51, 35, 49#51, 24, 49#40, 24, 49#40, 21, 65#40, 29, 49#51, 24, 64#54, 20, 50#46, 17, 72" />
-  <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,6,8,S_-Group_Generic_Zombie,1,1,S_-Group_Generic_Zombie,6,7,S_-Group_Generic_Zombie,5,7,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,5,8,S_-Group_Generic_Zombie,4,6,S_-Group_Generic_Zombie,5,7,S_-Group_Generic_Zombie,6,9,S_-Group_Generic_Zombie,1,2,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,3,4,S_-_Group_Zom_Badass,3,4" />
+  <property name="SleeperVolumeSize" value="10, 5, 25#2, 3, 7#10, 6, 17#10, 4, 24#24, 13, 22#10, 5, 24#10, 7, 17#10, 5, 15#8, 5, 15#5, 5, 8#10, 6, 7#10, 5, 9#7, 4, 20#18, 4, 15" />
+  <property name="SleeperVolumeStart" value="40, 19, 48#48, 25, 60#40, 29, 56#40, 35, 49#40, 4, 53#51, 29, 49#51, 35, 49#51, 24, 49#40, 24, 49#40, 24, 65#40, 29, 49#51, 24, 64#54, 20, 50#46, 17, 72" />
+  <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,6,8,S_-Group_Generic_Zombie,1,1,S_-Group_Generic_Zombie,6,7,S_-Group_Generic_Zombie,5,7,S_-Group_Generic_Zombie,2,3,S_-Group_Generic_Zombie,6,8,S_-Group_Generic_Zombie,5,6,S_-Group_Generic_Zombie,6,8,S_-Group_Generic_Zombie,6,9,S_-Group_Generic_Zombie,1,2,S_-Group_Generic_Zombie,4,5,S_-Group_Generic_Zombie,3,4,S_-Group_Generic_Zombie,5,6,S_-_Group_Zom_Badass,5,6" />
   <property name="SleeperIsLootVolume" value="False,True,True,False,False,False,False,False,False,True,False,False,False,False" />
   <property name="SleeperIsBossVolume" value="False,False,False,False,True,False,False,False,False,False,False,False" />
-  <property name="QuestTags" value="clear, fetch, hidden_cache" />
+  <property name="QuestTags" value="clear, fetch, hidden_cache, infested" />
   <property name="DifficultyTier" value="5" />
   <property name="ShowQuestClearCount" value="1" />
   <property name="ExcludePOICulling" value="False" />
@@ -35,23 +35,23 @@
   <property name="POIMarkerPartSpawnChance" value="1" />
   <property name="SleeperVolumeTriggeredBy" value=" # # # # # # # # # # # # # " />
   <property class="Stats">
-    <property name="TotalVertices" value="1829873" />
-    <property name="TotalTriangles" value="1377441" />
+    <property name="TotalVertices" value="1982555" />
+    <property name="TotalTriangles" value="1517083" />
     <property class="BlockEntities">
-      <property name="Vertices" value="1566983" />
-      <property name="Triangles" value="1187726" />
+      <property name="Vertices" value="1719977" />
+      <property name="Triangles" value="1327518" />
     </property>
     <property class="ChunkMeshes0">
-      <property name="Vertices" value="218426" />
-      <property name="Triangles" value="119909" />
+      <property name="Vertices" value="218122" />
+      <property name="Triangles" value="119763" />
     </property>
     <property class="ChunkMeshes1">
       <property name="Vertices" value="0" />
       <property name="Triangles" value="0" />
     </property>
     <property class="ChunkMeshes2">
-      <property name="Vertices" value="264" />
-      <property name="Triangles" value="132" />
+      <property name="Vertices" value="256" />
+      <property name="Triangles" value="128" />
     </property>
     <property class="ChunkMeshes3">
       <property name="Vertices" value="1002" />
