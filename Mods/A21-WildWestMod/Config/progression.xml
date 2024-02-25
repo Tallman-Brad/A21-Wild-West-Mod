@@ -474,7 +474,7 @@
 		<display_entry item="gunRifleT1HuntingRifle" unlock_level="11,14,18,22,26" />
 		<display_entry item="gunRifleT2LeverActionRifle" unlock_level="27,35,43,51,59" />
 		<display_entry item="gunRifleT2LeverActionRifleWinchester" unlock_level="27,35,43,51,59" />
-		<display_entry item="gunRifleT2LeverActionRifleLegendaryTribeWinchester" unlock_level="50,60,70,80,90,100" />
+		<display_entry item="gunRifleT2LeverActionRifleLegendaryTribeWinchester" unlock_level="50,60,75,85,100" />
 
 		<effect_group>
 			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,100" value="1" tags="gunRifleT0PipeRifle"/>
@@ -487,7 +487,7 @@
 			<passive_effect name="CraftingTier" operation="base_add" level="14,18,22,26,100" value="1,2,3,4,4" tags="gunRifleT1HuntingRifle"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="35,43,51,59,100" value="1,2,3,4,4" tags="gunRifleT2LeverActionRifle"/>
 			<passive_effect name="CraftingTier" operation="base_add" level="35,43,51,59,100" value="1,2,3,4,4" tags="gunRifleT2LeverActionRifleWinchester"/>
-			<passive_effect name="CraftingTier" operation="base_add" level="60,70,80,90,100" value="1,2,3,4,5" tags="gunRifleT2LeverActionRifleLegendaryTribeWinchester"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="60,75,85,100" value="1,2,3,4" tags="gunRifleT2LeverActionRifleLegendaryTribeWinchester"/>
 		</effect_group>
 	</crafting_skill>
 
@@ -566,7 +566,7 @@
 		<!--display_entry item="meleeWpnBatonT0PipeBaton" unlock_level="1,3,5,7,10" /-->
 		<!--display_entry item="gunBotT1JunkSledge" unlock_level="11,13,16,19,22" /-->
 		<!--display_entry item="meleeWpnBatonT2StunBaton" unlock_level="23,26,30,34,38" /-->
-		<display_entry item="gunBotT2JunkTurretWildWest" unlock_level="5,10,15,20,25,30" />
+		<display_entry item="gunBotT2JunkTurretWildWest" unlock_level="5,10,15,20,30" />
 		<!--display_entry item="gunBotT3JunkDrone" unlock_level="68,76,84,92,100" /-->
 
 		<effect_group>
@@ -579,7 +579,7 @@
 			<!--passive_effect name="CraftingTier" operation="base_add" level="3,5,7,10,100" value="1,2,3,4,4" tags="meleeWpnBatonT0PipeBaton"/-->
 			<!--passive_effect name="CraftingTier" operation="base_add" level="13,16,19,22,100" value="1,2,3,4,4" tags="gunBotT1JunkSledge"/-->
 			<!--passive_effect name="CraftingTier" operation="base_add" level="26,30,34,38,100" value="1,2,3,4,4" tags="meleeWpnBatonT2StunBaton"/-->
-			<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,25,30" value="1,2,3,4,5" tags="gunBotT2JunkTurretWildWest"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="10,15,20,30" value="1,2,3,4" tags="gunBotT2JunkTurretWildWest"/>
 			<!--passive_effect name="CraftingTier" operation="base_add" level="76,84,92,100" value="1,2,3,4" tags="gunBotT3JunkDrone"/-->
 		</effect_group>
 	</crafting_skill>

@@ -1229,7 +1229,7 @@
 		<passive_effect name="BlockDamage" operation="base_add" value="-1" tags="perkDeadEye"/> <!-- damage offset -->
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="82" tags="perkDeadEye"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkDeadEye"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="11" tags="perkDeadEye"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="12" tags="perkDeadEye"/>
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkDeadEye"/> <!-- 2.7s -->
 		<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
@@ -1259,7 +1259,7 @@
 		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11" tags="perkDeadEye"/>
 		<passive_effect name="WeaponHandling" operation="base_set" value=".7" tags="perkDeadEye"/>
 
-		<passive_effect name="DegradationMax" operation="base_set" value="220,440" tier="1,6" tags="perkDeadEye"/> <!-- Default 200,400 -->
+		<passive_effect name="DegradationMax" operation="base_set" value="330,550" tier="1,6" tags="perkDeadEye"/> <!-- Default A21 Lever Action increased to 400,700 -->
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeadEye"/>
 
 		<passive_effect name="DamageModifier" operation="base_add" value="100" tags="head"/>
@@ -1331,9 +1331,9 @@
 		<passive_effect name="BlockDamage" operation="base_add" value="-1" tags="perkDeadEye"/> <!-- damage offset -->
 		<passive_effect name="RoundsPerMinute" operation="base_set" value="82" tags="perkDeadEye"/>
 		<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkDeadEye"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="12" tags="perkDeadEye"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="14" tags="perkDeadEye"/> <!-- Historical Max for this type of Rifle -->
 		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1" tags="perkDeadEye"/> <!-- 2.7s -->
-		<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,4" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModSlots" operation="base_set" value="3,3,3,4,4,5" tier="1,2,3,4,5,6"/>
 		<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
 		<passive_effect name="EntityDamage" operation="base_add" value="12" tags="perkDeadEye"/> <!-- damage offset -->
@@ -1361,7 +1361,7 @@
 		<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="11" tags="perkDeadEye"/>
 		<passive_effect name="WeaponHandling" operation="base_set" value=".7" tags="perkDeadEye"/>
 
-		<passive_effect name="DegradationMax" operation="base_set" value="240,460" tier="1,6" tags="perkDeadEye"/> <!-- Default 200,400 -->
+		<passive_effect name="DegradationMax" operation="base_set" value="365,610" tier="1,6" tags="perkDeadEye"/> <!-- Default A21 Lever Action increased to 400,700 -->
 		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkDeadEye"/>
 
 		<passive_effect name="DamageModifier" operation="base_add" value="100" tags="head"/>
