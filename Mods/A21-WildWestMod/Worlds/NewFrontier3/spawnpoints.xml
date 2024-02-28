@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<spawnpoints>
+	<spawnpoint position="2753,33,1079" rotation="0,270,0" /> <!-- NE -->
+	<spawnpoint position="2753,33,1080" rotation="0,270,0" /> <!-- NE -->
+	<spawnpoint position="-2833,33,1426" rotation="0,90,0" /> <!-- NW -->
+	<spawnpoint position="-2833,33,1427" rotation="0,90,0" /> <!-- NW -->
+<!--	<spawnpoint position="2751,32,-2535" rotation="0,270,0" />
+	<spawnpoint position="2752,32,-2534" rotation="0,270,0" />         SE -->
+
+</spawnpoints>
