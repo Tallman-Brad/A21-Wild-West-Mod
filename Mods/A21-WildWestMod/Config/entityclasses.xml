@@ -7,6 +7,15 @@
 <remove xpath="/entity_classes/entity_class[@name='zombieSoldier']"/>
 <remove xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']"/>
 <remove xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']"/>
+
+<remove xpath="/entity_classes/entity_class[@name='zombieFatCop']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']"/>
+
+<remove xpath="/entity_classes/entity_class[@name='zombieMutated']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMutatedFeral']"/>
+<remove xpath="/entity_classes/entity_class[@name='zombieMutatedRadiated']"/>
+
 	<!-- Remove Demolition and Readd to removed extends and hat issue -->
 	<remove xpath="/entity_classes/entity_class[@name='zombieDemolition']"/>
 
@@ -108,11 +117,230 @@
 <set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse</set>
 <set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse3</set>
 <set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse2</set>	
+
+
+	<!-- New Biker -->
+	
+	<set xpath="/entity_classes/entity_class[@name='zombieBiker']/property[@name='Mesh']/@value">#@modfolder:Resources/OaksCowboyBiker.unity3d?OaksCowboyBiker</set>
+    <set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/OaksCowboyBiker.unity3d?OaksCowboyBikerFed</set> <!-- fed -->
+    <set xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/OaksCowboyBiker.unity3d?OaksCowboyBikerRad</set>  <!-- Rad -->
+
+
 	
 <append xpath="/entity_classes">
 
 <!-- ##### New Entites2 #####-->
 
+				<!-- NEW ZOMBIE_FAT_COP -->
+<entity_class name="zombieFatCop" extends="zombieTemplateMale">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="Tags" value="entity,zombie,walker,zombieCop"/>
+	<property name="Mesh" value="#@modfolder:Resources/SheriffOak.unity3d?SheriffOak"/>
+	<property name="WalkType" value="1"/>
+	<property name="RightHandJointName" value="Jaw"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="Mass" value="320"/>
+	<property name="Weight" value="70"/>
+	<property name="PhysicsBody" value="zombieFat"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="PushFactor" value="20"/>
+
+	<property name="AITask" value="
+	BreakBlock|
+	ApproachDistraction|
+	RangedAttackTarget itemType=1;cooldown=4;duration=5|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+	<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
+	<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
+	<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
+	<property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain"/>
+	<property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
+	<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="SoundExplodeWarn" value="hulkexplodewarning"/>
+
+	<property name="DismemberMultiplierLegs" value="0"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0"/>
+	<property name="KnockdownProneDamageThreshold" value="0"/>
+	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	<property name="LegsExplosionDamageMultiplier" value="2"/> <!-- volatile so vulnerable to land mines/explosives -->
+	<property name="ArmsExplosionDamageMultiplier" value="2"/>
+	<property name="HeadExplosionDamageMultiplier" value="2"/>
+	<property name="ChestExplosionDamageMultiplier" value="2"/>
+
+	<!-- Gameplay zombieFatCop -->
+	<property name="MoveSpeedAggro" value="0.3, 1.35"/>  <!-- slight increase over vanilla -->
+	<property name="JumpMaxDistance" value=".8, 1.1"/>
+	<property name="HandItem" value="meleeHandZombieCop"/>
+	<property name="ExperienceGain" value="750"/><!-- XP strong -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="375"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+	</effect_group>
+
+	<property name="Explosion.ParticleIndex" value="2"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+</entity_class>
+
+		<!-- NEW ZOMBIE_FAT_COP_FERAL -->
+<entity_class name="zombieFatCopFeral" extends="zombieFatCop">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,zombieCop"/>
+	<property name="Mesh" value="#@modfolder:Resources/SheriffOak.unity3d?SheriffOakfed"/>
+	<!-- Gameplay zombieFatCopFeral -->
+	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
+	<property name="MoveSpeedAggro" value="0.6, 1.45"/> <!-- slight increase -->
+	<property name="JumpMaxDistance" value="1.8, 2.5"/>
+	<property name="HandItem" value="meleeHandZombieCopFeral"/>
+	<property name="ExperienceGain" value="1200"/><!-- XP strong feral -->
+	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="700"/>
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+	</effect_group>
+
+	<property name="Explosion.BlockDamage" value="650"/>
+	<property name="Explosion.EntityDamage" value="200"/>
+
+	<!--
+	<effect_group name="Fallsplosion test">
+		<triggered_effect trigger="onSelfLandJump" action="CVarLogValue" cvar="_fallSpeed"/>
+		<triggered_effect trigger="onSelfLandJump" action="ModifyCVar" cvar="$buffBurningElementDuration" operation="set" value="10"/>
+		<triggered_effect trigger="onSelfLandJump" action="AddBuff" buff="buffBurningElement"/>
+	</effect_group>
+	-->
+</entity_class>
+
+		<!-- NEW ZOMBIE_FAT_COP_RADIATED -->
+<entity_class name="zombieFatCopRadiated" extends="zombieFatCopFeral">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,radiated,zombieCop"/>
+	<property name="Mesh" value="#@modfolder:Resources/SheriffOak.unity3d?SheriffOakRad"/>
+	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
+
+	<!-- Gameplay zombieFatCopRadiated -->
+	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+	<property name="HandItem" value="meleeHandZombieCopRadiated"/>
+	<property name="ExperienceGain" value="1500"/><!-- XP strong radiated -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="1350"/>
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		<triggered_effect trigger="onSelfFirstSpawn" action="ModifyCVar" target="self" cvar="EntityBoss" operation="set" value="1"/>
+	</effect_group>
+
+	<property name="Explosion.BlockDamage" value="750"/>
+	<property name="Explosion.EntityDamage" value="250"/>
+</entity_class>
+
+<!-- Re-add mutant -->
+
+<entity_class name="zombieMutated" extends="zombieFatCop">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker"/>
+	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutated.prefab"/>
+	<property name="SizeScale" value="1"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+
+  <property name="DismemberTag_L_HeadGore"/>
+  <property name="DismemberTag_L_LeftUpperLegGore" value=";" data="target=LeftUpLeg+scale=1,.5,1+type=blunt+stc=true;target=LeftUpLeg+scale=1,.5,1+type=blade+stc=true"/>
+  <property name="DismemberTag_L_LeftLowerLegGore" value=";" data="target=LeftLeg+type=blunt+atp=true+atb=true+rot=90,0,0;target=LeftLeg+type=blade+atp=true+atb=true+rot=90,0,0"/>
+  <property name="DismemberTag_L_RightUpperLegGore" value=";" data="target=RightUpLeg+scale=1,.5,1+type=blunt+stc=true;target=RightUpLeg+scale=1,.5,1+type=blade+stc=true"/>
+  <property name="DismemberTag_L_RightLowerLegGore" value=";" data="target=RightLeg+type=blunt+atp=true+atb=true+rot=90,0,0;target=RightLeg+type=blade+atp=true+atb=true+rot=90,0,0"/>
+  <property name="DismemberTag_L_LeftUpperArmGore"/>
+  <property name="DismemberTag_L_LeftLowerArmGore"/>
+  <property name="DismemberTag_L_RightUpperArmGore"/>
+  <property name="DismemberTag_L_RightLowerArmGore"/>
+
+	<property name="AITask" value="
+	BreakBlock|
+	ApproachDistraction|
+	RangedAttackTarget itemType=1;cooldown=4;duration=3;minRange=1;maxRange=6;unreachableRange=18|
+	DestroyArea|
+	ApproachAndAttackTarget class=EntityPlayer,0,EntityBandit,0,EntityEnemyAnimal|
+	ApproachSpot|
+	Look|
+	Wander|
+	"/>
+
+  <!-- Gameplay zombieMutated -->
+	<property name="HandItem" value="meleeHandzombieMutated"/>
+	<property name="ExplodeHealthThreshold" value="0"/>
+	<property name="MoveSpeed" value=".25"/>
+	<property name="MoveSpeedAggro" value=".4, 1.3"/>
+	<property name="ExperienceGain" value="400"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+	</effect_group>
+</entity_class>
+
+		<!-- *** ZOMBIE_MUTATED_FERAL -->
+<entity_class name="zombieMutatedFeral" extends="zombieMutated">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral"/>
+	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedFeral.prefab"/>
+	<property name="SizeScale" value="1.1"/>
+
+	<!-- Gameplay zombieMutatedFeral -->
+	<property name="HandItem" value="meleeHandzombieMutatedFeral"/>
+	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
+	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>
+	<property name="ExperienceGain" value="750"/><!-- XP grunt feral -->
+	<property name="LootDropProb" value=".03"/> <!-- Feral -->
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="350"/>
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+	</effect_group>
+</entity_class>
+
+		<!-- *** ZOMBIE_MUTATED_RADIATED -->
+<entity_class name="zombieMutatedRadiated" extends="zombieMutatedFeral">
+	<property name="UserSpawnType" value="Menu"/>
+	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
+	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab"/>
+	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
+
+	<!-- Gameplay zombieMutatedRadiated -->
+	<property name="HandItem" value="meleeHandzombieMutatedRadiated"/>
+	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
+	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
+	<property name="MoveSpeedAggro" value=".5, 1.35"/>
+	<property name="ExperienceGain" value="1200"/><!-- XP grunt radiated -->
+	<property name="LootDropEntityClass" value="EntityLootContainerStrong"/>
+
+	<effect_group name="Base Effects">
+		<passive_effect name="HealthMax" operation="base_set" value="650"/>
+		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
+		<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="2.5"/>
+		<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+	</effect_group>
+</entity_class>
+
+<!-- GRIN ENTITIES -->
 
  <entity_class name="Grin" extends="zombieTemplateShort">
 	        <property name="UserSpawnType" value="Menu"/>
@@ -255,7 +483,7 @@
 	        <property name="AINoiseSeekDist" value="6"/>
 	        <property name="AIPathCostScale" value=".65, .9"/>
 
-	        <property name="MoveSpeedAggro" value=".8, 1.5"/>
+	        <property name="MoveSpeedAggro" value="1.1, 1.8"/>
 	        <property name="JumpMaxDistance" value=".5, .6"/>
 	        <property name="HandItem" value="meleeHandZombieHazMatFeral"/>
             <property name="ModelType" value="Standard"/>
@@ -294,7 +522,7 @@
             <property name="AINoiseSeekDist" value="6"/>
 	        <property name="AIPathCostScale" value=".65, .9"/>
 
-	        <property name="MoveSpeedAggro" value=".8, 1.5"/>
+	        <property name="MoveSpeedAggro" value="1.1, 1.8"/>
 	        <property name="JumpMaxDistance" value=".5, .6"/>
 	        <property name="HandItem" value="meleeHandZombieHazMatFeral"/>
 	        <property name="PainResistPerHit" value=".9"/>
@@ -378,7 +606,7 @@
     <property name="Explosion.DamageBonus.wood" value=".1"/>
     <property name="Explosion.DamageBonus.water" value="0"/>
 	<property name="Explosion.DamageBonus.earth" value="0"/>
-
+	<property name="TimeStayAfterDeath" value="2.5"/>         <!-- time before barrel spawns -->
 	<property name="StompsSpikes" value="true"/>
 	<property name="ExplodeDelay" value="2"/>
 	<property name="ExplodeHealthThreshold" value=".8"/> <!-- Disable Health explosion -->

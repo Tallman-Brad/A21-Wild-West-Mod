@@ -119,6 +119,92 @@
 	</append>
 	
 <!-- Set for replacement custom features -->
+
+. Includes regular, feral and radiated.<!-- Set for SportsBag01 replacement custom features -->
+	
+	<remove xpath="/blocks/block[@name='cntSportsBag01']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag01Red']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag01Orange']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag01Yellow']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag01Green']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag01Blue']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag01Purple']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag01Pink']/property[@name='TintColor']"/>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag01Red']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag01new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag01Orange']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?LeatherSuitcace5"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag01Yellow']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag01new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag01Green']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag02new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag01Blue']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?LeatherSuitcace5"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag01Purple']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?LeatherSuitcace5"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag01Pink']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag02new"/>
+	</append>
+	
+	<!-- Set for SportsBag02 replacement custom features -->
+	
+	<remove xpath="/blocks/block[@name='cntSportsBag02']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Brown']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Red']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Orange']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Yellow']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Green']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Blue']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Purple']/property[@name='TintColor']"/>
+	<remove xpath="/blocks/block[@name='cntSportsBag02Pink']/property[@name='TintColor']"/>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag02Red']" >
+        <property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag02new"/>
+    </append>
+
+	<append xpath="/blocks/block[@name='cntSportsBag02Brown']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?LeatherSuitcace5"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag02Orange']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag02new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag02Yellow']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag02new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag02Green']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag01new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag02Blue']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag01new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag02Purple']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag02new"/>
+	</append>
+	
+	<append xpath="/blocks/block[@name='cntSportsBag02Pink']" >
+		<property name="Model" value="#@modfolder:Resources/newbagoak.unity3d?sports_bag01new"/>
+	</append>
+
+
+
 	<set xpath="/blocks/block[@name='cntCashRegisterEmpty']/property[@name='Model']/@value">#@modfolder:Resources/registernew.unity3d?cashRegisteropennew</set>
 	<append xpath="/blocks/block[@name='cntCashRegisterEmpty']">
 		<property name="ModelOffset" value="0,0.5,0"/>		
@@ -2433,7 +2519,7 @@
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="WoodChestwest1"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/WoodChestwest1.unity3d?WoodChestwest1"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?WoodChestwest1"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
@@ -2454,7 +2540,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="WoodChestwest1"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/WoodChestwest1.unity3d?WoodChestwest1"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?WoodChestwest1"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
@@ -2480,7 +2566,7 @@
 	<property name="MaxDamage" value="500"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="Model" value="#@modfolder:Resources/WoodChestwest1.unity3d?WoodChestwest1"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?WoodChestwest1Open"/>
 	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
@@ -2505,7 +2591,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="WoodChestWestnew"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/WoodChestWestnew.unity3d?WoodChestWestnew"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?WoodChestWestnew"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
@@ -2531,7 +2617,7 @@
 	<property name="MaxDamage" value="500"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="Model" value="#@modfolder:Resources/WoodChestWestnew.unity3d?WoodChestWestnew"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?WoodChestWestnewOpen"/>
 	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
@@ -2546,7 +2632,7 @@
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="WoodCratewest2"/>
 	<property name="Shape" value="ModelEntity"/>
-	<property name="Model" value="#@modfolder:Resources/WoodCratewest2.unity3d?WoodCratewest2"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?WoodCratewest2"/>
 	<property name="DescriptionKey" value="cntStorageGenericSignedDesc"/>
 	<property name="Class" value="SecureLootSigned"/>
 	<property name="DisplayType" value="blockMulti"/>
@@ -2572,7 +2658,7 @@
 	<property name="MaxDamage" value="500"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="Model" value="#@modfolder:Resources/WoodCratewest2.unity3d?WoodCratewest2"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?WoodCratewest2Open"/>
 	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
 	<property class="RepairItems">
 		<property name="resourceWood" value="10"/>
@@ -2594,7 +2680,7 @@
 	<property name="MaxDamage" value="7000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Path" value="solid"/>
-	<property name="Model" value="#@modfolder:Resources/woodchestwest2.unity3d?woodchestwest2"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?woodchestwest2Open"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="ItemTypeIcon" value="lock"/>
 	<property name="LootList" value="WildWestTreasure_01"/>
@@ -2617,6 +2703,7 @@
 	<property name="Extends" value="woodchestwest2" param1="DowngradeBlock"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="woodchestwest2"/>
+	<property name="Model" value="#@modfolder:Resources/WestChests.unity3d?woodchestwest2Open"/>
 	<property name="CustomIconTint" value="FFFF00"/>
 	<!-- <property name="ItemTypeIcon" value="unlock"/> -->
 	<property name="Class" value="Loot"/>

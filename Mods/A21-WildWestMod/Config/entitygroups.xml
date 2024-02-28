@@ -429,6 +429,21 @@
 	<entitygroup name="animalBisonBoar">
 		animalBisonBoar
 	</entitygroup>
+
+
+	<!-- Military POI Spawn Group -->
+	
+	<entitygroup name="zombieMilitaryFeral">
+		zombieSoldierFeral
+		zombieMaleHazmatFeral
+		zombieMolotovSoldierFeral
+	</entitygroup>
+
+	<!-- Mon Signor POI Spawn Group -->
+
+	<entitygroup name="zombieMonsignor">
+		zombieBusinessManRadiatedGunslinger
+	</entitygroup>
 	
 	<!-- Bat POI Spawn Group -->
 	
