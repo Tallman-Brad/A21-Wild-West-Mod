@@ -96,7 +96,12 @@
 	<set xpath="/items/item[@name='meleeHandzombieMutatedFeral']/property[@class='Action0']/property[@name='Range']/@value">1.5</set> <!-- Default 1.7 -->
 	<set xpath="/items/item[@name='meleeHandzombieMutatedRadiated']/property[@class='Action0']/property[@name='Range']/@value">1.5</set> <!-- Default 1.7 -->
 	<!-- Weapons and Tools -->
-	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Meshfile']/@value">#@modfolder:Resources/bradshotgun.unity3d?bradshotgun.prefab</set> <!-- New Pump Shotgun Model -->
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Meshfile']/@value">#@modfolder:Resources/bradshotgun.unity3d?bradshotgun.prefab</set> 
+	
+	<!-- Replacing Steel Axe for older variant -->
+	<set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/steelaxeoak.unity3d?steelaxeoak</set>
+	
+	<!-- New Pump Shotgun Model -->
     <set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@class='Action0']/property[@name='Sound_start']/@value">oakfire</set>  <!-- New Pump Shotgun Model -->
     <remove xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='TintColor']"/> <!-- New Pump Shotgun Model tint removal-->
 	<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@class='Action1']/property[@name='Repair_amount']/@value">500</set><!-- 100 Default -->
@@ -112,6 +117,184 @@
 	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@class='Action0']/property[@name='AutoReload']/@value">true</set>
 	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Meshfile']/@value">#@modfolder:Resources/newfireaxe.unity3d?newfireaxe</set><!-- Replacing Fire Axe for older variant -->
 	<remove xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='TintColor']"/>
+
+	<!-- Steel Spear -->
+	<append xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']">
+	<property name="Tags" value="melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,perkElectrocutioner,stunBaton,spearSkill"/><!-- ,thrownWeapon -->
+
+	<effect_group name="apply damage buff, meleeWpnSpearT3SteelSpear">
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Sparks" prefab="ParticleEffects/p_electric_shock_small" parentTransform="Handle" localPos="0,0.5,0" localRot="0,0,0">
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			
+		<!-- set shock duration -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="0"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4.8">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="1"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="5.6">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="2"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="6.4">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="3"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="7.2">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="4"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="8">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="5"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="0"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="4.8">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="1"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="5.6">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="2"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="6.4">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="3"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="7.2">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="4"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="stunBatonDuration" operation="set" value="8">
+			<requirement name="ProgressionLevel" progression_name="perkJavelinMaster" operation="Equals" value="5"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="4" key="charge"/></triggered_effect>
+
+	</effect_group>
+	<effect_group name="increase charges">
+		<!-- initialize metadata for "charge" on stun batons, don't change value if already exists -->
+		<triggered_effect trigger="onSelfEquipStart" action="SetItemMetaFloat" change="0" relative="true" key="charge"/>
+		
+		<!-- play stun baton sounds -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit1">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="0" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit1">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="0" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit2">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="1" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit2">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="1" key="charge"/></triggered_effect>	
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit3">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="2" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit3">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="2" key="charge"/></triggered_effect>	
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit4">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="3" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit4">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="3" key="charge"/></triggered_effect>	
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit5">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" mode="before" action="PlaySound" sound="stunbaton_hit5">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+
+		<!-- potentially apply bonus charges from TechJunkie perk, by setting it to 3 the other actions below increase it to max charge -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkTechJunkie6BatonCharge" operation="Equals" value="1"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="3" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="3" key="charge"/>
+			<requirement name="ProgressionLevel" progression_name="perkTechJunkie6BatonCharge" operation="Equals" value="1"/>
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+		</triggered_effect>	
+		
+		<!-- increase charges -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="1" relative="true" key="charge">
+			<requirement name="IsAlive" target="other"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="1" relative="true" key="charge">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="GTE" value="3" key="charge"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="2" relative="true" key="charge">
+			<requirement name="IsAlive" target="other"/>
+			<requirement name="CompareItemMetaFloat" operation="LTE" value="2" key="charge"/>
+		</triggered_effect>
+
+		<!-- add electric effect to baton -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddPart" part="Sparks" prefab="ParticleEffects/p_electric_shock_small" parentTransform="Handle" localPos="0,0.5,0" localRot="0,0,0">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddPart" part="Sparks" prefab="ParticleEffects/p_electric_shock_small" parentTransform="Handle" localPos="0,0.5,0" localRot="0,0,0">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="4" key="charge"/></triggered_effect>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+		
+		<!-- trigger ragdoll events for fully charged baton -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="other" duration="@stunBatonDuration" force="350">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="other" duration="@stunBatonDuration" force="350">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!EntityTagCompare" target="other" tags="trader"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" duration="2.5" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.3" duration="2.5" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="!HasBuff" buff="buffDrugNerdTats"/>
+		</triggered_effect>
+		
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.1" duration="@stunBatonDuration" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/> <!-- if you have buffDrugNerdTats, use stun duration so zombies get up after stun is finished -->
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="Ragdoll" target="otherAOE" range="1.3" duration="@stunBatonDuration" force="350" target_tags="zombie,animal">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffmodMeleeStunBatonRepulsor"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/> <!-- if you have buffDrugNerdTats, use stun duration so zombies get up after stun is finished -->
+		</triggered_effect>
+		
+		<!-- trigger shock events for fully charged baton -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="other" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="AddBuff" target="otherAOE" range="1.1" target_tags="zombie,animal" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="otherAOE" range="1.3" target_tags="zombie,animal" buff="buffShocked" duration="@stunBatonDuration">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/>
+			<requirement name="HasBuff" buff="buffDrugNerdTats"/></triggered_effect>
+		
+		<!-- reset charges -->
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RemovePart" part="Sparks">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="RemovePart" part="Sparks">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionRayHit" action="SetItemMetaFloat" change="0" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="SetItemMetaFloat" change="0" relative="false" key="charge">
+			<requirement name="CompareItemMetaFloat" operation="Equals" value="5" key="charge"/></triggered_effect>
+	</effect_group>
+	</append>
+	
 	<!-- Ammo Stacking and Unlocking -->
 	<set xpath="/items/item[@name='ammo9mmBulletBall']/property[@name='Stacknumber']/@value">1500</set><!-- x5 of default -->	
 	<set xpath="/items/item[@name='ammo762mmBulletBall']/property[@name='Stacknumber']/@value">1500</set><!-- x10 of default -->
@@ -232,8 +415,6 @@
 	<!-- Bundle Stacking -->
 	<set xpath="/items/item[@name='resourceRockSmallBundle']/property[@name='Stacknumber']/@value">25</set><!-- x5 of default -->
 
-
-
 	<!-- Append Stacking -->	
 	<append xpath="/items/item[@name='medicalPlasterCast']">
 		<property name="Stacknumber" value="20"/> <!-- STK resource -->	
@@ -267,7 +448,7 @@
 	<set xpath="/items/item[@name='apparelCoatLeatherPoncho']/effect_group/passive_effect[@name='HyperthermalResist']/@value">14.5,18.3</set><!-- 10.5,14.3 -->
 	
 	<!-- Bicycle Tags -->
-	<append xpath="/items/item[@name='vehicleBicyclePlaceable']/property[@name='Tags']/@value">,vseat</append><!-- Hopefully adding the seat tag -->	
+	<append xpath="/items/item[@name='vehicleBicyclePlaceable']/property[@name='Tags']/@value">,vseat</append><!-- Hopefully adding the seat tag -->
 	
 <remove xpath="/items/item[@name='drinkCanMegaCrush']"></remove>
 
@@ -1200,7 +1381,7 @@
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,ammo44MagnumBulletSilver"/>
 		<property name="Reload_time" value="2.5"/>
 		<property name="Sound_start" value="lever_action_rifle_fire"/>
 		<property name="Sound_loop" value=""/>
@@ -1302,7 +1483,7 @@
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
-		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP"/>
+		<property name="Magazine_items" value="ammo44MagnumBulletBall,ammo44MagnumBulletHP,ammo44MagnumBulletAP,ammo44MagnumBulletSilver"/>
 		<property name="Reload_time" value="2.5"/>
 		<property name="Sound_start" value="lever_action_rifle_fire"/>
 		<property name="Sound_loop" value=""/>
@@ -1851,6 +2032,55 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
+		
+<!-- Winchester Silver Magnum -->
+
+<item name="ammo44MagnumBulletSilver">
+	<property name="Extends" value="ammo44MagnumBulletBall"/>
+	<property name="Tags" value="ammo44Mag"/>
+	<property name="DisplayType" value="ammoBulletAP"/>
+	<property name="EconomicValue" value="15"/>
+	<!-- property name="TraderStageTemplate" value="ammoTier3"/ -->
+	<property name="DescriptionKey" value="ammo44MagnumBulletSilverDesc"/>
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+	
+	<effect_group name="ammo44MagnumBulletSilver" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="100" tags="perkDeadEye,revolver"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="20" tags="perkDeadEye"/>
+		<passive_effect name="BlockDamage" operation="base_add" value="20" tags="barrelExplosive"/>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.75" tags="perkDeadEye"/><display_value name="dTargetArmor" value="-.75"/>
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="1"/><display_value name="dTargetPenetration" value="1"/>
+		<!-- <passive_effect name="DegradationPerUse" operation="perc_add" value=".3" tags="perkDeadEye,perkMachineGunner"/><display_value name="dDegradationPerUse" value=".3"/> -->
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+
+	<effect_group name="perkPenetrator" tiered="false">
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.1" tags="perkDeadEye">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.15" tags="perkDeadEye">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.2" tags="perkDeadEye">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkDeadEye">
+			<requirement name="ProgressionLevel" progression_name="perkPenetrator" operation="Equals" value="4"/></passive_effect>
+	</effect_group>
+</item>
+
+<item name="ammoBundle44MagnumBulletSilver">
+	<property name="Extends" value="ammoBundle44MagnumBulletBall"/>
+	<property name="CustomIcon" value="ammo44MagnumBulletSilver"/>
+	<property name="DescriptionKey" value="ammoBundle44MagnumBulletSilverDesc"/>	
+	<property name="Stacknumber" value="10"/> <!-- STK ammobundle high -->
+	<property name="EconomicValue" value="300"/>
+	<!--property name="TraderStageTemplate" value="ammoTier3"/-->
+	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons,APAmmo"/>
+	
+	<property class="Action0">
+		<property name="Create_item" value="ammo44MagnumBulletSilver"/>
+		<property name="Create_item_count" value="15"/>
+	</property>
+</item>
 		
 <!-- Food and Drink -->		
 
@@ -3044,7 +3274,7 @@
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
 				<property name="DamageEntity" value="15"/>
-				<property name="DamageBlock" value="50"/>
+				<property name="DamageBlock" value="60"/>
 				<property name="Explosion.ParticleIndex" value="0"/>
 				<property name="Velocity" value="13"/>
 				<property name="FlyTime" value="6"/>
@@ -3114,7 +3344,7 @@
 			<property name="Delay" value=".5"/>
 			<property name="Infinite_ammo" value="true"/>
 			<property name="DamageEntity" value="7"/>
-			<property name="DamageBlock" value="2"/>
+			<property name="DamageBlock" value="50"/>
 			<property name="Explosion.ParticleIndex" value="10"/>
 			<property name="Explosion.Duration" value="8"/>
 			<property name="Explosion.RadiusBlocks" value="1"/>
@@ -3148,7 +3378,7 @@
 				<property name="Delay" value=".7"/>
 				<!-- obsolete if rounds per minute exists -->
 				<property name="DamageEntity" value="10"/>
-				<property name="DamageBlock" value="15"/>
+				<property name="DamageBlock" value="25"/>
 				<property name="Buff" value="buffInjuryBleedingZombie,buffInfectionCatch,buffBurningZombie"/></property>
 			<property class="Action1">
 				<property name="Class" value="Vomit"/>
@@ -3184,7 +3414,7 @@
 			<property class="Action1">
 				<property name="Class" value="Projectile"/>
 				<property name="DamageEntity" value="20"/>
-				<property name="DamageBlock" value="20"/>
+				<property name="DamageBlock" value="50"/>
 				<property name="Explosion.ParticleIndex" value="10"/>
 				<property name="Explosion.RadiusEntities" value="2"/>
 				<property name="Velocity" value="13"/>
@@ -3258,7 +3488,7 @@
 			<property name="Delay" value=".5"/>
 			<property name="Infinite_ammo" value="true"/>
 			<property name="DamageEntity" value="5"/>
-			<property name="DamageBlock" value="2"/>
+			<property name="DamageBlock" value="20"/>
 			<property name="Explosion.ParticleIndex" value="10"/>
 			<property name="Explosion.Duration" value="8"/>
 			<property name="Explosion.RadiusBlocks" value="1"/>
@@ -3318,47 +3548,6 @@
 		<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="abrasionZombieHit" operation="set" value="1800"/><!--AbrasionRegular-->
 	</effect_group>
 </item>
-
-		<item name="meleeHandUndertakerWildWest">
-			<property name="Extends" value="meleeHandMaster"/>
-			<property name="CreativeMode" value="None"/>
-			<property name="Degradation" value="99999" param1="true"/>
-			<property name="Material" value="Mmetal"/>
-			<property class="Action0">
-				<property name="Range" value="3"/>
-				<property name="Sound_start" value="swoosh"/>
-				<property name="DamageEntity" value="30"/>
-				<property name="DamageBlock" value="125"/>
-				<property name="Buff" value="buffInjuryKnockdown01"/>				
-				</property>
-		<effect_group name="meleeHandUndertakerWildWest" tiered="false">
-			<passive_effect name="ModSlots" operation="base_set" value="0"/>
-			<passive_effect name="BuffProcChance" operation="base_set" value=".0001" tags="buffInfectionCatch"/>
-			<passive_effect name="BuffProcChance" operation="base_set" value=".33" tags="buffInjuryKnockdown01"/>
-		</effect_group>				
-		</item>
-		
-		<item name="meleeHandHammerSpammerWildWest">
-			<property name="Extends" value="meleeHandZombieStrong"/>
-			<property name="Range" value="1.7"/>
-			<property name="Sphere" value=".8"/>	
-			<property class="Action0">
-			<property name="DamageEntity" value="20"/>
-			<property name="DamageBlock" value="500"/>
-			<property name="Buff" value="buffShocked"/>			
-		</property>
-			<effect_group name="meleeHandHammerSpammerWildWest" tiered="false">
-				<passive_effect name="ModSlots" operation="base_set" value="0"/>
-				<!--<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/>  A16 1.5 -->
-				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
-				buff="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"
-				weights=".11,.07,.07,.05,.29,.36,.11"/>
-				<passive_effect name="BuffProcChance" operation="base_set" value=".2" tags="buffShocked"/>				
-			
-			<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" target="other" cvar="infectionCounter" operation="add" value="10"><!--InfectionRegular-->
-				<requirement name="CVarCompare" target="other" cvar="infectionCounter" operation="GT" value="0"/></triggered_effect>			
-			</effect_group>	
-		</item>
 
 	<item name="meleeHandZombieFemaleFatBarker"> <!-- Using ammoProjectileZombieVomit as base -->
 		<property name="Extends" value="meleeHandMaster"/>
@@ -3637,7 +3826,7 @@
 		<property class="Action1">
 			<property name="Class" value="Projectile"/>
 			<property name="DamageEntity" value="6"/> <!-- Radiated Gunslinger -->
-			<property name="DamageBlock" value="35"/> <!-- Radiated Gunslinger -->
+			<property name="DamageBlock" value="40"/> <!-- Radiated Gunslinger -->
 			<!-- property name="Explosion.ParticleIndex" value="7"/ -->
 			<property name="Velocity" value="30"/> <!-- Radiated Gunslinger -->
 			<property name="FlyTime" value="2"/>

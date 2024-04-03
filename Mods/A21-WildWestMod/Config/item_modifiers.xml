@@ -1,5 +1,14 @@
 ﻿<wildwestmod>
 
+<!-- burning shaft for axe -->
+	<remove xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/item_property_overrides[@name='meleeToolAxeT2SteelAxe']"/>
+
+    <append xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']">
+            <item_property_overrides name="meleeToolAxeT2SteelAxe">
+            <property name="FlameEffect" value="#@modfolder:Resources/steelaxeoak.unity3d?SteelFire"/>
+        </item_property_overrides>
+    </append>
+
 	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">	
 		<!-- visible attachment: scope x2 -->
 			<effect_group tiered="false" name="internal attachment prefab (Wild West Mod)">

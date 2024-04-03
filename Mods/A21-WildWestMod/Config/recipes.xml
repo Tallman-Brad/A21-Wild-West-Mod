@@ -2677,12 +2677,13 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceRawDiamond" count="3"/>
 </recipe>
 
-<!--recipe name="modMeleeStunBatonRepulsor" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
+<recipe name="modMeleeStunBatonRepulsor" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceForgedSteel" count="5"/>
 	<ingredient name="resourceDuctTape" count="5"/>
-	<ingredient name="resourceElectricParts" count="10"/>
-	<ingredient name="resourceMechanicalParts" count="5"/>
-</recipe-->
+	<ingredient name="modMeleeWeightedHead" count="1"/>
+	<ingredient name="blueCrystalBattery" count="1"/>
+	<ingredient name="resourceStagAntler" count="1"/>
+</recipe>
 
 <recipe name="modMeleeBunkerBuster" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceForgedSteel" count="5"/>
@@ -4833,6 +4834,12 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceScrapIron" count="4800"/>
 	<ingredient name="ammoGasCan" count="800"/>
 </recipe> <!-- Wild West Mod Values -->
+
+<!-- Winchester Silver Magnum -->	
+<recipe name="ammoBundle44MagnumBulletSilver" count="1" craft_time="60" craft_area="Ammobench">
+	<ingredient name="resourceSilverNugget" count="1"/>
+	<ingredient name="resourceGunPowder" count="75"/>
+</recipe>
 
 <recipe name="cntjailDoorWhiteVariantHelper" craft_time="90" count="1" craft_area="workbench">
 	<ingredient name="resourceForgedSteel" count="22"/>

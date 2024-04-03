@@ -2968,7 +2968,7 @@
 	<property name="difficulty" value="hard"/>
 	<property name="shareable" value="false"/>
 		
-			<objective type="EntityKill" id="zombieSoldier,zombieSoldierFeral,zombieSoldierRadiated,zombieMolotovSoldierFeral,zombieGrinBomb" value="250"/>
+			<objective type="EntityKill" id="zombieSoldier,zombieSoldierFeral,zombieSoldierRadiated,zombieMolotovSoldierFeral,zombieGrinBomb,zombieMutated,zombieMutatedFeral,zombieMutatedRadiated" value="250"/>
 		
 	<reward type="Exp" value="10000"/>
 	<reward type="Item" id="casinoCoin" value="5000"/>

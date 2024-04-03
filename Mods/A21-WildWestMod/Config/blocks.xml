@@ -11,6 +11,13 @@
 	<set xpath="/blocks/block[@name='cementMixer']/property[@name='TakeDelay']/@value">5</set> <!-- Default 15 -->
 	<set xpath="/blocks/block[@name='chemistryStation']/property[@name='TakeDelay']/@value">5</set> <!-- Default 15 -->
 
+<!-- Old Wall Clocks -->
+    <set xpath="/blocks/block[@name='wallClock']/property[@name='Model']/@value">#@modfolder:Resources/NewWallClock.unity3d?wallClockPrefabNew</set>
+    <set xpath="/blocks/block[@name='wallClockBroken']/property[@name='Model']/@value">#@modfolder:Resources/NewWallClock.unity3d?wallClockBrokenPrefabNew</set>
+
+	<!-- Removing movement collision from Drift wood as it can stop a custom vehicle instantly -->
+	<set xpath="/blocks/block[@name='driftwood']/property[@name='Collide']/@value">melee,bullet,arrow,rocket</set>
+
 		<!-- Vanilla Tweaks for Road Replacement Car/Asset Models. -->
 <!-- Master -->
 

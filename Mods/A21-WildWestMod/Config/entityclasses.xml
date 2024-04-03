@@ -39,12 +39,12 @@
 
 	<!-- Horse - Zilox and Darkstardragon -->
 
-	<!--append xpath="/entity_classes/entity_class[@name='playerMale']">
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>	
 			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
 			<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffHorseMovementPlayer"/>
 		</effect_group>
-	</append-->
+	</append>
 
 	<!-- Supply Drop -->
 		<set xpath="/entity_classes/entity_class[@name='supplyPlane']/property[@name='Mesh']/@value">#@modfolder:Resources/HotAirBalloon2.unity3d?HotAirBalloon2</set>
@@ -113,10 +113,10 @@
 	<drop event="Harvest" name="foodBoarMilk" tag="butcherHarvest" count="1,2"/>
 	</append>
 
-<!-- Medusa Screamer -->
-<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse</set>
-<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse3</set>
-<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse2</set>	
+	<!-- Medusa Screamer -->
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamer']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse3</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/Meduse.unity3d?Meduse2</set>	
 
 
 	<!-- New Biker -->
@@ -124,7 +124,6 @@
 	<set xpath="/entity_classes/entity_class[@name='zombieBiker']/property[@name='Mesh']/@value">#@modfolder:Resources/OaksCowboyBiker.unity3d?OaksCowboyBiker</set>
     <set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/property[@name='Mesh']/@value">#@modfolder:Resources/OaksCowboyBiker.unity3d?OaksCowboyBikerFed</set> <!-- fed -->
     <set xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/property[@name='Mesh']/@value">#@modfolder:Resources/OaksCowboyBiker.unity3d?OaksCowboyBikerRad</set>  <!-- Rad -->
-
 
 	
 <append xpath="/entity_classes">
@@ -203,7 +202,7 @@
 	<!-- Gameplay zombieFatCopFeral -->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
 	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
-	<property name="MoveSpeedAggro" value="0.6, 1.45"/> <!-- slight increase -->
+	<property name="MoveSpeedAggro" value="0.6, 1.55"/> <!-- increased so can catch player running backwards -->
 	<property name="JumpMaxDistance" value="1.8, 2.5"/>
 	<property name="HandItem" value="meleeHandZombieCopFeral"/>
 	<property name="ExperienceGain" value="1200"/><!-- XP strong feral -->
@@ -257,8 +256,8 @@
 
 <entity_class name="zombieMutated" extends="zombieFatCop">
 	<property name="UserSpawnType" value="Menu"/>
-	<property name="Tags" value="entity,zombie,walker"/>
-	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutated.prefab"/>
+	<property name="Tags" value="entity,zombie,walker,feral"/> <!-- added feral -->
+	<property name="Mesh" value="#@modfolder:Resources/mutantoak.unity3d?mutant"/>
 	<property name="SizeScale" value="1"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
@@ -287,12 +286,12 @@
   <!-- Gameplay zombieMutated -->
 	<property name="HandItem" value="meleeHandzombieMutated"/>
 	<property name="ExplodeHealthThreshold" value="0"/>
-	<property name="MoveSpeed" value=".25"/>
-	<property name="MoveSpeedAggro" value=".4, 1.3"/>
+	<property name="MoveSpeed" value=".5"/> --> <!-- .25 -->
+	<property name="MoveSpeedAggro" value=".4, 1.1"/> <!-- .4, 1.3 -->
 	<property name="ExperienceGain" value="400"/>
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		<passive_effect name="HealthMax" operation="base_set" value="250"/> <!-- 150 -->
 	</effect_group>
 </entity_class>
 
@@ -300,11 +299,11 @@
 <entity_class name="zombieMutatedFeral" extends="zombieMutated">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,zombie,walker,feral"/>
-	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedFeral.prefab"/>
+	<property name="Mesh" value="#@modfolder:Resources/mutantoak.unity3d?mutantfed"/>
 	<property name="SizeScale" value="1.1"/>
 
 	<!-- Gameplay zombieMutatedFeral -->
-	<property name="HandItem" value="meleeHandzombieMutatedFeral"/>
+	<property name="HandItem" value="meleeHandZombieFire"/>   <!--meleeHandzombieMutatedFeral-->
 	<property name="DismemberMultiplierHead" value=".7"/><property name="DismemberMultiplierArms" value=".7"/><property name="DismemberMultiplierLegs" value=".7"/><!-- Feral -->
 	<property name="PainResistPerHit" value=".7"/><!-- Feral -->
 	<property name="MoveSpeedAggro" value=".5, 1.35"/>
@@ -312,7 +311,7 @@
 	<property name="LootDropProb" value=".03"/> <!-- Feral -->
 
 	<effect_group name="Base Effects">
-		<passive_effect name="HealthMax" operation="base_set" value="350"/>
+		<passive_effect name="HealthMax" operation="base_set" value="450"/> <!-- 350 -->
 		<!--<passive_effect name="EntityDamage" operation="perc_add" value="0"/>--> <!-- Feral damage -->
 	</effect_group>
 </entity_class>
@@ -321,11 +320,11 @@
 <entity_class name="zombieMutatedRadiated" extends="zombieMutatedFeral">
 	<property name="UserSpawnType" value="Menu"/>
 	<property name="Tags" value="entity,zombie,walker,feral,radiated"/>
-	<property name="Mesh" value="@:Entities/Zombies/Prefabs/ZMutatedRadiated.prefab"/>
+	<property name="Mesh" value="#@modfolder:Resources/mutantoak.unity3d?mutantrad"/>
 	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>-->
 
 	<!-- Gameplay zombieMutatedRadiated -->
-	<property name="HandItem" value="meleeHandzombieMutatedRadiated"/>
+	<property name="HandItem" value="meleeHandZombieCopFeral"/>
 	<property name="DismemberMultiplierHead" value=".4"/><property name="DismemberMultiplierArms" value=".4"/><property name="DismemberMultiplierLegs" value=".4"/><!-- Radiated -->
 	<property name="PainResistPerHit" value=".9"/><!-- Radiated -->
 	<property name="MoveSpeedAggro" value=".5, 1.35"/>
@@ -2595,7 +2594,7 @@
 		<!-- Horse - Zilox and Darkstardragon -->	
 
 		<entity_class name="vehicleWWMHorseT1">
-			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
+			<property name="Tags" value="vehicle,wwmhorseapple,horsehealth"/>
 			<property name="Class" value="EntityVJeep"/>
 			<property name="Parent" value="Cars"/>
 			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?HorseT1.prefab"/>
@@ -2617,7 +2616,7 @@
 		</entity_class>
 		
 		<entity_class name="vehicleWWMHorseT2">
-			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
+			<property name="Tags" value="vehicle,wwmhorseapple,horsehealth"/>
 			<property name="Class" value="EntityVJeep"/>
 			<property name="Parent" value="Cars"/>
 			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?HorseT2.prefab"/>
@@ -2639,7 +2638,7 @@
 		</entity_class>
 		
 		<entity_class name="vehicleWWMHorseT3">
-			<property name="Tags" value="vehicle,horsedeco,wwmhorseapple,horsehealth"/>
+			<property name="Tags" value="vehicle,wwmhorseapple,horsehealth"/>
 			<property name="Class" value="EntityVJeep"/>
 			<property name="Parent" value="Cars"/>
 			<property name="Prefab" value="#@modfolder:Resources/WWMHorsey.unity3d?HorseT3.prefab"/>

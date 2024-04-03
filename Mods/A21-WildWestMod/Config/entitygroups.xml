@@ -579,11 +579,14 @@
  <!-- First Grin Bomber - Military-->
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS103']">
 		zombieSoldier, .5
-		zombieSoldierFeral, .7
-		zombieSoldierRadiated, .25
 		zombieMaleHazmat, .5
+		zombieMutated, .5
+		zombieSoldierFeral, .7
 		zombieMaleHazmatFeral, .7
+		zombieMutatedFeral, .7
+		zombieSoldierRadiated, .25
 		zombieMaleHazmatRadiated, .25
+		zombieMutatedRadiated, .25
 		zombieBusinessManRadiatedGunslinger, .1
 		zombieMolotovSoldierFeral, .1
 		zombieSpiderFeralFireGlider, .1
@@ -598,11 +601,14 @@
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS140']">
 		zombieSoldier, .2
+		zombieMaleHazmat, .2
+		zombieMutated, .2
 		zombieSoldierFeral, .5
+		zombieMaleHazmatFeral, .5
+		zombieMutatedFeral, .5
 		zombieSoldierRadiated, .5
-		zombieMaleHazmat, .7
-		zombieMaleHazmatFeral, .2
 		zombieMaleHazmatRadiated, .5
+		zombieMutatedRadiated, .5
 		zombieBusinessManRadiatedGunslinger, .1
 		zombieMolotovSoldierFeral, .1
 		zombieSpiderFeralFireGlider, .1
@@ -631,14 +637,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS255']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
-		zombieBusinessManRadiatedGunslinger, .1
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .1
 		zombieGrinBomb, .1
 	</set>						   
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS304']">
@@ -651,16 +660,19 @@
 		zombieTheRatRadiated, .05
 	</set>
 	
-	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS354']">
+	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS354']">	
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>   
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS407']">
@@ -674,14 +686,17 @@
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS453']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>  
 	
@@ -696,14 +711,17 @@
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS550']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set> 
 	
@@ -716,14 +734,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS651']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -739,14 +760,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS758']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -762,14 +786,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS858']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -785,14 +812,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS951']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -808,14 +838,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1106']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -831,14 +864,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1308']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -854,14 +890,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1506']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -877,14 +916,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1712']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -900,14 +942,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1911']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -923,14 +968,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2102']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -946,14 +994,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2314']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -969,14 +1020,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2501']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -992,14 +1046,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2708']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1015,14 +1072,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2903']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1038,14 +1098,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3103']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1061,14 +1124,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3306']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1084,14 +1150,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3514']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1107,14 +1176,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3707']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1130,14 +1202,17 @@
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS3904']">
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1150,14 +1225,17 @@
 		zombieTheRatFeral, .075
 		zombieTheRatRadiated, .05
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1170,14 +1248,17 @@
 		zombieTheRatFeral, .075
 		zombieTheRatRadiated, .05
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1190,14 +1271,17 @@
 		zombieTheRatFeral, .075
 		zombieTheRatRadiated, .05
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1210,14 +1294,17 @@
 		zombieTheRatFeral, .075
 		zombieTheRatRadiated, .05
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 	
@@ -1230,14 +1317,17 @@
 		zombieTheRatFeral, .075
 		zombieTheRatRadiated, .05
 		zombieSoldier, .1
-		zombieSoldierFeral, .25
-		zombieSoldierRadiated, .7
 		zombieMaleHazmat, .1
+		zombieMutated, .1
+		zombieSoldierFeral, .25
 		zombieMaleHazmatFeral, .25
+		zombieMutatedFeral, .25
+		zombieSoldierRadiated, .7
 		zombieMaleHazmatRadiated, .7
-		zombieBusinessManRadiatedGunslinger, .15
+		zombieMutatedRadiated, .7
 		zombieMolotovSoldierFeral, .15
 		zombieSpiderFeralFireGlider, .15
+		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
 	</set>
 
