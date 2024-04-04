@@ -765,7 +765,7 @@
 			<property name="slot_type" value="chassis"/>
 			<property name="mesh" value="chassis"/>
 			<property name="transform" value="Origin"/>
-			<property name="paint" value="Horse-Idle"/>
+			<!--property name="paint" value="Horse-Idle"/-->
 		</property>
 
 		<property class="engine">
@@ -898,7 +898,7 @@
 			<property name="slot_type" value="chassis"/>
 			<property name="mesh" value="chassis"/>
 			<property name="transform" value="Origin"/>
-			<property name="paint" value="Horse-Idle"/>
+			<!--property name="paint" value="Horse-Idle"/-->
 		</property>
 
 		<property class="engine">
@@ -1046,7 +1046,7 @@
 			<property name="slot_type" value="chassis"/>
 			<property name="mesh" value="chassis"/>
 			<property name="transform" value="Origin"/>
-			<property name="paint" value="Horse-Idle"/>
+			<!--property name="paint" value="Horse-Idle"/-->
 		</property>
 
 		<property class="engine">
