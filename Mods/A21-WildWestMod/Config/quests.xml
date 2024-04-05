@@ -2382,6 +2382,7 @@
 		<objective type="BlockPlace" id="campfire" value="1" phase="2"/>
 
 		<reward type="Exp" value="2500"/>
+		<reward type="SkillPoints" value="1" chainreward="false"/>
 		<reward type="Item" id="PotStove" value="1"/>
 		<reward type="Item" id="resourceScrapIron" value="24"/>
 		<reward type="Item" id="cntBeerCooler" value="1"/>
@@ -2454,6 +2455,7 @@
 		<objective type="BlockPlace" id="WoodCoopEmpty" value="1" phase="1"/>
 
 		<reward type="Exp" value="2500"/>
+		<reward type="SkillPoints" value="1" chainreward="false"/>
 		<reward type="Item" id="plantedPotato1" value="1"/>
 		<reward type="Item" id="plantedCorn1" value="1"/>
 		<reward type="Item" id="plantedPumpkin1" value="1"/>
@@ -2530,7 +2532,7 @@
 		<reward type="Item" id="foodApple" value="20"/>
 		<reward type="Item" id="resourceCobblestones" value="250"/>
 		<reward type="Item" id="qc_fort01" value="1"/>
-		<reward type="SkillPoints" value="2" chainreward="true"/>	
+		<reward type="SkillPoints" value="2" chainreward="true"/>
 	</quest>
 	
 	<!-- Adds the "Fort Challenge" -->
@@ -2613,6 +2615,7 @@
 		<objective type="BlockPlace" id="ladderMetal" value="3" phase="1"/>
 
 		<reward type="Exp" value="2500"/>
+		<reward type="SkillPoints" value="1" chainreward="false"/>
 		<reward type="Item" id="resourceConcreteMix" value="50"/>		
 		<reward type="Quest" id="quest_fort04"/>
 	</quest>
@@ -2676,7 +2679,7 @@
 		<reward type="Exp" value="2500"/>
 		<reward type="Item" id="ammoJunkTurretRegular" value="300"/>
 		<reward type="Item" id="modGunDrumMagazineExtender" value="1"/>		
-		<reward type="SkillPoints" value="2" chainreward="true"/>
+		<reward type="SkillPoints" value="2" chainreward="false"/>
 	</quest>
 	
 	<!-- Adds the "Chuckwagon Dinner Bell Challenge" -->	
