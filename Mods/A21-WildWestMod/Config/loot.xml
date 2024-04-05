@@ -5407,9 +5407,10 @@ If there is no hit the default quality is used.
 <lootgroup name="groupBeerCooler01">
 	<item name="drinkJarBeer" loot_prob_template="low"/> <!-- Lowered -->
 	<item group="groupFoodCommon" loot_prob_template="low"/> <!-- Same -->
-	<item group="groupFoodUncommon" loot_prob_template="veryLow"/> <!-- New -->
+	<item group="groupFoodUncommon" loot_prob_template="low"/> <!-- New -->
+	<item group="groupFoodRare" loot_prob_template="veryLow"/> <!-- New -->
 	<item group="groupDrinksCommon" loot_prob_template="med"/> <!-- Same -->
-	<item name="drinkCanMegaCrush" count="1" loot_prob_template="veryLow"/> <!-- New -->
+	<item name="drinkCanMegaCrush" count="1" loot_prob_template="low"/> <!-- New -->
 </lootgroup>
 
 <lootgroup name="groupBeerCooler" count="all">
@@ -5418,9 +5419,9 @@ If there is no hit the default quality is used.
 
 <!-- *** CoffeeMaker_Loot -->
 <lootgroup name="groupCoffeeMaker01">
-	<item name="resourceCropCoffeeBeans" count="1,3" loot_prob_template="high"/>
+	<item name="resourceCropCoffeeBeans" count="1,3" loot_prob_template="med"/> <!-- Lowered -->
 	<item name="drinkJarRiverWater" count="1" loot_prob_template="med"/>
-	<item name="drinkJarCoffee" count="1" loot_prob_template="veryLow"/>
+	<item name="drinkJarCoffee" count="1" loot_prob_template="low"/> <!-- Raised -->
 </lootgroup>
 
 <lootgroup name="groupCoffeeMaker" count="all">
@@ -5430,7 +5431,7 @@ If there is no hit the default quality is used.
 <!-- *** SodaFountain_Loot -->
 <lootgroup name="groupSodaFountain01">
 	<item name="drinkJarRiverWater" count="1"/>
-	<item name="drinkCanMegaCrush" count="1" loot_prob_template="veryLow"/>
+	<item name="drinkCanMegaCrush" count="1" loot_prob_template="low"/> <!-- Raised -->
 </lootgroup>
 
 <lootgroup name="groupSodaFountain" count="all">

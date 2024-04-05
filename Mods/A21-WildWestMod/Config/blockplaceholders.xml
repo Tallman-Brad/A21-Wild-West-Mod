@@ -500,7 +500,7 @@
 		<!--block name="cntTrashPile04"/-->
 		<block name="cntTrashPile05"/>
 		<block name="cntTrashPile06"/>
-		<block name="cntTrashPile07"/>
+		<!--block name="cntTrashPile07"/-->
 		<block name="cntTrashPile08"/>
 		<block name="cntTrashPile09"/>
 		<!--block name="cntShoppingCartEmptyRed" prob=".2"/-->
@@ -564,7 +564,7 @@
 	<!-- Replace the lootYard with one of the following -->
 	<placeholder name="cntGarageRandomLootHelper">
 		<block name="cntGarageStorage" prob=".2"/>
-		<block name="cntTrashPile02" prob=".5"/>
+		<!--block name="cntTrashPile02" prob=".5"/-->
 		<block name="cntCardboardBox" prob=".2"/>
 		<!--block name="cntBackpack01" prob=".02"/-->
 		<!--block name="cntBackpack03" prob=".02"/-->
