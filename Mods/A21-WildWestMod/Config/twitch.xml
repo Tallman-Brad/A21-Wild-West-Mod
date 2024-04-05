@@ -1,0 +1,71 @@
+<configs>
+	<append xpath="/twitch">
+	
+	<!-- Group Animals -->
+	
+	<action name="twitch_groupTerritorialBisons">
+		<property name="command" value="#group_bisons" />
+		<property name="command_key" value="TwitchAction_SpawnGroupTerritorialBisonsCommand" />
+		<property name="title_key" value="TwitchAction_SpawnGroupTerritorialBisons" />
+		<property name="description_key" value="TwitchAction_SpawnGroupTerritorialBisonsDesc" />
+		<property name="category" value="Spawns" />
+		<property name="start_gamestage" value="50" />
+		<property name="event_name" value="group_bisons" />
+		<property name="default_cost" value="300" />
+		<property name="is_positive" value="false" />
+		<property name="add_cooldown" value="true" />
+		<property name="cooldown_add_amount" value="50" />
+		<property name="cooldown" value="60" />
+		<property name="cooldown_blocked" value="true" />
+		<property name="waiting_blocked" value="true" />
+		<property name="vote_cooldown_add" value="30" />
+		<property name="min_respawn_count" value="3" />
+		<property name="max_respawn_count" value="3" />
+		<property name="presets" value="standard,hardcore" />
+	</action>
+	
+	<action name="twitch_groupCrispies">
+		<property name="command" value="#group_crispies" />
+		<property name="command_key" value="TwitchAction_SpawnGroupCrispiesCommand" />
+		<property name="title_key" value="TwitchAction_SpawnGroupCrispies" />
+		<property name="description_key" value="TwitchAction_SpawnGroupCrispiesDesc" />
+		<property name="category" value="Spawns" />
+		<property name="start_gamestage" value="50" />
+		<property name="event_name" value="group_crispies" />
+		<property name="default_cost" value="300" />
+		<property name="is_positive" value="false" />
+		<property name="add_cooldown" value="true" />
+		<property name="cooldown_add_amount" value="50" />
+		<property name="cooldown" value="60" />
+		<property name="cooldown_blocked" value="true" />
+		<property name="waiting_blocked" value="true" />
+		<property name="vote_cooldown_add" value="30" />
+		<property name="min_respawn_count" value="3" />
+		<property name="max_respawn_count" value="3" />
+		<property name="presets" value="standard,hardcore" />
+	</action>
+	
+	<action name="twitch_groupScreamerPets">
+		<property name="command" value="#group_screamerpets" />
+		<property name="command_key" value="TwitchAction_SpawnGroupScreamerPetsCommand" />
+		<property name="title_key" value="TwitchAction_SpawnGroupCrispies" />
+		<property name="description_key" value="TwitchAction_SpawnGroupScreamerPetsDesc" />
+		<property name="category" value="Spawns" />
+		<property name="start_gamestage" value="50" />
+		<property name="event_name" value="group_screamerpets" />
+		<property name="default_cost" value="300" />
+		<property name="is_positive" value="false" />
+		<property name="add_cooldown" value="true" />
+		<property name="cooldown_add_amount" value="50" />
+		<property name="cooldown" value="60" />
+		<property name="cooldown_blocked" value="true" />
+		<property name="waiting_blocked" value="true" />
+		<property name="vote_cooldown_add" value="30" />
+		<property name="min_respawn_count" value="3" />
+		<property name="max_respawn_count" value="3" />
+		<property name="presets" value="standard,hardcore" />
+	</action>
+	
+	</append>
+		
+</configs>

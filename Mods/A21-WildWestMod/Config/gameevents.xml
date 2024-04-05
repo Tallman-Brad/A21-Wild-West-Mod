@@ -1,0 +1,37 @@
+<configs>
+	<append xpath="/gameevents">
+	
+	<!-- Group Animal Spawns -->
+	
+	<action_sequence name="group_bisons" template="spawn_group">
+		<variable name="zombiename" value="animalBisonBear" />
+		<variable name="spawncount" value="5" />
+		<variable name="alertsound" value="Animals/Bear/bearattack" />
+		<variable name="gamestage_extra1" value="75" />
+		<variable name="spawncount_extra1" value="2" />
+		<variable name="gamestage_extra2" value="100" />
+		<variable name="spawncount_extra2" value="3" />
+	</action_sequence>
+	
+	<action_sequence name="group_crispies" template="spawn_group">
+		<variable name="zombiename" value="guppyVultureBurnt,guppyMommaVultureBurnt,guppyRadiatedMommaVultureBurnt,guppyRadiatedFireMommaVultureBurnt" />
+		<variable name="spawncount" value="5" />
+		<variable name="alertsound" value="Animals/Vulture/vultureattack" />
+		<variable name="gamestage_extra1" value="75" />
+		<variable name="spawncount_extra1" value="2" />
+		<variable name="gamestage_extra2" value="100" />
+		<variable name="spawncount_extra2" value="3" />
+	</action_sequence>
+	
+	<action_sequence name="group_screamerpets" template="spawn_group">
+		<variable name="zombiename" value="zombieRatPet,zombieRatPetFeral,zombieRatPetRadiated" />
+		<variable name="spawncount" value="5" />
+		<variable name="alertsound" value="wolfalert" />
+		<variable name="gamestage_extra1" value="75" />
+		<variable name="spawncount_extra1" value="2" />
+		<variable name="gamestage_extra2" value="100" />
+		<variable name="spawncount_extra2" value="3" />
+	</action_sequence>
+
+	</append>
+</configs>
