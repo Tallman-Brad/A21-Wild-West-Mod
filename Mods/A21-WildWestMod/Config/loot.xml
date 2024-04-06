@@ -3505,21 +3505,28 @@ If there is no hit the default quality is used.
 	<item group="schematicsModsAndGeneralT2" loot_prob_template="ProbT2Cap"/>
 </lootgroup>
 
+<!-- Bringing in mid/late range vehicle mod schematics earlier and keeping them later to remove scripted drops which are far too predictable -->
 <!-- *** T0_Vehicle_Mod_Schematics -->
 <lootgroup name="vehicleModSchematics01">
 	<item name="modVehicleOffRoadHeadlightsSchematic"/>
+	<item name="modVehicleFuelSaverSchematic"/>
+	<item name="modVehicleReserveFuelTankSchematic"/>
 </lootgroup>
 
 <!-- *** T1_Vehicle_Mod_Schematics -->
 <lootgroup name="vehicleModSchematics02">
 	<item name="modVehicleFuelSaverSchematic"/>
 	<item name="modVehicleReserveFuelTankSchematic"/>
+	<item name="modVehicleOffRoadHeadlightsSchematic"/>
+	<item name="modVehicleSuperChargerSchematic"/>
 </lootgroup>
 
 <!-- *** T2_Vehicle_Mod_Schematics -->
 <lootgroup name="vehicleModSchematics03">
 <!--	<item name="modVehicleExpandedSeatSchematic"/> -->    <!-- #####################-->
 	<item name="modVehicleSuperChargerSchematic"/>
+	<item name="modVehicleFuelSaverSchematic"/>
+	<item name="modVehicleReserveFuelTankSchematic"/>
 </lootgroup>
 
 <!-- *** Vehicle_Mod_Schematics_Scaled -->
