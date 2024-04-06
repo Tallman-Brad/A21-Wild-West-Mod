@@ -542,7 +542,7 @@
 		zombieBurntFeral, .35
 		zombieMutatedFeral, .35
 	</csv>	
-	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains (text(), 'zombieMoeFeral')]/text()" delim="\n" op="add">
+	<csv xpath="/entitygroups/entitygroup[starts-with(@name, 'feralHordeStageGS') and contains (text(), 'zombieMoeRadiated')]/text()" delim="\n" op="add">
 		zombieBurntRadiated, .2
 		zombieMutatedRadiated, .2
 		zombieBusinessManRadiatedGunslinger, .35 
