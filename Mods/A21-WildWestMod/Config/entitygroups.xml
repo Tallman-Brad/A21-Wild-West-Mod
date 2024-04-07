@@ -110,7 +110,7 @@
 <!-- *** FOREST ANIMALS NIGHT -->
 
 	<csv xpath="/entitygroups/entitygroup[@name='WildGameForestNight']/text()" delim="\n" op="add" >
-		animalSmallBat, 40	
+		animalSmallBat, 25	
 	</csv>
 	
 	<!-- Custom Groups -->

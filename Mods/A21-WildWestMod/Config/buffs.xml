@@ -320,15 +320,15 @@
 		<update_rate value=".1"/>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value="0"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.1" cvar="$RFood" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.001" cvar="$RFood" operation="set" value="1"/>
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value="0.002"/>
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.1" cvar="$RFood" operation="set" value=".002"/> 
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.001" cvar="$RFood" operation="set" value=".002"/> 
 		</effect_group>
 		<effect_group>
 			<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value=".001"/>
-			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.1" cvar="$RFood" operation="set" value=".001"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="0.001" cvar="$RFood" operation="set" value=".001"/>
 		</effect_group>
 	</buff>
 		
@@ -346,7 +346,7 @@
 		<damage_type value="heat"/>																																		  
 		<stack_type value="ignore"/>
 		<duration value="0"/>
-		<update_rate value="15" />
+		<update_rate value="30" />
 		<effect_group name="Damage over Time">
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="10" />
 		</effect_group>
@@ -357,8 +357,7 @@
 <buff name="CraterBear" hidden="true">
             <effect_group>
                 <triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="#@modfolder:Resources/bearfx.unity3d?bearfx" local_offset="0,-1.5,0.5" local_rotation="0,0,0" parent_transform="Spine"/>
-
-        </effect_group>
+			</effect_group>
 </buff>
 
 	</append>
