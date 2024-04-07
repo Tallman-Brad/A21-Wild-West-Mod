@@ -3199,7 +3199,7 @@
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffvehicleWWMHorseHeal" target="selfAOE" range="1.5" target_tags="wwmhorseapple"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffvehicleWWMHorseHeal" target="selfAOE" range="3.0" target_tags="wwmhorseapple"/>
 	</effect_group>
 </item>
 
