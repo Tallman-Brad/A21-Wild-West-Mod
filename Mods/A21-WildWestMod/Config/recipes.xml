@@ -3962,6 +3962,14 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="resourceAnimalFat" count="1"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 	</recipe>
+	
+	<recipe name="foodChickSticks" count="1" craft_time="18" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
+	<ingredient name="CaughtChick" count="3"/>
+	<ingredient name="foodHoneyComb" count="1"/>
+	<ingredient name="foodWildWestAcornFlour" count="1"/>
+	<ingredient name="foodEgg" count="1"/>
+	<ingredient name="resourceWood" count="1"/>
+	</recipe>
 
 <!-- Oakraven's Wild West Lights and Piano -->
 
@@ -4434,13 +4442,19 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
-	<!-- Apple Pie -->
+	<!-- Apple Dishes -->
 	
 	<recipe name="foodApplePie" count="1" craft_time="18" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
 		<ingredient name="foodApple" count="2"/>
 		<ingredient name="foodWildWestAcornFlour" count="1"/>
 		<ingredient name="foodEgg" count="1"/>
 		<ingredient name="resourceAnimalFat" count="1"/>
+	</recipe>
+	
+	<recipe name="foodHoneyApple" count="1" craft_time="18" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
+		<ingredient name="foodApple" count="1"/>
+		<ingredient name="foodHoneyComb" count="1"/>
+		<ingredient name="resourceWood" count="1"/>
 	</recipe>
 
 <!-- Decorations -->
