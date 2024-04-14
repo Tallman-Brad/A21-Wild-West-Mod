@@ -5438,7 +5438,7 @@ If there is no hit the default quality is used.
 <!-- *** SodaFountain_Loot -->
 <lootgroup name="groupSodaFountain01">
 	<item name="drinkJarRiverWater" count="1"/>
-	<item name="drinkCanMegaCrush" count="1" loot_prob_template="low"/> <!-- Raised -->
+	<item name="drinkCanMegaCrush" count="1" loot_prob_template="med"/> <!-- Raised -->
 </lootgroup>
 
 <lootgroup name="groupSodaFountain" count="all">
