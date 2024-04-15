@@ -579,19 +579,19 @@
  <!-- First Grin Bomber - Military-->
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS103']">
 		zombieMaleHazmat
-		zombieSoldier, .15
-		zombieMutated, .15
+		zombieSoldier, .5
+		zombieMutated, .25
 		zombieSoldierFeral, .1
 		zombieMaleHazmatFeral, .1
-		zombieMutatedFeral, .1
-		zombieSoldierRadiated, .05
-		zombieMaleHazmatRadiated, .05
-		zombieMutatedRadiated, .05
-		zombieBusinessManRadiatedGunslinger, .025
-		zombieMolotovSoldierFeral, .025
-		zombieSpiderFeralFireGlider, .025
-		zombieGrinBomb, .025
-	</set>	   
+		zombieMutatedFeral, .025
+		zombieSoldierRadiated, .02
+		zombieMaleHazmatRadiated, .02
+		zombieMutatedRadiated, .02
+		zombieBusinessManRadiatedGunslinger, .02
+		zombieMolotovSoldierFeral, .02
+		zombieSpiderFeralFireGlider, .02
+		zombieGrinBomb, .01
+	</set>
 	
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS121']">
 		guppyVultureBurnt
@@ -601,17 +601,17 @@
 	</set>
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS140']">
 		zombieMaleHazmat
-		zombieSoldier, .15
-		zombieMutated, .15
-		zombieSoldierFeral, .1
-		zombieMaleHazmatFeral, .1
+		zombieSoldier, .5
+		zombieMutated, .25
+		zombieSoldierFeral, .25
+		zombieMaleHazmatFeral, .25
 		zombieMutatedFeral, .1
-		zombieSoldierRadiated, .05
-		zombieMaleHazmatRadiated, .05
+		zombieSoldierRadiated, .1
+		zombieMaleHazmatRadiated, .1
 		zombieMutatedRadiated, .05
-		zombieBusinessManRadiatedGunslinger, .025
-		zombieMolotovSoldierFeral, .025
-		zombieSpiderFeralFireGlider, .025
+		zombieBusinessManRadiatedGunslinger, .05
+		zombieMolotovSoldierFeral, .05
+		zombieSpiderFeralFireGlider, .05
 		zombieGrinBomb, .025
 	</set>
 	
@@ -649,7 +649,7 @@
 		zombieMolotovSoldierFeral, .05
 		zombieSpiderFeralFireGlider, .05
 		zombieGrinBomb, .05
-	</set>						   
+	</set>				   
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS304']">
 		guppyVultureBurnt
 		guppyMommaVultureBurnt, .4
@@ -674,7 +674,7 @@
 		zombieSpiderFeralFireGlider, .15
 		zombieBusinessManRadiatedGunslinger, .15
 		zombieGrinBomb, .1
-	</set>   
+	</set>  
 	<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS407']">
 		guppyVultureBurnt
 		guppyMommaVultureBurnt, .4
