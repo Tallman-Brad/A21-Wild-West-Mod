@@ -711,8 +711,8 @@
 	<!-- Interaction -->
 	<property name="MaxDamage" value="100"/>
 	<property name="HeatMapStrength" value="3"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
+	<property name="HeatMapTime" value="2500"/>
+	<property name="HeatMapFrequency" value="500"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
@@ -779,9 +779,9 @@
 	<property name="SellableToTrader" value="false"/>
 	<!-- Interaction -->
 	<property name="MaxDamage" value="100"/>
-	<property name="HeatMapStrength" value="5"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
+	<property name="HeatMapStrength" value="3"/>
+	<property name="HeatMapTime" value="2500"/>
+	<property name="HeatMapFrequency" value="500"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
@@ -838,9 +838,9 @@
 	<property name="SellableToTrader" value="false"/>
 	<!-- Interaction -->
 	<property name="MaxDamage" value="100"/>
-	<property name="HeatMapStrength" value="5"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
+	<property name="HeatMapStrength" value="3"/>
+	<property name="HeatMapTime" value="2500"/>
+	<property name="HeatMapFrequency" value="500"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
@@ -897,9 +897,9 @@
 	<property name="SellableToTrader" value="false"/>
 	<!-- Interaction -->
 	<property name="MaxDamage" value="100"/>
-	<property name="HeatMapStrength" value="5"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
+	<property name="HeatMapStrength" value="3"/>
+	<property name="HeatMapTime" value="2500"/>
+	<property name="HeatMapFrequency" value="500"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property name="OpenSound" value="campfire_open"/>
@@ -932,11 +932,11 @@
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="ParticleName" value="campfire"/>
-	<property name="ParticleOffset" value="0.5,0,0.5"/>
+	<property name="ParticleOffset" value="0.5,0,0.75"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="5"/>
-	<property name="HeatMapTime" value="5000"/>
-	<property name="HeatMapFrequency" value="1000"/>
+	<property name="HeatMapStrength" value="3"/>
+	<property name="HeatMapTime" value="2500"/>
+	<property name="HeatMapFrequency" value="500"/>
 	<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
 	<property name="ActiveRadiusEffects" value="buffCampfireAOE(3)"/>
 	<property class="Workstation">
