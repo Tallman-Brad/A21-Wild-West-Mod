@@ -276,6 +276,9 @@
 <!-- Decorative Logs Walls and Door -->
 	<set xpath="/blocks/block[@name='doorWoodLargeGate']/property[@name='MaxDamage']/@value">1000</set>
  	<append xpath="/blocks/block[@name='doorWoodLargeGate']/property[@name='Group']/@value">,Decor/Miscellaneous</append>
+	<append xpath="/blocks/block[@name='doorWoodLargeGate']" >
+		<property name="EconomicValue" value="100"/>	
+	</append>
 	<append xpath="/blocks/block[@name='logWallLeft']">
 		<property name="MaxDamage" value="1000"/>
 		<property name="Group" value="Building,advBuilding,Decor/Miscellaneous"/>
@@ -403,10 +406,6 @@
 	
 <!-- Custom Content From Here -->
 <!-- Price to remove sell exploit for trader door -->
-
-	<append xpath="/blocks/block[@name='doorwoodlargegate']" >
-		<property name="EconomicValue" value="100"/>
-	</append>
 
 	<append xpath="/blocks">
 	
