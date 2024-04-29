@@ -409,6 +409,7 @@
 	<property name="Extends" value="logWallLeft"/>		
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="logWallLeft"/>
+	<property name="EconomicValue" value="100"/>
 	<property name="DescriptionKey" value="blockVariantHelperGroupDesc"/>
 	<property name="Group" value="Building,advBuilding,Decor/Miscellaneous"/>
 	<property name="ItemTypeIcon" value="all_blocks"/>
