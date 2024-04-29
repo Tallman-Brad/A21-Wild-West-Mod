@@ -127,7 +127,7 @@
 	
 <!-- Set for replacement custom features -->
 
-. Includes regular, feral and radiated.<!-- Set for SportsBag01 replacement custom features -->
+<!-- Set for SportsBag01 replacement custom features -->
 	
 	<remove xpath="/blocks/block[@name='cntSportsBag01']/property[@name='TintColor']"/>
 	<remove xpath="/blocks/block[@name='cntSportsBag01Red']/property[@name='TintColor']"/>
@@ -402,6 +402,11 @@
 	</append>
 	
 <!-- Custom Content From Here -->
+<!-- Price to remove sell exploit for trader door -->
+
+	<append xpath="/blocks/block[@name='doorwoodlargegate']" >
+		<property name="EconomicValue" value="100"/>
+	</append>
 
 	<append xpath="/blocks">
 	
