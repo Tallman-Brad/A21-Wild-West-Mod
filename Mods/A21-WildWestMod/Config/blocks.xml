@@ -1859,6 +1859,7 @@
         <property name="Extends" value="WildWestLightTemplate"/>
 		<property name="CustomIcon" value="lantern1"/>
 		<property name="DescriptionKey" value="lantern1Desc"/>
+		<property name="EconomicValue" value="300"/>
         <property name="Model" value="#@modfolder:Resources/oldwestlights.unity3d?lantern1"/>
 		<property name="FilterTags" value="foutdoor,fcrops"/>
 		<property name="SortOrder1" value="a090"/>
@@ -1881,6 +1882,7 @@
         <property name="Extends" value="WildWestLightTemplate"/>
 		<property name="CustomIcon" value="lantern2"/>
 		<property name="DescriptionKey" value="lantern2Desc"/>
+		<property name="EconomicValue" value="300"/>
         <property name="Model" value="#@modfolder:Resources/oldwestlights.unity3d?lantern2"/>
 		<property name="FilterTags" value="foutdoor,fcrops"/>
 		<property name="SortOrder1" value="a090"/>
@@ -1893,6 +1895,7 @@
         <property name="Extends" value="WildWestLightTemplate"/>
 		<property name="CustomIcon" value="lantern3"/>
 		<property name="DescriptionKey" value="lantern3Desc"/>
+		<property name="EconomicValue" value="300"/>
         <property name="Model" value="#@modfolder:Resources/oldwestlights.unity3d?Lantern3"/>
 		<property name="FilterTags" value="foutdoor,fcrops"/>
 		<property name="SortOrder1" value="a090"/>
@@ -1905,6 +1908,7 @@
         <property name="Extends" value="WildWestLightTemplate"/>
 		<property name="CustomIcon" value="lantern4"/>
 		<property name="DescriptionKey" value="lantern4Desc"/>
+		<property name="EconomicValue" value="300"/>
         <property name="Model" value="#@modfolder:Resources/oldwestlights.unity3d?lantern4"/>
 		<property name="FilterTags" value="foutdoor,fcrops"/>
 		<property name="SortOrder1" value="a090"/>
@@ -1917,6 +1921,7 @@
         <property name="Extends" value="WildWestLightTemplate"/>
 		<property name="CustomIcon" value="lantern5"/>
 		<property name="DescriptionKey" value="lantern5Desc"/>
+		<property name="EconomicValue" value="300"/>
         <property name="Model" value="#@modfolder:Resources/oldwestlights.unity3d?lantern5"/>
 		<property name="FilterTags" value="foutdoor,fcrops"/>
 		<property name="SortOrder1" value="a090"/>
@@ -1929,6 +1934,7 @@
         <property name="Extends" value="WildWestLightTemplate"/>
 		<property name="CustomIcon" value="rooflight1"/>
 		<property name="DescriptionKey" value="rooflight1Desc"/>
+		<property name="EconomicValue" value="300"/>
         <property name="Model" value="#@modfolder:Resources/oldwestlights.unity3d?RoofLight1"/>
 		<property name="FilterTags" value="foutdoor,fcrops"/>
 		<property name="SortOrder1" value="a090"/>
@@ -1941,6 +1947,7 @@
         <property name="Extends" value="WildWestLightTemplate"/>
 		<property name="CustomIcon" value="oldpiano"/>
 		<property name="DescriptionKey" value="OldPianoDesc"/>
+		<property name="EconomicValue" value="300"/>
         <property name="Model" value="#@modfolder:Resources/OldPiano.unity3d?pianomatic"/>
 		<property name="MultiBlockDim" value="2,2,1"/>
 		<property name="ModelOffset" value="0,.5,0"/>

@@ -2759,28 +2759,39 @@
 </item>
 
 <item name="drinkHoneyBeer">
-	<property name="Extends" value="drinkJarRedTea"/>
-	<property name="DisplayType" value="waterMegaCrush"/>
-	<property name="CustomIcon" value="honeybeer"/>
-	<property name="DescriptionKey" value="drinkHoneyBeerDesc"/>	
+	<property name="Tags" value="drinks,foodSkill"/>
+	<property name="HoldType" value="3"/>
+	<property name="Meshfile" value="@:Other/Items/Food/bottled_waterPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mglass"/>
+	<!-- <property name="Weight" value="10"/> -->
+	<property name="Stacknumber" value="250"/> <!-- STK drink -->
 	<property name="EconomicValue" value="140"/>
+	<!--property name="UnlockedBy" value="craftingFood"/--><!-- perkMasterChef,drinkJarBeerSchematic, -->
+	<property name="DisplayType" value="waterHoneyBeer"/>
+	<property name="CustomIcon" value="honeybeer"/>
+	<property name="DescriptionKey" value="drinkHoneyBeerDesc"/>
+	<property name="Group" value="Food/Cooking,CFDrink/Cooking,Medical"/>
 	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<!-- <property name="Create_item" value="drinkJarEmpty"/> -->
 	</property>
-
-	<effect_group tiered="false" name="Drink Tier Found">
+	<effect_group tiered="false" name="Drink Tier 3">
 		<requirement name="NotHasBuff" buff="buffIsOnFire"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="60"/>
-			<display_value name="dStaminaRegen" value=".15"/>
-			<display_value name="dRunSpeed" value=".5"/>
-			<display_value name="dDuration" value="120"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffMegaCrushDuration" operation="add" value="123"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffMegaCrushDuration" operation="set" value="363">
-				<requirement name="CVarCompare" cvar="$buffMegaCrushDuration" operation="GT" value="363"/></triggered_effect>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffMegaCrush"/>
-								
-			<display_value name="dCureInfection" value=".03"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="3"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>								
+			<display_value name="dStaminaRegen" value=".4"/>
+			<display_value name="dEntityDamageBrawling" value="3"/>
+			<display_value name="dStunResist" value="1"/>
+			<display_value name="dDuration" value="90"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="add" value="93"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffBeerDuration" operation="set" value="273">
+				<requirement name="CVarCompare" cvar="$buffBeerDuration" operation="GT" value="273"/></triggered_effect>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffBeer"/>
+			
+			<display_value name="dCureInfection" value=".05"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="5"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>
 	</effect_group>
 
 	<effect_group tiered="false">

@@ -981,7 +981,7 @@ foodHoneyBreadDesc,items,Food,,,"A tasty treat with healing properties. Cures 3%
 foodHoneyPumpkinPie,items,Food,,,Honey Pumpkin Pie,,,,,,,,,,,,,
 foodHoneyPumpkinPieDesc,items,Food,,,"A tasty treat with healing properties. Cures 3% infection.",,,,,,,,,,,,,
 drinkHoneyBeer,items,Food,,,Honey Beer,,,,,,,,,,,,,
-drinkHoneyBeerDesc,items,Food,,,"Puts a spring in your step, power in your punch, and provides healing properties. Cures 3% infection.",,,,,,,,,,,,,
+drinkHoneyBeerDesc,items,Food,,,"Unleash your inner berserker to put power in your punch for longer, and cure 5% infection.",,,,,,,,,,,,,
 
 CaughtChick,items,Item,,,Caught Chick,,,,,,,,,,,,,
 CaughtChickDesc,items,Item,,,"Use 2 Caught Chicks, with right mouse click, on an Empty Chicken Coop to populate and activate the next stage.",,,,,,,,,,,,,

@@ -3905,7 +3905,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	</recipe>
 
 	<recipe name="foodHoneyBread" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot">
-	<ingredient name="foodHoneyComb" count="2"/>
+	<ingredient name="foodHoneyComb" count="3"/>
 	<ingredient name="foodCornMeal" count="2"/>
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 	<ingredient name="foodEgg" count="1"/>
@@ -3913,7 +3913,7 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	</recipe>
 
 	<recipe name="foodHoneyPumpkinPie" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot">
-	<ingredient name="foodHoneyComb" count="2"/>
+	<ingredient name="foodHoneyComb" count="3"/>
 	<ingredient name="foodCropPumpkin" count="2"/>
 	<ingredient name="foodEgg" count="1"/>
 	<ingredient name="foodCornMeal" count="1"/>
@@ -3921,14 +3921,9 @@ either via a direct cvar change or via RecipeTagUnlock passive effect. cvar is n
 	</recipe>
 
 	<recipe name="drinkHoneyBeer" count="1" craft_area="campfire" craft_tool="toolCookingPot">
-	<ingredient name="resourceCropHopsFlower" count="4"/>
-	<ingredient name="drinkJarBoiledWater" count="1"/>
-	<ingredient name="foodCropPotato" count="4"/>
-	<ingredient name="foodHoneyComb" count="4"/>
-	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="resourceCropHopsFlower"/>
-	</effect_group>
-</recipe>
+	<ingredient name="drinkJarBeer" count="1"/>
+	<ingredient name="foodHoneyComb" count="5"/>
+	</recipe>
 
 <!-- Oakraven's Chicken Coops -->
 
