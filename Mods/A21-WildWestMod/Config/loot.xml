@@ -2329,7 +2329,6 @@ If there is no hit the default quality is used.
 
 <lootgroup name="groupApparelHats">
 	<!-- <item name="armorSantaHat" mods="dye" mod_chance="0"/> -->	<!-- *** HOLIDAY_ITEM -->
-	<item name="armorSantaHat" mods="dye" mod_chance="0"/>
 	<item name="apparelSkullCap" mods="dye" mod_chance="0"/>
 	<item name="apparelPressboyCap" mods="dye" mod_chance="0"/>
 	<item name="apparelBallCap" mods="dye" mod_chance="0"/>
