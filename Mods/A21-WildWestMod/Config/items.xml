@@ -2163,7 +2163,7 @@
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
 	<property name="Stacknumber" value="50"/> <!-- STK food -->
-	<property name="EconomicValue" value="72"/>
+	<property name="EconomicValue" value="80"/>
 	<property name="UnlockedBy" value="craftingFood"/>
 	<property class="Action0">
 		<property name="Class" value="Eat"/>
